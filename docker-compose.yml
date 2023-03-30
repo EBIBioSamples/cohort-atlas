@@ -1,0 +1,20 @@
+version: '3'
+services:
+  cohort-atlas:
+    build: .
+    image: cohort-atlas:latest
+    ports:
+      - "8080:8080"
+    links:
+      - mongodb
+  mongodb:
+    image: mongo:6.0.5
+    ports:
+      - "27017:27017"
+
+# avoid conflicts with EBI network
+networks:
+  default:
+    ipam:
+      config:
+        - subnet: 172.30.0.0/16
