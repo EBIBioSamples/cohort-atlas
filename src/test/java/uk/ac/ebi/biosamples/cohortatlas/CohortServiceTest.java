@@ -8,6 +8,8 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import uk.ac.ebi.biosamples.cohortatlas.model.Cohort;
+import uk.ac.ebi.biosamples.cohortatlas.repository.CohortRepository;
+import uk.ac.ebi.biosamples.cohortatlas.service.CohortService;
 
 import java.util.List;
 

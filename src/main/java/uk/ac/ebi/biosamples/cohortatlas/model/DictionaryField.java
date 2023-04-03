@@ -2,7 +2,7 @@ package uk.ac.ebi.biosamples.cohortatlas.model;
 
 import java.util.List;
 
-public class Field {
+public class DictionaryField {
   private String id; //?
   private String name;
   private String label;

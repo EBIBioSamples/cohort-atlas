@@ -7,7 +7,7 @@ import java.time.Instant;
 import java.util.List;
 
 @Document
-public class Cohort extends CohortDescriptor {
+public class Cohort {
   @Id
   private String accession;
   private String name;
@@ -39,6 +39,6 @@ public class Cohort extends CohortDescriptor {
   private String projects;
   private List<Attachment> attachments;
 
-  private List<String> dictionary;
-  private List<String> links;
+  private List<ExternalLink> externalLinks;
+  private List<ArchiveLink> archiveLinks;
 }
