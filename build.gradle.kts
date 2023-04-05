@@ -1,5 +1,6 @@
 plugins {
 	java
+	`jvm-test-suite`
 	id("org.springframework.boot") version "3.0.5"
 	id("io.spring.dependency-management") version "1.1.0"
 }
@@ -42,4 +43,38 @@ dependencies {
 
 tasks.withType<Test> {
 	useJUnitPlatform()
+}
+
+testing {
+	suites {
+		val test by getting(JvmTestSuite::class) {
+			useJUnitJupiter()
+		}
+
+		val integrationTest by registering(JvmTestSuite::class) {
+			dependencies {
+				implementation(project())
+				implementation("org.springframework.boot:spring-boot-starter-test")
+				implementation("de.flapdoodle.embed:de.flapdoodle.embed.mongo.spring30x:4.6.1")
+			}
+
+//			sources {
+//				java {
+//					setSrcDirs(listOf("src/integrationTest/java"))
+//				}
+//			}
+
+			targets {
+				all {
+					testTask.configure {
+						shouldRunAfter(test)
+					}
+				}
+			}
+		}
+	}
+}
+
+tasks.named("check") {
+	dependsOn(testing.suites.named("integrationTest"))
 }
