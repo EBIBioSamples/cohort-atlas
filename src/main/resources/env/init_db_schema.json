@@ -1,0 +1,51 @@
+[
+  {
+    "cohortId": "BSC0000001",
+    "cohortName": "ReCoDID COVID-19 pilot study",
+    "description": "A test cohort with test ReCoDID data",
+    "acronym":"ReCoDID",
+    "website": "https://www.ebi.ac.uk/biosamples/samples?filter=attr%3Aproject+name%3AReCoDID+COVID-19+pilot+study",
+    "logo":"https://www.ebi.ac.uk/biosamples/images/logo_biosamples.png",
+    "type": "COHORT",
+    "provider": {},
+    "license": "",
+    "rights": "",
+    "dataSharing": {},
+    "contacts": [],
+    "investigators": [],
+    "startDate": "",
+    "endDate": "",
+    "targetEnrollment": "",
+    "totalEnrollment": "",
+    "publications": "",
+    "funding": "",
+    "acknowledgements": "",
+    "supplementaryInformation": "",
+    "datasets": "",
+    "territories": "",
+    "dataTypes": {},
+    "projects": "",
+    "attachments": "",
+    "externalLinks": "",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+  {
+    "id": "test_id_1",
+    "name": "",
+    "label": "",
+    "description": "",
+    "type": "",
+    "values": "",
+    "parent": "",
+    "annotations": "",
+    "tags": "",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "prefix": "",
+    "accession": "SAMEA112152897",
+    "type": "IS_A_CHILD_OF",
+    "cohort": "BSC0000001",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Relationship"
+  }
+]

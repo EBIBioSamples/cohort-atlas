@@ -1,5 +1,6 @@
 package uk.ac.ebi.biosamples.cohortatlas.model;
 
+import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -7,11 +8,9 @@ import java.time.Instant;
 import java.util.List;
 
 @Document
+@Data
 public class Cohort {
   @Id
-  private String accession;
-  private String name;
-
   private String cohortId;
   private String cohortName;
   private String description;
@@ -40,5 +39,4 @@ public class Cohort {
   private List<Attachment> attachments;
 
   private List<ExternalLink> externalLinks;
-  private List<ArchiveLink> archiveLinks;
 }

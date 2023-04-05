@@ -1,0 +1,73 @@
+name: Report a bug
+description: Create a new ticket to report a bug
+title: "[BUG] - "
+labels:
+  - bug
+projects:
+  - Cohort Atlas
+body:
+  - type: markdown
+    attributes:
+      value: Template for reporting bugs
+  - type: input
+    id: bug-title
+    attributes:
+      label: Bug summary
+      description: Please provide a summary or title for the bug. 
+      placeholder: e.g. Validation crashes when compiling the schemas
+    validations:
+      required: true
+  - type: textarea
+    id: technical-details
+    attributes:
+      label: Technical details
+      description: If relevant, please specify the technical details of the environment
+      placeholder:  |
+          e.g. 
+              * Used GitHub branch: main
+              * Software versions: Java 17
+              * Operating system: WSL2
+    validations:
+      required: false
+  - type: textarea
+    id: to-reproduce
+    attributes:
+      label: To reproduce
+      description: Please explain in detail what led you to observe the bug to help us to reproduce
+      placeholder:  |
+          e.g.
+            Steps to reproduce:
+              1. Clone project and install dependencies:
+              ````
+              git clone <url>
+              ````
+              2. Compile and run:
+              ````
+              ./gradlew clean build
+              ````
+              3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: observed-behaviour
+    attributes:
+      label: Observed behaviour
+      description: Please explain the behaviour you observed and considered a bug.
+      placeholder: e.g. Cohort can not be exported into X format and giving Y error.
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behaviour
+    attributes:
+      label: Expected behaviour
+      description: Please explain what you expected to happen if there was no bug.
+      placeholder: e.g. Cohort should be able to download in X format
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Please add any additional information that would be useful for fixing the bug
+    validations:
+      required: false

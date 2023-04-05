@@ -1,4 +1,4 @@
-package uk.ac.ebi.biosamples.cohortatlas;
+package uk.ac.ebi.biosamples.cohortatlas.service;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

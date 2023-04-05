@@ -1,4 +1,4 @@
-package uk.ac.ebi.biosamples.cohortatlas;
+package uk.ac.ebi.biosamples.cohortatlas.service;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -21,7 +21,6 @@ class CohortServiceTest {
 
   @InjectMocks
   CohortService cohortService;
-
 
   @Test
   public void search_should_return_a_list_of_cohorts() {

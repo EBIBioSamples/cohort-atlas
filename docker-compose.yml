@@ -3,9 +3,14 @@ services:
   cohort-atlas:
     build: .
     image: cohort-atlas:latest
+    environment:
+      - spring.data.mongodb.uri=mongodb://mongodb:27017/cohortatlas?authSource=admin
+      - SPRING_PROFILES_ACTIVE=docker
     ports:
-      - "8080:8080"
+      - "8081:8080"
     links:
+      - mongodb
+    depends_on:
       - mongodb
   mongodb:
     image: mongo:6.0.5
