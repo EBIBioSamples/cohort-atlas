@@ -11,6 +11,7 @@ import uk.ac.ebi.biosamples.cohortatlas.model.Cohort;
 import uk.ac.ebi.biosamples.cohortatlas.repository.CohortRepository;
 import uk.ac.ebi.biosamples.cohortatlas.service.CohortService;
 
+import java.time.Instant;
 import java.util.List;
 
 @ExtendWith(MockitoExtension.class)
@@ -33,6 +34,11 @@ class CohortServiceTest {
 
   private List<Cohort> getTestCohorts() {
     return List.of(new Cohort(), new Cohort(), new Cohort());
+  }
+
+  @Test
+  public void testInstant() {
+    System.out.println(Instant.now());
   }
 
 }

@@ -1,8 +1,12 @@
 package uk.ac.ebi.biosamples.cohortatlas;
 
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Primary;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.data.repository.init.Jackson2RepositoryPopulatorFactoryBean;
@@ -18,6 +22,15 @@ public class CohortAtlasApplication {
 
   public static void main(String[] args) {
     SpringApplication.run(CohortAtlasApplication.class, args);
+  }
+
+  @Bean
+  @Primary
+  public ObjectMapper objectMapper() {
+    ObjectMapper objectMapper = new ObjectMapper()
+        .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);;
+    objectMapper.registerModule(new JavaTimeModule());
+    return objectMapper;
   }
 
   @Bean
@@ -40,6 +53,7 @@ public class CohortAtlasApplication {
   @Bean
   public Jackson2RepositoryPopulatorFactoryBean populateRepoWithTestData() {
     Jackson2RepositoryPopulatorFactoryBean factory = new Jackson2RepositoryPopulatorFactoryBean();
+    factory.setMapper(objectMapper());
     factory.setResources(new Resource[]{new ClassPathResource("env/init_db_schema.json")});
     return factory;
   }

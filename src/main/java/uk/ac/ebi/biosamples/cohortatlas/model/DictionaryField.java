@@ -1,7 +1,10 @@
 package uk.ac.ebi.biosamples.cohortatlas.model;
 
+import lombok.Data;
+
 import java.util.List;
 
+@Data
 public class DictionaryField {
   private String id; //?
   private String name;

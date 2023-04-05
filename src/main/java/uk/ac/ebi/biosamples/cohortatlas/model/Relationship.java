@@ -1,5 +1,8 @@
 package uk.ac.ebi.biosamples.cohortatlas.model;
 
+import lombok.Data;
+
+@Data
 public class Relationship {
   private String prefix;
   private String accession;
