@@ -2,6 +2,7 @@ package uk.ac.ebi.biosamples.cohortatlas.model;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.TextIndexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.Instant;
@@ -11,8 +12,11 @@ import java.util.List;
 @Data
 public class Cohort {
   @Id
+  @TextIndexed(weight = 10F)
   private String cohortId;
+  @TextIndexed(weight = 10F)
   private String cohortName;
+  @TextIndexed(weight = 10F)
   private String description;
   private String acronym;
   private String website;
