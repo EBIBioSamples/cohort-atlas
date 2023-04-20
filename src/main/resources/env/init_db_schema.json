@@ -3,32 +3,126 @@
     "cohortId": "BSC0000001",
     "cohortName": "ReCoDID COVID-19 pilot study",
     "description": "A test cohort with test ReCoDID data",
-    "acronym":"ReCoDID",
+    "acronym": "ReCoDID",
     "website": "https://www.ebi.ac.uk/biosamples/samples?filter=attr%3Aproject+name%3AReCoDID+COVID-19+pilot+study",
-    "logo":"https://www.ebi.ac.uk/biosamples/images/logo_biosamples.png",
+    "logo": "https://www.ebi.ac.uk/biosamples/images/logo_biosamples.png",
     "type": "COHORT",
-    "provider": {},
-    "license": "",
-    "rights": "",
-    "dataSharing": {},
-    "contacts": [],
-    "investigators": [],
+    "provider": {
+      "name": "test name",
+      "description": "test description"
+    },
+    "license": "MIT",
+    "rights": "Similar to license, sentence of right?",
+    "dataSharing": {
+      "id": "DUO:0000042",
+      "label": "general research use"
+    },
+    "contacts": [
+      {
+        "name": "example",
+        "email": "example@example.com"
+      }
+    ],
+    "investigators": [
+      {
+        "name": "investigator",
+        "email": "investigator@example.com"
+      }
+    ],
     "startDate": "2015-02-24T09:51:07.257571830Z",
     "endDate": "2025-02-24T09:51:07.257571830Z",
-    "targetEnrollment": "",
-    "totalEnrollment": "",
-    "publications": "",
+    "targetEnrollment": 100000,
+    "totalEnrollment": 10000,
+    "publications": [
+      {
+        "url": "publication.example.com"
+      }
+    ],
     "funding": "",
     "acknowledgements": "",
     "supplementaryInformation": "",
-    "datasets": "",
-    "territories": "",
-    "dataTypes": {},
-    "projects": "",
+    "datasets": [],
+    "territories": [
+      {
+        "id": "NCIT:C17233",
+        "label": "United Kingdom"
+      }
+    ],
+    "dataTypes": {
+      "biospecimens": true,
+      "environmentalData": true,
+      "genomicData": true,
+      "phenotypicData": true
+    },
+    "projects": [],
     "attachments": [],
     "externalLinks": [],
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
   },
+  {
+    "cohortId": "BSC0000002",
+    "cohortName": "Test cohort study",
+    "description": "A test cohort with test example data",
+    "acronym": "ReCoDID",
+    "website": "https://www.ebi.ac.uk/biosamples/samples?filter=attr%3Aproject+name%3AReCoDID+COVID-19+pilot+study",
+    "logo": "https://www.ebi.ac.uk/biosamples/images/logo_biosamples.png",
+    "type": "COHORT",
+    "provider": {
+      "name": "name",
+      "description": "description"
+    },
+    "license": "MIT",
+    "rights": "Similar to license, sentence of right?",
+    "dataSharing": {
+      "id": "DUO:0000042",
+      "label": "general research use"
+    },
+    "contacts": [
+      {
+        "name": "example",
+        "email": "example@example.com"
+      }
+    ],
+    "investigators": [
+      {
+        "name": "investigator",
+        "email": "investigator@example.com"
+      }
+    ],
+    "startDate": "2015-02-24T09:51:07.257571830Z",
+    "endDate": "2025-02-24T09:51:07.257571830Z",
+    "targetEnrollment": 1000000,
+    "totalEnrollment": 1000,
+    "publications": [
+      {
+        "url": "publication.example.com"
+      }
+    ],
+    "funding": "",
+    "acknowledgements": "",
+    "supplementaryInformation": "",
+    "datasets": [],
+    "territories": [
+      {
+        "id": "NCIT:C16582",
+        "label": "United Kingdom"
+      }
+    ],
+    "dataTypes": {
+      "biospecimens": true,
+      "environmentalData": true,
+      "genomicData": false,
+      "phenotypicData": false
+    },
+    "projects": [],
+    "attachments": [],
+    "externalLinks": [],
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+
+
+
+
   {
     "id": "test_id_1",
     "name": "Alcohol use history",

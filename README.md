@@ -1,34 +1,18 @@
 # cohort-atlas
 A browser for discovering cohorts and related resources
 
-To run the project follow these steps:
+## Requirements
+- Java 17
+- docker (23.0.1) and docker compose (v2.16.0)
 
-1) Build the project using the commands
+## Build and run
 ```shell
-gradle build -x check
-./gradlew build --args='--spring.profiles.active=test'
+./gradlew build
+docker compose build
+docker compose up
 ```
 
-2) Build the Docker image using
+### Build without integration tests
 ```shell
-docker build -t cohort-atlas .
-```
-
-3) Start the Docker container using
-```shell
-docker-compose up
-```
-
-4) Access to Cohort Atlas will be by: http://localhost:8081/
-
-In addition, check the Java version (17th is expected) and update if necessary:
-
-```shell
-/usr/libexec/java_home
-
-echo "export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home" >> ~/.bash_profile
-
-source ~/.bash_profile
-
-echo $JAVA_HOME
+./gradlew build -x check
 ```

@@ -4,8 +4,8 @@ import lombok.Data;
 
 @Data
 public class DataTypes {
-  private String biospecimens;
-  private String environmentalData;
-  private String genomicData;
-  private String phenotypicData;
+  private boolean biospecimens;
+  private boolean environmentalData;
+  private boolean genomicData;
+  private boolean phenotypicData;
 }

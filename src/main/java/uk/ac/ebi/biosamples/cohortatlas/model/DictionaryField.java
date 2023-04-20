@@ -17,5 +17,7 @@ public class DictionaryField {
   private List<String> annotations;
   private List<String> tags;
 
+  private String fullQualifiedName; // get name with parent paths?
+
   private String cohort;
 }
