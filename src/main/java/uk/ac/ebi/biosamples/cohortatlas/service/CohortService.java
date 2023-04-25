@@ -7,18 +7,18 @@ import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Service;
 import uk.ac.ebi.biosamples.cohortatlas.model.Cohort;
 import uk.ac.ebi.biosamples.cohortatlas.repository.CohortRepository;
-import uk.ac.ebi.biosamples.cohortatlas.repository.SearchRepository;
+import uk.ac.ebi.biosamples.cohortatlas.repository.CohortSearchRepository;
 
 import java.util.List;
 
 @Service
 public class CohortService {
   private final CohortRepository cohortRepository;
-  private final SearchRepository searchRepository;
+  private final CohortSearchRepository cohortSearchRepository;
 
-  public CohortService(CohortRepository cohortRepository, SearchRepository searchRepository) {
+  public CohortService(CohortRepository cohortRepository, CohortSearchRepository cohortSearchRepository) {
     this.cohortRepository = cohortRepository;
-    this.searchRepository = searchRepository;
+    this.cohortSearchRepository = cohortSearchRepository;
   }
 
   public Cohort saveCohort(Cohort cohort) {
@@ -26,7 +26,7 @@ public class CohortService {
   }
 
   public Page<Cohort> searchCohorts(Pageable pageRequest, String text, List<String> filters, String sort) {
-    return searchRepository.findPageWithFilters(pageRequest, text, sort, filters);
+    return cohortSearchRepository.findPageWithFilters(pageRequest, text, sort, filters);
   }
 
   @NonNull

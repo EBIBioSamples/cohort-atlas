@@ -63,7 +63,7 @@
     "cohortId": "BSC0000002",
     "cohortName": "Test cohort study",
     "description": "A test cohort with test example data",
-    "acronym": "ReCoDID",
+    "acronym": "TESTCOH",
     "website": "https://www.ebi.ac.uk/biosamples/samples?filter=attr%3Aproject+name%3AReCoDID+COVID-19+pilot+study",
     "logo": "https://www.ebi.ac.uk/biosamples/images/logo_biosamples.png",
     "type": "COHORT",
@@ -119,13 +119,192 @@
     "externalLinks": [],
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
   },
-
+  {
+    "cohortId": "BSC0000003",
+    "cohortName": "Test cohort study 3",
+    "description": "A test cohort with test example data 3",
+    "acronym": "TESTCOH3",
+    "website": "https://www.ebi.ac.uk/biosamples/samples?filter=attr%3Aproject+name%3AReCoDID+COVID-19+pilot+study",
+    "logo": "https://www.ebi.ac.uk/biosamples/images/logo_biosamples.png",
+    "type": "COHORT",
+    "provider": {
+      "name": "name",
+      "description": "description"
+    },
+    "license": "MIT",
+    "rights": "Similar to license, sentence of right?",
+    "dataSharing": {
+      "id": "DUO:0000042",
+      "label": "general research use"
+    },
+    "contacts": [
+      {
+        "name": "example",
+        "email": "example@example.com"
+      }
+    ],
+    "investigators": [
+      {
+        "name": "investigator",
+        "email": "investigator@example.com"
+      }
+    ],
+    "startDate": "2009-02-24T09:51:07.257571830Z",
+    "endDate": "2021-02-24T09:51:07.257571830Z",
+    "targetEnrollment": 10,
+    "totalEnrollment": 10,
+    "publications": [
+      {
+        "url": "publication.example.com"
+      }
+    ],
+    "funding": "",
+    "acknowledgements": "",
+    "supplementaryInformation": "",
+    "datasets": [],
+    "territories": [
+      {
+        "id": "NCIT:C16582",
+        "label": "United Kingdom"
+      }
+    ],
+    "dataTypes": {
+      "biospecimens": false,
+      "environmentalData": false,
+      "genomicData": true,
+      "phenotypicData": false
+    },
+    "projects": [],
+    "attachments": [],
+    "externalLinks": [],
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+  {
+    "cohortId": "BSC0000004",
+    "cohortName": "Test cohort study 4",
+    "description": "A test cohort with test example data 4",
+    "acronym": "TESTCOH4",
+    "website": "https://www.ebi.ac.uk/biosamples/samples?filter=attr%3Aproject+name%3AReCoDID+COVID-19+pilot+study",
+    "logo": "https://www.ebi.ac.uk/biosamples/images/logo_biosamples.png",
+    "type": "COHORT",
+    "provider": {
+      "name": "name",
+      "description": "description"
+    },
+    "license": "MIT",
+    "rights": "Similar to license, sentence of right?",
+    "dataSharing": {
+      "id": "DUO:0000042",
+      "label": "general research use"
+    },
+    "contacts": [
+      {
+        "name": "example",
+        "email": "example@example.com"
+      }
+    ],
+    "investigators": [
+      {
+        "name": "investigator",
+        "email": "investigator@example.com"
+      }
+    ],
+    "startDate": "2011-02-24T09:51:07.257571830Z",
+    "endDate": "2022-02-24T09:51:07.257571830Z",
+    "targetEnrollment": 100000,
+    "totalEnrollment": 100000,
+    "publications": [
+      {
+        "url": "publication.example.com"
+      }
+    ],
+    "funding": "",
+    "acknowledgements": "",
+    "supplementaryInformation": "",
+    "datasets": [],
+    "territories": [
+      {
+        "id": "NCIT:C16582",
+        "label": "United Kingdom"
+      }
+    ],
+    "dataTypes": {
+      "biospecimens": true,
+      "environmentalData": true,
+      "genomicData": true,
+      "phenotypicData": false
+    },
+    "projects": [],
+    "attachments": [],
+    "externalLinks": [],
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+  {
+    "cohortId": "BSC0000005",
+    "cohortName": "Test cohort study 5",
+    "description": "A test cohort with test example data 5",
+    "acronym": "ReCoDID",
+    "website": "https://www.ebi.ac.uk/biosamples/samples?filter=attr%3Aproject+name%3AReCoDID+COVID-19+pilot+study",
+    "logo": "https://www.ebi.ac.uk/biosamples/images/logo_biosamples.png",
+    "type": "COHORT",
+    "provider": {
+      "name": "name",
+      "description": "description"
+    },
+    "license": "MIT",
+    "rights": "Similar to license, sentence of right?",
+    "dataSharing": {
+      "id": "DUO:0000042",
+      "label": "general research use"
+    },
+    "contacts": [
+      {
+        "name": "example",
+        "email": "example@example.com"
+      }
+    ],
+    "investigators": [
+      {
+        "name": "investigator",
+        "email": "investigator@example.com"
+      }
+    ],
+    "startDate": "1999-02-24T09:51:07.257571830Z",
+    "endDate": "2025-02-24T09:51:07.257571830Z",
+    "targetEnrollment": 1000000,
+    "totalEnrollment": 100000,
+    "publications": [
+      {
+        "url": "publication.example.com"
+      }
+    ],
+    "funding": "",
+    "acknowledgements": "",
+    "supplementaryInformation": "",
+    "datasets": [],
+    "territories": [
+      {
+        "id": "NCIT:C16582",
+        "label": "United Kingdom"
+      }
+    ],
+    "dataTypes": {
+      "biospecimens": true,
+      "environmentalData": true,
+      "genomicData": true,
+      "phenotypicData": true
+    },
+    "projects": [],
+    "attachments": [],
+    "externalLinks": [],
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
 
 
 
   {
-    "id": "test_id_1",
-    "name": "Alcohol use history",
+    "id": "test_field_1",
+    "name": "alcohol_use_history",
     "label": "Alcohol use history",
     "description": "Alcohol use history",
     "type": "",
@@ -133,13 +312,51 @@
     "parent": "lifestyle_and_behaviours",
     "annotations": [],
     "tags": [],
+    "fullQualifiedName": "lifestyle_and_behaviours.alcohol_use_history",
+    "cohort": "BSC0000001",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
   },
   {
-    "prefix": "biosample",
-    "accession": "SAMEA112152897",
-    "type": "IS_A_CHILD_OF",
+    "id": "test_field_2",
+    "name": "tobacco_use_history",
+    "label": "Tobacco use history",
+    "description": "Tobacco use history",
+    "type": "",
+    "values": "",
+    "parent": "lifestyle_and_behaviours",
+    "annotations": [],
+    "tags": [],
+    "fullQualifiedName": "lifestyle_and_behaviours.tobacco_use_history",
     "cohort": "BSC0000001",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "id": "test_field_3",
+    "name": "tobacco_use_history",
+    "label": "Tobacco use history",
+    "description": "Tobacco use history",
+    "type": "",
+    "values": "",
+    "parent": "lifestyle_and_behaviours",
+    "annotations": [],
+    "tags": [],
+    "fullQualifiedName": "lifestyle_and_behaviours.tobacco_use_history",
+    "cohort": "BSC0000002",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+
+  {
+    "id": "test_relationship_1",
+    "source": "biosample:SAMEA112152897",
+    "type": "IS_A_CHILD_OF",
+    "target": "BSC0000001",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Relationship"
+  },
+  {
+    "id": "test_relationship_2",
+    "source": "biosample:SAMEA112152898",
+    "type": "IS_A_CHILD_OF",
+    "target": "BSC0000001",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Relationship"
   }
 ]

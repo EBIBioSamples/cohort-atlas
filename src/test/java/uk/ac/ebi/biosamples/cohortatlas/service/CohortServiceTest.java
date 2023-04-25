@@ -13,8 +13,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import uk.ac.ebi.biosamples.cohortatlas.model.Cohort;
 import uk.ac.ebi.biosamples.cohortatlas.repository.CohortRepository;
-import uk.ac.ebi.biosamples.cohortatlas.repository.SearchRepository;
-import uk.ac.ebi.biosamples.cohortatlas.service.CohortService;
+import uk.ac.ebi.biosamples.cohortatlas.repository.CohortSearchRepository;
 
 import java.time.Instant;
 import java.util.Collections;
@@ -25,7 +24,7 @@ class CohortServiceTest {
   @Mock
   CohortRepository cohortRepository;
   @Mock
-  SearchRepository searchRepository;
+  CohortSearchRepository cohortSearchRepository;
 
   @InjectMocks
   CohortService cohortService;
@@ -38,7 +37,7 @@ class CohortServiceTest {
     String sort = "";
 
     Page<Cohort> cohortPage = new PageImpl<>(getTestCohorts(), pageRequest, getTestCohorts().size());
-    Mockito.when(searchRepository.findPageWithFilters(pageRequest, text, sort, filters)).thenReturn(cohortPage);
+    Mockito.when(cohortSearchRepository.findPageWithFilters(pageRequest, text, sort, filters)).thenReturn(cohortPage);
 
     Page<Cohort> cohorts = cohortService.searchCohorts(pageRequest, text, filters, sort);
     Assertions.assertNotNull(cohorts);

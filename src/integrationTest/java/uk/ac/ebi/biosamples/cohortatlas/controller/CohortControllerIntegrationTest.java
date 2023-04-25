@@ -45,4 +45,9 @@ class CohortControllerIntegrationTest {
     this.mockMvc.perform(get("/api/cohorts")).andDo(print()).andExpect(status().isOk())
         .andExpect(content().string(containsString("ReCoDID")));
   }
+
+  @Test
+  public void free_text_search() {
+    assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/api/cohorts?text=recodid", String.class)).contains("ReCoDID");
+  }
 }

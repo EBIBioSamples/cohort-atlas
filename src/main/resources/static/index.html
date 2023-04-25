@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Cohort Atlas</title>
+    <style>
+        td {
+            border: 1px solid black;
+            padding: 2px;
+        }
+    </style>
 </head>
-<body>
+<body onload="loadCohorts()">
 <h1>BioSamples Cohort Atlas</h1>
 <div id="cohort-atlas-content">
     <table>
@@ -15,19 +21,32 @@
             <td>acronym</td>
         </tr>
         </thead>
-        <tbody>
-        <tr>
-            <td>ReCoDID COVID-19 pilot study</td>
-            <td>www.ebi.ac.uk/biosamples</td>
-            <td>ReCoDID</td>
-        </tr>
-        <tr>
-            <td>ReCoDID COVID-19 pilot study</td>
-            <td>www.ebi.ac.uk/biosamples</td>
-            <td>ReCoDID</td>
-        </tr>
-        </tbody>
+        <tbody id="cohortTableBody"></tbody>
     </table>
 </div>
+<script>
+    function loadCohorts() {
+        fetch("http://localhost:8080/api/cohorts")
+            .then((data) => data.json())
+            .then((cohortsHal) => {
+                console.log(cohortsHal);
+                let cohorts = cohortsHal["_embedded"]["cohortList"];
+                let tableBody = document.getElementById("cohortTableBody");
+                for (let cohort of cohorts) {
+                    let row = document.createElement("tr");
+                    let cell = document.createElement("td");
+                    cell.innerHTML = cohort["cohortName"];
+                    row.appendChild(cell);
+                    cell = document.createElement("td");
+                    cell.innerHTML = cohort["website"];
+                    row.appendChild(cell);
+                    cell = document.createElement("td");
+                    cell.innerHTML = cohort["acronym"];
+                    row.appendChild(cell);
+                    tableBody.appendChild(row);
+                }
+            })
+    }
+</script>
 </body>
 </html>

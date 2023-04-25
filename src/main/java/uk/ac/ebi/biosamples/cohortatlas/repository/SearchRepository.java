@@ -16,22 +16,14 @@ import uk.ac.ebi.biosamples.cohortatlas.model.Cohort;
 import java.util.List;
 
 @Repository
-public class SearchRepository {
-  private final MongoTemplate mongoTemplate;
+public abstract class SearchRepository {
+  protected final MongoTemplate mongoTemplate;
 
   public SearchRepository(MongoTemplate mongoTemplate) {
     this.mongoTemplate = mongoTemplate;
   }
 
-  public Page<Cohort> findPageWithFilters(Pageable page, String text, String sort, List<String> filters) {
-    Query query = getSearchQuery(page, text, sort, filters);
-    List<Cohort> cohorts = mongoTemplate.find(query, Cohort.class);
-
-    return PageableExecutionUtils.getPage(cohorts, page,
-        () -> mongoTemplate.count(Query.of(query).limit(-1).skip(-1), Cohort.class));
-  }
-
-  private Query getSearchQuery(Pageable page, String text, String sort, List<String> filters) {
+  protected Query getSearchQuery(Pageable page, String text, String sort, List<String> filters) {
     Query query = new Query().with(page);
     populateQueryWithSort(query, sort);
     populateQueryWithFreeTextSearch(query, text);
