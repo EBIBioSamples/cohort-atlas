@@ -2,6 +2,7 @@ package uk.ac.ebi.biosamples.cohortatlas.model;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.index.TextIndexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -11,6 +12,8 @@ import java.util.List;
 @Document
 @Data
 public class Cohort {
+  @Transient
+  public static final String SEQUENCE_NAME = "accession_sequence";
   @Id
   @TextIndexed(weight = 10F)
   private String cohortId;
@@ -18,6 +21,8 @@ public class Cohort {
   private String cohortName; // study name
   @TextIndexed(weight = 10F)
   private String description; // study aim
+  @TextIndexed(weight = 10F)
+  private String accession;
   private String acronym;
   private String website;
   private String logo;
