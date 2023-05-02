@@ -3,6 +3,7 @@ erDiagram
     Cohort {
     string name
     number enrollment
+    
     }
 
     Dataset {
@@ -13,28 +14,20 @@ erDiagram
     StandardField {
         string name
         type type
+        ontology ontology
     }
 
-    CohortDescriptor {
-        CohortField[] fields
-    }
-
-    Cohort 1--1 CohortDescriptor: ""
     CohortField {
+        string category
         string name
         type type
         range range
-    }
-
-    CohortDescriptor 1--1+CohortField:""
-    FieldHarmonisationMapping {
-        CohortField cohortField
-        StandardField standardField
         MappingStrategy mappingStrategy
     }
 
-    FieldHarmonisationMapping 1+--1+ CohortField : ""
-    FieldHarmonisationMapping 1+--1+ StandardField : ""
 
-    Cohort 1--1+ Dataset : d
+
+    CohortField 1--1 StandardField : ""
+    Cohort 1--1+ CohortField :"" 
+    Cohort 1--1+ Dataset : ""
 ```
