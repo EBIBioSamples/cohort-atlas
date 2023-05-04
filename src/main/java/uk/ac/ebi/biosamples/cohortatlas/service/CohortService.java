@@ -14,11 +14,9 @@ import java.util.List;
 @Service
 public class CohortService {
   private final CohortRepository cohortRepository;
-  private final CohortSearchRepository cohortSearchRepository;
 
-  public CohortService(CohortRepository cohortRepository, CohortSearchRepository cohortSearchRepository) {
+  public CohortService(CohortRepository cohortRepository) {
     this.cohortRepository = cohortRepository;
-    this.cohortSearchRepository = cohortSearchRepository;
   }
 
   public Cohort saveCohort(Cohort cohort) {
@@ -26,7 +24,7 @@ public class CohortService {
   }
 
   public Page<Cohort> searchCohorts(Pageable pageRequest, String text, List<String> filters, String sort) {
-    return cohortSearchRepository.findPageWithFilters(pageRequest, text, sort, filters);
+    return cohortRepository.findByFilters(pageRequest, text, sort, filters);
   }
 
   @NonNull

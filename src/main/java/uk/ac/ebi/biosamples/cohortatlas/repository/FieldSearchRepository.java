@@ -1,5 +1,6 @@
 package uk.ac.ebi.biosamples.cohortatlas.repository;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.mongodb.core.MongoTemplate;
@@ -10,14 +11,13 @@ import uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField;
 
 import java.util.List;
 
-@Repository
-public class FieldSearchRepository extends SearchRepository {
-  public FieldSearchRepository(MongoTemplate mongoTemplate) {
-    super(mongoTemplate);
-  }
+@RequiredArgsConstructor
+public class FieldSearchRepository implements SearchRepository<DictionaryField> {
+  protected MongoTemplate mongoTemplate;
+  private final SearchQueryHelper searchQueryHelper = new SearchQueryHelper();
 
-  public Page<DictionaryField> findFieldPageWithFilters(Pageable page, String text, String sort, List<String> filters) {
-    Query query = getSearchQuery(page, text, sort, filters);
+  public Page<DictionaryField> findByFilters(Pageable page, String text, String sort, List<String> filters) {
+    Query query = searchQueryHelper.getSearchQuery(page, text, sort, filters);
     List<DictionaryField> cohorts = mongoTemplate.find(query, DictionaryField.class);
 
     return PageableExecutionUtils.getPage(cohorts, page,

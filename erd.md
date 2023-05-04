@@ -1,9 +1,9 @@
 ```mermaid
 erDiagram
     Cohort {
-    string name
-    number enrollment
-    
+        string name
+        number enrollment
+
     }
 
     Dataset {
@@ -27,7 +27,7 @@ erDiagram
 
 
 
-    CohortField 1--1 StandardField : ""
-    Cohort 1--1+ CohortField :"" 
-    Cohort 1--1+ Dataset : ""
+    CohortField 1--1 StandardField: ""
+    Cohort 1--1+ CohortField: ""
+    Cohort 1--1+ Dataset: ""
 ```

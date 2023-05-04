@@ -37,7 +37,7 @@ class CohortServiceTest {
     String sort = "";
 
     Page<Cohort> cohortPage = new PageImpl<>(getTestCohorts(), pageRequest, getTestCohorts().size());
-    Mockito.when(cohortSearchRepository.findPageWithFilters(pageRequest, text, sort, filters)).thenReturn(cohortPage);
+    Mockito.when(cohortSearchRepository.findByFilters(pageRequest, text, sort, filters)).thenReturn(cohortPage);
 
     Page<Cohort> cohorts = cohortService.searchCohorts(pageRequest, text, filters, sort);
     Assertions.assertNotNull(cohorts);

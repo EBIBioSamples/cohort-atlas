@@ -19,7 +19,7 @@ class CohortSearchRepositoryIntegrationTest {
   @Autowired
   private CohortService cohortService;
   @Autowired
-  private CohortSearchRepository cohortSearchRepository;
+  private CohortRepository cohortSearchRepository;
 
 
   @Test
@@ -36,7 +36,7 @@ class CohortSearchRepositoryIntegrationTest {
     cohort.setAcronym("CHILD");
     cohortService.saveCohort(cohort);
 
-    Page<Cohort> page = cohortSearchRepository.findPageWithFilters(PageRequest.of(0, 5), "CohortSearchRepositoryIntegrationTest", "cohortName", Collections.emptyList());
+    Page<Cohort> page = cohortSearchRepository.findByFilters(PageRequest.of(0, 5), "CohortSearchRepositoryIntegrationTest", "cohortName", Collections.emptyList());
     Assertions.assertTrue(page.getSize() > 1);
     Assertions.assertEquals("SearchRepositoryIntegrationTest_freeTextSearch_1", page.getContent().get(0).getCohortName());
   }
