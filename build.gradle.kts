@@ -27,6 +27,8 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-hateoas")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.14.2")
+	implementation ("org.springframework.data:spring-data-rest-hal-browser:3.3.9.RELEASE")
+	implementation ("org.springframework.data:spring-data-rest-hal-explorer")
 //	implementation("org.springframework.cloud:spring-cloud-function-web")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")

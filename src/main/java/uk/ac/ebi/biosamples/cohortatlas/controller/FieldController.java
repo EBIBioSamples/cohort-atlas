@@ -27,8 +27,8 @@ public class FieldController {
   }
 
   @GetMapping("/fields/all")
-  public List<DictionaryField> getFields(@RequestParam(required = false) String cohortId) {
-    return fieldService.searchFields(cohortId);
+  public List<DictionaryField> getFields(@RequestParam(required = false) String accession) {
+    return fieldService.searchFields(accession);
   }
 
   @GetMapping("/fields")

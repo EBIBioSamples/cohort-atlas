@@ -1,6 +1,6 @@
 [
   {
-    "cohortId": "BSC0000001",
+    "accession": "BSC0000001",
     "cohortName": "ReCoDID COVID-19 pilot study",
     "description": "A test cohort with test ReCoDID data",
     "acronym": "ReCoDID",
@@ -60,7 +60,7 @@
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
   },
   {
-    "cohortId": "BSC0000002",
+    "accession": "BSC0000002",
     "cohortName": "Test cohort study",
     "description": "A test cohort with test example data",
     "acronym": "TESTCOH",
@@ -120,7 +120,7 @@
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
   },
   {
-    "cohortId": "BSC0000003",
+    "accession": "BSC0000003",
     "cohortName": "Test cohort study 3",
     "description": "A test cohort with test example data 3",
     "acronym": "TESTCOH3",
@@ -180,7 +180,7 @@
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
   },
   {
-    "cohortId": "BSC0000004",
+    "accession": "BSC0000004",
     "cohortName": "Test cohort study 4",
     "description": "A test cohort with test example data 4",
     "acronym": "TESTCOH4",
@@ -240,7 +240,7 @@
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
   },
   {
-    "cohortId": "BSC0000005",
+    "accession": "BSC0000005",
     "cohortName": "Test cohort study 5",
     "description": "A test cohort with test example data 5",
     "acronym": "ReCoDID",

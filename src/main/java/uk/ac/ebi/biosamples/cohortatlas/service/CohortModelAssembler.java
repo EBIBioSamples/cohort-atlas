@@ -25,7 +25,7 @@ public class CohortModelAssembler implements RepresentationModelAssembler<Cohort
 
   @Override
   public EntityModel<Cohort> toModel(@NonNull Cohort cohort) {
-    Link link = linkTo(CohortController.class).slash(cohort.getCohortId()).withSelfRel();
+    Link link = linkTo(CohortController.class).slash(cohort.getAccession()).withSelfRel();
     return EntityModel.of(cohort, link);
   }
 
