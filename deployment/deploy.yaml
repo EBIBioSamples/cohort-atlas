@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cohort-atlas
+  namespace: cohort-atlas-dev
+  annotations:
+    buildNumber: "1.0"
+spec:
+  selector:
+    matchLabels:
+      app: cohort-atlas
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: cohort-atlas
+      annotations:
+        buildNumber: "1.0"
+    spec:
+      containers:
+        - name: cohort-atlas
+          image: cohort-atlas:latest
+          readinessProbe:
+            httpGet:
+              path: "/actuator/health/readiness"
+              port: 8080
+            initialDelaySeconds: 5
+          ports:
+            - containerPort: 8080
+          env:
+            - name: spring.data.mongodb.uri
+              value: mongodb://mongodb:27017/cohortatlas?authSource=admin
+            - name: SPRING_PROFILES_ACTIVE
+              value: docker
+---
+
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: cohort-atlas
+  namespace: cohort-atlas-dev
+spec:
+  selector:
+    app: cohort-atlas
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+---
