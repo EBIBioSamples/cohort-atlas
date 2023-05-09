@@ -54,7 +54,7 @@ public class CohortController {
 
   @PutMapping("/{accession}")
   public ResponseEntity<EntityModel<Cohort>> saveCohort(@PathVariable String accession, @RequestBody Cohort cohort) {
-    if (!accession.equals(cohort.getCohortId())) {
+    if (!accession.equals(cohort.getAccession())) {
       throw new InputMismatchException("Accession mismatch");
     }
 

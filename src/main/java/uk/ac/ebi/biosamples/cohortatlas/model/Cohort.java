@@ -16,13 +16,11 @@ public class Cohort {
   public static final String SEQUENCE_NAME = "accession_sequence";
   @Id
   @TextIndexed(weight = 10F)
-  private String cohortId;
+  private String accession;
   @TextIndexed(weight = 10F)
   private String cohortName; // study name
   @TextIndexed(weight = 10F)
   private String description; // study aim
-  @TextIndexed(weight = 10F)
-  private String accession;
   private String acronym;
   private String website;
   private String logo;

@@ -31,7 +31,7 @@ public class CohortServiceIntegrationTest {
         Cohort cohort1 = new Cohort();
         String cohortAccession = "BSC" + String.format("%06d", ++countOfCohortAlreadyInDB);
         cohort1.setCohortName("Creating cohort-1 with accession: "+cohortAccession);
-        cohort1.setCohortId(cohortAccession);
+        cohort1.setAccession(cohortAccession);
         cohort1.setDescription("Test cohort for UKB containing text Cohort creation IntegrationTest");
         cohort1.setAcronym("UKB");
         cohortService.saveCohort(cohort1);
@@ -39,17 +39,17 @@ public class CohortServiceIntegrationTest {
         Cohort cohort2 = new Cohort();
         cohortAccession = "BSC" + String.format("%06d", ++countOfCohortAlreadyInDB);
         cohort2.setCohortName("Creating cohort-2 with accession: "+cohortAccession);
-        cohort2.setCohortId(cohortAccession);
+        cohort2.setAccession(cohortAccession);
         cohort2.setDescription(" Cohort creation IntegrationTest should work with free text");
         cohort2.setAcronym("CHILD");
         cohortService.saveCohort(cohort2);
 
 
-        Cohort cohortFetchedFromDB = cohortService.getCohortById(cohort1.getCohortId());
+        Cohort cohortFetchedFromDB = cohortService.getCohortById(cohort1.getAccession());
         assertThat(cohortFetchedFromDB.getAccession()).isEqualTo(cohort1.getAccession());
         assertThat(cohortFetchedFromDB.getCohortName()).isEqualTo("Creating cohort-1 with accession: "+cohort1.getAccession());
 
-        cohortFetchedFromDB = cohortService.getCohortById(cohort2.getCohortId());
+        cohortFetchedFromDB = cohortService.getCohortById(cohort2.getAccession());
         assertThat(cohortFetchedFromDB.getAccession()).isEqualTo(cohort2.getAccession());
         assertThat(cohortFetchedFromDB.getCohortName()).isEqualTo("Creating cohort-2 with accession: "+cohort2.getAccession());
     }

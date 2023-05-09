@@ -14,12 +14,8 @@ import static org.springframework.data.mongodb.core.query.Query.query;
 
 @Service
 public class AccessionService {
-    MongoOperations mongoOperations;
-
     @Autowired
-    public AccessionService(MongoOperations mongoOperations) {
-        this.mongoOperations = mongoOperations;
-    }
+    MongoOperations mongoOperations;
 
     public String generateAccession(String seqName) {
 
