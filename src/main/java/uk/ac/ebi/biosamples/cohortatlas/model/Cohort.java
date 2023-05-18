@@ -23,18 +23,23 @@ public class Cohort {
   private String description; // study aim
   private String acronym;
   private String website;
-  private String logo;
-  private String type; //Type of the cohort e.g. 'cohort', 'network': could be an ontology?
+
   private Provider provider;
   private String license;
-  private String rights;
-  private Ontology dataSharing;
-  private List<Contact> contacts;
-  private List<Contact> investigators;
   private Instant startDate;
   private Instant endDate;
   private long targetEnrollment;
   private long totalEnrollment;
+
+  private List<Field> dictionary;
+  private List<Link> relationships;
+
+  private String logo;
+  private String type; //Type of the cohort e.g. 'cohort', 'network': could be an ontology?
+  private String rights;
+  private Ontology dataSharing;
+  private List<Contact> contacts;
+  private List<Contact> investigators;
   private List<Publication> publications;
   private String funding;
   private String acknowledgements;
@@ -44,7 +49,6 @@ public class Cohort {
   private DataTypes dataTypes;
   private List<Project> projects;
   private List<Attachment> attachments;
-
   private List<ExternalLink> externalLinks;
 
 //  private List<String> dataSources;//Method of data collection: Questionnaire, Physical measure, Cognitive measure, Biosample, Government databases/registries, Other source of information

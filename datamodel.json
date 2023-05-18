@@ -1,0 +1,23 @@
+{
+  "name": "Sample Cohort",
+  "url" : "http://cohort.com",
+  "dictionary": [
+    {
+      "name": "age",
+      "description": "lorem ipsum",
+      "mapping" : {
+        "term" : "GECKO:XYZ"
+      }
+    }
+  ],
+  "links": [
+    {
+      "type": "project",
+      "url": "xyz"
+    },
+    {
+      "type":"sample",
+      "url": "xyz"
+    }
+  ]
+}
