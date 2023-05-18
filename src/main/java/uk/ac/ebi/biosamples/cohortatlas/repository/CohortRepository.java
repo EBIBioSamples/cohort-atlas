@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 import uk.ac.ebi.biosamples.cohortatlas.model.Cohort;
 
 @Repository
-public interface CohortRepository extends MongoRepository<Cohort, String> {
+public interface CohortRepository extends MongoRepository<Cohort, String>, SearchRepository {
   Page<Cohort> findAllBy(TextCriteria criteria, Pageable pageable);
 }

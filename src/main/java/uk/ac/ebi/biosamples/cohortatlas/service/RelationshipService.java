@@ -12,15 +12,13 @@ import java.util.List;
 @Service
 public class RelationshipService {
   private final RelationshipRepository relationshipRepository;
-  private final RelationshipSearchRepository relationshipSearchRepository;
 
   public RelationshipService(RelationshipRepository relationshipRepository, RelationshipSearchRepository relationshipSearchRepository) {
     this.relationshipRepository = relationshipRepository;
-    this.relationshipSearchRepository = relationshipSearchRepository;
   }
 
   public Page<Relationship> searchRelationships(Pageable pageRequest, String text, List<String> filters, String sort) {
-    return relationshipSearchRepository.findFieldPageWithFilters(pageRequest, text, sort, filters);
+    return relationshipRepository.findByFilters(pageRequest, text, sort, filters);
   }
 
 }

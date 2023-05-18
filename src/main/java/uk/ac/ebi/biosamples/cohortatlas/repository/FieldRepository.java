@@ -8,7 +8,7 @@ import uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField;
 import java.util.List;
 import java.util.Map;
 
-public interface FieldRepository extends MongoRepository<DictionaryField, String> {
+public interface FieldRepository extends MongoRepository<DictionaryField, String>, SearchRepository<DictionaryField> {
   List<DictionaryField> findByCohort(String cohort);
 
   @Aggregation(pipeline = {

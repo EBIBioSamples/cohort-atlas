@@ -38,7 +38,7 @@ class FieldServiceTest {
     String sort = "";
 
     Page<DictionaryField> fieldPage = new PageImpl<>(getTestFields(), pageRequest, getTestFields().size());
-    Mockito.when(fieldSearchRepository.findFieldPageWithFilters(pageRequest, text, sort, filters)).thenReturn(fieldPage);
+    Mockito.when(fieldSearchRepository.findByFilters(pageRequest, text, sort, filters)).thenReturn(fieldPage);
 
     Page<DictionaryField> fields = fieldService.searchFields(pageRequest, text, filters, sort);
     Assertions.assertNotNull(fields);
