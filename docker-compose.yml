@@ -7,7 +7,7 @@ services:
       - spring.data.mongodb.uri=mongodb://mongodb:27017/cohortatlas?authSource=admin
       - SPRING_PROFILES_ACTIVE=docker
     ports:
-      - "8081:8080"
+      - "8080:8080"
     links:
       - mongodb
     depends_on:

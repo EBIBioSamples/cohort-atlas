@@ -10,12 +10,15 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.data.repository.init.Jackson2RepositoryPopulatorFactoryBean;
+import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
+import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
 import org.springframework.lang.NonNull;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.method.HandlerTypePredicate;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.PathMatchConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import uk.ac.ebi.biosamples.cohortatlas.model.Cohort;
 
 @SpringBootApplication
 public class CohortAtlasApplication {
@@ -28,7 +31,7 @@ public class CohortAtlasApplication {
   @Primary
   public ObjectMapper objectMapper() {
     ObjectMapper objectMapper = new ObjectMapper()
-        .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);;
+        .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
     objectMapper.registerModule(new JavaTimeModule());
     return objectMapper;
   }
@@ -49,6 +52,17 @@ public class CohortAtlasApplication {
     };
   }
 
+  @Bean
+  public RepositoryRestConfigurer repositoryRestConfigurer() {
+
+    return new RepositoryRestConfigurer() {
+
+      @Override
+      public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config, CorsRegistry cors) {
+        config.exposeIdsFor(Cohort.class);
+      }
+    };
+  }
   // initially db data loading for development
   @Bean
   public Jackson2RepositoryPopulatorFactoryBean populateRepoWithTestData() {
