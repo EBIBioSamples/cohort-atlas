@@ -71,7 +71,7 @@
       "name": "name",
       "description": "description"
     },
-    "license": "MIT",
+    "license": "BSD",
     "rights": "Similar to license, sentence of right?",
     "dataSharing": {
       "id": "DUO:0000042",
@@ -131,7 +131,7 @@
       "name": "name",
       "description": "description"
     },
-    "license": "MIT",
+    "license": "Apache",
     "rights": "Similar to license, sentence of right?",
     "dataSharing": {
       "id": "DUO:0000042",
