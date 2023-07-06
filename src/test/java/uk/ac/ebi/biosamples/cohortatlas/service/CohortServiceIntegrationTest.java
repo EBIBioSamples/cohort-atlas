@@ -8,8 +8,10 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.test.context.ActiveProfiles;
 import uk.ac.ebi.biosamples.cohortatlas.model.Cohort;
+import uk.ac.ebi.biosamples.cohortatlas.model.DataType;
 import uk.ac.ebi.biosamples.cohortatlas.repository.CohortSearchRepository;
 
+import java.util.Collection;
 import java.util.Collections;
 
 @SpringBootTest
@@ -34,6 +36,7 @@ public class CohortServiceIntegrationTest {
         cohort1.setAccession(cohortAccession);
         cohort1.setDescription("Test cohort for UKB containing text Cohort creation IntegrationTest");
         cohort1.setAcronym("UKB");
+        cohort1.setDataTypes(Collections.singletonList(DataType.ENVIRONMENTAL_DATA));
         cohortService.saveCohort(cohort1);
 
         Cohort cohort2 = new Cohort();
@@ -42,6 +45,7 @@ public class CohortServiceIntegrationTest {
         cohort2.setAccession(cohortAccession);
         cohort2.setDescription(" Cohort creation IntegrationTest should work with free text");
         cohort2.setAcronym("CHILD");
+        cohort2.setDataTypes(Collections.singletonList(DataType.BIOSPECIMENS));
         cohortService.saveCohort(cohort2);
 
 
