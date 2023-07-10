@@ -42,7 +42,7 @@ public class CohortAtlasApplication {
       // enable cors for development
       @Override
       public void addCorsMappings(@NonNull CorsRegistry registry) {
-        registry.addMapping("/**").allowedOrigins("*");
+        registry.addMapping("/**").allowedOrigins("*").allowedMethods("*");
       }
 
       @Override

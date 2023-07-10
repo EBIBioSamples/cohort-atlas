@@ -6,6 +6,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Service;
 import uk.ac.ebi.biosamples.cohortatlas.model.Cohort;
+import uk.ac.ebi.biosamples.cohortatlas.model.Field;
 import uk.ac.ebi.biosamples.cohortatlas.repository.CohortRepository;
 import uk.ac.ebi.biosamples.cohortatlas.repository.CohortSearchRepository;
 
@@ -36,6 +37,12 @@ public class CohortService {
 
   public void deleteCohort(String id) {
     cohortRepository.deleteById(id);
+  }
+
+  public void saveDictionaryFields(String accession, List<Field> fields) {
+    Cohort cohort = cohortRepository.findById(accession).orElseThrow(() -> new RuntimeException("Cohort does not exist: " + accession));
+    cohort.setDictionary(fields);
+    cohortRepository.save(cohort);
   }
 
   public Pageable getPageRequest(Integer page, Integer size) {

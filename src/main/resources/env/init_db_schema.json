@@ -57,6 +57,36 @@
     "projects": [],
     "attachments": [],
     "externalLinks": [],
+
+    "dictionary": [
+      {
+        "name": "Age",
+        "description": "Age of the participant",
+        "mappedTerm": "age"
+      },
+      {
+        "name": "BirthDate",
+        "description": "birth date",
+        "mappedTerm": "birthdate"
+      },
+      {
+        "name": "Gender",
+        "description": "Gender",
+        "mappedTerm": "gender"
+      }
+    ],
+    "relationships": [
+      {
+        "archive": "BIOSAMPLES",
+        "source": "SAMEA1235345",
+        "type": "IS_A_PART_OF"
+      },
+      {
+        "archive": "BIOSAMPLES",
+        "source": "SAMEA1235345",
+        "type": "IS_A_PART_OF"
+      }
+    ],
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
   },
   {

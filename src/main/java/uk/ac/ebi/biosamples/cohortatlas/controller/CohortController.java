@@ -7,6 +7,7 @@ import org.springframework.hateoas.PagedModel;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import uk.ac.ebi.biosamples.cohortatlas.model.Cohort;
+import uk.ac.ebi.biosamples.cohortatlas.model.Field;
 import uk.ac.ebi.biosamples.cohortatlas.service.CohortModelAssembler;
 import uk.ac.ebi.biosamples.cohortatlas.service.CohortService;
 
@@ -66,5 +67,12 @@ public class CohortController {
   public ResponseEntity<Void> deleteCohort(@PathVariable String accession) {
     cohortService.deleteCohort(accession);
     return ResponseEntity.noContent().build();
+  }
+
+  @PutMapping("/{accession}/fields")
+  public ResponseEntity<Void> saveDictionary(@PathVariable String accession, @RequestBody List<Field> fields) {
+    System.out.println("saving dictionary: " + fields);
+    cohortService.saveDictionaryFields(accession, fields);
+    return ResponseEntity.accepted().build();
   }
 }
