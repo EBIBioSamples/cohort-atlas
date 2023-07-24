@@ -11,12 +11,15 @@ import org.springframework.util.CollectionUtils;
 import org.springframework.util.StringUtils;
 
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Repository
 public abstract class SearchRepository {
     protected final MongoTemplate mongoTemplate;
 
+    private static final Set<String> booleanFields = new HashSet<>(Arrays.asList("dataTypes"));
     public SearchRepository(MongoTemplate mongoTemplate) {
         this.mongoTemplate = mongoTemplate;
     }
@@ -51,11 +54,19 @@ public abstract class SearchRepository {
             if (filterArray.length > 1) {
                 String filterField = filterArray[0];
                 String[] filterByValues = filterArray[1].split("~");
-
-                if (filterByValues.length > 1) {
-                        query.addCriteria(Criteria.where(filterField).in(Arrays.asList(filterByValues)));
+                if (booleanFields.contains(filterField)) {
+                    for(String filterValue: filterByValues) {
+                        query.addCriteria(new Criteria().andOperator(
+                                Criteria.where(filterField+"."+filterValue).exists(true),
+                                Criteria.where(filterField+"."+filterValue).ne(false))
+                        );
+                    }
                 } else {
-                    query.addCriteria(Criteria.where(filterField).is(filterByValues[0]));
+                    if (filterByValues.length > 1) {
+                        query.addCriteria(Criteria.where(filterField).in(Arrays.asList(filterByValues)));
+                    } else {
+                        query.addCriteria(Criteria.where(filterField).is(filterByValues[0]));
+                    }
                 }
             }
         }
