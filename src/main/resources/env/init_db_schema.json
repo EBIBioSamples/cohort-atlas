@@ -48,12 +48,12 @@
         "label": "United Kingdom"
       }
     ],
-    "dataTypes": [
-      "biospecimens",
-      "environmentalData",
-      "genomicData",
-      "phenotypicData"
-    ],
+    "dataTypes": {
+      "biospecimens": true,
+      "environmentalData": true,
+      "genomicData": true,
+      "phenotypicData": true
+    },
     "projects": [],
     "attachments": [],
     "externalLinks": [],
@@ -108,10 +108,12 @@
         "label": "United Kingdom"
       }
     ],
-    "dataTypes": [
-      "biospecimens",
-      "environmentalData"
-    ],
+    "dataTypes": {
+      "biospecimens": true,
+      "environmentalData": true,
+      "genomicData": false,
+      "phenotypicData": false
+    },
     "projects": [],
     "attachments": [],
     "externalLinks": [],
@@ -166,9 +168,12 @@
         "label": "United Kingdom"
       }
     ],
-    "dataTypes": [
-      "genomicData"
-    ],
+    "dataTypes": {
+      "biospecimens": false,
+      "environmentalData": false,
+      "genomicData": true,
+      "phenotypicData": false
+    },
     "projects": [],
     "attachments": [],
     "externalLinks": [],
@@ -223,11 +228,12 @@
         "label": "United Kingdom"
       }
     ],
-    "dataTypes": [
-      "biospecimens",
-      "environmentalData",
-      "genomicData"
-    ],
+    "dataTypes": {
+      "biospecimens": true,
+      "environmentalData": true,
+      "genomicData": true,
+      "phenotypicData": false
+    },
     "projects": [],
     "attachments": [],
     "externalLinks": [],
@@ -282,9 +288,12 @@
         "label": "United Kingdom"
       }
     ],
-    "dataTypes": [
-      "phenotypicData"
-    ],
+    "dataTypes": {
+      "biospecimens": true,
+      "environmentalData": true,
+      "genomicData": true,
+      "phenotypicData": true
+    },
     "projects": [],
     "attachments": [],
     "externalLinks": [],

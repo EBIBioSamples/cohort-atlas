@@ -8,6 +8,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.test.context.ActiveProfiles;
 import uk.ac.ebi.biosamples.cohortatlas.model.Cohort;
+import uk.ac.ebi.biosamples.cohortatlas.model.DataTypes;
 import uk.ac.ebi.biosamples.cohortatlas.service.CohortService;
 
 import java.util.Arrays;
@@ -56,14 +57,32 @@ class CohortSearchRepositoryIntegrationTest {
     cohort.setAcronym("filter2");
     cohortService.saveCohort(cohort);
 
+
+    //single filter
+    Page<Cohort> page = cohortSearchRepository.findPageWithFilters(PageRequest.of(0, 5), null,
+            "cohortName", Collections.singletonList("dataTypes:biospecimens"));
+    int pageSizeBefore = page.getContent().size();
+    page.forEach( cohort1 -> assertTrue( cohort1.getDataTypes().isBiospecimens()));
+
+
     cohort = new Cohort();
     cohort.setCohortName("third");
     cohort.setDescription("third");
     cohort.setAcronym("filter3");
+    DataTypes dataTypes = new DataTypes();
+    dataTypes.setBiospecimens(true);
+    cohort.setDataTypes(dataTypes);
     cohortService.saveCohort(cohort);
 
+    page = cohortSearchRepository.findPageWithFilters(PageRequest.of(0, 5), null,
+            "accession", Collections.singletonList("dataTypes:biospecimens"));
+    assertEquals(1+pageSizeBefore, page.getContent().size());
+    page.forEach( cohort1 -> assertTrue( cohort1.getDataTypes().isBiospecimens()));
+    assertEquals("third", page.getContent().get(pageSizeBefore).getCohortName());
+
+
     //single filter
-    Page<Cohort> page = cohortSearchRepository.findPageWithFilters(PageRequest.of(0, 5), null,
+    page = cohortSearchRepository.findPageWithFilters(PageRequest.of(0, 5), null,
             "cohortName", Collections.singletonList("acronym:filter3"));
     assertEquals(1, page.getContent().size());
     assertEquals("third", page.getContent().get(0).getCohortName());
