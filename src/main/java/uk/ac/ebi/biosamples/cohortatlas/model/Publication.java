@@ -4,5 +4,6 @@ import lombok.Data;
 
 @Data
 public class Publication {
-  private String url;
+  private String title;
+  private String doi;
 }

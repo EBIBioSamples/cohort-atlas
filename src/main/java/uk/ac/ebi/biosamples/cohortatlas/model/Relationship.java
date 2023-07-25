@@ -10,7 +10,7 @@ public class Relationship {
   @Id
   private String id;
   private String source; //should be in format prefix:accession
-  private String target; //should be a cohort id
+//  private String target; //should be a cohort id
   private Type type;
 
 //  private String altUrl;

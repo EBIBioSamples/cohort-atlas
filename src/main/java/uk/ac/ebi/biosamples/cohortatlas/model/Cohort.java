@@ -47,6 +47,10 @@ public class Cohort {
 
   private List<ExternalLink> externalLinks;
 
+
+  private List<Field> dictionary;
+  private List<Relationship> relationships;
+
 //  private List<String> dataSources;//Method of data collection: Questionnaire, Physical measure, Cognitive measure, Biosample, Government databases/registries, Other source of information
 //  private List<String> targets;//Persons the question is about: Participant, Children, Parents, Grandparents, Siblings, Partner, Interviewer, Proxy, Other target
 //  private List<String> sampleType; // urine, blood, stool, saliva, other
