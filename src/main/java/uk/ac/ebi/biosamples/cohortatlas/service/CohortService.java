@@ -1,11 +1,10 @@
 package uk.ac.ebi.biosamples.cohortatlas.service;
 
 import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectReader;
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.MappingIterator;
 import com.fasterxml.jackson.dataformat.csv.CsvMapper;
 import com.fasterxml.jackson.dataformat.csv.CsvSchema;
-import com.opencsv.CSVReader;
-import com.opencsv.CSVReaderBuilder;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -17,11 +16,7 @@ import uk.ac.ebi.biosamples.cohortatlas.model.Field;
 import uk.ac.ebi.biosamples.cohortatlas.repository.CohortRepository;
 import uk.ac.ebi.biosamples.cohortatlas.repository.CohortSearchRepository;
 
-import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.Reader;
-import java.nio.file.Files;
 import java.util.List;
 
 @Service
@@ -58,13 +53,8 @@ public class CohortService {
   }
 
   public void saveDictionaryFields(String accession, MultipartFile file) throws IOException {
-    Reader reader = new InputStreamReader(file.getInputStream());
-    CSVReader csvReader = new CSVReaderBuilder(reader).withSkipLines(1).build();
-
-
-    CsvMapper mapper = new CsvMapper();
-    List<Field> dictionary = mapper.readValue(file.getInputStream(), new TypeReference<List<Field>>(){});
-
+//    Reader reader = new InputStreamReader(file.getInputStream());
+//    CSVReader csvReader = new CSVReaderBuilder(reader).withSkipLines(1).build();
 
 //    CsvSchema schema = CsvSchema.builder().addColumn("parentCategoryCode")
 //        .addColumn("code").addColumn("name").addColumn("description").build();
@@ -79,7 +69,21 @@ public class CohortService {
 //
 //    }
 
+    CsvMapper mapper = new CsvMapper();
 
+    CsvSchema csvSchema = mapper
+        .typedSchemaFor(Field.class)
+        .withHeader()
+        .withColumnSeparator(',')
+        .withComments();
+
+    MappingIterator<Field> csvIterator = mapper.readerWithTypedSchemaFor(Field.class).with(csvSchema)
+        .readValues(file.getInputStream());
+
+    List<Field> dictionary = csvIterator.readAll();
+
+//    mapper.enable(DeserializationFeature.ACCEPT_EMPTY_STRING_AS_NULL_OBJECT);
+//    List<Field> dictionary = mapper.readValue(file.getInputStream(), new TypeReference<List<Field>>(){});
     saveDictionaryFields(accession, dictionary);
   }
 

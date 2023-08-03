@@ -42,12 +42,7 @@
     "acknowledgements": "",
     "supplementaryInformation": "",
     "datasets": [],
-    "territories": [
-      {
-        "id": "NCIT:C17233",
-        "label": "United Kingdom"
-      }
-    ],
+    "territories": ["United Kingdom"],
     "dataTypes": {
       "biospecimens": true,
       "environmentalData": true,
@@ -61,9 +56,9 @@
   },
   {
     "accession": "BSC0000002",
-    "cohortName": "Test cohort study",
-    "description": "A test cohort with test example data",
-    "acronym": "TESTCOH",
+    "cohortName": "*FraNCCoDS (France National Cohort Collection Data Sharing)",
+    "description": "This study provides a biobank repository of patient samples which have been analysed as part of FraNCCoDs.",
+    "acronym": "FraNCCoDS",
     "website": "https://www.ebi.ac.uk/biosamples/samples?filter=attr%3Aproject+name%3AReCoDID+COVID-19+pilot+study",
     "logo": "https://www.ebi.ac.uk/biosamples/images/logo_biosamples.png",
     "type": "COHORT",
@@ -71,7 +66,7 @@
       "name": "name",
       "description": "description"
     },
-    "license": "BSD",
+    "license": "-",
     "rights": "Similar to license, sentence of right?",
     "dataSharing": {
       "id": "DUO:0000042",
@@ -89,10 +84,10 @@
         "email": "investigator@example.com"
       }
     ],
-    "startDate": "2015-02-24T09:51:07.257571830Z",
-    "endDate": "2025-02-24T09:51:07.257571830Z",
-    "targetEnrollment": 1000000,
-    "totalEnrollment": 1000,
+    "startDate": "2020-05-01T09:51:07.257571830Z",
+    "endDate": "2021-04-30T09:51:07.257571830Z",
+    "targetEnrollment": 11,
+    "totalEnrollment": 11,
     "publications": [
       {
         "url": "publication.example.com"
@@ -102,12 +97,7 @@
     "acknowledgements": "",
     "supplementaryInformation": "",
     "datasets": [],
-    "territories": [
-      {
-        "id": "NCIT:C16582",
-        "label": "United Kingdom"
-      }
-    ],
+    "territories": ["France"],
     "dataTypes": {
       "biospecimens": true,
       "environmentalData": true,
@@ -121,9 +111,9 @@
   },
   {
     "accession": "BSC0000003",
-    "cohortName": "Test cohort study 3",
-    "description": "A test cohort with test example data 3",
-    "acronym": "TESTCOH3",
+    "cohortName": "ReCoDID COVID-19 PatHost Cohort (RCPC)",
+    "description": "ReCoDID COVID-19 Pathogen-Host Interactions Cohort Study. This project aims to explore the effect of VOCs and VOIs identified within a cohort of patients in the United Kingdom, on the severity of disease and symptoms.",
+    "acronym": "ReCoDIDPatHost",
     "website": "https://www.ebi.ac.uk/biosamples/samples?filter=attr%3Aproject+name%3AReCoDID+COVID-19+pilot+study",
     "logo": "https://www.ebi.ac.uk/biosamples/images/logo_biosamples.png",
     "type": "COHORT",
@@ -149,10 +139,10 @@
         "email": "investigator@example.com"
       }
     ],
-    "startDate": "2009-02-24T09:51:07.257571830Z",
-    "endDate": "2021-02-24T09:51:07.257571830Z",
-    "targetEnrollment": 10,
-    "totalEnrollment": 10,
+    "startDate": "2020-02-10T09:51:07.257571830Z",
+    "endDate": "2021-03-10T09:51:07.257571830Z",
+    "targetEnrollment": 100,
+    "totalEnrollment": 95,
     "publications": [
       {
         "url": "publication.example.com"
@@ -162,12 +152,7 @@
     "acknowledgements": "",
     "supplementaryInformation": "",
     "datasets": [],
-    "territories": [
-      {
-        "id": "NCIT:C16582",
-        "label": "United Kingdom"
-      }
-    ],
+    "territories": ["United Kingdom"],
     "dataTypes": {
       "biospecimens": false,
       "environmentalData": false,
@@ -181,9 +166,9 @@
   },
   {
     "accession": "BSC0000004",
-    "cohortName": "Test cohort study 4",
-    "description": "A test cohort with test example data 4",
-    "acronym": "TESTCOH4",
+    "cohortName": "COV-COHORT",
+    "description": "Studying mechanism of infections among a cohort of patients across a range of South American countries.",
+    "acronym": "COV-COHORT",
     "website": "https://www.ebi.ac.uk/biosamples/samples?filter=attr%3Aproject+name%3AReCoDID+COVID-19+pilot+study",
     "logo": "https://www.ebi.ac.uk/biosamples/images/logo_biosamples.png",
     "type": "COHORT",
@@ -191,7 +176,7 @@
       "name": "name",
       "description": "description"
     },
-    "license": "MIT",
+    "license": "-",
     "rights": "Similar to license, sentence of right?",
     "dataSharing": {
       "id": "DUO:0000042",
@@ -209,10 +194,9 @@
         "email": "investigator@example.com"
       }
     ],
-    "startDate": "2011-02-24T09:51:07.257571830Z",
-    "endDate": "2022-02-24T09:51:07.257571830Z",
-    "targetEnrollment": 100000,
-    "totalEnrollment": 100000,
+    "startDate": "2020-01-03T09:51:07.257571830Z",
+    "targetEnrollment": 5423,
+    "totalEnrollment": 5423,
     "publications": [
       {
         "url": "publication.example.com"
@@ -222,12 +206,7 @@
     "acknowledgements": "",
     "supplementaryInformation": "",
     "datasets": [],
-    "territories": [
-      {
-        "id": "NCIT:C16582",
-        "label": "United Kingdom"
-      }
-    ],
+    "territories": ["Argentina", "Bolivia", "Brazil", "Chile", "Colombia"],
     "dataTypes": {
       "biospecimens": true,
       "environmentalData": true,
@@ -241,17 +220,17 @@
   },
   {
     "accession": "BSC0000005",
-    "cohortName": "Test cohort study 5",
-    "description": "A test cohort with test example data 5",
-    "acronym": "ReCoDID",
-    "website": "https://www.ebi.ac.uk/biosamples/samples?filter=attr%3Aproject+name%3AReCoDID+COVID-19+pilot+study",
+    "cohortName": "Lombardy Cohort - Public Health Italy",
+    "description": "Study into the transmission events of the initial spread of COVID-19 within Trento, Italy",
+    "acronym": "LombardyCohort",
+    "website": "https://recodid.eu/xyz",
     "logo": "https://www.ebi.ac.uk/biosamples/images/logo_biosamples.png",
     "type": "COHORT",
     "provider": {
-      "name": "name",
+      "name": "Italian Public Health Laboratory",
       "description": "description"
     },
-    "license": "MIT",
+    "license": "-",
     "rights": "Similar to license, sentence of right?",
     "dataSharing": {
       "id": "DUO:0000042",
@@ -269,10 +248,9 @@
         "email": "investigator@example.com"
       }
     ],
-    "startDate": "1999-02-24T09:51:07.257571830Z",
-    "endDate": "2025-02-24T09:51:07.257571830Z",
-    "targetEnrollment": 1000000,
-    "totalEnrollment": 100000,
+    "startDate": "2020-04-01T09:51:07.257571830Z",
+    "targetEnrollment": 200,
+    "totalEnrollment": 190,
     "publications": [
       {
         "url": "publication.example.com"
@@ -282,12 +260,7 @@
     "acknowledgements": "",
     "supplementaryInformation": "",
     "datasets": [],
-    "territories": [
-      {
-        "id": "NCIT:C16582",
-        "label": "United Kingdom"
-      }
-    ],
+    "territories": ["Italy"],
     "dataTypes": {
       "biospecimens": true,
       "environmentalData": true,
@@ -299,7 +272,6 @@
     "externalLinks": [],
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
   },
-
 
 
   {

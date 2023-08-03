@@ -40,7 +40,7 @@ public class Cohort {
   private String acknowledgements;
   private String supplementaryInformation;
   private List<Dataset> datasets;
-  private List<Ontology> territories; //countries/regions, should we rename this to populations?
+  private List<String> territories; //countries/regions, should we rename this to populations?
   private DataTypes dataTypes;
   private List<Project> projects;
   private List<Attachment> attachments;
@@ -49,7 +49,7 @@ public class Cohort {
 
 
   private List<Field> dictionary;
-  private List<Relationship> relationships;
+  private List<Relation> relationships;
 
 //  private List<String> dataSources;//Method of data collection: Questionnaire, Physical measure, Cognitive measure, Biosample, Government databases/registries, Other source of information
 //  private List<String> targets;//Persons the question is about: Participant, Children, Parents, Grandparents, Siblings, Partner, Interviewer, Proxy, Other target
