@@ -344,7 +344,66 @@
     "cohort": "BSC0000002",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
   },
-
+  {
+    "id": "1",
+    "value": "biospecimens",
+    "type": "dataTypes",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Constant"
+  },
+  {
+    "id": "2",
+    "value": "environmentalData",
+    "type": "dataTypes",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Constant"
+  },
+  {
+    "id": "3",
+    "value": "genomicData",
+    "type": "dataTypes",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Constant"
+  },
+  {
+    "id": "4",
+    "value": "phenotypicData",
+    "type": "dataTypes",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Constant"
+  },
+  {
+    "id": "5",
+    "value": "MIT",
+    "type": "licences",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Constant"
+  },
+  {
+    "id": "6",
+    "value": "BSD",
+    "type": "licences",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Constant"
+  },
+  {
+    "id": "7",
+    "value": "Apache",
+    "type": "licences",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Constant"
+  },
+  {
+    "id": "8",
+    "value": "Antibiotic",
+    "type": "treatments",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Constant"
+  },
+  {
+    "id": "9",
+    "value": "Chloroquine/hydroxychloroquine",
+    "type": "treatments",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Constant"
+  },
+  {
+    "id": "10",
+    "value": "Any Oxygen therapy",
+    "type": "treatments",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Constant"
+  },
   {
     "id": "test_relationship_1",
     "source": "biosample:SAMEA112152897",
