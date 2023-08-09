@@ -1,0 +1,246 @@
+[
+  {
+  "_id": {
+    "$oid": "63d6558c320f956e84d39059"
+  },
+  "pid": "NFBC1966G0",
+  "cohortId": 1,
+  "name": "Parents of NFBC1966",
+  "acronym": "NFBC1966 G0",
+  "type": "cohort",
+  "institution": "UOULU"
+},
+  {
+  "_id": {
+    "$oid": "63d6558c320f956e84d3905c"
+  },
+  "pid": "ALSPAC",
+  "cohortId": 4,
+  "name": "Avon Longitudinal Study of Parents and Children",
+  "acronym": "ALSPAC",
+  "website": "http://www.bristol.ac.uk/alspac/",
+  "description": "Based at the University of Bristol, the Avon Longitudinal Study of Parents and Children (ALSPAC), also known as Children of the 90s, is a world-leading birth cohort study.\\n Between April 1991 and December 1992 we recruited more than 14,000 pregnant women into the study and these women (some of whom had two pregnancies or multiple births during the recruitment period), the children arising from the pregnancy, and their partners have been followed up intensively over two decades.\\n We are the most detailed study of its kind in the world and we provide the international research community with a rich resource for the study of the environmental and genetic factors that affect a person’s health and development. Through our research we aim to inform policy and practices that will provide a better life for future generations.",
+  "type": "cohort",
+  "design": "Longitudinal",
+  "collectionType": [
+    "Retrospective",
+    "Prospective"
+  ],
+  "institution": "UOB",
+  "numberOfParticipants": 14541,
+  "countries": "United Kingdom of Great Britain and Northern Ireland (the)",
+  "inclusionCriteria": "Children,Mothers,Partners",
+  "startYear": "1990",
+  "endYear": "1992",
+  "dataAccessConditions": "not for profit, non commercial use only",
+  "releaseType": "Closed dataset",
+  "designPaper": "10.1093/ije/dys064",
+  "publications": [
+    "10.1093/ije/dys066"
+  ],
+  "fundingStatement": "“The UK Medical Research Council and Wellcome (Grant ref: 217065/Z/19/Z) and the University of Bristol provide core support for ALSPAC. This publication is the work of the authors and <INSERT NAMES> will serve as guarantors for the contents of this paper.”\\n In addition, you are expected to acknowledge the grant(s) which supported the collection of the primary exposure(s) and outcome(s) used in your study and any other grants in the checklist, which are pertinent to your study. The following sentences should be included with the above section:\\n “A comprehensive list of grants funding (PDF, 330KB) is available on the ALSPAC website. This research was specifically funded by <INSERT DETAILS FOR SPECIFIC PROJECT(S) WHERE APPROPRIATE, including grant number(s)>.”",
+  "acknowledgements": "We are extremely grateful to all the families who took part in this study, the midwives for their help in recruiting them, and the whole ALSPAC team, which includes interviewers, computer and laboratory technicians, clerical workers, research scientists, volunteers, managers, receptionists and nurses."
+},
+  {
+  "_id": {
+    "$oid": "63daad050d0a0d8233a88347"
+  },
+  "pid": "NFBC1986",
+  "cohortId": 2,
+  "name": "Northern Finland Birth Cohort 1986",
+  "acronym": "NFBC1986",
+  "website": "www.oulu.fi/nfbc",
+  "description": "NFBC1986 is a longitudinal one-year birth cohort study from an unselected population. The cohort included all the mothers (N=9362) with children whose expected date of birth felt between July 1st 1985 - June 30th 1986 in the two northernmost provinces on Finland (Oulu and Lapland). A small percentage of the births occurred towards the end of June 1985 and begin of July 1986.\\\\nThe number of deliveries in the cohort was 9362, which was 99% of all the deliveries taking place in the target period of the cohort. Altogether 9479 children were born into the cohort, 9432 of them live born. The original data have been supplemented by data collected with postal questionnaires at the ages of 7, 8 and 16 years and various hospital records and statistical register data. The latest data collection with clinical examinations and questionnaires was at the age of 33 years.",
+  "type": "cohort",
+  "design": "Longitudinal",
+  "collectionType": "Prospective",
+  "numberOfParticipants": 9479,
+  "countries": "Finland",
+  "regions": [
+    "Lapland",
+    "North Ostrobothnia"
+  ],
+  "populationAgeGroups": [
+    {
+      "variable": "prenatal",
+      "value": "yes"
+    },
+    {
+      "variable": "newborn",
+      "value": "yes"
+    },
+    {
+      "variable": "infant",
+      "value": "yes"
+    },
+    {
+      "variable": "infantsAndToddlers",
+      "value": "yes"
+    },
+    {
+      "variable": "child",
+      "value": "yes"
+    },
+    {
+      "variable": "adolescent",
+      "value": "yes"
+    },
+    {
+      "variable": "youngAdult",
+      "value": "yes"
+    },
+    {
+      "variable": "adult",
+      "value": "yes"
+    }
+  ],
+  "institution": "UOULU",
+  "inclusionCriteria": "All mothers and their children whose expected date of birth was between July 1st 1985 - June 30th 1986 in the two northernmost provinces of Finland (Oulu and Lapland)",
+  "startYear": "1985",
+  "endYear": "na",
+  "dataAccessConditions": "health or medical or biomedical research",
+  "dataAccessConditionsDescription": "https://www.oulu.fi/nfbc/materialrequest",
+  "releaseType": "Closed dataset",
+  "linkageOptions": "yes",
+  "designPaper": "http://urn.fi/urn:nbn:fi:att:f5c10eef-3d25-4bd0-beb8-f2d59df95b8e",
+  "publications": [
+    "10.1111/j.1365-3016.1997.tb00007.x",
+    "10.1111/j.1471-0528.1993.tb12971.x"
+  ],
+  "fundingStatement": "EU QLG1-CT-2000-01643 (EUROBLCS) Grant no. E51560, NorFA Grant no. 731, 20056, 30167, USA / NIH 2000 G DF682 Grant no. 50945",
+  "acknowledgements": "We thank all cohort members and researchers who have participated in the study. We also wish acknowledge the work of the NFBC project center."
+},
+  {
+  "_id": {
+    "$oid": "63daad8e0d0a0d8233a88348"
+  },
+  "pid": "NFBC1966",
+  "cohortId": 3,
+  "name": "NFBC1966",
+  "acronym": "NFBC1966",
+  "website": "www.oulu.fi/nfbc",
+  "description": "The study was started by professor Paula Rantakallio in the two Northernmost provinces in Finland (Oulu and Lapland) already in the year 1965 when the mothers were pregnant. Data on the individuals born into this cohort was collected since the 24th gestational week as well as their mothers and, to a lesser extent, fathers. The cohort included 12055 mothers and they had 12068 deliveries (13 women delivered twice).\\nCases belonging to survey were determined by the calculated term. A small percentage of the births occurred towards the end of 1965 and early in 1967. The calculated term, as was customary at that time, was counted from the first day of the last menstrual period. Where this date was unknown the expected term was estimated from the  date of commencement of foetal ovements and progress of the pregnancy. The study covered all live born and stillborn infants with birth weight of 600 grams or more.\\nAccording to the Finland's central Office of Statistics, births in the study area during 1966 totalled 12527, so study population comprised 96.3 per cent of all births during 1966 in that area. Altogether 12231 children were born into the cohort, 12058 of them live born. The original data have been supplemented by data collected with postal questionnaires at the ages of 1, 14 and 31 years and various hospital records and national register data.",
+  "type": "cohort",
+  "design": "Longitudinal",
+  "collectionType": "Prospective",
+  "institution": "UOULU",
+  "numberOfParticipants": 12231,
+  "countries": "Finland",
+  "regions": [
+    "Lapland",
+    "North Ostrobothnia"
+  ],
+  "populationAgeGroups": [
+    {
+      "variable": "prenatal",
+      "value": "yes"
+    },
+    {
+      "variable": "newborn",
+      "value": "yes"
+    },
+    {
+      "variable": "infant",
+      "value": "yes"
+    },
+    {
+      "variable": "infantsAndToddlers",
+      "value": "yes"
+    },
+    {
+      "variable": "child",
+      "value": "yes"
+    },
+    {
+      "variable": "adolescent",
+      "value": "yes"
+    },
+    {
+      "variable": "youngAdult",
+      "value": "yes"
+    },
+    {
+      "variable": "adult",
+      "value": "yes"
+    },
+    {
+      "variable": "middleAged",
+      "value": "yes"
+    }
+  ],
+  "inclusionCriteria": "All pregnant women and their children living in the Oulu and Lapland provinces of Finland with expected delivery dates in 1966.",
+  "startYear": "1965",
+  "endYear": "na",
+  "dataAccessConditions": "health or medical or biomedical research",
+  "dataAccessConditionsDescription": "https://www.oulu.fi/nfbc/materialrequest",
+  "releaseType": "Closed dataset",
+  "linkageOptions": "yes",
+  "designPaper": "http://urn.fi/urn:nbn:fi:att:bc1e5408-980e-4a62-b899-43bec3755243",
+  "publications": [
+    "10.1093/ije/dyab109"
+  ],
+  "fundingStatement": "For the 31yr follow-up: NFBC1966  received financial support from University of Oulu Grant no. 65354, Oulu University Hospital Grant no. 2/97, 8/97, Ministry of Health and Social Affairs Grant no. 23/251/97, 160/97, 190/97, National Institute for Health and Welfare, Helsinki Grant no. 54121, Regional Institute of Occupational Health, Oulu, Finland Grant no. 50621, 54231 \\nFor the 46yr follow-up: NFBC1966 received financial support from University of Oulu Grant no. 24000692, Oulu University Hospital Grant no. 24301140, ERDF European Regional Development Fund Grant no. 539/2010 A31592",
+  "acknowledgements": "We thank all cohort members and researchers who have participated in the study. We also wish acknowledge the work of the NFBC project center."
+},
+  {
+  "_id": {
+    "$oid": "63daae830d0a0d8233a88349"
+  },
+  "pid": "GenR",
+  "cohortId": 5,
+  "name": "The Generation R Study",
+  "acronym": "GenR",
+  "website": "https://generationr.nl/",
+  "description": "The design of Generation R has been described in detail previously, the following information was extracted from the most recent paper on design and cohort update 2017 (https://doi.org/10.1007/s10654-016-0224-9):\\nThe Generation R Study is a population-based prospective cohort study from fetal life until adulthood and is conducted in Rotterdam, the second largest city in the Netherlands. The study is designed to identify early environmental and genetic causes and causal pathways leading to normal and abnormal growth, development and health from fetal life, childhood and young adulthood. This multidisciplinary study focuses on several health outcomes including behaviour and cognition, body composition, eye development, growth, hearing, heart and vascular development, infectious disease and immunity, oral health and facial growth, respiratory health, allergy and skin disorders of children and their parents. Main exposures of interest include environmental, endocrine, genomic (genetic, epigenetic, microbiome), lifestyle related, nutritional and socio-demographic determinants. \\nPregnant women with an expected delivery date between April 2002 and January 2006 living in Rotterdam were eligible for participation in the study. In total, 9778 mothers were enrolled in the study, who gave birth to 9749 live born children. Extensive assessments are performed in mothers, fathers and their children. Measurements were planned in early pregnancy (gestational age <18 weeks), mid pregnancy (gestational age 18–25 weeks) and late pregnancy (gestational age >25 weeks). The fathers were assessed once during the pregnancy of their partner. The children form a prenatally recruited birth cohort that will be followed at least until young adulthood. In the preschool period, which in the Netherlands refers to the period from birth until the age of 4 years, data collection was performed by a home-visit at the age of 3 months, and by repeated questionnaires and routine child health centers visits. Information from these routine visits was obtained and used for the study. Additional detailed measurements of fetal and postnatal growth and development were conducted in a randomly selected subgroup of Dutch children and their parents at a gestational age of 32 weeks and postnatally at the ages of 1.5, 6, 14, 24, 36 and 48 months in a dedicated research center.\\nAround the ages of 6 and 10 years all children and their parents were invited to visit our research center in the Erasmus MC-Sophia Children’s Hospital to participate in hands-on measurements, advanced imaging modalities, behavioural observations and biological sample collection. MRI scans of all participating children were made in order to image abdominal composition, brain, lungs, cardiovascular system, fat tissue, kidney, liver, and hip development. Furthermore, the parents received 6 questionnaires during this period. Children also received their own questionnaire around the age of 10. Information from municipal health services, schools and general practicionars has also been collected. Response at baseline was 61%, and general follow-up rates until the age of 10 years were around 80%.",
+  "keywords": "multi ethnic population-based prospective cohort study from fetal life onwards",
+  "contactEmail": "v.jaddoe@erasmusmc.nl",
+  "type": "cohort",
+  "design": "Longitudinal",
+  "collectionType": "Retrospective,Prospective",
+  "institution": "EMC",
+  "numberOfParticipants": 9901,
+  "countries": "Netherlands (the)",
+  "regions": [
+    "Rotterdam"
+  ],
+  "populationAgeGroups": [
+    {
+      "variable": "prenatal",
+      "value": "yes"
+    },
+    {
+      "variable": "newborn",
+      "value": "yes"
+    },
+    {
+      "variable": "infant",
+      "value": "yes"
+    },
+    {
+      "variable": "infantsAndToddlers",
+      "value": "yes"
+    }
+  ],
+  "inclusionCriteria": "Pregnant women with an expected delivery date between April 2002 and January 2006 living in Rotterdam were eligible for participation in the study. We aimed to enrol mothers in early pregnancy but enrolment was possible until birth of their child. Partners from mothers enrolled in pregnancy were invited to participate. Extensive assessments are performed in mothers, fathers and their children.",
+  "startYear": "2001",
+  "endYear": "2006",
+  "dataAccessConditions": "not for profit, non commercial use only",
+  "dataAccessConditionsDescription": "1. LifeCycle Project Research proposal has been discussed in the WP and distributed to all LifeCycle Project cohorts  2. The lead researcher sends a request to Generation R contact (primary contact for internal discussion: LifeCycle Project manager lifecycle@erasmusmc.nl). If it concerns another proposal than a LifeCycle proposal please state this. 3. The proposal is discussed in the Generation R Management Team by the involved Generation R PI 4. The involved PI notifies the lead researcher and the LifeCycle project manager of the MT outcome, with lifecycle@erasmusmc.nl in the cc.  5. In case of approval, the LifeCycle project manager will send the researcher the Generation R Data Use Agreement (DUA) or Data transfer agreement (DTA).  6. If adaptations to the DUA are requested, the LifeCycle project manager forwards the DUA to Janine Felix who will liaise with the legal team if needed; once an agreement has been reached, the completed DUA is sent to the LifeCycle project manager 7. Lead researcher returns the DUA to lifecycle@erasmusmc.nl once completed 8. The LifeCycle project manager completes the DUA: checks the DUA and has it signed by Vincent 9. The project manager finalizes the Data Access Process:   - creates the Opal-views   - emails the researcher the fully signed DUA, and the Opal-login details to access the data   - Informs Generation R contact that data access has been granted",
+  "releaseType": "Closed dataset",
+  "releaseDescription": "Upon completion of follow-up, data will be cleaned for usage by the Generation R study group and then harmonized and uploaded for ECCN availability.",
+  "designPaper": "10.1007/s10654-006-9022-0",
+  "publications": [
+    "https://doi.org/10.1007/s10654-006-9022-0",
+    "https://doi.org/10.1111/j.1365-3016.2003.00521.x",
+    "https://doi.org/10.1007/s10654-010-9516-7",
+    "https://doi.org/10.1007/s10654-007-9209-z",
+    "https://doi.org/10.1007/s10654-014-9980-6",
+    "https://doi.org/10.1007/s10654-008-9309-4",
+    "https://doi.org/10.1007/s10654-012-9735-1",
+    "https://doi.org/10.1007/s10654-016-0224-9",
+    "https://doi.org/10.1007/s10654-013-9768-0"
+  ],
+  "fundingStatement": "The general design of the Generation R Study is made possible by financial support from the Erasmus  MC, University Medical Center, Rotterdam, Erasmus University Rotterdam, Netherlands  Organization for Health Research and Development (ZonMw), Netherlands Organisation for  Scientific Research (NWO), Ministry of Health, Welfare and Sport and Ministry of Youth and  Families. This project received funding from the European Union's Horizon 2020 research and innovation programme (LIFECYCLE, grant agreement No 733206, 2016; EUCAN-Connect grant agreement No 824989; ATHLETE, grant agreement No 874583). VJ received funding from a Consolidator Grant from the European Research Council (ERC-2014-CoG-648916).",
+  "acknowledgements": "The authors gratefully acknowledge the contribution of participants, research collaborators, general practitioners, hospitals, midwives, and pharmacies in Rotterdam."
+}
+]
