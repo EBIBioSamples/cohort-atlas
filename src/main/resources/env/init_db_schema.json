@@ -624,6 +624,146 @@
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
   },
 
+  {
+    "accession": "BSC0000000",
+    "cohortName": "Longitudinal Study of Parents and Children (Test)",
+    "description": "This is a test cohort which contains all available data fields in cohort-atlas",
+    "acronym": "LSPCT",
+    "website": "wwwdev.ebi.ac.uk/biosamples/cohortatlas/cohorts/BSC0000000",
+    "logo": "",
+    "type": "Cohort",
+    "studyDesign": "Longitudinal",
+    "provider": {
+      "name": "BioSamples Development Team",
+      "description": "BioSamples Team is a part of EBI AIT"
+    },
+    "license": "MIT",
+    "rights": "",
+    "dataSharing": {
+      "id": "DUO:0000004",
+      "label": "No restrictions"
+    },
+    "contacts": [
+      {
+        "name": "Fox Mulder",
+        "orcid": "",
+        "email": "biosamples@ebi.ac.uk"
+      },
+      {
+        "name": "Dana Scully",
+        "orcid": "",
+        "email": "biosamples@ebi.ac.uk"
+      }
+    ],
+    "investigators": [
+      {
+        "name": "Cloud Strife",
+        "orcid": "",
+        "email": "biosamples@ebi.ac.uk"
+      }
+    ],
+    "startDate": "01-01-2023",
+    "endDate": "01-01-2025",
+    "targetEnrollment": 1000,
+    "totalEnrollment": 345,
+    "publications": [
+      {
+        "url": "https://academic.oup.com/nar/article/50/D1/D1500/6423179"
+      },
+      {
+        "url": "https://academic.oup.com/nar/article/47/D1/D1172/5165182"
+      }
+    ],
+    "funding": "This cohort is not funded by anyone",
+    "acknowledgements": "We acknowledge the hard work of all EBI team",
+    "territories": [
+      "UK"
+    ],
+    "dataTypes": {
+      "biospecimens": true,
+      "environmentalData": true,
+      "genomicData": true,
+      "phenotypicData": true
+    },
+    "datasets": [],
+    "projects": [],
+    "attachments": [],
+    "externalLinks": [],
+    "supplementaryInformation": "",
+    "dictionary": [
+      {
+        "name": "Gender",
+        "label": "Gender",
+        "description": "Gender",
+        "type": "string",
+        "values": "MALE, FEMALE, OTHER",
+        "annotation": "gender"
+      },
+      {
+        "name": "Birthdate",
+        "label": "Birthdate",
+        "description": "Birthdate",
+        "type": "string",
+        "annotation": "age/birthdate"
+      },
+      {
+        "name": "Agreement dateAgreement date",
+        "label": "Agreement dateAgreement date",
+        "description": "Agreement dateAgreement date",
+        "type": "string",
+        "annotation": "date and time-related information"
+      },
+      {
+        "name": "Year of birth",
+        "label": "Year of birth",
+        "description": "Year of birth",
+        "type": "string"
+      },
+      {
+        "name": "Age",
+        "label": "Age at present",
+        "description": "Age at present",
+        "type": "string",
+        "annotation": "age/birthdate"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "biosamples:SAMEA2241260",
+        "type": "IS_RELATED_TO"
+      },
+      {
+        "source": "biosamples:SAMEA2241357",
+        "type": "IS_RELATED_TO"
+      },
+      {
+        "source": "biosamples:SAMEA2541472",
+        "type": "IS_A_PART_OF"
+      }
+    ],
+    "dataSummary": {
+      "diseases": [],
+      "medication": [],
+      "treatment": [],
+      "outcome": [],
+      "complications": [],
+      "typeOfData": [],
+
+      "ageRange": "",
+      "ageGroups": [],
+      "sampleSize": "",
+      "sampleType": "",
+      "followUpSchedule":  "",
+      "collectionType": "",
+      "inclusionCriteria":  "",
+      "releaseType": "",
+      "linkageOptions":  ""
+    },
+    "tags": ["test"],
+    "label": "TEST",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+
 
   {
     "id": "test_field_1",
