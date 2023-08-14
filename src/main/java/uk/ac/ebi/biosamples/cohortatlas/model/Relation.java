@@ -5,17 +5,9 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
-@Document
-public class Relationship {
-  @Id
-  private String id;
+public class Relation {
   private String source; //should be in format prefix:accession
-//  private String target; //should be a cohort id
   private Type type;
-
-//  private String altUrl;
-//  private String altLabel;
-
 
   public enum Type {
     IS_RELATED_TO,

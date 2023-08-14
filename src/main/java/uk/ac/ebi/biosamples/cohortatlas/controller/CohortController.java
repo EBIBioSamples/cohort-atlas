@@ -6,21 +6,33 @@ import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.PagedModel;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+import reactor.core.publisher.Mono;
 import uk.ac.ebi.biosamples.cohortatlas.model.Cohort;
+import uk.ac.ebi.biosamples.cohortatlas.model.Field;
+import uk.ac.ebi.biosamples.cohortatlas.model.Relation;
+import uk.ac.ebi.biosamples.cohortatlas.model.Survey;
 import uk.ac.ebi.biosamples.cohortatlas.service.CohortModelAssembler;
 import uk.ac.ebi.biosamples.cohortatlas.service.CohortService;
+import uk.ac.ebi.biosamples.cohortatlas.service.HarmonisationService;
 
+import java.io.IOException;
+import java.util.HashMap;
 import java.util.InputMismatchException;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping(value = "/cohorts", produces = {"application/hal+json"})
 public class CohortController {
   private final CohortService cohortService;
+  private final HarmonisationService harmonisationService;
   private final CohortModelAssembler cohortModelAssembler;
 
-  public CohortController(CohortService cohortService, CohortModelAssembler cohortModelAssembler) {
+  public CohortController(CohortService cohortService, HarmonisationService harmonisationService,
+                          CohortModelAssembler cohortModelAssembler) {
     this.cohortService = cohortService;
+    this.harmonisationService = harmonisationService;
     this.cohortModelAssembler = cohortModelAssembler;
   }
 
@@ -66,5 +78,58 @@ public class CohortController {
   public ResponseEntity<Void> deleteCohort(@PathVariable String accession) {
     cohortService.deleteCohort(accession);
     return ResponseEntity.noContent().build();
+  }
+
+  @PatchMapping("/{accession}")
+  public ResponseEntity<Void> patchCohort(@PathVariable String accession, @RequestBody Cohort cohort) {
+    Cohort savedCohort = cohortService.getCohortById(accession);
+    //todo add bsd, ega links
+    // add survey questions?
+    savedCohort.setRelationships(cohort.getRelationships());
+    cohortService.saveCohort(savedCohort);
+    return  ResponseEntity.noContent().build();
+  }
+
+  @PutMapping("/{accession}/fields")
+  public ResponseEntity<Void> saveDictionary(@PathVariable String accession, @RequestBody List<Field> fields) {
+    cohortService.saveDictionaryFields(accession, fields);
+    return ResponseEntity.accepted().build();
+  }
+
+  @PutMapping("/{accession}/relationships")
+  public ResponseEntity<Cohort> saveRelationships(@PathVariable String accession,
+                                                   @RequestBody List<Relation> relationships) {
+    Cohort cohort = cohortService.getCohortById(accession);
+    cohort.setRelationships(relationships);
+    cohortService.saveCohort(cohort);
+    return ResponseEntity.ok(cohort);
+  }
+
+  @PutMapping("/{accession}/survey")
+  public ResponseEntity<Cohort> saveSurveyData(@PathVariable String accession, @RequestBody Survey survey) {
+    Cohort cohort = cohortService.getCohortById(accession);
+//    cohort.setSurvey(survey);
+    cohortService.saveCohort(cohort);
+    return ResponseEntity.ok(cohort);
+  }
+
+  @PostMapping("/{accession}/dictionary")
+  public ResponseEntity<List<Field>> handleDictionaryFile(@PathVariable String accession,
+                                                   @RequestParam("file") MultipartFile file) throws IOException {
+    cohortService.saveDictionaryFields(accession, file);
+    List<Field> dictionary = triggerHarmonisation(accession);
+    return ResponseEntity.ok(dictionary);
+  }
+
+  @PutMapping("/{accession}/dictionary/harmonise")
+  public ResponseEntity<Void> harmoniseCohortDictionary(@PathVariable String accession) {
+    triggerHarmonisation(accession);
+    return ResponseEntity.accepted().build();
+  }
+
+  private List<Field> triggerHarmonisation(String accession) {
+    Cohort cohort = cohortService.getCohortById(accession);
+
+    return harmonisationService.harmoniseDictionary(accession, cohort.getDictionary());
   }
 }

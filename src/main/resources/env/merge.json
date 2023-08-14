@@ -1,5 +1,85 @@
 [
   {
+    "accession": "",
+    "cohortName": "",
+    "description": "",
+    "acronym": "",
+    "website": "",
+    "logo": "",
+    "type": "",
+    "studyDesign": "",
+    "provider": {
+      "name": "",
+      "description": ""
+    },
+    "license": "",
+    "rights": "",
+    "dataSharing": {
+      "id": "",
+      "label": ""
+    },
+    "contacts": [
+      {
+        "name": "",
+        "orcid": "",
+        "email": ""
+      }
+    ],
+    "investigators": [
+      {
+        "name": "",
+        "orcid": "",
+        "email": ""
+      }
+    ],
+    "startDate": "",
+    "endDate": "",
+    "targetEnrollment": 0,
+    "totalEnrollment": 0,
+    "publications": [
+      {
+        "url": ""
+      }
+    ],
+    "funding": "",
+    "acknowledgements": "",
+    "territories": [],
+    "dataTypes": {
+      "biospecimens": true,
+      "environmentalData": true,
+      "genomicData": true,
+      "phenotypicData": true
+    },
+    "datasets": [],
+    "projects": [],
+    "attachments": [],
+    "externalLinks": [],
+    "supplementaryInformation": "",
+    "dictionary": [],
+    "relationships": [],
+    "dataSummary": {
+      "diseases": [],
+      "medication": [],
+      "treatment": [],
+      "outcome": [],
+      "complications": [],
+      "typeOfData": [],
+
+      "ageRange": "",
+      "ageGroups": [],
+      "sampleSize": "",
+      "sampleType": "",
+      "followUpSchedule":  "",
+      "collectionType": "",
+      "inclusionCriteria":  "",
+      "releaseType": "",
+      "linkageOptions":  ""
+    },
+    "tags": [],
+    "label": "",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+  {
     "accession": "BSC0000001",
     "cohortName": "Avon Longitudinal Study of Parents and Children",
     "description": "Based at the University of Bristol, the Avon Longitudinal Study of Parents and Children (ALSPAC), also known as Children of the 90s, is a world-leading birth cohort study.\\n Between April 1991 and December 1992 we recruited more than 14,000 pregnant women into the study and these women (some of whom had two pregnancies or multiple births during the recruitment period), the children arising from the pregnancy, and their partners have been followed up intensively over two decades.\\n We are the most detailed study of its kind in the world and we provide the international research community with a rich resource for the study of the environmental and genetic factors that affect a person’s health and development. Through our research we aim to inform policy and practices that will provide a better life for future generations.",
@@ -607,11 +687,6 @@
         "Hyperglycaemia",
         "Hypoglycaemia"
       ],
-      "typeOfData": [
-        "SARS-CoV-2 sequences",
-        "Serology",
-        "Clinical-epidemiological"
-      ],
 
       "ageRange": "20 - 78",
       "sampleSize": 273,
@@ -622,204 +697,5 @@
     "tags": ["ReCoDID"],
     "label": "RECODID",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
-  },
-
-  {
-    "accession": "BSC0000000",
-    "cohortName": "Longitudinal Study of Parents and Children (Test)",
-    "description": "This is a test cohort which contains all available data fields in cohort-atlas",
-    "acronym": "LSPCT",
-    "website": "wwwdev.ebi.ac.uk/biosamples/cohortatlas/cohorts/BSC0000000",
-    "logo": "",
-    "type": "Cohort",
-    "studyDesign": "Longitudinal",
-    "provider": {
-      "name": "BioSamples Development Team",
-      "description": "BioSamples Team is a part of EBI AIT"
-    },
-    "license": "MIT",
-    "rights": "",
-    "dataSharing": {
-      "id": "DUO:0000004",
-      "label": "No restrictions"
-    },
-    "contacts": [
-      {
-        "name": "Fox Mulder",
-        "orcid": "",
-        "email": "biosamples@ebi.ac.uk"
-      },
-      {
-        "name": "Dana Scully",
-        "orcid": "",
-        "email": "biosamples@ebi.ac.uk"
-      }
-    ],
-    "investigators": [
-      {
-        "name": "Cloud Strife",
-        "orcid": "",
-        "email": "biosamples@ebi.ac.uk"
-      }
-    ],
-    "startDate": "01-01-2023",
-    "endDate": "01-01-2025",
-    "targetEnrollment": 1000,
-    "totalEnrollment": 345,
-    "publications": [
-      {
-        "url": "https://academic.oup.com/nar/article/50/D1/D1500/6423179"
-      },
-      {
-        "url": "https://academic.oup.com/nar/article/47/D1/D1172/5165182"
-      }
-    ],
-    "funding": "This cohort is not funded by anyone",
-    "acknowledgements": "We acknowledge the hard work of all EBI team",
-    "territories": [
-      "UK"
-    ],
-    "dataTypes": {
-      "biospecimens": true,
-      "environmentalData": true,
-      "genomicData": true,
-      "phenotypicData": true
-    },
-    "datasets": [],
-    "projects": [],
-    "attachments": [],
-    "externalLinks": [],
-    "supplementaryInformation": "",
-    "dictionary": [
-      {
-        "name": "Gender",
-        "label": "Gender",
-        "description": "Gender",
-        "type": "string",
-        "values": "MALE, FEMALE, OTHER",
-        "annotation": "gender"
-      },
-      {
-        "name": "Birthdate",
-        "label": "Birthdate",
-        "description": "Birthdate",
-        "type": "string",
-        "annotation": "age/birthdate"
-      },
-      {
-        "name": "Agreement dateAgreement date",
-        "label": "Agreement dateAgreement date",
-        "description": "Agreement dateAgreement date",
-        "type": "string",
-        "annotation": "date and time-related information"
-      },
-      {
-        "name": "Year of birth",
-        "label": "Year of birth",
-        "description": "Year of birth",
-        "type": "string"
-      },
-      {
-        "name": "Age",
-        "label": "Age at present",
-        "description": "Age at present",
-        "type": "string",
-        "annotation": "age/birthdate"
-      }
-    ],
-    "relationships": [
-      {
-        "source": "biosamples:SAMEA2241260",
-        "type": "IS_RELATED_TO"
-      },
-      {
-        "source": "biosamples:SAMEA2241357",
-        "type": "IS_RELATED_TO"
-      },
-      {
-        "source": "biosamples:SAMEA2541472",
-        "type": "IS_A_PART_OF"
-      }
-    ],
-    "dataSummary": {
-      "diseases": [],
-      "medication": [],
-      "treatment": [],
-      "outcome": [],
-      "complications": [],
-      "typeOfData": [],
-
-      "ageRange": "",
-      "ageGroups": [],
-      "sampleSize": "",
-      "sampleType": "",
-      "followUpSchedule":  "",
-      "collectionType": "",
-      "inclusionCriteria":  "",
-      "releaseType": "",
-      "linkageOptions":  ""
-    },
-    "tags": ["test"],
-    "label": "TEST",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
-  },
-
-
-  {
-    "id": "test_field_1",
-    "name": "alcohol_use_history",
-    "label": "Alcohol use history",
-    "description": "Alcohol use history",
-    "type": "",
-    "values": "",
-    "parent": "lifestyle_and_behaviours",
-    "annotations": [],
-    "tags": [],
-    "fullQualifiedName": "lifestyle_and_behaviours.alcohol_use_history",
-    "cohort": "BSC0000001",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "id": "test_field_2",
-    "name": "tobacco_use_history",
-    "label": "Tobacco use history",
-    "description": "Tobacco use history",
-    "type": "",
-    "values": "",
-    "parent": "lifestyle_and_behaviours",
-    "annotations": [],
-    "tags": [],
-    "fullQualifiedName": "lifestyle_and_behaviours.tobacco_use_history",
-    "cohort": "BSC0000001",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "id": "test_field_3",
-    "name": "tobacco_use_history",
-    "label": "Tobacco use history",
-    "description": "Tobacco use history",
-    "type": "",
-    "values": "",
-    "parent": "lifestyle_and_behaviours",
-    "annotations": [],
-    "tags": [],
-    "fullQualifiedName": "lifestyle_and_behaviours.tobacco_use_history",
-    "cohort": "BSC0000002",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-
-  {
-    "id": "test_relationship_1",
-    "source": "biosample:SAMEA112152897",
-    "type": "IS_A_CHILD_OF",
-    "target": "BSC0000001",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Relationship"
-  },
-  {
-    "id": "test_relationship_2",
-    "source": "biosample:SAMEA112152898",
-    "type": "IS_A_CHILD_OF",
-    "target": "BSC0000001",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Relationship"
   }
 ]

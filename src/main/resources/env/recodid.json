@@ -1,0 +1,1002 @@
+[
+  {
+  "_id": {
+    "$oid": "612fa0673d9a6280627772f8"
+  },
+  "populaton": "Adult ICU patients",
+  "comorbidities": [
+    {
+      "variable": "Asthma (physician diagnosed)",
+      "value": "yes"
+    },
+    {
+      "variable": "Chronic kidney disease",
+      "value": "yes"
+    },
+    {
+      "variable": "Obesity (as defined by clinical staff)",
+      "value": "yes"
+    },
+    {
+      "variable": "Moderate or severe liver disease",
+      "value": "yes"
+    }
+  ],
+  "medication": [
+    {
+      "variable": "Oral steroids",
+      "value": "yes"
+    },
+    {
+      "variable": "Other immunosuppressant agents (not oral steroids)",
+      "value": "yes"
+    },
+    {
+      "variable": "Antivirals",
+      "value": "yes"
+    }
+  ],
+  "location": "Rotterdam, NL",
+  "treatment": [
+    {
+      "variable": "Lopinavir/Ritonvir",
+      "value": "yes"
+    },
+    {
+      "variable": "Remdesivir",
+      "value": "yes"
+    },
+    {
+      "variable": "Interferon alpha",
+      "value": "yes"
+    }
+  ],
+  "outcome": [
+    {
+      "variable": "Discharged alive",
+      "value": "yes"
+    },
+    {
+      "variable": "Hospitalization",
+      "value": "yes"
+    },
+    {
+      "variable": "Transfer to other facility",
+      "value": "yes"
+    },
+    {
+      "variable": "Death",
+      "value": "yes"
+    }
+  ],
+  "complications": [
+    {
+      "variable": "Pleural effusion",
+      "value": "yes"
+    },
+    {
+      "variable": "Cryptogenic organizing pneumonia (COP)",
+      "value": "yes"
+    },
+    {
+      "variable": "Bronchiolitis",
+      "value": "yes"
+    },
+    {
+      "variable": "Cardiac arrest",
+      "value": "yes"
+    },
+    {
+      "variable": "Myocardial infarction",
+      "value": "yes"
+    }
+  ],
+  "countries": "France",
+  "website": "https://recodid.eu/xyz",
+  "organisation": "*French Biobank, Paris",
+  "ageRange": {
+    "min": "20",
+    "max": "90"
+  },
+  "cohortId": 2,
+  "confirmedCount": 11,
+  "followUpSchedule": "daily",
+  "recruitmentDate": {
+    "startDate": "2020-05-01",
+    "endDate": "2021-04-30"
+  },
+  "sampleSize": 11,
+  "sampleType": "nasopharyngeal swab ",
+  "studyAim": "This study provides a biobank repository of patient samples which have been analysed as part of FraNCCoDs.",
+  "studyName": "*FraNCCoDS (France National Cohort Collection Data Sharing)",
+  "typeOfData": [
+    "na",
+    "na"
+  ]
+},
+  {
+  "_id": {
+    "$oid": "612fa0c53d9a6280627772f9"
+  },
+  "populaton": "healthcare workers",
+  "comorbidities": [
+    {
+      "variable": "Mild liver disease",
+      "value": "yes"
+    },
+    {
+      "variable": "Asplenia",
+      "value": "yes"
+    },
+    {
+      "variable": "Chronic neurological disorder",
+      "value": "yes"
+    },
+    {
+      "variable": "Malignant neoplasm",
+      "value": "yes"
+    },
+    {
+      "variable": "Chronic hematologic disease",
+      "value": "yes"
+    }
+  ],
+  "medication": [
+    {
+      "variable": "Oral steroids",
+      "value": "yes"
+    },
+    {
+      "variable": "Antivirals",
+      "value": "yes"
+    },
+    {
+      "variable": "Antibiotics",
+      "value": "yes"
+    }
+  ],
+  "location": "Cambridge, UK",
+  "treatment": [
+    {
+      "variable": "Chloroquine/hydroxychloroquine",
+      "value": "yes"
+    },
+    {
+      "variable": "Antibiotic",
+      "value": "yes"
+    },
+    {
+      "variable": "Ventilation",
+      "value": "yes"
+    }
+  ],
+  "outcome": [
+    {
+      "variable": "Discharged alive",
+      "value": "yes"
+    },
+    {
+      "variable": "Transfer to other facility",
+      "value": "yes"
+    },
+    {
+      "variable": "Death",
+      "value": "yes"
+    },
+    {
+      "variable": "Unknown",
+      "value": "yes"
+    }
+  ],
+  "complications": [
+    {
+      "variable": "Acute renal injury / Acute renal failure",
+      "value": "yes"
+    },
+    {
+      "variable": "Gastrointestinal hemorrhage",
+      "value": "yes"
+    },
+    {
+      "variable": "Pancreatitis",
+      "value": "yes"
+    },
+    {
+      "variable": "Liver dysfunction",
+      "value": "yes"
+    },
+    {
+      "variable": "Hyperglycaemia",
+      "value": "yes"
+    }
+  ],
+  "countries": "UK",
+  "organisation": "*EMBL-EBI, Hinxton, UK",
+  "website": "https://recodid.eu/xyz",
+  "ageRange": {
+    "min": "25",
+    "max": "65"
+  },
+  "cohortId": 3,
+  "confirmedCount": 95,
+  "followUpSchedule": "weekly",
+  "recruitmentDate": {
+    "startDate": "2020-02-10 ",
+    "endDate": "2021-03-10 "
+  },
+  "sampleSize": 100,
+  "sampleType": "Saliva",
+  "studyAim": "ReCoDID COVID-19 Pathogen-Host Interactions Cohort Study. This project aims to explore the effect of VOCs and VOIs identified within a cohort of patients in the United Kingdom, on the severity of disease and symptoms.",
+  "studyName": "*ReCoDID COVID-19 PatHost Cohort (RCPC)",
+  "typeOfData": [
+    "na",
+    "na",
+    "na"
+  ]
+},
+  {
+  "_id": {
+    "$oid": "612fa13f3d9a6280627772fa"
+  },
+  "populaton": "Hospital or health care centre",
+  "comorbidities": [
+    {
+      "variable": "Hypertension",
+      "value": "yes"
+    },
+    {
+      "variable": "Chronic pulmonary disease (not asthma)",
+      "value": "yes"
+    },
+    {
+      "variable": "Asthma (physician diagnosed)",
+      "value": "yes"
+    },
+    {
+      "variable": "Obesity (as defined by clinical staff)",
+      "value": "yes"
+    },
+    {
+      "variable": "Chronic neurological disorder",
+      "value": "yes"
+    },
+    {
+      "variable": "Diabetes Mellitus",
+      "value": "yes"
+    },
+    {
+      "variable": "Tuberculosis",
+      "value": "yes"
+    },
+    {
+      "variable": "Smoking",
+      "value": "yes"
+    }
+  ],
+  "medication": [
+    {
+      "variable": "Angiotensin converting enzyme inhibitors (ACE inhibitors)",
+      "value": "yes"
+    },
+    {
+      "variable": "Angiotensin II receptor blockers (ARBs)",
+      "value": "yes"
+    },
+    {
+      "variable": "Non-steroidal anti-inflammatory (NSAID)",
+      "value": "yes"
+    },
+    {
+      "variable": "Antibiotics",
+      "value": "yes"
+    },
+    {
+      "variable": "Other targeted COVID-19 Medication",
+      "value": "yes"
+    }
+  ],
+  "location": "Trondheim",
+  "treatment": [
+    {
+      "variable": "Non-invasive ventilation",
+      "value": "yes"
+    },
+    {
+      "variable": "Invasive ventilation",
+      "value": "yes"
+    },
+    {
+      "variable": "Renal replacement therapy (RRT) or dialysis",
+      "value": "yes"
+    },
+    {
+      "variable": "Inotropes / vasopressors",
+      "value": "yes"
+    }
+  ],
+  "outcome": [
+    {
+      "variable": "Discharged alive",
+      "value": "yes"
+    },
+    {
+      "variable": "death",
+      "value": "yes"
+    }
+  ],
+  "complications": [
+    {
+      "variable": "Viral pneumonia/pneumonitis",
+      "value": "yes"
+    },
+    {
+      "variable": "Acute Respiratory Distress Syndrome",
+      "value": "yes"
+    },
+    {
+      "variable": "Pleural effusion",
+      "value": "yes"
+    },
+    {
+      "variable": "Cardiac arrest",
+      "value": "yes"
+    },
+    {
+      "variable": "Myocardial infarction",
+      "value": "yes"
+    },
+    {
+      "variable": "Cardiomyopathy",
+      "value": "yes"
+    },
+    {
+      "variable": "Congestive heart failure",
+      "value": "yes"
+    },
+    {
+      "variable": "Seizure",
+      "value": "yes"
+    },
+    {
+      "variable": "Stroke / Cerebrovascular accident",
+      "value": "yes"
+    }
+  ],
+  "countries": "Argentina,\nBolivia,\nBrazil,\nChile,\nColombia",
+  "organisation": "*South American COV-Cohort Consortium",
+  "website": "https://recodid.eu/xyz",
+  "ageRange": {
+    "min": "20",
+    "max": "65"
+  },
+  "cohortId": 4,
+  "confirmedCount": 5234,
+  "followUpSchedule": "daily",
+  "recruitmentDate": {
+    "startDate": "2020-01-03 ",
+    "endDate": "ongoing"
+  },
+  "sampleSize": 5423,
+  "sampleType": "nasopharyngial (NP) swab; serum/plasma; human tissue; human DNA sample",
+  "studyAim": "Studying mechanism of infections among a cohort of patients across a range of South American countries. ",
+  "studyName": "*COV-COHORT",
+  "typeOfData": [
+    "na",
+    "na",
+    "na"
+  ]
+},
+  {
+  "_id": {
+    "$oid": "612fa8093d9a6280627772fb"
+  },
+  "populaton": "Community",
+  "comorbidities": [
+    {
+      "variable": "Chronic pulmonary disease (not asthma)",
+      "value": "yes"
+    },
+    {
+      "variable": "Asthma (physician diagnosed)",
+      "value": "yes"
+    },
+    {
+      "variable": "AIDS / HIV",
+      "value": "yes"
+    },
+    {
+      "variable": "Diabetes Mellitus",
+      "value": "yes"
+    },
+    {
+      "variable": "Rheumatologic disorder",
+      "value": "yes"
+    },
+    {
+      "variable": "Dementia",
+      "value": "yes"
+    },
+    {
+      "variable": "Malnutrition",
+      "value": "yes"
+    },
+    {
+      "variable": "Smoking",
+      "value": "yes"
+    }
+  ],
+  "medication": [
+    {
+      "variable": "Non-steroidal anti-inflammatory (NSAID)",
+      "value": "yes"
+    },
+    {
+      "variable": "Oral steroids",
+      "value": "yes"
+    },
+    {
+      "variable": "Other immunosuppressant agents (not oral steroids)",
+      "value": "yes"
+    },
+    {
+      "variable": "Antivirals",
+      "value": "yes"
+    },
+    {
+      "variable": "Antibiotics",
+      "value": "yes"
+    }
+  ],
+  "location": "Trento",
+  "treatment": [
+    {
+      "variable": "Any Oxygen therapy",
+      "value": "yes"
+    },
+    {
+      "variable": "Non-invasive ventilation",
+      "value": "yes"
+    },
+    {
+      "variable": "Invasive ventilation",
+      "value": "yes"
+    },
+    {
+      "variable": "Prone Positioning",
+      "value": "yes"
+    },
+    {
+      "variable": "Inhaled Nitric Oxide",
+      "value": "yes"
+    }
+  ],
+  "outcome": [
+    {
+      "variable": "Discharged alive",
+      "value": "yes"
+    },
+    {
+      "variable": "Death",
+      "value": "yes"
+    },
+    {
+      "variable": "Transfer to other facility",
+      "value": "yes"
+    },
+    {
+      "variable": "Palliative discharge",
+      "value": "yes"
+    }
+  ],
+  "complications": [
+    {
+      "variable": " Viral pneumonia/pneumonitis",
+      "value": "yes"
+    },
+    {
+      "variable": "Bacterial pneumonia",
+      "value": "yes"
+    },
+    {
+      "variable": "Acute Respiratory Distress Syndrome",
+      "value": "yes"
+    },
+    {
+      "variable": "Pneumothorax",
+      "value": "yes"
+    },
+    {
+      "variable": "Pleural effusion",
+      "value": "yes"
+    },
+    {
+      "variable": "Cryptogenic organizing pneumonia (COP)",
+      "value": "yes"
+    },
+    {
+      "variable": "Bronchiolitis",
+      "value": "yes"
+    },
+    {
+      "variable": "Cardiac arrest",
+      "value": "yes"
+    },
+    {
+      "variable": "Myocardial infarction",
+      "value": "yes"
+    }
+  ],
+  "countries": "Italy",
+  "organisation": "*Italian Public Health Laboratory",
+  "website": "https://recodid.eu/xyz",
+  "ageRange": {
+    "min": "10",
+    "max": "88"
+  },
+  "cohortId": 5,
+  "confirmedCount": 190,
+  "followUpSchedule": "none",
+  "recruitmentDate": {
+    "startDate": "2020-04-01",
+    "endDate": "ongoing"
+  },
+  "sampleSize": 200,
+  "sampleType": "nasopharyngial (NP) swab; sputum; serum/plasma",
+  "studyAim": "Study into the transmission events of the initial spread of COVID-19 within Trento, Italy ",
+  "studyName": "*Lombardy Cohort - Public Health Italy",
+  "typeOfData": [
+    "na",
+    "na"
+  ]
+},
+  {
+  "_id": {
+    "$oid": "612fa86e3d9a6280627772fc"
+  },
+  "populaton": "care center ",
+  "comorbidities": [
+    {
+      "variable": "Chronic cardiac disease (not hypertension)",
+      "value": "yes"
+    },
+    {
+      "variable": "Hypertension",
+      "value": "yes"
+    },
+    {
+      "variable": "Chronic kidney disease",
+      "value": "yes"
+    },
+    {
+      "variable": "Obesity (as defined by clinical staff)",
+      "value": "yes"
+    },
+    {
+      "variable": "Chronic hematologic disease",
+      "value": "yes"
+    },
+    {
+      "variable": "AIDS / HIV",
+      "value": "yes"
+    },
+    {
+      "variable": "Diabetes Mellitus",
+      "value": "yes"
+    },
+    {
+      "variable": "Rheumatologic disorder",
+      "value": "yes"
+    },
+    {
+      "variable": "Dementia",
+      "value": "yes"
+    },
+    {
+      "variable": "Tuberculosis",
+      "value": "yes"
+    },
+    {
+      "variable": "Malnutrition",
+      "value": "yes"
+    },
+    {
+      "variable": "Smoking",
+      "value": "yes"
+    }
+  ],
+  "medication": [
+    {
+      "variable": "Angiotensin converting enzyme inhibitors (ACE inhibitors)",
+      "value": "yes"
+    },
+    {
+      "variable": "Non-steroidal anti-inflammatory (NSAID)",
+      "value": "yes"
+    },
+    {
+      "variable": "Other immunosuppressant agents (not oral steroids)",
+      "value": "yes"
+    },
+    {
+      "variable": "Antibiotics",
+      "value": "yes"
+    }
+  ],
+  "location": "Galway",
+  "treatment": [
+    {
+      "variable": "Any Oxygen therapy",
+      "value": "yes"
+    },
+    {
+      "variable": "Invasive ventilation",
+      "value": "yes"
+    },
+    {
+      "variable": "Inhaled Nitric Oxide",
+      "value": "yes"
+    },
+    {
+      "variable": "Tracheostomy inserted",
+      "value": "yes"
+    },
+    {
+      "variable": "Renal replacement therapy (RRT) or dialysis",
+      "value": "yes"
+    },
+    {
+      "variable": "ICU or High Dependency Unit admission",
+      "value": "yes"
+    }
+  ],
+  "outcome": [
+    {
+      "variable": "Discharged alive",
+      "value": "yes"
+    },
+    {
+      "variable": "death",
+      "value": "yes"
+    },
+    {
+      "variable": "Hospitalization",
+      "value": "yes"
+    },
+    {
+      "variable": "Unknown",
+      "value": "yes"
+    }
+  ],
+  "complications": [
+    {
+      "variable": "Stroke / Cerebrovascular accident",
+      "value": "yes"
+    },
+    {
+      "variable": "Pulmonary embolism",
+      "value": "yes"
+    },
+    {
+      "variable": "Anaemia",
+      "value": "yes"
+    },
+    {
+      "variable": "Rhabdomyolysis / Myositis",
+      "value": "yes"
+    },
+    {
+      "variable": "Acute renal injury / Acute renal failure",
+      "value": "yes"
+    },
+    {
+      "variable": "Gastrointestinal hemorrhage",
+      "value": "yes"
+    },
+    {
+      "variable": "Pancreatitis",
+      "value": "yes"
+    },
+    {
+      "variable": "Liver dysfunction",
+      "value": "yes"
+    }
+  ],
+  "countries": "Germany,\nUK,\nFrance,\nItaly,\nSpain",
+  "organisation": "*VoC-CoV consortium",
+  "website": "https://recodid.eu/xyz",
+  "ageRange": {
+    "min": "19",
+    "max": "66"
+  },
+  "cohortId": 6,
+  "confirmedCount": 21130,
+  "followUpSchedule": "weekly",
+  "recruitmentDate": {
+    "startDate": "2020-04-01 ",
+    "endDate": "ongoing"
+  },
+  "sampleSize": 25124,
+  "sampleType": "sputum",
+  "studyAim": "VoC-CoV aims to investigate the effect of variants of concern on patients through a couple of main themes - symptoms and phenotypic effects and transmission events.",
+  "studyName": "*VoC-CoV",
+  "typeOfData": [
+    "na",
+    "na"
+  ]
+},
+  {
+  "_id": {
+    "$oid": "6318d801ab7802abbea1007c"
+  },
+  "populaton": "Adult Patients admitted to the ICU with a clinical suspicion of infection or patients admitted to the ICU with respiratory failure (either Optiflow or mechanical ventilation)",
+  "comorbidities": [
+    {
+      "variable": "Chronic cardiac disease (not hypertension)",
+      "value": "yes"
+    },
+    {
+      "variable": "Hypertension",
+      "value": "yes"
+    },
+    {
+      "variable": "Chronic pulmonary disease (not asthma)",
+      "value": "yes"
+    },
+    {
+      "variable": "Asthma (physician diagnosed)",
+      "value": "yes"
+    },
+    {
+      "variable": "Chronic kidney disease",
+      "value": "yes"
+    },
+    {
+      "variable": "Obesity (as defined by clinical staff)",
+      "value": "yes"
+    },
+    {
+      "variable": "Moderate or severe liver disease",
+      "value": "yes"
+    },
+    {
+      "variable": "Mild liver disease",
+      "value": "yes"
+    },
+    {
+      "variable": "Chronic neurological disorder",
+      "value": "yes"
+    },
+    {
+      "variable": "Malignant neoplasm",
+      "value": "yes"
+    },
+    {
+      "variable": "Chronic hematologic disease",
+      "value": "yes"
+    },
+    {
+      "variable": "Rheumatologic disorder",
+      "value": "yes"
+    },
+    {
+      "variable": "Malnutrition",
+      "value": "yes"
+    },
+    {
+      "variable": "Smoking",
+      "value": "yes"
+    }
+  ],
+  "medication": [
+    {
+      "variable": "Antiviral or COVID-19 targeted agent (Ribavirin, Lopinavir/Ritonvir, Remdesivir (Veklury), Neuraminidase inhibitors, Interferon alpha, Interferon beta, Chloroquine/hydroxychloroquine)",
+      "value": "yes"
+    },
+    {
+      "variable": "Antibiotic",
+      "value": "yes"
+    },
+    {
+      "variable": "Heparin",
+      "value": "yes"
+    },
+    {
+      "variable": "Antifungal agent",
+      "value": "yes"
+    }
+  ],
+  "location": "Rotterdam, NL",
+  "treatment": [
+    {
+      "variable": "Any Oxygen therapy",
+      "value": "yes"
+    },
+    {
+      "variable": "Non-invasive ventilation",
+      "value": "yes"
+    },
+    {
+      "variable": "Invasive ventilation",
+      "value": "yes"
+    },
+    {
+      "variable": "Prone positioning",
+      "value": "yes"
+    },
+    {
+      "variable": "Inhaled Nitric Oxide",
+      "value": "yes"
+    },
+    {
+      "variable": "Tracheostomy inserted",
+      "value": "yes"
+    },
+    {
+      "variable": "Extracorporeal support (ECMO)",
+      "value": "yes"
+    },
+    {
+      "variable": "Renal replacement therapy (RRT) or dialysis",
+      "value": "yes"
+    },
+    {
+      "variable": "Inotropes / vasopressors",
+      "value": "yes"
+    },
+    {
+      "variable": "ICU or High Dependency Unit admission",
+      "value": "yes"
+    }
+  ],
+  "outcome": [
+    {
+      "variable": "Discharged alive",
+      "value": "yes"
+    },
+    {
+      "variable": "Transfer to other facility",
+      "value": "yes"
+    },
+    {
+      "variable": "Death",
+      "value": "yes"
+    }
+  ],
+  "complications": [
+    {
+      "variable": "Viral pneumonia/pneumonitis",
+      "value": "yes"
+    },
+    {
+      "variable": "Bacterial pneumonia",
+      "value": "yes"
+    },
+    {
+      "variable": "Acute Respiratory Distress Syndrome",
+      "value": "yes"
+    },
+    {
+      "variable": "Pleural effusion",
+      "value": "yes"
+    },
+    {
+      "variable": "Pneumothorax",
+      "value": "yes"
+    },
+    {
+      "variable": "Cryptogenic organizing pneumonia (COP)",
+      "value": "yes"
+    },
+    {
+      "variable": "Bronchiolitis",
+      "value": "yes"
+    },
+    {
+      "variable": "Cardiac arrest",
+      "value": "yes"
+    },
+    {
+      "variable": "Myocardial infarction",
+      "value": "yes"
+    },
+    {
+      "variable": "Cardiac ischemia",
+      "value": "yes"
+    },
+    {
+      "variable": "Cardiac arrhythmia",
+      "value": "yes"
+    },
+    {
+      "variable": "Myocarditis/Pericarditis",
+      "value": "yes"
+    },
+    {
+      "variable": "Endocarditis",
+      "value": "yes"
+    },
+    {
+      "variable": "Cardiomyopathy",
+      "value": "yes"
+    },
+    {
+      "variable": "Congestive heart failure",
+      "value": "yes"
+    },
+    {
+      "variable": "Seizure",
+      "value": "yes"
+    },
+    {
+      "variable": "Stroke / Cerebrovascular accident",
+      "value": "yes"
+    },
+    {
+      "variable": "Meningitis / Encephalitis",
+      "value": "yes"
+    },
+    {
+      "variable": "Bacteremia",
+      "value": "yes"
+    },
+    {
+      "variable": "Pulmonary embolism",
+      "value": "yes"
+    },
+    {
+      "variable": "Anemia",
+      "value": "yes"
+    },
+    {
+      "variable": "Rhabdomyolysis / Myositis",
+      "value": "yes"
+    },
+    {
+      "variable": "Acute renal injury / Acute renal failure",
+      "value": "yes"
+    },
+    {
+      "variable": "Gastrointestinal hemorrhage",
+      "value": "yes"
+    },
+    {
+      "variable": "Gastrointestinal hemorrhage | Pancreatitis",
+      "value": "yes"
+    },
+    {
+      "variable": "Liver dysfunction",
+      "value": "yes"
+    },
+    {
+      "variable": "Hyperglycaemia",
+      "value": "yes"
+    },
+    {
+      "variable": "Hypoglycaemia",
+      "value": "yes"
+    }
+  ],
+  "countries": "Netherlands",
+  "website": "https://www.erasmusmc.nl/en/research/departments/viroscience",
+  "organisation": "Erasmus Medical Centre, Rotterdam, Netherlands",
+  "ageRange": {
+    "min": "20",
+    "max": "78"
+  },
+  "cohortId": 1,
+  "confirmedCount": 151,
+  "followUpSchedule": "Until discharged from Erasmus MC; Data further consulted to check survival up to 60 days after inclusion into the study",
+  "recruitmentDate": {
+    "startDate": "2020",
+    "endDate": "2021"
+  },
+  "sampleSize": 273,
+  "sampleType": "nasopharyngeal swab",
+  "studyAim": "As part of a multidisciplinary consortium (https://recodid.eu/), the study aims at connecting clinical-epidemiological (CE) data with further datasets from research on many other aspects of SARS-CoV-2. This study includes CE data for a cohort of 151 PCR-confirmed COVID-19 individuals from a group of 273 patients who were admitted to the hospital with a respiratory infection or respiratory failure in 2020-2021. ",
+  "studyName": "Erasmus MC COVID-19 cohort-associated connected datasets study",
+  "typeOfData": [
+    "SARS-CoV-2 sequences",
+    "Serology",
+    "Clinical-epidemiological"
+  ]
+}]
