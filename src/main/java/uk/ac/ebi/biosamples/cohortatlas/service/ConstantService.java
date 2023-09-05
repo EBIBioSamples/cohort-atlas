@@ -14,6 +14,9 @@ public class ConstantService {
     this.constantRepository = constantRepository;
   }
 
+  public Constant saveConstant(Constant constant) {
+    return constantRepository.save(constant);
+  }
   public Map<String,List<String>> findAllFilters( ) {
     List<Constant> all = constantRepository.findAll();
     Map<String,List<String>> filters= new HashMap<>();
