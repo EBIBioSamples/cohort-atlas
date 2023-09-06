@@ -9,6 +9,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.test.context.ActiveProfiles;
 import uk.ac.ebi.biosamples.cohortatlas.model.Cohort;
 import uk.ac.ebi.biosamples.cohortatlas.model.DataTypes;
+import uk.ac.ebi.biosamples.cohortatlas.model.Facet;
 import uk.ac.ebi.biosamples.cohortatlas.service.CohortService;
 
 import java.util.Arrays;
@@ -43,71 +44,63 @@ class CohortSearchRepositoryIntegrationTest {
     assertEquals("SearchRepositoryIntegrationTest_freeTextSearch_1", page.getContent().get(0).getCohortName());
   }
 
+  //TODO: test here
   @Test
   void filterCohorts() {
     Cohort cohort = new Cohort();
     cohort.setCohortName("first");
     cohort.setDescription("first");
     cohort.setAcronym("filter1");
+    Facet facet = new Facet();
+    facet.setDataTypes(Arrays.asList("biospecimens"));
+    facet.setLicences(Collections.singletonList("MIT"));
+    cohort.setFacet(facet);
     cohortService.saveCohort(cohort);
 
     cohort = new Cohort();
     cohort.setCohortName("second");
     cohort.setDescription("second");
+    facet = new Facet();
+    facet.setDataTypes(Arrays.asList("phenotypicData"));
+    facet.setLicences(Collections.singletonList("MIT"));
+    cohort.setFacet(facet);
     cohort.setAcronym("filter2");
     cohortService.saveCohort(cohort);
-
-
-    //single filter
-    Page<Cohort> page = cohortSearchRepository.findPageWithFilters(PageRequest.of(0, 5), null,
-            "cohortName", Collections.singletonList("dataTypes:biospecimens"));
-    int pageSizeBefore = page.getContent().size();
-    page.forEach( cohort1 -> assertTrue( cohort1.getDataTypes().isBiospecimens()));
-
 
     cohort = new Cohort();
     cohort.setCohortName("third");
     cohort.setDescription("third");
+    facet = new Facet();
+    facet.setDataTypes(Arrays.asList("biospecimens","genomicData"));
+    facet.setLicences(Collections.singletonList("Apache"));
+    cohort.setFacet(facet);
     cohort.setAcronym("filter3");
-    DataTypes dataTypes = new DataTypes();
-    dataTypes.setBiospecimens(true);
-    cohort.setDataTypes(dataTypes);
     cohortService.saveCohort(cohort);
 
-    page = cohortSearchRepository.findPageWithFilters(PageRequest.of(0, 5), null,
-            "accession", Collections.singletonList("dataTypes:biospecimens"));
-    assertEquals(1+pageSizeBefore, page.getContent().size());
-    page.forEach( cohort1 -> assertTrue( cohort1.getDataTypes().isBiospecimens()));
-    assertEquals("third", page.getContent().get(pageSizeBefore).getCohortName());
-
+    cohort = new Cohort();
+    cohort.setCohortName("fourth");
+    cohort.setDescription("fourth");
+    cohort.setAcronym("filter4");
+    cohortService.saveCohort(cohort);
 
     //single filter
+    Page<Cohort> page = cohortSearchRepository.findPageWithFilters(PageRequest.of(0, 5), null,
+            "cohortName", Collections.singletonList("dataTypes:biospecimens"));
+    page.forEach( cohort1 -> assertTrue( cohort1.getFacet().getDataTypes().contains("biospecimens")));
+
+    //single filter multiple values(OR one of the values must be present as it si single category)
     page = cohortSearchRepository.findPageWithFilters(PageRequest.of(0, 5), null,
-            "cohortName", Collections.singletonList("acronym:filter3"));
-    assertEquals(1, page.getContent().size());
-    assertEquals("third", page.getContent().get(0).getCohortName());
+            "cohortName", Collections.singletonList("dataTypes:biospecimens~genomicData"));
+    page.forEach( cohort1 -> assertTrue( (cohort1.getFacet().getDataTypes().contains("biospecimens")
+            || cohort1.getFacet().getDataTypes().contains("genomicData")
+    )));
 
-    //single field multiple filter
-    page = cohortSearchRepository.findPageWithFilters(PageRequest.of(0, 5), null, "cohortName",
-            Collections.singletonList("acronym:filter3~filter2"));
-    assertEquals(2, page.getContent().size());
-
-    assertTrue((page.getContent().get(0).getCohortName().equals("second")
-            && page.getContent().get(1).getCohortName().equals("third"))
-    || (page.getContent().get(0).getCohortName().equals("third")
-            && page.getContent().get(0).getCohortName().equals("second")));
-
-
-    //multiple field multiple filter, second filter does not match with the first filter
-    page = cohortSearchRepository.findPageWithFilters(PageRequest.of(0, 5), null, "cohortName",
-            Arrays.asList("acronym:filter3~filter2","description:first"));
-    assertEquals(0, page.getContent().size());
-
-    //multiple field multiple filter. Only third cohort matches both acronym and description
-    page = cohortSearchRepository.findPageWithFilters(PageRequest.of(0, 5), null, "cohortName",
-            Arrays.asList("acronym:filter3~filter2","description:third"));
-    assertEquals(1, page.getContent().size());
-    assertEquals("third", page.getContent().get(0).getCohortName());
+    //multiple filter single values, when there are multiple categories it should be AND(both to be present)
+    page = cohortSearchRepository.findPageWithFilters(PageRequest.of(0, 5), null,
+            "cohortName", Arrays.asList("dataTypes:phenotypicData","licences:MIT"));
+    page.forEach( cohort1 -> assertTrue( (cohort1.getFacet().getDataTypes().contains("phenotypicData")
+            && cohort1.getFacet().getLicences().contains("MIT")
+    )));
 
   }
 

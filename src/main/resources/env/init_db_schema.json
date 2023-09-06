@@ -33,6 +33,11 @@
     "dataSummary": {
       "inclusionCriteria":  "Children, Mothers, Partners"
     },
+    "facet" : {
+      "dataTypes" : [ "Biospecimens"],
+      "licences" : [ "MIT" ],
+      "treatments" : [ "Antibiotic" ]
+    },
     "tags": ["earlycause"],
     "label": "EARLY_CAUSE",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
@@ -79,6 +84,11 @@
       ],
       "inclusionCriteria":  "All mothers and their children whose expected date of birth was between July 1st 1985 - June 30th 1986 in the two northernmost provinces of Finland (Oulu and Lapland)"
     },
+    "facet" : {
+      "dataTypes" : [ "Biospecimens"],
+      "licences" : [ "MIT" ],
+      "treatments" : [ "Antibiotic" ]
+    },
     "tags": ["earlycause"],
     "label": "EARLY_CAUSE",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
@@ -121,6 +131,11 @@
         "child", "adolescent", "youngAdult", "adult", "middleAged"
       ],
       "inclusionCriteria":  "All pregnant women and their children living in the Oulu and Lapland provinces of Finland with expected delivery dates in 1966."
+    },
+    "facet" : {
+      "dataTypes" : [ "Biospecimens"],
+      "licences" : [ "Apache" ],
+      "treatments" : [ "Antibiotic" ]
     },
     "tags": ["earlycause"],
     "label": "EARLY_CAUSE",
@@ -758,6 +773,11 @@
       "inclusionCriteria":  "",
       "releaseType": "",
       "linkageOptions":  ""
+    },
+    "facet" : {
+      "dataTypes" : [ "biospecimens","environmentalData","genomicData","phenotypicData"],
+      "licences" : [ "MIT" ],
+      "treatments" : [ "Any Oxygen therapy","Chloroquine/hydroxychloroquine" ]
     },
     "tags": ["test"],
     "label": "TEST",

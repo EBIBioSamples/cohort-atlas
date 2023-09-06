@@ -52,6 +52,8 @@ public class Cohort {
   private List<Relation> relationships;
 
   private Summary dataSummary;
+
+  private Facet facet;
   private List<String> tags;
   private String label;
 
