@@ -621,7 +621,334 @@
     },
     "tags": ["ReCoDID"],
     "label": "RECODID",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort",
+    "dictionary": [
+      {
+        "name": "Chronic cardiac disease (not hypertension) ",
+        "label": "Chronic cardiac disease (not hypertension) ",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Hypertension",
+        "label": "Hypertension",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Chronic pulmonary disease (not asthma)",
+        "label": "Chronic pulmonary disease (not asthma)",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Asthma (physician diagnosed)",
+        "label": "Asthma (physician diagnosed)",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Chronic kidney disease",
+        "label": "Chronic kidney disease",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Obesity (as defined by clinical staff)",
+        "label": "Obesity (as defined by clinical staff)",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Moderate or severe liver disease",
+        "label": "Moderate or severe liver disease",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Mild liver disease",
+        "label": "Mild liver disease",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Asplenia",
+        "label": "Asplenia",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Chronic neurological disorder",
+        "label": "Chronic neurological disorder",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Malignant neoplasm",
+        "label": "Malignant neoplasm",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Chronic hematologic disease",
+        "label": "Chronic hematologic disease",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "AIDS / HIV",
+        "label": "AIDS / HIV",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Diabetes Mellitus",
+        "label": "Diabetes Mellitus",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Diabetes with complications",
+        "label": "Diabetes with complications",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Diabetes without complications",
+        "label": "Diabetes without complications",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Rheumatologic disorder",
+        "label": "Rheumatologic disorder",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Dementia",
+        "label": "Dementia",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Tuberculosis",
+        "label": "Tuberculosis",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Malnutrition",
+        "label": "Malnutrition",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Other relevant risk factor(s)",
+        "label": "Other relevant risk factor(s)",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Other relevant risk factor(s) - if YES, specify: ",
+        "label": "Other relevant risk factor(s) - if YES, specify: ",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Smoking",
+        "label": "Smoking",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Complete",
+        "label": "Complete",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Any Oxygen therapy",
+        "label": "Any Oxygen therapy",
+        "parent": "treatment"
+      },
+      {
+        "name": "Non-invasive ventilation",
+        "label": "Non-invasive ventilation",
+        "parent": "treatment"
+      },
+      {
+        "name": "Invasive ventilation",
+        "label": "Invasive ventilation",
+        "parent": "treatment"
+      },
+      {
+        "name": "Prone Positioning",
+        "label": "Prone Positioning",
+        "parent": "treatment"
+      },
+      {
+        "name": "Inhaled Nitric Oxide",
+        "label": "Inhaled Nitric Oxide",
+        "parent": "treatment"
+      },
+      {
+        "name": "Tracheostomy inserted",
+        "label": "Tracheostomy inserted",
+        "parent": "treatment"
+      },
+      {
+        "name": "Extracorporeal support (ECMO)",
+        "label": "Extracorporeal support (ECMO)",
+        "parent": "treatment"
+      },
+      {
+        "name": "Renal replacement therapy (RRT) or dialysis",
+        "label": "Renal replacement therapy (RRT) or dialysis",
+        "parent": "treatment"
+      },
+      {
+        "name": "Inotropes / vasopressors",
+        "label": "Inotropes / vasopressors",
+        "parent": "treatment"
+      },
+      {
+        "name": "ICU or High Dependency Unit admission",
+        "label": "ICU or High Dependency Unit admission",
+        "parent": "treatment"
+      },
+      {
+        "name": "Optiflow or mechanical ventilation",
+        "label": "Optiflow or mechanical ventilation",
+        "parent": "treatment"
+      },
+      {
+        "name": "Lopinavir/Ritonvir",
+        "label": "Lopinavir/Ritonvir",
+        "parent": "treatment"
+      },
+      {
+        "name": "Remdesivir",
+        "label": "Remdesivir",
+        "parent": "treatment"
+      },
+      {
+        "name": "Interferon alpha",
+        "label": "Interferon alpha",
+        "parent": "treatment"
+      },
+      {
+        "name": "Chloroquine/hydroxychloroquine",
+        "label": "Chloroquine/hydroxychloroquine",
+        "parent": "treatment"
+      },
+      {
+        "name": "Antibiotic",
+        "label": "Antibiotic",
+        "parent": "treatment"
+      },
+      {
+        "name": "Ventilation",
+        "label": "Ventilation",
+        "parent": "treatment"
+      },
+      {
+        "name": "Discharged alive",
+        "label": "Discharged alive",
+        "parent": "outcome"
+      },
+      {
+        "name": "Hospitalization",
+        "label": "Hospitalization",
+        "parent": "outcome"
+      },
+      {
+        "name": "Transfer to other facility",
+        "label": "Transfer to other facility",
+        "parent": "outcome"
+      },
+      {
+        "name": "Death",
+        "label": "Death",
+        "parent": "outcome"
+      },
+      {
+        "name": "Palliative discharge",
+        "label": "Palliative discharge",
+        "parent": "outcome"
+      },
+      {
+        "name": "Unknown",
+        "label": "Unknown",
+        "parent": "outcome"
+      },
+      {
+        "name": "Clinical-epidemiological",
+        "label": "Clinical-epidemiological ",
+        "parent": "typeOfData"
+      },
+      {
+        "name": "human sequence data",
+        "label": "Human sequence data",
+        "parent": "typeOfData"
+      },
+      {
+        "name": "SARS-CoV-2 sequences",
+        "label": "SARS-CoV-2 sequences",
+        "parent": "typeOfData"
+      },
+      {
+        "name": "Serology",
+        "label": "Serology",
+        "parent": "typeOfData"
+      },
+      {
+        "name": "Angiotensin converting enzyme inhibitors (ACE inhibitors)",
+        "label": "Angiotensin converting enzyme inhibitors (ACE inhibitors)",
+        "parent": "medication"
+      },
+      {
+        "name": "Angiotensin II receptor blockers (ARBs)",
+        "label": "Angiotensin II receptor blockers (ARBs)",
+        "parent": "medication"
+      },
+      {
+        "name": "Non-steroidal anti-inflammatory (NSAID)",
+        "label": "Non-steroidal anti-inflammatory (NSAID)",
+        "parent": "medication"
+      },
+      {
+        "name": "Oral steroids",
+        "label": "Oral steroids",
+        "parent": "medication"
+      },
+      {
+        "name": "Oral steroids - if YES, agent(s):",
+        "label": "Oral steroids - if YES, agent(s):",
+        "parent": "medication"
+      },
+      {
+        "name": "Other immunosuppressant agents (not oral steroids)",
+        "label": "Other immunosuppressant agents (not oral steroids)",
+        "parent": "medication"
+      },
+      {
+        "name": "Antivirals",
+        "label": "Antivirals",
+        "parent": "medication"
+      },
+      {
+        "name": "Antivirals - if YES, agent(s):",
+        "label": "Antivirals - if YES, agent(s):",
+        "parent": "medication"
+      },
+      {
+        "name": "Antibiotics",
+        "label": "Antibiotics",
+        "parent": "medication"
+      },
+      {
+        "name": "Antibiotics - if YES, agent(s):",
+        "label": "Antibiotics - if YES, agent(s):",
+        "parent": "medication"
+      },
+      {
+        "name": "Other targeted COVID-19 Medications",
+        "label": "Other targeted COVID-19 Medications",
+        "parent": "medication"
+      },
+      {
+        "name": "Other targeted COVID-19 Medications - if YES, agent(s):",
+        "label": "Other targeted COVID-19 Medications - if YES, agent(s):",
+        "parent": "medication"
+      },
+      {
+        "name": "Complete",
+        "label": "Complete",
+        "parent": "medication"
+      },
+      {
+        "name": "countries",
+        "label": "countries",
+        "values": "Argentina, Bolivia, Brazil, Chile, Colombia, France, Germany, Spain, UK, Netherlands"
+      }
+    ]
   },
 
   {

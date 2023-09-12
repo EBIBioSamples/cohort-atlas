@@ -20,7 +20,7 @@ public class Field {
   private String values;
 
   private String parent;
-  private List<String> suggestions;
+  private List<Suggestion> suggestions;
 //  private String suggestions;
   private String annotation;
 //  private List<String> tags;

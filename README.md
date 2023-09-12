@@ -1,6 +1,8 @@
 # cohort-atlas
 A browser for discovering cohorts and related resources
 
+## Still in prototyping stage ##
+
 ## Requirements
 - Java 17
 - docker (23.0.1) and docker compose (v2.16.0)
