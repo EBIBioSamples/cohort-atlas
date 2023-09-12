@@ -1012,7 +1012,6 @@
       "genomicData": true,
       "phenotypicData": true
     },
-    "datasets": [],
     "projects": [],
     "attachments": [],
     "externalLinks": [],
@@ -1089,6 +1088,54 @@
     "tags": ["test"],
     "label": "TEST",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+  {
+    "accession": "test_project_1",
+    "name": "test_project_1",
+    "description": "test_project_1",
+    "acronym": "TP1",
+    "website": "www.ebi.ac.uk/biosamples",
+    "startDate": "01-01-2025",
+    "endDate": "01-01-2030",
+    "funding": "no funding",
+    "acknowledgements": "No ack",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Project"
+  },
+  {
+    "accession": "test_project_2",
+    "name": "test_project_2",
+    "description": "test_project_2",
+    "acronym": "TP2",
+    "website": "www.ebi.ac.uk/biosamples",
+    "startDate": "01-01-2020",
+    "endDate": "01-01-2030",
+    "funding": "no funding",
+    "acknowledgements": "No ack",
+    "dictionary": [
+      {
+        "name": "Gender",
+        "label": "Gender",
+        "description": "Gender",
+        "type": "string",
+        "values": "MALE, FEMALE, OTHER",
+        "annotation": "gender"
+      },
+      {
+        "name": "Birthdate",
+        "label": "Birthdate",
+        "description": "Birthdate",
+        "type": "string",
+        "annotation": "age/birthdate"
+      },
+      {
+        "name": "Agreement dateAgreement date",
+        "label": "Agreement dateAgreement date",
+        "description": "Agreement dateAgreement date",
+        "type": "string",
+        "annotation": "date and time-related information"
+      }
+    ],
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Project"
   },
 
 

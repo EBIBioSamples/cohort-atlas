@@ -41,8 +41,7 @@ public class Cohort {
   private List<String> territories; //countries/regions, should we rename this to populations?
   private DataTypes dataTypes;
 
-  private List<Dataset> datasets;
-  private List<Project> projects;
+  private List<String> projects;
 
   private List<Attachment> attachments;
   private List<ExternalLink> externalLinks;
