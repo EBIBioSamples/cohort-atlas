@@ -1012,7 +1012,7 @@
       "genomicData": true,
       "phenotypicData": true
     },
-    "projects": [],
+    "project": "BCAP0000000",
     "attachments": [],
     "externalLinks": [],
     "supplementaryInformation": "",
@@ -1089,22 +1089,12 @@
     "label": "TEST",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
   },
+
+
   {
-    "accession": "test_project_1",
-    "name": "test_project_1",
-    "description": "test_project_1",
-    "acronym": "TP1",
-    "website": "www.ebi.ac.uk/biosamples",
-    "startDate": "01-01-2025",
-    "endDate": "01-01-2030",
-    "funding": "no funding",
-    "acknowledgements": "No ack",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Project"
-  },
-  {
-    "accession": "test_project_2",
-    "name": "test_project_2",
-    "description": "test_project_2",
+    "accession": "BCAP0000000",
+    "name": "test_project",
+    "description": "Test umbrella project to contain multiple cohorts",
     "acronym": "TP2",
     "website": "www.ebi.ac.uk/biosamples",
     "startDate": "01-01-2020",
@@ -1140,45 +1130,583 @@
 
 
   {
-    "id": "test_field_1",
-    "name": "alcohol_use_history",
-    "label": "Alcohol use history",
-    "description": "Alcohol use history",
-    "type": "",
-    "values": "",
+    "id": "Gender",
+    "name": "Gender",
+    "label": "Gender",
+    "description": "Gender of the patient",
+    "type": "string",
+    "values": "MALE, FEMALE, OTHER",
     "parent": "lifestyle_and_behaviours",
-    "annotations": [],
+    "annotation": "gender",
     "tags": [],
-    "fullQualifiedName": "lifestyle_and_behaviours.alcohol_use_history",
-    "cohort": "BSC0000001",
+    "fullQualifiedName": "lifestyle_and_behaviours.gender",
+    "cohort": "BSC0000000",
+    "project": "BCAP0000000",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
   },
   {
-    "id": "test_field_2",
-    "name": "tobacco_use_history",
-    "label": "Tobacco use history",
-    "description": "Tobacco use history",
-    "type": "",
-    "values": "",
-    "parent": "lifestyle_and_behaviours",
-    "annotations": [],
-    "tags": [],
-    "fullQualifiedName": "lifestyle_and_behaviours.tobacco_use_history",
-    "cohort": "BSC0000001",
+    "id": "Birthdate",
+    "name": "Birthdate",
+    "label": "Birthdate",
+    "description": "Birthdate of the patient",
+    "type": "string",
+    "annotation": "age/birthdate",
+    "cohort": "BSC0000000",
+    "project": "BCAP0000000",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
   },
   {
-    "id": "test_field_3",
-    "name": "tobacco_use_history",
-    "label": "Tobacco use history",
-    "description": "Tobacco use history",
-    "type": "",
-    "values": "",
-    "parent": "lifestyle_and_behaviours",
-    "annotations": [],
-    "tags": [],
-    "fullQualifiedName": "lifestyle_and_behaviours.tobacco_use_history",
-    "cohort": "BSC0000002",
+    "id": "Agreement date",
+    "name": "Agreement date",
+    "label": "Agreement date",
+    "description": "Agreement date for the survey",
+    "type": "string",
+    "annotation": "date and time-related information",
+    "cohort": "BSC0000000",
+    "project": "BCAP0000000",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "id": "Year of birth",
+    "name": "Year of birth",
+    "label": "Year of birth",
+    "description": "Year of birth of the patient",
+    "type": "string",
+    "cohort": "BSC0000000",
+    "project": "BCAP0000000",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "id": "Age",
+    "name": "Age",
+    "label": "Age at present",
+    "description": "Age at present",
+    "type": "string",
+    "annotation": "age/birthdate",
+    "cohort": "BSC0000000",
+    "project": "BCAP0000000",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+
+
+  {
+    "name": "Chronic cardiac disease (not hypertension) ",
+    "label": "Chronic cardiac disease (not hypertension) ",
+    "parent": "comorbidities",
+    "description": "Chronic cardiac disease (not hypertension)",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Hypertension",
+    "label": "Hypertension",
+    "parent": "comorbidities",
+    "description": "Hypertension",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Chronic pulmonary disease (not asthma)",
+    "label": "Chronic pulmonary disease (not asthma)",
+    "parent": "comorbidities",
+    "description": "Chronic pulmonary disease (not asthma)",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Asthma (physician diagnosed)",
+    "label": "Asthma (physician diagnosed)",
+    "parent": "comorbidities",
+    "description": "Asthma (physician diagnosed)",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Chronic kidney disease",
+    "label": "Chronic kidney disease",
+    "parent": "comorbidities",
+    "description": "Chronic kidney disease",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Obesity (as defined by clinical staff)",
+    "label": "Obesity (as defined by clinical staff)",
+    "parent": "comorbidities",
+    "description": "Obesity (as defined by clinical staff)",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Moderate or severe liver disease",
+    "label": "Moderate or severe liver disease",
+    "parent": "comorbidities",
+    "description": "Moderate or severe liver disease",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Mild liver disease",
+    "label": "Mild liver disease",
+    "parent": "comorbidities",
+    "description": "Mild liver disease",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Asplenia",
+    "label": "Asplenia",
+    "parent": "comorbidities",
+    "description": "Asplenia",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Chronic neurological disorder",
+    "label": "Chronic neurological disorder",
+    "parent": "comorbidities",
+    "description": "Chronic neurological disorder",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Malignant neoplasm",
+    "label": "Malignant neoplasm",
+    "parent": "comorbidities",
+    "description": "Malignant neoplasm",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Chronic hematologic disease",
+    "label": "Chronic hematologic disease",
+    "parent": "comorbidities",
+    "description": "Chronic",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "AIDS / HIV",
+    "label": "AIDS / HIV",
+    "parent": "comorbidities",
+    "description": "AIDS / HIV",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Diabetes Mellitus",
+    "label": "Diabetes Mellitus",
+    "parent": "comorbidities",
+    "description": "Diabetes Mellitus",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Diabetes with complications",
+    "label": "Diabetes with complications",
+    "parent": "comorbidities",
+    "description": "Diabetes with complications",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Diabetes without complications",
+    "label": "Diabetes without complications",
+    "parent": "comorbidities",
+    "description": "Diabetes without complications",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Rheumatologic disorder",
+    "label": "Rheumatologic disorder",
+    "parent": "comorbidities",
+    "description": "Rheumatologic disorder",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Dementia",
+    "label": "Dementia",
+    "parent": "comorbidities",
+    "description": "Dementia",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Tuberculosis",
+    "label": "Tuberculosis",
+    "parent": "comorbidities",
+    "description": "Tuberculosis",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Malnutrition",
+    "label": "Malnutrition",
+    "parent": "comorbidities",
+    "description": "Malnutrition",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Other relevant risk factor(s)",
+    "label": "Other relevant risk factor(s)",
+    "parent": "comorbidities",
+    "description": "Other relevant risk factor(s)",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Other relevant risk factor(s) - if YES, specify: ",
+    "label": "Other relevant risk factor(s) - if YES, specify: ",
+    "parent": "comorbidities",
+    "description": "Other relevant risk factor(s) - if YES, specify",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Smoking",
+    "label": "Smoking",
+    "parent": "comorbidities",
+    "description": "Smoking",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Complete",
+    "label": "Complete",
+    "parent": "comorbidities",
+    "description": "Complete",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Any Oxygen therapy",
+    "label": "Any Oxygen therapy",
+    "parent": "treatment",
+    "description": "Any Oxygen therapy",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Non-invasive ventilation",
+    "label": "Non-invasive ventilation",
+    "parent": "treatment",
+    "description": "Non-invasive ventilation",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Invasive ventilation",
+    "label": "Invasive ventilation",
+    "parent": "treatment",
+    "description": "Invasive ventilation",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Prone Positioning",
+    "label": "Prone Positioning",
+    "parent": "treatment",
+    "description": "Prone Positioning",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Inhaled Nitric Oxide",
+    "label": "Inhaled Nitric Oxide",
+    "parent": "treatment",
+    "description": "Inhaled Nitric Oxide",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Tracheostomy inserted",
+    "label": "Tracheostomy inserted",
+    "parent": "treatment",
+    "description": "Tracheostomy inserted",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Extracorporeal support (ECMO)",
+    "label": "Extracorporeal support (ECMO)",
+    "parent": "treatment",
+    "description": "Extracorporeal support (ECMO)",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Renal replacement therapy (RRT) or dialysis",
+    "label": "Renal replacement therapy (RRT) or dialysis",
+    "parent": "treatment",
+    "description": "Renal replacement therapy (RRT) or dialysis",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Inotropes / vasopressors",
+    "label": "Inotropes / vasopressors",
+    "parent": "treatment",
+    "description": "Inotropes / vasopressors",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "ICU or High Dependency Unit admission",
+    "label": "ICU or High Dependency Unit admission",
+    "parent": "treatment",
+    "description": "ICU or High Dependency Unit admission",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Optiflow or mechanical ventilation",
+    "label": "Optiflow or mechanical ventilation",
+    "parent": "treatment",
+    "description": "Optiflow or mechanical ventilation",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Lopinavir/Ritonvir",
+    "label": "Lopinavir/Ritonvir",
+    "parent": "treatment",
+    "description": "Lopinavir/Ritonvir",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Remdesivir",
+    "label": "Remdesivir",
+    "parent": "treatment",
+    "description": "Remdesivir",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Interferon alpha",
+    "label": "Interferon alpha",
+    "parent": "treatment",
+    "description": "Interferon alpha",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Chloroquine/hydroxychloroquine",
+    "label": "Chloroquine/hydroxychloroquine",
+    "parent": "treatment",
+    "description": "Chloroquine/hydroxychloroquine",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Antibiotic",
+    "label": "Antibiotic",
+    "parent": "treatment",
+    "description": "Antibiotic",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Ventilation",
+    "label": "Ventilation",
+    "parent": "treatment",
+    "description": "Ventilation",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Discharged alive",
+    "label": "Discharged alive",
+    "parent": "outcome",
+    "description": "Discharged alive",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Hospitalization",
+    "label": "Hospitalization",
+    "parent": "outcome",
+    "description": "Hospitalization",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Transfer to other facility",
+    "label": "Transfer to other facility",
+    "parent": "outcome",
+    "description": "Transfer to other facility",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Death",
+    "label": "Death",
+    "parent": "outcome",
+    "description": "Death",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Palliative discharge",
+    "label": "Palliative discharge",
+    "parent": "outcome",
+    "description": "Palliative discharge",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Unknown",
+    "label": "Unknown",
+    "parent": "outcome",
+    "description": "Unknown",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Clinical-epidemiological",
+    "label": "Clinical-epidemiological ",
+    "parent": "typeOfData",
+    "description": "Clinical-epidemiological",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "human sequence data",
+    "label": "Human sequence data",
+    "parent": "typeOfData",
+    "description": "Human sequence data",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "SARS-CoV-2 sequences",
+    "label": "SARS-CoV-2 sequences",
+    "parent": "typeOfData",
+    "description": "SARS-CoV-2 sequences",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Serology",
+    "label": "Serology",
+    "parent": "typeOfData",
+    "description": "Serology",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Angiotensin converting enzyme inhibitors (ACE inhibitors)",
+    "label": "Angiotensin converting enzyme inhibitors (ACE inhibitors)",
+    "parent": "medication",
+    "description": "Angiotensin converting enzyme inhibitors (ACE inhibitors)",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Angiotensin II receptor blockers (ARBs)",
+    "label": "Angiotensin II receptor blockers (ARBs)",
+    "parent": "medication",
+    "description": "Angiotensin II receptor blockers (ARBs)",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Non-steroidal anti-inflammatory (NSAID)",
+    "label": "Non-steroidal anti-inflammatory (NSAID)",
+    "parent": "medication",
+    "description": "Non-steroidal anti-inflammatory (NSAID)",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Oral steroids",
+    "label": "Oral steroids",
+    "parent": "medication",
+    "description": "Oral steroids",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Oral steroids - if YES, agent(s):",
+    "label": "Oral steroids - if YES, agent(s):",
+    "parent": "medication",
+    "description": "Oral steroids - if YES, agent(s)",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Other immunosuppressant agents (not oral steroids)",
+    "label": "Other immunosuppressant agents (not oral steroids)",
+    "parent": "medication",
+    "description": "Other immunosuppressant agents (not oral steroids)",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Antivirals",
+    "label": "Antivirals",
+    "parent": "medication",
+    "description": "Antivirals",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Antivirals - if YES, agent(s):",
+    "label": "Antivirals - if YES, agent(s):",
+    "parent": "medication",
+    "description": "Antivirals - if YES, agent(s)",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Antibiotics",
+    "label": "Antibiotics",
+    "parent": "medication",
+    "description": "Antibiotics",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Antibiotics - if YES, agent(s):",
+    "label": "Antibiotics - if YES, agent(s):",
+    "parent": "medication",
+    "description": "Antibiotics - if YES, agent(s)",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Other targeted COVID-19 Medications",
+    "label": "Other targeted COVID-19 Medications",
+    "parent": "medication",
+    "description": "Other targeted COVID-19 Medications",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Other targeted COVID-19 Medications - if YES, agent(s):",
+    "label": "Other targeted COVID-19 Medications - if YES, agent(s):",
+    "parent": "medication",
+    "description": "Other targeted COVID-19 Medications - if YES, agent(s):",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Complete",
+    "label": "Complete",
+    "parent": "medication",
+    "description": "Complete",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "countries",
+    "label": "countries",
+    "values": "Argentina, Bolivia, Brazil, Chile, Colombia, France, Germany, Spain, UK, Netherlands",
+    "description": "countries",
+    "cohort": "BSC0000010",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
   },
 

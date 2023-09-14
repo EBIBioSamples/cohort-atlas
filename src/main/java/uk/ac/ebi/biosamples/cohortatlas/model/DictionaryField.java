@@ -23,10 +23,11 @@ public class DictionaryField {
   private String values;
 
   private String parent;
-  private List<String> annotations;
+  private String annotation;
   private List<String> tags;
 
   private String fullQualifiedName; // get name with parent paths?
 
   private String cohort;
+  private String project;
 }
