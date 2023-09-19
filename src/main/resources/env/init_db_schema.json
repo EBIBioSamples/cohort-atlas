@@ -10,6 +10,7 @@
     "provider": {
       "name": "UOB"
     },
+    "license": "MIT",
     "rights": "Closed dataset. not for profit, non commercial use only.",
     "dataSharing": {
       "label": "not for profit, non commercial use only"
@@ -48,6 +49,7 @@
     "provider": {
       "name": "UOULU"
     },
+    "license": "Apache",
     "rights": "Closed dataset. health or medical or biomedical research. https://www.oulu.fi/nfbc/materialrequest",
     "dataSharing": {
       "label": "health or medical or biomedical research"
@@ -94,6 +96,7 @@
     "provider": {
       "name": "UOULU"
     },
+    "license": "BSD",
     "rights": "Closed dataset. health or medical or biomedical research. https://www.oulu.fi/nfbc/materialrequest",
     "dataSharing": {
       "label": "health or medical or biomedical research"
@@ -137,6 +140,7 @@
     "provider": {
       "name": "EMC"
     },
+    "license": "BSD",
     "rights": "Closed dataset. 1. LifeCycle Project Research proposal has been discussed in the WP and distributed to all LifeCycle Project cohorts  2. The lead researcher sends a request to Generation R contact (primary contact for internal discussion: LifeCycle Project manager lifecycle@erasmusmc.nl). If it concerns another proposal than a LifeCycle proposal please state this. 3. The proposal is discussed in the Generation R Management Team by the involved Generation R PI 4. The involved PI notifies the lead researcher and the LifeCycle project manager of the MT outcome, with lifecycle@erasmusmc.nl in the cc.  5. In case of approval, the LifeCycle project manager will send the researcher the Generation R Data Use Agreement (DUA) or Data transfer agreement (DTA).  6. If adaptations to the DUA are requested, the LifeCycle project manager forwards the DUA to Janine Felix who will liaise with the legal team if needed; once an agreement has been reached, the completed DUA is sent to the LifeCycle project manager 7. Lead researcher returns the DUA to lifecycle@erasmusmc.nl once completed 8. The LifeCycle project manager completes the DUA: checks the DUA and has it signed by Vincent 9. The project manager finalizes the Data Access Process:   - creates the Opal-views   - emails the researcher the fully signed DUA, and the Opal-login details to access the data   - Informs Generation R contact that data access has been granted",
     "dataSharing": {
       "label": "not for profit, non commercial use only"
