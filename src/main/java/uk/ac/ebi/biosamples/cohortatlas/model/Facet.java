@@ -8,6 +8,7 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 public class Facet {
+
   private String category;
   private String displayName;
   private String searchPath;

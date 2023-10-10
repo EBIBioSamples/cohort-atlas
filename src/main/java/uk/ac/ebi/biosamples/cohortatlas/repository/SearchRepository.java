@@ -3,21 +3,21 @@ package uk.ac.ebi.biosamples.cohortatlas.repository;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.mongodb.core.MongoTemplate;
-import org.springframework.data.mongodb.core.aggregation.Aggregation;
-import org.springframework.data.mongodb.core.aggregation.AggregationResults;
-import org.springframework.data.mongodb.core.aggregation.FacetOperation;
+import org.springframework.data.mongodb.core.aggregation.*;
+import org.springframework.data.mongodb.core.aggregation.BooleanOperators;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.TextCriteria;
 import org.springframework.stereotype.Repository;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.StringUtils;
+import uk.ac.ebi.biosamples.cohortatlas.model.Facet;
 import uk.ac.ebi.biosamples.cohortatlas.model.FacetResult;
 
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 @Repository
 public abstract class SearchRepository {
@@ -77,32 +77,46 @@ public abstract class SearchRepository {
 
     }
 
-    public List<FacetResult> getFacets() {
+    public List<Facet> getFacets() {
 
- /* using mongoOperations
- TypedAggregation<Cohort> aggregation = Aggregation.newAggregation(Cohort.class,
-              // Add your aggregation stages here to facet the data
-              // Example: Group by genre and count the books in each genre
-              Aggregation.group("license").count().as("count"),
-              Aggregation.project("count").and("license").previousOperation(),
-              Aggregation.group("treatment").count().as("count"),
-              Aggregation.project("count").and("treatment").previousOperation()
+     /* using mongoOperations
+     TypedAggregation<Cohort> aggregation = Aggregation.newAggregation(Cohort.class,
+                  // Add your aggregation stages here to facet the data
+                  // Example: Group by genre and count the books in each genre
+                  Aggregation.group("license").count().as("count"),
+                  Aggregation.project("count").and("license").previousOperation(),
+                  Aggregation.group("treatment").count().as("count"),
+                  Aggregation.project("count").and("treatment").previousOperation()
 
-              );
+                  );
+          return mongoOperations.aggregate(aggregation, "cohort", FacetResult.class);*/
 
-      return mongoOperations.aggregate(aggregation, "cohort", FacetResult.class);*/
 
-        //working solution using mongoTemplate
         FacetOperation facetOperation = Aggregation.facet()
-                .and(Aggregation.unwind("dataSummary.treatment"), Aggregation.sortByCount("dataSummary.treatment")).as("treatment")
+                .and(Aggregation.unwind("dataSummary.treatment"),
+                        Aggregation.sortByCount("dataSummary.treatment")).as("treatment")
                 .and(Aggregation.sortByCount("license")).as("license")
-                .and(Aggregation.unwind("territories"), Aggregation.sortByCount("territories")).as("territories");
-        // GroupOperation licenseGroupOperation = Aggregation.group("license").count().as("count");
+                .and(Aggregation.unwind("territories"),
+                        Aggregation.sortByCount("territories")).as("territories")
+                .and(Aggregation.project().and(ObjectOperators.ObjectToArray.valueOfToArray("dataTypes")).as("dataKeys"),
+                        Aggregation.unwind("dataKeys"),
+                        Aggregation.match(Criteria.where("dataKeys.v").is(true)),
+                        Aggregation.sortByCount("dataKeys.k") ).as("dataType");
 
-        Aggregation aggregation = Aggregation.newAggregation(facetOperation);
-        AggregationResults<FacetResult> results = mongoTemplate.aggregate(aggregation, "cohort", FacetResult.class);
 
-        return results.getMappedResults();
+        AggregationResults<FacetResult> results = mongoTemplate.aggregate(Aggregation.newAggregation(facetOperation), "cohort", FacetResult.class);
+
+        return convertToFacet(results.getMappedResults());
+    }
+
+    private List<Facet> convertToFacet(List<FacetResult> mappedResults) {
+        List<Facet> facets = new ArrayList<>();
+
+        if(mappedResults == null || mappedResults.size() ==0) {
+            return facets;
+        }
+
+        return mappedResults.get(0).getFacets();
     }
 
 }

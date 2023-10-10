@@ -8,6 +8,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.test.context.ActiveProfiles;
 import uk.ac.ebi.biosamples.cohortatlas.model.Cohort;
+import uk.ac.ebi.biosamples.cohortatlas.model.Facet;
 import uk.ac.ebi.biosamples.cohortatlas.model.FacetResult;
 import uk.ac.ebi.biosamples.cohortatlas.repository.CohortSearchRepository;
 
@@ -62,7 +63,7 @@ public class CohortServiceIntegrationTest {
         Page<Cohort> page = cohortSearchRepository.findPageWithFilters(PageRequest.of(0, Integer.MAX_VALUE),
                 null, "cohortName", Collections.emptyList());
 
-        List<FacetResult> facets = cohortSearchRepository.getFacets();
+        List<Facet> facets = cohortSearchRepository.getFacets();
         assertThat(facets != null);
 
     }

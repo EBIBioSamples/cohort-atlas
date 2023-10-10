@@ -7,5 +7,5 @@ import lombok.Data;
 @AllArgsConstructor
 public class FacetValue {
   private String _id;
-  private Integer count;
+  private int count;
 }

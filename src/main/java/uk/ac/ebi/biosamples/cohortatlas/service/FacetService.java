@@ -18,7 +18,7 @@ public class FacetService {
         this.cohortSearchRepository = cohortSearchRepository;
     }
 
-    public List<FacetResult> getFacets() {
+    public List<Facet> getFacets() {
     return cohortSearchRepository.getFacets();
   }
 
