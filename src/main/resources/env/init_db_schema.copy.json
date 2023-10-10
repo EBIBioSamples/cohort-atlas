@@ -1,0 +1,334 @@
+[
+  {
+    "accession": "BSC0000001",
+    "cohortName": "ReCoDID COVID-19 pilot study",
+    "description": "A test cohort with test ReCoDID data",
+    "acronym": "ReCoDID",
+    "website": "https://www.ebi.ac.uk/biosamples/samples?filter=attr%3Aproject+name%3AReCoDID+COVID-19+pilot+study",
+    "logo": "https://www.ebi.ac.uk/biosamples/images/logo_biosamples.png",
+    "type": "COHORT",
+    "provider": {
+      "name": "test name",
+      "description": "test description"
+    },
+    "license": "MIT",
+    "rights": "Similar to license, sentence of right?",
+    "dataSharing": {
+      "id": "DUO:0000042",
+      "label": "general research use"
+    },
+    "contacts": [
+      {
+        "name": "example",
+        "email": "example@example.com"
+      }
+    ],
+    "investigators": [
+      {
+        "name": "investigator",
+        "email": "investigator@example.com"
+      }
+    ],
+    "startDate": "2015-02-24T09:51:07.257571830Z",
+    "endDate": "2025-02-24T09:51:07.257571830Z",
+    "targetEnrollment": 100000,
+    "totalEnrollment": 10000,
+    "publications": [
+      {
+        "url": "publication.example.com"
+      }
+    ],
+    "funding": "",
+    "acknowledgements": "",
+    "supplementaryInformation": "",
+    "datasets": [],
+    "territories": ["United Kingdom"],
+    "dataTypes": {
+      "biospecimens": true,
+      "environmentalData": true,
+      "genomicData": true,
+      "phenotypicData": true
+    },
+    "projects": [],
+    "attachments": [],
+    "externalLinks": [],
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+  {
+    "accession": "BSC0000002",
+    "cohortName": "*FraNCCoDS (France National Cohort Collection Data Sharing)",
+    "description": "This study provides a biobank repository of patient samples which have been analysed as part of FraNCCoDs.",
+    "acronym": "FraNCCoDS",
+    "website": "https://www.ebi.ac.uk/biosamples/samples?filter=attr%3Aproject+name%3AReCoDID+COVID-19+pilot+study",
+    "logo": "https://www.ebi.ac.uk/biosamples/images/logo_biosamples.png",
+    "type": "COHORT",
+    "provider": {
+      "name": "name",
+      "description": "description"
+    },
+    "license": "-",
+    "rights": "Similar to license, sentence of right?",
+    "dataSharing": {
+      "id": "DUO:0000042",
+      "label": "general research use"
+    },
+    "contacts": [
+      {
+        "name": "example",
+        "email": "example@example.com"
+      }
+    ],
+    "investigators": [
+      {
+        "name": "investigator",
+        "email": "investigator@example.com"
+      }
+    ],
+    "startDate": "2020-05-01T09:51:07.257571830Z",
+    "endDate": "2021-04-30T09:51:07.257571830Z",
+    "targetEnrollment": 11,
+    "totalEnrollment": 11,
+    "publications": [
+      {
+        "url": "publication.example.com"
+      }
+    ],
+    "funding": "",
+    "acknowledgements": "",
+    "supplementaryInformation": "",
+    "datasets": [],
+    "territories": ["France"],
+    "dataTypes": {
+      "biospecimens": true,
+      "environmentalData": true,
+      "genomicData": false,
+      "phenotypicData": false
+    },
+    "projects": [],
+    "attachments": [],
+    "externalLinks": [],
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+  {
+    "accession": "BSC0000003",
+    "cohortName": "ReCoDID COVID-19 PatHost Cohort (RCPC)",
+    "description": "ReCoDID COVID-19 Pathogen-Host Interactions Cohort Study. This project aims to explore the effect of VOCs and VOIs identified within a cohort of patients in the United Kingdom, on the severity of disease and symptoms.",
+    "acronym": "ReCoDIDPatHost",
+    "website": "https://www.ebi.ac.uk/biosamples/samples?filter=attr%3Aproject+name%3AReCoDID+COVID-19+pilot+study",
+    "logo": "https://www.ebi.ac.uk/biosamples/images/logo_biosamples.png",
+    "type": "COHORT",
+    "provider": {
+      "name": "name",
+      "description": "description"
+    },
+    "license": "Apache",
+    "rights": "Similar to license, sentence of right?",
+    "dataSharing": {
+      "id": "DUO:0000042",
+      "label": "general research use"
+    },
+    "contacts": [
+      {
+        "name": "example",
+        "email": "example@example.com"
+      }
+    ],
+    "investigators": [
+      {
+        "name": "investigator",
+        "email": "investigator@example.com"
+      }
+    ],
+    "startDate": "2020-02-10T09:51:07.257571830Z",
+    "endDate": "2021-03-10T09:51:07.257571830Z",
+    "targetEnrollment": 100,
+    "totalEnrollment": 95,
+    "publications": [
+      {
+        "url": "publication.example.com"
+      }
+    ],
+    "funding": "",
+    "acknowledgements": "",
+    "supplementaryInformation": "",
+    "datasets": [],
+    "territories": ["United Kingdom"],
+    "dataTypes": {
+      "biospecimens": false,
+      "environmentalData": false,
+      "genomicData": true,
+      "phenotypicData": false
+    },
+    "projects": [],
+    "attachments": [],
+    "externalLinks": [],
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+  {
+    "accession": "BSC0000004",
+    "cohortName": "COV-COHORT",
+    "description": "Studying mechanism of infections among a cohort of patients across a range of South American countries.",
+    "acronym": "COV-COHORT",
+    "website": "https://www.ebi.ac.uk/biosamples/samples?filter=attr%3Aproject+name%3AReCoDID+COVID-19+pilot+study",
+    "logo": "https://www.ebi.ac.uk/biosamples/images/logo_biosamples.png",
+    "type": "COHORT",
+    "provider": {
+      "name": "name",
+      "description": "description"
+    },
+    "license": "-",
+    "rights": "Similar to license, sentence of right?",
+    "dataSharing": {
+      "id": "DUO:0000042",
+      "label": "general research use"
+    },
+    "contacts": [
+      {
+        "name": "example",
+        "email": "example@example.com"
+      }
+    ],
+    "investigators": [
+      {
+        "name": "investigator",
+        "email": "investigator@example.com"
+      }
+    ],
+    "startDate": "2020-01-03T09:51:07.257571830Z",
+    "targetEnrollment": 5423,
+    "totalEnrollment": 5423,
+    "publications": [
+      {
+        "url": "publication.example.com"
+      }
+    ],
+    "funding": "",
+    "acknowledgements": "",
+    "supplementaryInformation": "",
+    "datasets": [],
+    "territories": ["Argentina", "Bolivia", "Brazil", "Chile", "Colombia"],
+    "dataTypes": {
+      "biospecimens": true,
+      "environmentalData": true,
+      "genomicData": true,
+      "phenotypicData": false
+    },
+    "projects": [],
+    "attachments": [],
+    "externalLinks": [],
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+  {
+    "accession": "BSC0000005",
+    "cohortName": "Lombardy Cohort - Public Health Italy",
+    "description": "Study into the transmission events of the initial spread of COVID-19 within Trento, Italy",
+    "acronym": "LombardyCohort",
+    "website": "https://recodid.eu/xyz",
+    "logo": "https://www.ebi.ac.uk/biosamples/images/logo_biosamples.png",
+    "type": "COHORT",
+    "provider": {
+      "name": "Italian Public Health Laboratory",
+      "description": "description"
+    },
+    "license": "-",
+    "rights": "Similar to license, sentence of right?",
+    "dataSharing": {
+      "id": "DUO:0000042",
+      "label": "general research use"
+    },
+    "contacts": [
+      {
+        "name": "example",
+        "email": "example@example.com"
+      }
+    ],
+    "investigators": [
+      {
+        "name": "investigator",
+        "email": "investigator@example.com"
+      }
+    ],
+    "startDate": "2020-04-01T09:51:07.257571830Z",
+    "targetEnrollment": 200,
+    "totalEnrollment": 190,
+    "publications": [
+      {
+        "url": "publication.example.com"
+      }
+    ],
+    "funding": "",
+    "acknowledgements": "",
+    "supplementaryInformation": "",
+    "datasets": [],
+    "territories": ["Italy"],
+    "dataTypes": {
+      "biospecimens": true,
+      "environmentalData": true,
+      "genomicData": true,
+      "phenotypicData": true
+    },
+    "projects": [],
+    "attachments": [],
+    "externalLinks": [],
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+
+
+  {
+    "id": "test_field_1",
+    "name": "alcohol_use_history",
+    "label": "Alcohol use history",
+    "description": "Alcohol use history",
+    "type": "",
+    "values": "",
+    "parent": "lifestyle_and_behaviours",
+    "annotations": [],
+    "tags": [],
+    "fullQualifiedName": "lifestyle_and_behaviours.alcohol_use_history",
+    "cohort": "BSC0000001",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "id": "test_field_2",
+    "name": "tobacco_use_history",
+    "label": "Tobacco use history",
+    "description": "Tobacco use history",
+    "type": "",
+    "values": "",
+    "parent": "lifestyle_and_behaviours",
+    "annotations": [],
+    "tags": [],
+    "fullQualifiedName": "lifestyle_and_behaviours.tobacco_use_history",
+    "cohort": "BSC0000001",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "id": "test_field_3",
+    "name": "tobacco_use_history",
+    "label": "Tobacco use history",
+    "description": "Tobacco use history",
+    "type": "",
+    "values": "",
+    "parent": "lifestyle_and_behaviours",
+    "annotations": [],
+    "tags": [],
+    "fullQualifiedName": "lifestyle_and_behaviours.tobacco_use_history",
+    "cohort": "BSC0000002",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+
+  {
+    "id": "test_relationship_1",
+    "source": "biosample:SAMEA112152897",
+    "type": "IS_A_CHILD_OF",
+    "target": "BSC0000001",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Relationship"
+  },
+  {
+    "id": "test_relationship_2",
+    "source": "biosample:SAMEA112152898",
+    "type": "IS_A_CHILD_OF",
+    "target": "BSC0000001",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Relationship"
+  }
+]
