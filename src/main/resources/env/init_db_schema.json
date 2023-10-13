@@ -10,7 +10,6 @@
     "provider": {
       "name": "UOB"
     },
-    "license": "MIT",
     "rights": "Closed dataset. not for profit, non commercial use only.",
     "dataSharing": {
       "label": "not for profit, non commercial use only"
@@ -31,12 +30,6 @@
     "territories": [
       "United Kingdom of Great Britain and Northern Ireland (the)"
     ],
-    "dataTypes": {
-      "biospecimens": true,
-      "environmentalData": false,
-      "genomicData": false,
-      "phenotypicData": true
-    },
     "dataSummary": {
       "inclusionCriteria":  "Children, Mothers, Partners"
     },
@@ -55,7 +48,6 @@
     "provider": {
       "name": "UOULU"
     },
-    "license": "Apache",
     "rights": "Closed dataset. health or medical or biomedical research. https://www.oulu.fi/nfbc/materialrequest",
     "dataSharing": {
       "label": "health or medical or biomedical research"
@@ -80,12 +72,6 @@
       "Lapland",
       "North Ostrobothnia"
     ],
-    "dataTypes": {
-      "biospecimens": false,
-      "environmentalData": false,
-      "genomicData": false,
-      "phenotypicData": true
-    },
     "dataSummary": {
       "ageGroups": [
         "prenatal", "newborn", "infant", "infantsAndToddlers",
@@ -108,7 +94,6 @@
     "provider": {
       "name": "UOULU"
     },
-    "license": "BSD",
     "rights": "Closed dataset. health or medical or biomedical research. https://www.oulu.fi/nfbc/materialrequest",
     "dataSharing": {
       "label": "health or medical or biomedical research"
@@ -130,12 +115,6 @@
       "Lapland",
       "North Ostrobothnia"
     ],
-    "dataTypes": {
-      "biospecimens": false,
-      "environmentalData": false,
-      "genomicData": true,
-      "phenotypicData": false
-    },
     "dataSummary": {
       "ageGroups": [
         "prenatal", "newborn", "infant", "infantsAndToddlers",
@@ -158,7 +137,6 @@
     "provider": {
       "name": "EMC"
     },
-    "license": "BSD",
     "rights": "Closed dataset. 1. LifeCycle Project Research proposal has been discussed in the WP and distributed to all LifeCycle Project cohorts  2. The lead researcher sends a request to Generation R contact (primary contact for internal discussion: LifeCycle Project manager lifecycle@erasmusmc.nl). If it concerns another proposal than a LifeCycle proposal please state this. 3. The proposal is discussed in the Generation R Management Team by the involved Generation R PI 4. The involved PI notifies the lead researcher and the LifeCycle project manager of the MT outcome, with lifecycle@erasmusmc.nl in the cc.  5. In case of approval, the LifeCycle project manager will send the researcher the Generation R Data Use Agreement (DUA) or Data transfer agreement (DTA).  6. If adaptations to the DUA are requested, the LifeCycle project manager forwards the DUA to Janine Felix who will liaise with the legal team if needed; once an agreement has been reached, the completed DUA is sent to the LifeCycle project manager 7. Lead researcher returns the DUA to lifecycle@erasmusmc.nl once completed 8. The LifeCycle project manager completes the DUA: checks the DUA and has it signed by Vincent 9. The project manager finalizes the Data Access Process:   - creates the Opal-views   - emails the researcher the fully signed DUA, and the Opal-login details to access the data   - Informs Generation R contact that data access has been granted",
     "dataSharing": {
       "label": "not for profit, non commercial use only"
@@ -210,12 +188,6 @@
       "Netherlands",
       "Rotterdam"
     ],
-    "dataTypes": {
-      "biospecimens": false,
-      "environmentalData": true,
-      "genomicData": false,
-      "phenotypicData": false
-    },
     "dataSummary": {
       "ageGroups": [
         "prenatal", "newborn", "infant", "infantsAndToddlers"
@@ -228,45 +200,1513 @@
   },
 
   {
-    "id": "test_field_1",
-    "name": "alcohol_use_history",
-    "label": "Alcohol use history",
-    "description": "Alcohol use history",
-    "type": "",
-    "values": "",
+    "accession": "BSC0000005",
+    "cohortName": "*FraNCCoDS (France National Cohort Collection Data Sharing)",
+    "description": "This study provides a biobank repository of patient samples which have been analysed as part of FraNCCoDs.",
+    "acronym": "",
+    "website": "https://recodid.eu/xyz",
+    "type": "Cohort",
+    "provider": {
+      "name": "*French Biobank, Paris"
+    },
+    "startDate": "2020-05-01",
+    "endDate": "2021-04-30",
+    "totalEnrollment": 11,
+    "territories": [
+      "France", "Rotterdam, NL"
+    ],
+    "dataSummary": {
+      "diseases": [
+        "Asthma (physician diagnosed)",
+        "Chronic kidney disease",
+        "Obesity (as defined by clinical staff)",
+        "Moderate or severe liver disease"
+      ],
+      "medication": [
+        "Oral steroids",
+        "Other immunosuppressant agents (not oral steroids)",
+        "Antivirals"
+      ],
+      "treatment": [
+        "Lopinavir/Ritonvir",
+        "Remdesivir",
+        "Interferon alpha"
+      ],
+      "outcome": [
+        "Discharged alive",
+        "Hospitalization",
+        "Transfer to other facility",
+        "Death"
+      ],
+      "complications": [
+        "Pleural effusion",
+        "Cryptogenic organizing pneumonia (COP)",
+        "Bronchiolitis",
+        "Cardiac arrest",
+        "Myocardial infarction"
+      ],
+
+      "ageRange": "20 - 90",
+      "sampleSize": 11,
+      "sampleType": "nasopharyngeal swab",
+      "followUpSchedule":  "daily",
+      "inclusionCriteria":  "Adult ICU patients"
+    },
+    "tags": ["ReCoDID"],
+    "label": "RECODID",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+  {
+    "accession": "BSC0000006",
+    "cohortName": "*ReCoDID COVID-19 PatHost Cohort (RCPC)",
+    "description": "ReCoDID COVID-19 Pathogen-Host Interactions Cohort Study. This project aims to explore the effect of VOCs and VOIs identified within a cohort of patients in the United Kingdom, on the severity of disease and symptoms.",
+    "acronym": "",
+    "website": "https://recodid.eu/xyz",
+    "type": "Cohort",
+    "provider": {
+      "name": "*EMBL-EBI, Hinxton, UK"
+    },
+    "startDate": "2020-02-10",
+    "endDate": "2021-03-10",
+    "totalEnrollment": 95,
+    "territories": [
+      "UK", "Cambridge, UK"
+    ],
+    "dataSummary": {
+      "diseases": [
+        "Mild liver disease",
+        "Asplenia",
+        "Chronic neurological disorder",
+        "Malignant neoplasm",
+        "Chronic hematologic disease"
+      ],
+      "medication": [
+        "Oral steroids",
+        "Antivirals",
+        "Antibiotics"
+      ],
+      "treatment": [
+        "Chloroquine/hydroxychloroquine",
+        "Antibiotic",
+        "Ventilation"
+      ],
+      "outcome": [
+        "Discharged alive",
+        "Transfer to other facility",
+        "Death",
+        "Unknown"
+      ],
+      "complications": [
+        "Acute renal injury / Acute renal failure",
+        "Gastrointestinal hemorrhage",
+        "Pancreatitis",
+        "Liver dysfunction",
+        "Hyperglycaemia"
+      ],
+
+      "ageRange": "25 - 65",
+      "sampleSize": 100,
+      "sampleType": "Saliva",
+      "followUpSchedule":  "weekly",
+      "inclusionCriteria":  "healthcare workers"
+    },
+    "tags": ["ReCoDID"],
+    "label": "RECODID",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+  {
+    "accession": "BSC0000007",
+    "cohortName": "*COV-COHORT",
+    "description": "Studying mechanism of infections among a cohort of patients across a range of South American countries. ",
+    "acronym": "",
+    "website": "https://recodid.eu/xyz",
+    "type": "Cohort",
+    "provider": {
+      "name": "*South American COV-Cohort Consortium"
+    },
+    "startDate": "2020-01-03",
+    "endDate": "ongoing",
+    "totalEnrollment": 5234,
+    "territories": [
+      "Argentina", "Bolivia", "Brazil", "Chile", "Colombia", "Trondheim"
+    ],
+    "dataSummary": {
+      "diseases": [
+        "Hypertension",
+        "Chronic pulmonary disease (not asthma)",
+        "Asthma (physician diagnosed)",
+        "Obesity (as defined by clinical staff)",
+        "Chronic neurological disorder",
+        "Diabetes Mellitus",
+        "Tuberculosis",
+        "Smoking"
+      ],
+      "medication": [
+        "Angiotensin converting enzyme inhibitors (ACE inhibitors)",
+        "Angiotensin II receptor blockers (ARBs)",
+        "Non-steroidal anti-inflammatory (NSAID)",
+        "Antibiotics",
+        "Other targeted COVID-19 Medication"
+      ],
+      "treatment": [
+        "Non-invasive ventilation",
+        "Invasive ventilation",
+        "Renal replacement therapy (RRT) or dialysis",
+        "Inotropes / vasopressors"
+      ],
+      "outcome": [
+        "Discharged alive",
+        "death"
+      ],
+      "complications": [
+        "Viral pneumonia/pneumonitis",
+        "Acute Respiratory Distress Syndrome",
+        "Pleural effusion",
+        "Cardiac arrest",
+        "Myocardial infarction",
+        "Cardiomyopathy",
+        "Congestive heart failure",
+        "Seizure",
+        "Stroke / Cerebrovascular accident"
+      ],
+
+      "ageRange": "20 - 65",
+      "sampleSize": 5423,
+      "sampleType": "nasopharyngial (NP) swab; serum/plasma; human tissue; human DNA sample",
+      "followUpSchedule":  "daily",
+      "inclusionCriteria":  "Hospital or health care centre"
+    },
+    "tags": ["ReCoDID"],
+    "label": "RECODID",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+  {
+    "accession": "BSC0000008",
+    "cohortName": "*Lombardy Cohort - Public Health Italy",
+    "description": "Study into the transmission events of the initial spread of COVID-19 within Trento, Italy",
+    "acronym": "",
+    "website": "https://recodid.eu/xyz",
+    "type": "Cohort",
+    "provider": {
+      "name": "*Italian Public Health Laboratory"
+    },
+    "startDate": "2020-04-01",
+    "endDate": "ongoing",
+    "totalEnrollment": 190,
+    "territories": [
+      "Italy", "Trento"
+    ],
+    "dataSummary": {
+      "diseases": [
+        "Chronic pulmonary disease (not asthma)",
+        "Asthma (physician diagnosed)",
+        "AIDS / HIV",
+        "Diabetes Mellitus",
+        "Rheumatologic disorder",
+        "Dementia",
+        "Malnutrition",
+        "Smoking"
+      ],
+      "medication": [
+        "Non-steroidal anti-inflammatory (NSAID)",
+        "Oral steroids",
+        "Other immunosuppressant agents (not oral steroids)",
+        "Antivirals",
+        "Antibiotics"
+      ],
+      "treatment": [
+        "Any Oxygen therapy",
+        "Non-invasive ventilation",
+        "Invasive ventilation",
+        "Prone Positioning",
+        "Inhaled Nitric Oxide"
+      ],
+      "outcome": [
+        "Discharged alive",
+        "Death",
+        "Transfer to other facility",
+        "Palliative discharge"
+      ],
+      "complications": [
+        "Viral pneumonia/pneumonitis",
+        "Bacterial pneumonia",
+        "Acute Respiratory Distress Syndrome",
+        "Pneumothorax",
+        "Pleural effusion",
+        "Cryptogenic organizing pneumonia (COP)",
+        "Bronchiolitis",
+        "Cardiac arrest",
+        "Myocardial infarction"
+      ],
+
+      "ageRange": "10 - 88",
+      "sampleSize": 200,
+      "sampleType": "nasopharyngial (NP) swab; sputum; serum/plasma",
+      "followUpSchedule":  "none",
+      "inclusionCriteria":  "Community"
+    },
+    "tags": ["ReCoDID"],
+    "label": "RECODID",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+  {
+    "accession": "BSC0000009",
+    "cohortName": "*VoC-CoV",
+    "description": "VoC-CoV aims to investigate the effect of variants of concern on patients through a couple of main themes - symptoms and phenotypic effects and transmission events.",
+    "acronym": "",
+    "website": "https://recodid.eu/xyz",
+    "type": "Cohort",
+    "provider": {
+      "name": "*VoC-CoV consortium"
+    },
+    "startDate": "2020-04-01",
+    "endDate": "ongoing",
+    "totalEnrollment": 21130,
+    "territories": [
+      "Germany", "UK", "France", "Italy", "Spain", "Galway"
+    ],
+    "dataSummary": {
+      "diseases": [
+        "Chronic cardiac disease (not hypertension)",
+        "Hypertension",
+        "Chronic kidney disease",
+        "Obesity (as defined by clinical staff)",
+        "Chronic hematologic disease",
+        "AIDS / HIV",
+        "Diabetes Mellitus",
+        "Rheumatologic disorder",
+        "Dementia",
+        "Tuberculosis",
+        "Malnutrition",
+        "Smoking"
+      ],
+      "medication": [
+        "Angiotensin converting enzyme inhibitors (ACE inhibitors)",
+        "Non-steroidal anti-inflammatory (NSAID)",
+        "Other immunosuppressant agents (not oral steroids)",
+        "Antibiotics"
+      ],
+      "treatment": [
+        "Any Oxygen therapy",
+        "Invasive ventilation",
+        "Inhaled Nitric Oxide",
+        "Tracheostomy inserted",
+        "Renal replacement therapy (RRT) or dialysis",
+        "ICU or High Dependency Unit admission"
+      ],
+      "outcome": [
+        "Discharged alive",
+        "death",
+        "Hospitalization",
+        "Unknown"
+      ],
+      "complications": [
+        "Stroke / Cerebrovascular accident",
+        "Pulmonary embolism",
+        "Anaemia",
+        "Rhabdomyolysis / Myositis",
+        "Acute renal injury / Acute renal failure",
+        "Gastrointestinal hemorrhage",
+        "Pancreatitis",
+        "Liver dysfunction"
+      ],
+
+      "ageRange": "19 - 66",
+      "sampleSize": 25124,
+      "sampleType": "sputum",
+      "followUpSchedule":  "weekly",
+      "inclusionCriteria":  "care center"
+    },
+    "tags": ["ReCoDID"],
+    "label": "RECODID",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+  {
+    "accession": "BSC0000010",
+    "cohortName": "Erasmus MC COVID-19 cohort-associated connected datasets study",
+    "description": "As part of a multidisciplinary consortium (https://recodid.eu/), the study aims at connecting clinical-epidemiological (CE) data with further datasets from research on many other aspects of SARS-CoV-2. This study includes CE data for a cohort of 151 PCR-confirmed COVID-19 individuals from a group of 273 patients who were admitted to the hospital with a respiratory infection or respiratory failure in 2020-2021. ",
+    "acronym": "",
+    "website": "https://www.erasmusmc.nl/en/research/departments/viroscience",
+    "type": "Cohort",
+    "provider": {
+      "name": "Erasmus Medical Centre, Rotterdam, Netherlands"
+    },
+    "startDate": "2020",
+    "endDate": "2021",
+    "totalEnrollment": 151,
+    "territories": [
+      "Netherlands", "Rotterdam, NL"
+    ],
+    "dataSummary": {
+      "diseases": [
+        "Chronic cardiac disease (not hypertension)",
+        "Hypertension",
+        "Chronic pulmonary disease (not asthma)",
+        "Asthma (physician diagnosed)",
+        "Chronic kidney disease",
+        "Obesity (as defined by clinical staff)",
+        "Moderate or severe liver disease",
+        "Mild liver disease",
+        "Chronic neurological disorder",
+        "Malignant neoplasm",
+        "Chronic hematologic disease",
+        "Rheumatologic disorder",
+        "Malnutrition",
+        "Smoking"
+      ],
+      "medication": [
+        "Antiviral or COVID-19 targeted agent (Ribavirin, Lopinavir/Ritonvir, Remdesivir (Veklury), Neuraminidase inhibitors, Interferon alpha, Interferon beta, Chloroquine/hydroxychloroquine)",
+        "Antibiotic",
+        "Heparin",
+        "Antifungal agent"
+      ],
+      "treatment": [
+        "Any Oxygen therapy",
+        "Non-invasive ventilation",
+        "Invasive ventilation",
+        "Prone positioning",
+        "Inhaled Nitric Oxide",
+        "Tracheostomy inserted",
+        "Extracorporeal support (ECMO)",
+        "Renal replacement therapy (RRT) or dialysis",
+        "Inotropes / vasopressors",
+        "ICU or High Dependency Unit admission"
+      ],
+      "outcome": [
+        "Discharged alive",
+        "Transfer to other facility",
+        "Death"
+      ],
+      "complications": [
+        "Viral pneumonia/pneumonitis",
+        "Bacterial pneumonia",
+        "Acute Respiratory Distress Syndrome",
+        "Pleural effusion",
+        "Pneumothorax",
+        "Cryptogenic organizing pneumonia (COP)",
+        "Bronchiolitis",
+        "Cardiac arrest",
+        "Myocardial infarction",
+        "Cardiac ischemia",
+        "Cardiac arrhythmia",
+        "Myocarditis/Pericarditis",
+        "Endocarditis",
+        "Cardiomyopathy",
+        "Congestive heart failure",
+        "Seizure",
+        "Stroke / Cerebrovascular accident",
+        "Meningitis / Encephalitis",
+        "Bacteremia",
+        "Pulmonary embolism",
+        "Anemia",
+        "Rhabdomyolysis / Myositis",
+        "Acute renal injury / Acute renal failure",
+        "Gastrointestinal hemorrhage",
+        "Gastrointestinal hemorrhage | Pancreatitis",
+        "Liver dysfunction",
+        "Hyperglycaemia",
+        "Hypoglycaemia"
+      ],
+      "typeOfData": [
+        "SARS-CoV-2 sequences",
+        "Serology",
+        "Clinical-epidemiological"
+      ],
+
+      "ageRange": "20 - 78",
+      "sampleSize": 273,
+      "sampleType": "nasopharyngeal swab",
+      "followUpSchedule":  "Until discharged from Erasmus MC; Data further consulted to check survival up to 60 days after inclusion into the study",
+      "inclusionCriteria":  "Adult Patients admitted to the ICU with a clinical suspicion of infection or patients admitted to the ICU with respiratory failure (either Optiflow or mechanical ventilation)"
+    },
+    "tags": ["ReCoDID"],
+    "label": "RECODID",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort",
+    "dictionary": [
+      {
+        "name": "Chronic cardiac disease (not hypertension) ",
+        "label": "Chronic cardiac disease (not hypertension) ",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Hypertension",
+        "label": "Hypertension",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Chronic pulmonary disease (not asthma)",
+        "label": "Chronic pulmonary disease (not asthma)",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Asthma (physician diagnosed)",
+        "label": "Asthma (physician diagnosed)",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Chronic kidney disease",
+        "label": "Chronic kidney disease",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Obesity (as defined by clinical staff)",
+        "label": "Obesity (as defined by clinical staff)",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Moderate or severe liver disease",
+        "label": "Moderate or severe liver disease",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Mild liver disease",
+        "label": "Mild liver disease",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Asplenia",
+        "label": "Asplenia",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Chronic neurological disorder",
+        "label": "Chronic neurological disorder",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Malignant neoplasm",
+        "label": "Malignant neoplasm",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Chronic hematologic disease",
+        "label": "Chronic hematologic disease",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "AIDS / HIV",
+        "label": "AIDS / HIV",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Diabetes Mellitus",
+        "label": "Diabetes Mellitus",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Diabetes with complications",
+        "label": "Diabetes with complications",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Diabetes without complications",
+        "label": "Diabetes without complications",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Rheumatologic disorder",
+        "label": "Rheumatologic disorder",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Dementia",
+        "label": "Dementia",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Tuberculosis",
+        "label": "Tuberculosis",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Malnutrition",
+        "label": "Malnutrition",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Other relevant risk factor(s)",
+        "label": "Other relevant risk factor(s)",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Other relevant risk factor(s) - if YES, specify: ",
+        "label": "Other relevant risk factor(s) - if YES, specify: ",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Smoking",
+        "label": "Smoking",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Complete",
+        "label": "Complete",
+        "parent": "comorbidities"
+      },
+      {
+        "name": "Any Oxygen therapy",
+        "label": "Any Oxygen therapy",
+        "parent": "treatment"
+      },
+      {
+        "name": "Non-invasive ventilation",
+        "label": "Non-invasive ventilation",
+        "parent": "treatment"
+      },
+      {
+        "name": "Invasive ventilation",
+        "label": "Invasive ventilation",
+        "parent": "treatment"
+      },
+      {
+        "name": "Prone Positioning",
+        "label": "Prone Positioning",
+        "parent": "treatment"
+      },
+      {
+        "name": "Inhaled Nitric Oxide",
+        "label": "Inhaled Nitric Oxide",
+        "parent": "treatment"
+      },
+      {
+        "name": "Tracheostomy inserted",
+        "label": "Tracheostomy inserted",
+        "parent": "treatment"
+      },
+      {
+        "name": "Extracorporeal support (ECMO)",
+        "label": "Extracorporeal support (ECMO)",
+        "parent": "treatment"
+      },
+      {
+        "name": "Renal replacement therapy (RRT) or dialysis",
+        "label": "Renal replacement therapy (RRT) or dialysis",
+        "parent": "treatment"
+      },
+      {
+        "name": "Inotropes / vasopressors",
+        "label": "Inotropes / vasopressors",
+        "parent": "treatment"
+      },
+      {
+        "name": "ICU or High Dependency Unit admission",
+        "label": "ICU or High Dependency Unit admission",
+        "parent": "treatment"
+      },
+      {
+        "name": "Optiflow or mechanical ventilation",
+        "label": "Optiflow or mechanical ventilation",
+        "parent": "treatment"
+      },
+      {
+        "name": "Lopinavir/Ritonvir",
+        "label": "Lopinavir/Ritonvir",
+        "parent": "treatment"
+      },
+      {
+        "name": "Remdesivir",
+        "label": "Remdesivir",
+        "parent": "treatment"
+      },
+      {
+        "name": "Interferon alpha",
+        "label": "Interferon alpha",
+        "parent": "treatment"
+      },
+      {
+        "name": "Chloroquine/hydroxychloroquine",
+        "label": "Chloroquine/hydroxychloroquine",
+        "parent": "treatment"
+      },
+      {
+        "name": "Antibiotic",
+        "label": "Antibiotic",
+        "parent": "treatment"
+      },
+      {
+        "name": "Ventilation",
+        "label": "Ventilation",
+        "parent": "treatment"
+      },
+      {
+        "name": "Discharged alive",
+        "label": "Discharged alive",
+        "parent": "outcome"
+      },
+      {
+        "name": "Hospitalization",
+        "label": "Hospitalization",
+        "parent": "outcome"
+      },
+      {
+        "name": "Transfer to other facility",
+        "label": "Transfer to other facility",
+        "parent": "outcome"
+      },
+      {
+        "name": "Death",
+        "label": "Death",
+        "parent": "outcome"
+      },
+      {
+        "name": "Palliative discharge",
+        "label": "Palliative discharge",
+        "parent": "outcome"
+      },
+      {
+        "name": "Unknown",
+        "label": "Unknown",
+        "parent": "outcome"
+      },
+      {
+        "name": "Clinical-epidemiological",
+        "label": "Clinical-epidemiological ",
+        "parent": "typeOfData"
+      },
+      {
+        "name": "human sequence data",
+        "label": "Human sequence data",
+        "parent": "typeOfData"
+      },
+      {
+        "name": "SARS-CoV-2 sequences",
+        "label": "SARS-CoV-2 sequences",
+        "parent": "typeOfData"
+      },
+      {
+        "name": "Serology",
+        "label": "Serology",
+        "parent": "typeOfData"
+      },
+      {
+        "name": "Angiotensin converting enzyme inhibitors (ACE inhibitors)",
+        "label": "Angiotensin converting enzyme inhibitors (ACE inhibitors)",
+        "parent": "medication"
+      },
+      {
+        "name": "Angiotensin II receptor blockers (ARBs)",
+        "label": "Angiotensin II receptor blockers (ARBs)",
+        "parent": "medication"
+      },
+      {
+        "name": "Non-steroidal anti-inflammatory (NSAID)",
+        "label": "Non-steroidal anti-inflammatory (NSAID)",
+        "parent": "medication"
+      },
+      {
+        "name": "Oral steroids",
+        "label": "Oral steroids",
+        "parent": "medication"
+      },
+      {
+        "name": "Oral steroids - if YES, agent(s):",
+        "label": "Oral steroids - if YES, agent(s):",
+        "parent": "medication"
+      },
+      {
+        "name": "Other immunosuppressant agents (not oral steroids)",
+        "label": "Other immunosuppressant agents (not oral steroids)",
+        "parent": "medication"
+      },
+      {
+        "name": "Antivirals",
+        "label": "Antivirals",
+        "parent": "medication"
+      },
+      {
+        "name": "Antivirals - if YES, agent(s):",
+        "label": "Antivirals - if YES, agent(s):",
+        "parent": "medication"
+      },
+      {
+        "name": "Antibiotics",
+        "label": "Antibiotics",
+        "parent": "medication"
+      },
+      {
+        "name": "Antibiotics - if YES, agent(s):",
+        "label": "Antibiotics - if YES, agent(s):",
+        "parent": "medication"
+      },
+      {
+        "name": "Other targeted COVID-19 Medications",
+        "label": "Other targeted COVID-19 Medications",
+        "parent": "medication"
+      },
+      {
+        "name": "Other targeted COVID-19 Medications - if YES, agent(s):",
+        "label": "Other targeted COVID-19 Medications - if YES, agent(s):",
+        "parent": "medication"
+      },
+      {
+        "name": "Complete",
+        "label": "Complete",
+        "parent": "medication"
+      },
+      {
+        "name": "countries",
+        "label": "countries",
+        "values": "Argentina, Bolivia, Brazil, Chile, Colombia, France, Germany, Spain, UK, Netherlands"
+      }
+    ]
+  },
+
+  {
+    "accession": "BSC0000000",
+    "cohortName": "Longitudinal Study of Parents and Children (Test)",
+    "description": "This is a test cohort which contains all available data fields in cohort-atlas",
+    "acronym": "LSPCT",
+    "website": "wwwdev.ebi.ac.uk/biosamples/cohortatlas/cohorts/BSC0000000",
+    "logo": "",
+    "type": "Cohort",
+    "studyDesign": "Longitudinal",
+    "provider": {
+      "name": "BioSamples Development Team",
+      "description": "BioSamples Team is a part of EBI AIT"
+    },
+    "license": "MIT",
+    "rights": "",
+    "dataSharing": {
+      "id": "DUO:0000004",
+      "label": "No restrictions"
+    },
+    "contacts": [
+      {
+        "name": "Fox Mulder",
+        "orcid": "",
+        "email": "biosamples@ebi.ac.uk"
+      },
+      {
+        "name": "Dana Scully",
+        "orcid": "",
+        "email": "biosamples@ebi.ac.uk"
+      }
+    ],
+    "investigators": [
+      {
+        "name": "Cloud Strife",
+        "orcid": "",
+        "email": "biosamples@ebi.ac.uk"
+      }
+    ],
+    "startDate": "01-01-2023",
+    "endDate": "01-01-2025",
+    "targetEnrollment": 1000,
+    "totalEnrollment": 345,
+    "publications": [
+      {
+        "url": "https://academic.oup.com/nar/article/50/D1/D1500/6423179"
+      },
+      {
+        "url": "https://academic.oup.com/nar/article/47/D1/D1172/5165182"
+      }
+    ],
+    "funding": "This cohort is not funded by anyone",
+    "acknowledgements": "We acknowledge the hard work of all EBI team",
+    "territories": [
+      "UK"
+    ],
+    "dataTypes": {
+      "biospecimens": true,
+      "environmentalData": true,
+      "genomicData": true,
+      "phenotypicData": true
+    },
+    "project": "BCAP0000000",
+    "attachments": [],
+    "externalLinks": [],
+    "supplementaryInformation": "",
+    "dictionary": [
+      {
+        "name": "Gender",
+        "label": "Gender",
+        "description": "Gender",
+        "type": "string",
+        "values": "MALE, FEMALE, OTHER",
+        "annotation": "gender"
+      },
+      {
+        "name": "Birthdate",
+        "label": "Birthdate",
+        "description": "Birthdate",
+        "type": "string",
+        "annotation": "age/birthdate"
+      },
+      {
+        "name": "Agreement dateAgreement date",
+        "label": "Agreement dateAgreement date",
+        "description": "Agreement dateAgreement date",
+        "type": "string",
+        "annotation": "date and time-related information"
+      },
+      {
+        "name": "Year of birth",
+        "label": "Year of birth",
+        "description": "Year of birth",
+        "type": "string"
+      },
+      {
+        "name": "Age",
+        "label": "Age at present",
+        "description": "Age at present",
+        "type": "string",
+        "annotation": "age/birthdate"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "biosamples:SAMEA2241260",
+        "type": "IS_RELATED_TO"
+      },
+      {
+        "source": "biosamples:SAMEA2241357",
+        "type": "IS_RELATED_TO"
+      },
+      {
+        "source": "biosamples:SAMEA2541472",
+        "type": "IS_A_PART_OF"
+      }
+    ],
+    "dataSummary": {
+      "diseases": [],
+      "medication": [],
+      "treatment": [],
+      "outcome": [],
+      "complications": [],
+      "typeOfData": [],
+
+      "ageRange": "",
+      "ageGroups": [],
+      "sampleSize": "",
+      "sampleType": "",
+      "followUpSchedule":  "",
+      "collectionType": "",
+      "inclusionCriteria":  "",
+      "releaseType": "",
+      "linkageOptions":  ""
+    },
+    "tags": ["test"],
+    "label": "TEST",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+
+
+  {
+    "accession": "BCAP0000000",
+    "name": "test_project",
+    "description": "Test umbrella project to contain multiple cohorts",
+    "acronym": "TP2",
+    "website": "www.ebi.ac.uk/biosamples",
+    "startDate": "01-01-2020",
+    "endDate": "01-01-2030",
+    "funding": "no funding",
+    "acknowledgements": "No ack",
+    "dictionary": [
+      {
+        "name": "Gender",
+        "label": "Gender",
+        "description": "Gender",
+        "type": "string",
+        "values": "MALE, FEMALE, OTHER",
+        "annotation": "gender"
+      },
+      {
+        "name": "Birthdate",
+        "label": "Birthdate",
+        "description": "Birthdate",
+        "type": "string",
+        "annotation": "age/birthdate"
+      },
+      {
+        "name": "Agreement dateAgreement date",
+        "label": "Agreement dateAgreement date",
+        "description": "Agreement dateAgreement date",
+        "type": "string",
+        "annotation": "date and time-related information"
+      }
+    ],
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Project"
+  },
+
+
+  {
+    "id": "Gender",
+    "name": "Gender",
+    "label": "Gender",
+    "description": "Gender of the patient",
+    "type": "string",
+    "values": "MALE, FEMALE, OTHER",
     "parent": "lifestyle_and_behaviours",
-    "annotations": [],
+    "annotation": "gender",
     "tags": [],
-    "fullQualifiedName": "lifestyle_and_behaviours.alcohol_use_history",
-    "cohort": "BSC0000001",
+    "fullQualifiedName": "lifestyle_and_behaviours.gender",
+    "cohort": "BSC0000000",
+    "project": "BCAP0000000",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
   },
   {
-    "id": "test_field_2",
-    "name": "tobacco_use_history",
-    "label": "Tobacco use history",
-    "description": "Tobacco use history",
-    "type": "",
-    "values": "",
-    "parent": "lifestyle_and_behaviours",
-    "annotations": [],
-    "tags": [],
-    "fullQualifiedName": "lifestyle_and_behaviours.tobacco_use_history",
-    "cohort": "BSC0000001",
+    "id": "Birthdate",
+    "name": "Birthdate",
+    "label": "Birthdate",
+    "description": "Birthdate of the patient",
+    "type": "string",
+    "annotation": "age/birthdate",
+    "cohort": "BSC0000000",
+    "project": "BCAP0000000",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
   },
   {
-    "id": "test_field_3",
-    "name": "tobacco_use_history",
-    "label": "Tobacco use history",
-    "description": "Tobacco use history",
-    "type": "",
-    "values": "",
-    "parent": "lifestyle_and_behaviours",
-    "annotations": [],
-    "tags": [],
-    "fullQualifiedName": "lifestyle_and_behaviours.tobacco_use_history",
-    "cohort": "BSC0000002",
+    "id": "Agreement date",
+    "name": "Agreement date",
+    "label": "Agreement date",
+    "description": "Agreement date for the survey",
+    "type": "string",
+    "annotation": "date and time-related information",
+    "cohort": "BSC0000000",
+    "project": "BCAP0000000",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "id": "Year of birth",
+    "name": "Year of birth",
+    "label": "Year of birth",
+    "description": "Year of birth of the patient",
+    "type": "string",
+    "cohort": "BSC0000000",
+    "project": "BCAP0000000",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "id": "Age",
+    "name": "Age",
+    "label": "Age at present",
+    "description": "Age at present",
+    "type": "string",
+    "annotation": "age/birthdate",
+    "cohort": "BSC0000000",
+    "project": "BCAP0000000",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+
+
+  {
+    "name": "Chronic cardiac disease (not hypertension) ",
+    "label": "Chronic cardiac disease (not hypertension) ",
+    "parent": "comorbidities",
+    "description": "Chronic cardiac disease (not hypertension)",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Hypertension",
+    "label": "Hypertension",
+    "parent": "comorbidities",
+    "description": "Hypertension",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Chronic pulmonary disease (not asthma)",
+    "label": "Chronic pulmonary disease (not asthma)",
+    "parent": "comorbidities",
+    "description": "Chronic pulmonary disease (not asthma)",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Asthma (physician diagnosed)",
+    "label": "Asthma (physician diagnosed)",
+    "parent": "comorbidities",
+    "description": "Asthma (physician diagnosed)",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Chronic kidney disease",
+    "label": "Chronic kidney disease",
+    "parent": "comorbidities",
+    "description": "Chronic kidney disease",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Obesity (as defined by clinical staff)",
+    "label": "Obesity (as defined by clinical staff)",
+    "parent": "comorbidities",
+    "description": "Obesity (as defined by clinical staff)",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Moderate or severe liver disease",
+    "label": "Moderate or severe liver disease",
+    "parent": "comorbidities",
+    "description": "Moderate or severe liver disease",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Mild liver disease",
+    "label": "Mild liver disease",
+    "parent": "comorbidities",
+    "description": "Mild liver disease",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Asplenia",
+    "label": "Asplenia",
+    "parent": "comorbidities",
+    "description": "Asplenia",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Chronic neurological disorder",
+    "label": "Chronic neurological disorder",
+    "parent": "comorbidities",
+    "description": "Chronic neurological disorder",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Malignant neoplasm",
+    "label": "Malignant neoplasm",
+    "parent": "comorbidities",
+    "description": "Malignant neoplasm",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Chronic hematologic disease",
+    "label": "Chronic hematologic disease",
+    "parent": "comorbidities",
+    "description": "Chronic",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "AIDS / HIV",
+    "label": "AIDS / HIV",
+    "parent": "comorbidities",
+    "description": "AIDS / HIV",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Diabetes Mellitus",
+    "label": "Diabetes Mellitus",
+    "parent": "comorbidities",
+    "description": "Diabetes Mellitus",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Diabetes with complications",
+    "label": "Diabetes with complications",
+    "parent": "comorbidities",
+    "description": "Diabetes with complications",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Diabetes without complications",
+    "label": "Diabetes without complications",
+    "parent": "comorbidities",
+    "description": "Diabetes without complications",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Rheumatologic disorder",
+    "label": "Rheumatologic disorder",
+    "parent": "comorbidities",
+    "description": "Rheumatologic disorder",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Dementia",
+    "label": "Dementia",
+    "parent": "comorbidities",
+    "description": "Dementia",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Tuberculosis",
+    "label": "Tuberculosis",
+    "parent": "comorbidities",
+    "description": "Tuberculosis",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Malnutrition",
+    "label": "Malnutrition",
+    "parent": "comorbidities",
+    "description": "Malnutrition",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Other relevant risk factor(s)",
+    "label": "Other relevant risk factor(s)",
+    "parent": "comorbidities",
+    "description": "Other relevant risk factor(s)",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Other relevant risk factor(s) - if YES, specify: ",
+    "label": "Other relevant risk factor(s) - if YES, specify: ",
+    "parent": "comorbidities",
+    "description": "Other relevant risk factor(s) - if YES, specify",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Smoking",
+    "label": "Smoking",
+    "parent": "comorbidities",
+    "description": "Smoking",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Complete",
+    "label": "Complete",
+    "parent": "comorbidities",
+    "description": "Complete",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Any Oxygen therapy",
+    "label": "Any Oxygen therapy",
+    "parent": "treatment",
+    "description": "Any Oxygen therapy",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Non-invasive ventilation",
+    "label": "Non-invasive ventilation",
+    "parent": "treatment",
+    "description": "Non-invasive ventilation",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Invasive ventilation",
+    "label": "Invasive ventilation",
+    "parent": "treatment",
+    "description": "Invasive ventilation",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Prone Positioning",
+    "label": "Prone Positioning",
+    "parent": "treatment",
+    "description": "Prone Positioning",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Inhaled Nitric Oxide",
+    "label": "Inhaled Nitric Oxide",
+    "parent": "treatment",
+    "description": "Inhaled Nitric Oxide",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Tracheostomy inserted",
+    "label": "Tracheostomy inserted",
+    "parent": "treatment",
+    "description": "Tracheostomy inserted",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Extracorporeal support (ECMO)",
+    "label": "Extracorporeal support (ECMO)",
+    "parent": "treatment",
+    "description": "Extracorporeal support (ECMO)",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Renal replacement therapy (RRT) or dialysis",
+    "label": "Renal replacement therapy (RRT) or dialysis",
+    "parent": "treatment",
+    "description": "Renal replacement therapy (RRT) or dialysis",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Inotropes / vasopressors",
+    "label": "Inotropes / vasopressors",
+    "parent": "treatment",
+    "description": "Inotropes / vasopressors",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "ICU or High Dependency Unit admission",
+    "label": "ICU or High Dependency Unit admission",
+    "parent": "treatment",
+    "description": "ICU or High Dependency Unit admission",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Optiflow or mechanical ventilation",
+    "label": "Optiflow or mechanical ventilation",
+    "parent": "treatment",
+    "description": "Optiflow or mechanical ventilation",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Lopinavir/Ritonvir",
+    "label": "Lopinavir/Ritonvir",
+    "parent": "treatment",
+    "description": "Lopinavir/Ritonvir",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Remdesivir",
+    "label": "Remdesivir",
+    "parent": "treatment",
+    "description": "Remdesivir",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Interferon alpha",
+    "label": "Interferon alpha",
+    "parent": "treatment",
+    "description": "Interferon alpha",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Chloroquine/hydroxychloroquine",
+    "label": "Chloroquine/hydroxychloroquine",
+    "parent": "treatment",
+    "description": "Chloroquine/hydroxychloroquine",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Antibiotic",
+    "label": "Antibiotic",
+    "parent": "treatment",
+    "description": "Antibiotic",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Ventilation",
+    "label": "Ventilation",
+    "parent": "treatment",
+    "description": "Ventilation",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Discharged alive",
+    "label": "Discharged alive",
+    "parent": "outcome",
+    "description": "Discharged alive",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Hospitalization",
+    "label": "Hospitalization",
+    "parent": "outcome",
+    "description": "Hospitalization",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Transfer to other facility",
+    "label": "Transfer to other facility",
+    "parent": "outcome",
+    "description": "Transfer to other facility",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Death",
+    "label": "Death",
+    "parent": "outcome",
+    "description": "Death",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Palliative discharge",
+    "label": "Palliative discharge",
+    "parent": "outcome",
+    "description": "Palliative discharge",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Unknown",
+    "label": "Unknown",
+    "parent": "outcome",
+    "description": "Unknown",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Clinical-epidemiological",
+    "label": "Clinical-epidemiological ",
+    "parent": "typeOfData",
+    "description": "Clinical-epidemiological",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "human sequence data",
+    "label": "Human sequence data",
+    "parent": "typeOfData",
+    "description": "Human sequence data",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "SARS-CoV-2 sequences",
+    "label": "SARS-CoV-2 sequences",
+    "parent": "typeOfData",
+    "description": "SARS-CoV-2 sequences",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Serology",
+    "label": "Serology",
+    "parent": "typeOfData",
+    "description": "Serology",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Angiotensin converting enzyme inhibitors (ACE inhibitors)",
+    "label": "Angiotensin converting enzyme inhibitors (ACE inhibitors)",
+    "parent": "medication",
+    "description": "Angiotensin converting enzyme inhibitors (ACE inhibitors)",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Angiotensin II receptor blockers (ARBs)",
+    "label": "Angiotensin II receptor blockers (ARBs)",
+    "parent": "medication",
+    "description": "Angiotensin II receptor blockers (ARBs)",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Non-steroidal anti-inflammatory (NSAID)",
+    "label": "Non-steroidal anti-inflammatory (NSAID)",
+    "parent": "medication",
+    "description": "Non-steroidal anti-inflammatory (NSAID)",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Oral steroids",
+    "label": "Oral steroids",
+    "parent": "medication",
+    "description": "Oral steroids",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Oral steroids - if YES, agent(s):",
+    "label": "Oral steroids - if YES, agent(s):",
+    "parent": "medication",
+    "description": "Oral steroids - if YES, agent(s)",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Other immunosuppressant agents (not oral steroids)",
+    "label": "Other immunosuppressant agents (not oral steroids)",
+    "parent": "medication",
+    "description": "Other immunosuppressant agents (not oral steroids)",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Antivirals",
+    "label": "Antivirals",
+    "parent": "medication",
+    "description": "Antivirals",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Antivirals - if YES, agent(s):",
+    "label": "Antivirals - if YES, agent(s):",
+    "parent": "medication",
+    "description": "Antivirals - if YES, agent(s)",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Antibiotics",
+    "label": "Antibiotics",
+    "parent": "medication",
+    "description": "Antibiotics",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Antibiotics - if YES, agent(s):",
+    "label": "Antibiotics - if YES, agent(s):",
+    "parent": "medication",
+    "description": "Antibiotics - if YES, agent(s)",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Other targeted COVID-19 Medications",
+    "label": "Other targeted COVID-19 Medications",
+    "parent": "medication",
+    "description": "Other targeted COVID-19 Medications",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Other targeted COVID-19 Medications - if YES, agent(s):",
+    "label": "Other targeted COVID-19 Medications - if YES, agent(s):",
+    "parent": "medication",
+    "description": "Other targeted COVID-19 Medications - if YES, agent(s):",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "Complete",
+    "label": "Complete",
+    "parent": "medication",
+    "description": "Complete",
+    "cohort": "BSC0000010",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
+  },
+  {
+    "name": "countries",
+    "label": "countries",
+    "values": "Argentina, Bolivia, Brazil, Chile, Colombia, France, Germany, Spain, UK, Netherlands",
+    "description": "countries",
+    "cohort": "BSC0000010",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
   },
 
