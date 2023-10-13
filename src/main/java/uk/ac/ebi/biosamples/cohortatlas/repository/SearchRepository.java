@@ -18,6 +18,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.*;
+import java.util.stream.Collectors;
 
 @Repository
 public abstract class SearchRepository {
@@ -59,10 +60,10 @@ public abstract class SearchRepository {
                 String filterField = filterArray[0];
                 String[] filterByValues = filterArray[1].split("~");
                 if (booleanFields.contains(filterField)) {
-                    for(String filterValue: filterByValues) {
+                    for (String filterValue : filterByValues) {
                         query.addCriteria(new Criteria().andOperator(
-                                Criteria.where(filterField+"."+filterValue).exists(true),
-                                Criteria.where(filterField+"."+filterValue).ne(false))
+                            Criteria.where(filterField + "." + filterValue).exists(true),
+                            Criteria.where(filterField + "." + filterValue).ne(false))
                         );
                     }
                 } else {
@@ -93,15 +94,19 @@ public abstract class SearchRepository {
 
 
         FacetOperation facetOperation = Aggregation.facet()
-                .and(Aggregation.unwind("dataSummary.treatment"),
-                        Aggregation.sortByCount("dataSummary.treatment")).as("treatment")
-                .and(Aggregation.sortByCount("license")).as("license")
-                .and(Aggregation.unwind("territories"),
-                        Aggregation.sortByCount("territories")).as("territories")
-                .and(Aggregation.project().and(ObjectOperators.ObjectToArray.valueOfToArray("dataTypes")).as("dataKeys"),
-                        Aggregation.unwind("dataKeys"),
-                        Aggregation.match(Criteria.where("dataKeys.v").is(true)),
-                        Aggregation.sortByCount("dataKeys.k") ).as("dataType");
+            .and(Aggregation.unwind("dataSummary.treatment"),
+                Aggregation.sortByCount("dataSummary.treatment"),
+                Aggregation.match(Criteria.where("_id").nin(null, ""))).as("treatment")
+            .and(Aggregation.sortByCount("license"),
+                Aggregation.match(Criteria.where("_id").nin(null, ""))).as("license")
+            .and(Aggregation.unwind("territories"),
+                Aggregation.sortByCount("territories"),
+                Aggregation.match(Criteria.where("_id").nin(null, "")))
+            .as("territories")
+            .and(Aggregation.project().and(ObjectOperators.ObjectToArray.valueOfToArray("dataTypes")).as("dataKeys"),
+                Aggregation.unwind("dataKeys"),
+                Aggregation.match(Criteria.where("dataKeys.v").is(true)),
+                Aggregation.sortByCount("dataKeys.k")).as("dataType");
 
 
         AggregationResults<FacetResult> results = mongoTemplate.aggregate(Aggregation.newAggregation(facetOperation), "cohort", FacetResult.class);
