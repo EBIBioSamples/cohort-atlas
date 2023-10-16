@@ -7,12 +7,19 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Primary;
+import org.springframework.core.annotation.Order;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.data.repository.init.Jackson2RepositoryPopulatorFactoryBean;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
+import org.springframework.http.HttpMethod;
 import org.springframework.lang.NonNull;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configurers.oauth2.server.resource.OAuth2ResourceServerConfigurer;
+import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.method.HandlerTypePredicate;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
@@ -21,6 +28,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import uk.ac.ebi.biosamples.cohortatlas.model.Cohort;
 
 @SpringBootApplication
+@EnableWebSecurity
 public class CohortAtlasApplication {
 
   public static void main(String[] args) {
@@ -63,6 +71,7 @@ public class CohortAtlasApplication {
       }
     };
   }
+
   // initially db data loading for development
   @Bean
   public Jackson2RepositoryPopulatorFactoryBean populateRepoWithTestData() {
@@ -70,6 +79,31 @@ public class CohortAtlasApplication {
     factory.setMapper(objectMapper());
     factory.setResources(new Resource[]{new ClassPathResource("env/init_db_schema.json")});
     return factory;
+  }
+
+  @Order(1)
+  @Bean
+  public SecurityFilterChain clientFilterChain(HttpSecurity http) throws Exception {
+    http.authorizeHttpRequests()
+        .requestMatchers(HttpMethod.POST).authenticated()
+        .requestMatchers(HttpMethod.PUT).authenticated()
+        .requestMatchers("/login").authenticated()
+        .anyRequest().permitAll();
+
+    http.oauth2Login()
+        .and()
+        .logout()
+//        .addLogoutHandler(keycloakLogoutHandler)
+        .logoutSuccessUrl("/");
+
+//    http.oauth2ResourceServer((oauth2) -> oauth2.jwt(Customizer.withDefaults()));
+
+    http.oauth2ResourceServer(OAuth2ResourceServerConfigurer::jwt);
+
+    http.sessionManagement()
+        .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+
+    return http.build();
   }
 
 }
