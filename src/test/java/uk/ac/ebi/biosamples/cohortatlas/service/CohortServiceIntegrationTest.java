@@ -8,9 +8,12 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.test.context.ActiveProfiles;
 import uk.ac.ebi.biosamples.cohortatlas.model.Cohort;
+import uk.ac.ebi.biosamples.cohortatlas.model.Facet;
+import uk.ac.ebi.biosamples.cohortatlas.model.FacetResult;
 import uk.ac.ebi.biosamples.cohortatlas.repository.CohortSearchRepository;
 
 import java.util.Collections;
+import java.util.List;
 
 @SpringBootTest
 @ActiveProfiles("test")
@@ -54,4 +57,14 @@ public class CohortServiceIntegrationTest {
         assertThat(cohortFetchedFromDB.getCohortName()).isEqualTo("Creating cohort-2 with accession: "+cohort2.getAccession());
     }
 
+    @Test
+    public void facetSearchCohort() {
+
+        Page<Cohort> page = cohortSearchRepository.findPageWithFilters(PageRequest.of(0, Integer.MAX_VALUE),
+                null, "cohortName", Collections.emptyList());
+
+        List<Facet> facets = cohortSearchRepository.getFacets();
+        assertThat(facets != null);
+
+    }
 }
