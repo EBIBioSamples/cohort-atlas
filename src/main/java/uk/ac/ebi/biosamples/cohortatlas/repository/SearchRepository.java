@@ -54,6 +54,13 @@ public abstract class SearchRepository {
             return;
         }
 
+//        List<Criteria> criteriaList = filtersList.stream().map(f -> {
+//            String[] parts = f.split(":");
+//            return Criteria.where(parts[0]).is(parts[1]);
+//        }).toList();
+//
+//        query.addCriteria(new Criteria().andOperator(criteriaList));
+
         for (String filtersStr : filtersList) {
             String[] filterArray = filtersStr.split(":");
             if (filterArray.length > 1) {

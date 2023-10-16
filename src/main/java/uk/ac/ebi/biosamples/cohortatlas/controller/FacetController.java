@@ -3,6 +3,7 @@ package uk.ac.ebi.biosamples.cohortatlas.controller;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import uk.ac.ebi.biosamples.cohortatlas.model.Facet;
 import uk.ac.ebi.biosamples.cohortatlas.model.FacetResult;
@@ -21,7 +22,8 @@ public class FacetController {
   }
 
   @GetMapping()
-  public ResponseEntity<List<Facet>> getFacets() {
+  public ResponseEntity<List<Facet>> getFacets(@RequestParam(required = false) String text,
+                                               @RequestParam(value = "filter", required = false) List<String> filters) {
     List<Facet> facets = facetService.getFacets();
     return ResponseEntity.ok(facets);
   }
