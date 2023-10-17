@@ -13,6 +13,7 @@ import org.springframework.util.CollectionUtils;
 import org.springframework.util.StringUtils;
 import uk.ac.ebi.biosamples.cohortatlas.model.Facet;
 import uk.ac.ebi.biosamples.cohortatlas.model.FacetResult;
+import static uk.ac.ebi.biosamples.cohortatlas.model.Facet.*;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -87,33 +88,20 @@ public abstract class SearchRepository {
 
     public List<Facet> getFacets() {
 
-     /* using mongoOperations
-     TypedAggregation<Cohort> aggregation = Aggregation.newAggregation(Cohort.class,
-                  // Add your aggregation stages here to facet the data
-                  // Example: Group by genre and count the books in each genre
-                  Aggregation.group("license").count().as("count"),
-                  Aggregation.project("count").and("license").previousOperation(),
-                  Aggregation.group("treatment").count().as("count"),
-                  Aggregation.project("count").and("treatment").previousOperation()
-
-                  );
-          return mongoOperations.aggregate(aggregation, "cohort", FacetResult.class);*/
-
-
         FacetOperation facetOperation = Aggregation.facet()
-            .and(Aggregation.unwind("dataSummary.treatment"),
-                Aggregation.sortByCount("dataSummary.treatment"),
-                Aggregation.match(Criteria.where("_id").nin(null, ""))).as("treatment")
-            .and(Aggregation.sortByCount("license"),
-                Aggregation.match(Criteria.where("_id").nin(null, ""))).as("license")
-            .and(Aggregation.unwind("territories"),
-                Aggregation.sortByCount("territories"),
+            .and(Aggregation.unwind(FacetType.TREATMENTS.searchPath),
+                Aggregation.sortByCount(FacetType.TREATMENTS.searchPath),
+                Aggregation.match(Criteria.where("_id").nin(null, ""))).as(FacetType.TREATMENTS.category)
+            .and(Aggregation.sortByCount(FacetType.LICENSE.searchPath),
+                Aggregation.match(Criteria.where("_id").nin(null, ""))).as(FacetType.LICENSE.category)
+            .and(Aggregation.unwind(FacetType.TERRITORIES.searchPath),
+                Aggregation.sortByCount(FacetType.TERRITORIES.searchPath),
                 Aggregation.match(Criteria.where("_id").nin(null, "")))
-            .as("territories")
-            .and(Aggregation.project().and(ObjectOperators.ObjectToArray.valueOfToArray("dataTypes")).as("dataKeys"),
+            .as(FacetType.TERRITORIES.category)
+            .and(Aggregation.project().and(ObjectOperators.ObjectToArray.valueOfToArray(FacetType.DATA_TYPES.searchPath)).as("dataKeys"),
                 Aggregation.unwind("dataKeys"),
                 Aggregation.match(Criteria.where("dataKeys.v").is(true)),
-                Aggregation.sortByCount("dataKeys.k")).as("dataType");
+                Aggregation.sortByCount("dataKeys.k")).as(FacetType.DATA_TYPES.category);
 
 
         AggregationResults<FacetResult> results = mongoTemplate.aggregate(Aggregation.newAggregation(facetOperation), "cohort", FacetResult.class);
