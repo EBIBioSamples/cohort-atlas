@@ -13,6 +13,7 @@ import uk.ac.ebi.biosamples.cohortatlas.service.CohortService;
 
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 
 
 @SpringBootTest
@@ -62,22 +63,21 @@ class CohortSearchRepositoryIntegrationTest {
     Page<Cohort> page = cohortSearchRepository.findPageWithFilters(PageRequest.of(0, 5), null,
             "cohortName", Collections.singletonList("dataTypes:biospecimens"));
     int pageSizeBefore = page.getContent().size();
-    page.forEach( cohort1 -> assertTrue( cohort1.getDataTypes().isBiospecimens()));
+    page.forEach( cohort1 -> assertTrue( cohort1.getDataTypes().contains("biospecimens")));
 
 
     cohort = new Cohort();
     cohort.setCohortName("third");
     cohort.setDescription("third");
     cohort.setAcronym("filter3");
-    DataTypes dataTypes = new DataTypes();
-    dataTypes.setBiospecimens(true);
+    List<String> dataTypes = List.of("biospecimens");
     cohort.setDataTypes(dataTypes);
     cohortService.saveCohort(cohort);
 
     page = cohortSearchRepository.findPageWithFilters(PageRequest.of(0, 5), null,
             "accession", Collections.singletonList("dataTypes:biospecimens"));
     assertEquals(1+pageSizeBefore, page.getContent().size());
-    page.forEach( cohort1 -> assertTrue( cohort1.getDataTypes().isBiospecimens()));
+    page.forEach( cohort1 -> assertTrue( cohort1.getDataTypes().contains("biospecimens")));
     assertEquals("third", page.getContent().get(pageSizeBefore).getCohortName());
 
 
