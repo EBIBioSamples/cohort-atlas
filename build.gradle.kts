@@ -34,6 +34,7 @@ dependencies {
 	implementation ("org.springframework.boot:spring-boot-starter-oauth2-client")
 	implementation ("org.springframework.boot:spring-boot-starter-oauth2-resource-server")
 	implementation ("org.springframework.security:spring-security-oauth2-jose:6.1.4")
+	implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.7.8")
 //	implementation("com.opencsv:opencsv:5.7.1")
 	implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-csv:2.14.2")
 //	implementation("org.springframework.cloud:spring-cloud-function-web")
