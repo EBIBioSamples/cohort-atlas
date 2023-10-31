@@ -15,6 +15,7 @@ import org.springframework.util.CollectionUtils;
 import org.springframework.util.StringUtils;
 import uk.ac.ebi.biosamples.cohortatlas.model.Facet;
 import uk.ac.ebi.biosamples.cohortatlas.model.FacetResult;
+import static uk.ac.ebi.biosamples.cohortatlas.model.Facet.*;
 
 import java.util.*;
 
@@ -84,7 +85,7 @@ public abstract class SearchRepository {
   }
 
   public List<Facet> getFacets(String text, List<String> filters) {
-    List<AggregationOperation> operations = new ArrayList<>();
+   List<AggregationOperation> operations = new ArrayList<>();
 
     if (StringUtils.hasText(text)) {
       TextCriteria searchCriteria = TextCriteria.forDefaultLanguage().matchingAny(text);
@@ -101,32 +102,33 @@ public abstract class SearchRepository {
       operations.add(Aggregation.match(filterCriteria));
     }
 
-    FacetOperation facetOperation = Aggregation.facet()
-        .and(Aggregation.unwind("dataSummary.treatment"),
-            Aggregation.sortByCount("dataSummary.treatment"),
-            Aggregation.match(Criteria.where("_id").nin(null, ""))).as("treatment")
-        .and(Aggregation.unwind("dataSummary.diseases"),
+        FacetOperation facetOperation = Aggregation.facet()
+            .and(Aggregation.unwind(FacetType.TREATMENTS.searchPath),
+                Aggregation.sortByCount(FacetType.TREATMENTS.searchPath),
+                Aggregation.match(Criteria.where("_id").nin(null, ""))).as(FacetType.TREATMENTS.category)
+           .and(Aggregation.unwind("dataSummary.diseases"),
             Aggregation.sortByCount("dataSummary.diseases"),
             Aggregation.match(Criteria.where("_id").nin(null, ""))).as("diseases")
         .and(Aggregation.unwind("dataSummary.medication"),
             Aggregation.sortByCount("dataSummary.medication"),
             Aggregation.match(Criteria.where("_id").nin(null, ""))).as("medication")
-        .and(Aggregation.sortByCount("license"),
-            Aggregation.match(Criteria.where("_id").nin(null, ""))).as("license")
-        .and(Aggregation.unwind("territories"),
-            Aggregation.sortByCount("territories"),
-            Aggregation.match(Criteria.where("_id").nin(null, "")))
-        .as("territories")
-        .and(Aggregation.unwind("dataTypes"),
-            Aggregation.sortByCount("dataTypes"),
-            Aggregation.match(Criteria.where("_id").nin(null, "")))
-        .as("dataTypes");
-    operations.add(facetOperation);
+            .and(Aggregation.sortByCount(FacetType.LICENSE.searchPath),
+                Aggregation.match(Criteria.where("_id").nin(null, ""))).as(FacetType.LICENSE.category)
+            .and(Aggregation.unwind(FacetType.TERRITORIES.searchPath),
+                Aggregation.sortByCount(FacetType.TERRITORIES.searchPath),
+                Aggregation.match(Criteria.where("_id").nin(null, "")))
+            .as(FacetType.TERRITORIES.category)
+            .and(Aggregation.project().and(ObjectOperators.ObjectToArray.valueOfToArray(FacetType.DATA_TYPES.searchPath)).as("dataKeys"),
+                Aggregation.unwind("dataKeys"),
+                Aggregation.match(Criteria.where("dataKeys.v").is(true)),
+                Aggregation.sortByCount("dataKeys.k")).as(FacetType.DATA_TYPES.category);
 
-    AggregationResults<FacetResult> results =
+
+         AggregationResults<FacetResult> results =
         mongoTemplate.aggregate(Aggregation.newAggregation(operations), "cohort", FacetResult.class);
 
-    return convertToFacet(results.getMappedResults());
+        return convertToFacet(results.getMappedResults());
+
   }
 
   private List<Facet> convertToFacet(List<FacetResult> mappedResults) {
