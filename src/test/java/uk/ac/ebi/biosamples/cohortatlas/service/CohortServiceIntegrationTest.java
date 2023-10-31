@@ -12,6 +12,7 @@ import uk.ac.ebi.biosamples.cohortatlas.model.Facet;
 import uk.ac.ebi.biosamples.cohortatlas.model.FacetResult;
 import uk.ac.ebi.biosamples.cohortatlas.repository.CohortSearchRepository;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -63,7 +64,7 @@ public class CohortServiceIntegrationTest {
         Page<Cohort> page = cohortSearchRepository.findPageWithFilters(PageRequest.of(0, Integer.MAX_VALUE),
                 null, "cohortName", Collections.emptyList());
 
-        List<Facet> facets = cohortSearchRepository.getFacets();
+        List<Facet> facets = cohortSearchRepository.getFacets("", new ArrayList<>());
         assertThat(facets != null);
 
     }

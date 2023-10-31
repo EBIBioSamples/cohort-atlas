@@ -24,7 +24,7 @@ public class FacetController {
   @GetMapping()
   public ResponseEntity<List<Facet>> getFacets(@RequestParam(required = false) String text,
                                                @RequestParam(value = "filter", required = false) List<String> filters) {
-    List<Facet> facets = facetService.getFacets();
+    List<Facet> facets = facetService.getFacets(text, filters);
     return ResponseEntity.ok(facets);
   }
 

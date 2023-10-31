@@ -10,7 +10,10 @@ import java.util.List;
 @AllArgsConstructor
 public class FacetResult {
 
+
     private List<FacetValue> treatments;
+    private List<FacetValue> diseases;
+    private List<FacetValue> medication;
     private List<FacetValue> license;
     private List<FacetValue> territories;
 
@@ -23,6 +26,8 @@ public class FacetResult {
                         getTotalCount(treatments), treatments),
                 new Facet(FacetType.TERRITORIES.category, FacetType.TERRITORIES.displayName, FacetType.TERRITORIES.searchPath,
                         getTotalCount(territories), territories),
+                                   new Facet("diseases", "Diseases", "dataSummary.diseases", getTotalCount(diseases), diseases),
+            new Facet("medication", "Medication", "dataSummary.medication", getTotalCount(medication), medication),
                 new Facet(FacetType.LICENSE.category, FacetType.LICENSE.displayName, FacetType.LICENSE.searchPath,
                         getTotalCount(license), license));
     }
