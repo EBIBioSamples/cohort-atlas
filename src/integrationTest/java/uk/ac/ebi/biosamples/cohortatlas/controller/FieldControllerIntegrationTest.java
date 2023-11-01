@@ -10,7 +10,6 @@ import org.springframework.test.context.ActiveProfiles;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ActiveProfiles("test")
 @AutoConfigureMockMvc
@@ -25,14 +24,13 @@ class FieldControllerIntegrationTest {
   @Test
   void fields_api_should_return_paginated_fields() {
     String response = this.restTemplate.getForObject("http://localhost:" + port + "/api/fields", String.class);
-    assertThat(response).contains("alcohol_use_history");
-    assertThat(response).contains("tobacco_use_history");
+    assertThat(response).contains("Hypertension");
   }
 
   @Test
   public void fields_api_text_search_should_return_paginated_fields() {
-    String response = this.restTemplate.getForObject("http://localhost:" + port + "/api/fields?text=alcohol", String.class);
-    assertThat(response).contains("alcohol_use_history");
-    assertThat(response).doesNotContain("tobacco_use_history");
+    String response = this.restTemplate.getForObject("http://localhost:" + port + "/api/fields?text=asthma", String.class);
+    assertThat(response).contains("Chronic pulmonary disease (not asthma)");
+    assertThat(response).doesNotContain("Hypertension");
   }
 }

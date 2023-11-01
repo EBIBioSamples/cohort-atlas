@@ -14,7 +14,7 @@ import java.util.List;
 @RestController
 @RequestMapping(value = "/export")
 public class DataExportController {
-  private CohortController cohortController;
+  private final CohortController cohortController;
 
   public DataExportController(CohortController cohortController) {
     this.cohortController = cohortController;
