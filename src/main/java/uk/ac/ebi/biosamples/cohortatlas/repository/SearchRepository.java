@@ -105,7 +105,7 @@ public abstract class SearchRepository {
     FacetOperation facetOperation = Aggregation.facet()
             .and(Aggregation.unwind("dataSummary.treatment"),
                     Aggregation.sortByCount("dataSummary.treatment"),
-                    Aggregation.match(Criteria.where("_id").nin(null, ""))).as("treatment")
+                    Aggregation.match(Criteria.where("_id").nin(null, ""))).as("treatments")
             .and(Aggregation.unwind("dataSummary.diseases"),
                     Aggregation.sortByCount("dataSummary.diseases"),
                     Aggregation.match(Criteria.where("_id").nin(null, ""))).as("diseases")
