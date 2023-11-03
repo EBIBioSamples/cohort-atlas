@@ -6,7 +6,7 @@ import org.springframework.test.context.ActiveProfiles;
 
 @SpringBootTest
 @ActiveProfiles("test")
-class CohortAtlasApplicationTest extends KeycloakTestContainers {
+class CohortAtlasApplicationTest extends CohortAtlasIntegrationTest {
 
   @Test
   void contextLoads() {

@@ -2,11 +2,9 @@ package uk.ac.ebi.biosamples.cohortatlas.service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
-import org.springframework.test.context.ActiveProfiles;
-import uk.ac.ebi.biosamples.cohortatlas.KeycloakTestContainers;
+import uk.ac.ebi.biosamples.cohortatlas.CohortAtlasIntegrationTest;
 import uk.ac.ebi.biosamples.cohortatlas.model.Cohort;
 import uk.ac.ebi.biosamples.cohortatlas.model.Facet;
 import uk.ac.ebi.biosamples.cohortatlas.repository.CohortSearchRepository;
@@ -17,9 +15,7 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@SpringBootTest
-@ActiveProfiles("test")
-public class CohortServiceIntegrationTest extends KeycloakTestContainers {
+public class CohortServiceIntegrationTest extends CohortAtlasIntegrationTest {
 
   @Autowired
   private CohortService cohortService;

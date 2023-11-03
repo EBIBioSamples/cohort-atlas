@@ -10,7 +10,7 @@ import org.testcontainers.junit.jupiter.Testcontainers;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ActiveProfiles("test")
 @Testcontainers
-public abstract class KeycloakTestContainers {
+public abstract class CohortAtlasIntegrationTest {
   static final KeycloakContainer keycloak;
 
   static {
