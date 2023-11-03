@@ -7,6 +7,7 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.test.context.ActiveProfiles;
+import uk.ac.ebi.biosamples.cohortatlas.KeycloakTestContainers;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -14,7 +15,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ActiveProfiles("test")
 @AutoConfigureMockMvc
-class RelationshipControllerIntegrationTest {
+class RelationshipControllerIntegrationTest extends KeycloakTestContainers {
 
   @Value(value = "${local.server.port}")
   private int port;

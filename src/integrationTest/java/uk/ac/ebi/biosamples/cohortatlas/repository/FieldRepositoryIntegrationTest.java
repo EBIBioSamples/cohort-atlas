@@ -6,13 +6,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.mongodb.core.aggregation.AggregationResults;
 import org.springframework.test.context.ActiveProfiles;
+import uk.ac.ebi.biosamples.cohortatlas.KeycloakTestContainers;
 
 import java.util.List;
 import java.util.Map;
 
 @SpringBootTest
 @ActiveProfiles("test")
-public class FieldRepositoryIntegrationTest {
+public class FieldRepositoryIntegrationTest extends KeycloakTestContainers {
   @Autowired
   public FieldRepository fieldRepository;
 

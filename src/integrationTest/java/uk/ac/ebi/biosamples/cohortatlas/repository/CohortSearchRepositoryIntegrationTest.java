@@ -6,6 +6,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.test.context.ActiveProfiles;
+import uk.ac.ebi.biosamples.cohortatlas.KeycloakTestContainers;
 import uk.ac.ebi.biosamples.cohortatlas.model.Cohort;
 import uk.ac.ebi.biosamples.cohortatlas.service.CohortService;
 
@@ -18,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @SpringBootTest
 @ActiveProfiles("test")
-class CohortSearchRepositoryIntegrationTest {
+class CohortSearchRepositoryIntegrationTest extends KeycloakTestContainers {
   @Autowired
   private CohortService cohortService;
   @Autowired

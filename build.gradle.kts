@@ -19,8 +19,6 @@ repositories {
 	mavenCentral()
 }
 
-//extra["springCloudVersion"] = "2022.0.1"
-
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-actuator")
 	implementation("org.springframework.boot:spring-boot-starter-data-mongodb")
@@ -37,19 +35,14 @@ dependencies {
 	implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.7.8")
 //	implementation("com.opencsv:opencsv:5.7.1")
 	implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-csv:2.14.2")
-//	implementation("org.springframework.cloud:spring-cloud-function-web")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
 	annotationProcessor("org.projectlombok:lombok")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("de.flapdoodle.embed:de.flapdoodle.embed.mongo.spring30x:4.6.1")
+	testImplementation("org.testcontainers:testcontainers:1.19.1")
+	testImplementation("com.github.dasniko:testcontainers-keycloak:3.0.0")
 }
-
-//dependencyManagement {
-//	imports {
-//		mavenBom("org.springframework.cloud:spring-cloud-dependencies:${property("springCloudVersion")}")
-//	}
-//}
 
 tasks.withType<Test> {
 	useJUnitPlatform()
@@ -69,6 +62,11 @@ testing {
 				implementation("org.springframework.boot:spring-boot-starter-data-mongodb")
 				implementation("org.springframework.boot:spring-boot-starter-hateoas")
 				implementation("org.springframework.boot:spring-boot-starter-web")
+
+				implementation("org.junit.jupiter:junit-jupiter:5.8.1")
+				implementation("org.testcontainers:junit-jupiter:1.19.1")
+				implementation("org.testcontainers:testcontainers:1.19.1")
+				implementation("com.github.dasniko:testcontainers-keycloak:3.0.0")
 			}
 
 //			sources {
