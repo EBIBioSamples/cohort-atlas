@@ -201,323 +201,351 @@
 
   {
     "accession": "BSC0000005",
-    "cohortName": "*FraNCCoDS (France National Cohort Collection Data Sharing)",
-    "description": "This study provides a biobank repository of patient samples which have been analysed as part of FraNCCoDs.",
-    "acronym": "",
-    "website": "https://recodid.eu/xyz",
+    "cohortName": "Health Care Workers Cohort Study in the EuCARE Project",
+    "description": "The WP3 healthcare workers cohort in EuCARE is an observational multicentre study including collection of retrospective (historical) and prospective data and sample collection from health care workers with either a vaccination or a confirmed SARS-CoV-2 infection.",
+    "acronym": "EuCARE-HCW",
+    "website": "https://eucareresearch.eu/activities/clinical-cohorts/",
     "type": "Cohort",
     "provider": {
-      "name": "*French Biobank, Paris"
+      "name": "EuCARE - European cohorts of patients and schools to advance response to epidemics",
+      "description": "EuCARE answers to an emergency call from the European Union, in the frame of the Horizon Europe programme, to confront the COVID-19 epidemics and in particular the newly emerging SARS-COV-2 variants under several aspects. With the support of strong immuno-virological and artificial intelligence components, the project will take advantage of large hospital patients, vaccinated healthcare workers, and schools’ cohorts in Europe, Kenya, Mexico, Brazil and Vietnam to find an answer to urgent issues related to science and society.The EuCARE Project is funded by the European Union´s Horizon Europe Research and Innovation Programme under Grant Agreement No 101046016.",
+      "website": "https://eucareresearch.eu/"
     },
-    "startDate": "2020-05-01",
-    "endDate": "2021-04-30",
-    "totalEnrollment": 11,
+    "startDate": "2022-04-01",
+    "endDate": "2025-04-01",
+    "targetEnrollment": 1800,
+    "studyDesign": "Observational retrospective-prospective multicentre cohort study",
     "territories": [
-      "France", "Rotterdam, NL"
+      "Italy",
+      "Poland",
+      "Portugal",
+      "Germany",
+      "Lithuania",
+      "Brazil",
+      "Mexico"
+    ],
+    "locations": [
+      "Milan (IT)",
+      "Rome (IT)",
+      "Szczecin (PL)",
+      "Lisbon (PT)",
+      "Dusseldorf (DE)",
+      "Vilnius (LT)",
+      "Belo Horizonte (BR)",
+      "Villahermosa (MX)"
     ],
     "dataSummary": {
       "diseases": [
-        "Asthma (physician diagnosed)",
-        "Chronic kidney disease",
-        "Obesity (as defined by clinical staff)",
-        "Moderate or severe liver disease"
+        "immunossupression"
       ],
-      "medication": [
-        "Oral steroids",
-        "Other immunosuppressant agents (not oral steroids)",
-        "Antivirals"
-      ],
-      "treatment": [
-        "Lopinavir/Ritonvir",
-        "Remdesivir",
-        "Interferon alpha"
-      ],
-      "outcome": [
-        "Discharged alive",
-        "Hospitalization",
-        "Transfer to other facility",
-        "Death"
-      ],
-      "complications": [
-        "Pleural effusion",
-        "Cryptogenic organizing pneumonia (COP)",
-        "Bronchiolitis",
-        "Cardiac arrest",
-        "Myocardial infarction"
-      ],
-
-      "ageRange": "20 - 90",
-      "sampleSize": 11,
-      "sampleType": "nasopharyngeal swab",
-      "followUpSchedule":  "daily",
-      "inclusionCriteria":  "Adult ICU patients"
+      "ageRange": "18 - 122",
+      "sampleType": "serum, plasma, PMBC, nasopharyngeal swabs",
+      "followUpSchedule": "follow-up is planned to last 24 months with respect to the occurrence of the first known immunization event, either natural infection or vaccination",
+      "inclusionCriteria": "Adult (>18 years) HCW with at least one immunization event (SARS-CoV-2 infection and/or vaccination) and mandatory information on their full immunization story:\na. Dates of SARS-CoV-2 infection, and/or\nb. dates of vaccination and vaccine type\n\n2. For those with a history of SARS-CoV-2 infection, diagnosis obtained by detection of SARS-CoV-2 RNA or Antigen\n3. Having a signed informed consent when required by ethical approval",
+      "typeOfData": [
+        "SARS-CoV-2 sequences",
+        "Serology",
+        "Clinical-epidemiological",
+        "Biospecimens",
+        "Phenotypic"
+      ]
     },
-    "tags": ["ReCoDID"],
+    "funding": "European Union",
+    "publications": [
+      {
+        "doi": "10.1186/s12879-023-08658-2"
+      }
+    ],
+    "tags": [
+      "ReCoDID"
+    ],
     "label": "RECODID",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
   },
   {
     "accession": "BSC0000006",
-    "cohortName": "*ReCoDID COVID-19 PatHost Cohort (RCPC)",
-    "description": "ReCoDID COVID-19 Pathogen-Host Interactions Cohort Study. This project aims to explore the effect of VOCs and VOIs identified within a cohort of patients in the United Kingdom, on the severity of disease and symptoms.",
-    "acronym": "",
-    "website": "https://recodid.eu/xyz",
+    "cohortName": "EuCARE-HOSPITALISED",
+    "description": "The hospitalized cohort in EuCARE is an observational multicentre study including collection of retrospective (historical) and prospective data from hospitalized COVID-19 patients. In a subset of patients, peripheral blood, viral isolates and/or viral sequences are collected for analysis in WP2 with regards to neutralising antibodies, cellular immunity and SARS-CoV-2 diagnostics.",
+    "acronym": "EuCARE-HOSPITALISED",
+    "website": "https://eucareresearch.eu/activities/clinical-cohorts/",
     "type": "Cohort",
     "provider": {
-      "name": "*EMBL-EBI, Hinxton, UK"
+      "name": "EuCARE - European cohorts of patients and schools to advance response to epidemics",
+      "description": "EuCARE answers to an emergency call from the European Union, in the frame of the Horizon Europe programme, to confront the COVID-19 epidemics and in particular the newly emerging SARS-COV-2 variants under several aspects. With the support of strong immuno-virological and artificial intelligence components, the project will take advantage of large hospital patients, vaccinated healthcare workers, and schools’ cohorts in Europe, Kenya, Mexico, Brazil and Vietnam to find an answer to urgent issues related to science and society.The EuCARE Project is funded by the European Union´s Horizon Europe Research and Innovation Programme under Grant Agreement No 101046016.",
+      "website": "https://eucareresearch.eu/"
     },
-    "startDate": "2020-02-10",
-    "endDate": "2021-03-10",
-    "totalEnrollment": 95,
+    "startDate": "2022-02-23",
+    "endDate": "2026-10-13",
+    "targetEnrollment": 1800,
+    "studyDesign": "Observational retrospective-prospective multicentre cohort study",
     "territories": [
-      "UK", "Cambridge, UK"
+      "Sweden",
+      "Italy",
+      "Poland",
+      "Portugal",
+      "Germany",
+      "Lithuania",
+      "UK",
+      "Kenya",
+      "Brazil",
+      "Mexico"
+    ],
+    "locations": [
+      "Stockholm (SE)",
+      "Milan (IT)",
+      "Rome (IT)",
+      "Szczecin (PL)",
+      "Lisbon (PT)",
+      "Dusseldorf (DE)",
+      "Vilnius (LT)",
+      "Poole (UK)",
+      "Nairobi (KE)",
+      "Belo Horizonte (BR)",
+      "Villahermosa (MX)"
     ],
     "dataSummary": {
       "diseases": [
-        "Mild liver disease",
-        "Asplenia",
-        "Chronic neurological disorder",
-        "Malignant neoplasm",
-        "Chronic hematologic disease"
+        "Cancer",
+        "Cerebrovascular disease",
+        "Chronic kidney disease",
+        "Chronic lung diseases",
+        "Chronic liver diseases",
+        "Diabetes mellitus (type 1 or 2)",
+        "Heart disease",
+        "Mental health disorders",
+        "Pregnancy and recent pregnancy",
+        "Smoking",
+        "current and former",
+        "Tuberculosis",
+        "HIV",
+        "Neurologic conditions",
+        "including dementia",
+        "Obesity",
+        "Overweight",
+        "Sickle cell disease or thalassemia",
+        "Solid organ or blood stem cell transplantation",
+        "Substance use disorder",
+        "Immunosuppressive conditions",
+        "Cystic fibrosis",
+        "Asthma",
+        "Hypertension",
+        "Immune deficiencies",
+        "Mental Health conditions"
       ],
       "medication": [
-        "Oral steroids",
-        "Antivirals",
-        "Antibiotics"
-      ],
-      "treatment": [
-        "Chloroquine/hydroxychloroquine",
-        "Antibiotic",
-        "Ventilation"
+        "Lopinavir",
+        "Molnupiravir",
+        "SARS-CoV-2 specific monoclonal Abs (name type)",
+        "Paxlovid",
+        "Remdesivir",
+        "Glucocorticoids",
+        "Monoclonal antibody against IL-6 (Tocilizumab, Olokizumab, Levilimab, Sarilumab)",
+        "Recombinant IL-1 receptor anragonist (Anakinra etc.)",
+        "Janus kinase (JAK1/JAK2 inhibitor as Ruxolitinib, Baricitinib, Tofacitinib, etc.)",
+        "Chloroquine phosphate",
+        "Anti-coagulation therapy specifically prescribed for COVID-19 (Low-molecular weight heparin, etc.)",
+        "Ribavirin",
+        "Other COVID drug",
+        "Other non-COVID drug"
       ],
       "outcome": [
-        "Discharged alive",
-        "Transfer to other facility",
-        "Death",
-        "Unknown"
+        "in-hospital mortality",
+        "ICU admission",
+        "mechanical ventilation"
       ],
-      "complications": [
-        "Acute renal injury / Acute renal failure",
-        "Gastrointestinal hemorrhage",
-        "Pancreatitis",
-        "Liver dysfunction",
-        "Hyperglycaemia"
-      ],
-
-      "ageRange": "25 - 65",
-      "sampleSize": 100,
-      "sampleType": "Saliva",
-      "followUpSchedule":  "weekly",
-      "inclusionCriteria":  "healthcare workers"
+      "ageRange": "18 - 122",
+      "sampleType": "Swab (nasopharyngeal), Whole blood, Bronchoalveolar lavage, Sputum, Serum, Plasma, PBMC, Urine, Feces/rectal swab, BAS (Bronchoaspirate), Swab (throat), BAL (Bronchoalveolar lavage), ETA (Endotracheal Aspirate), CSF (Cerebrospinal Fluid), Pus, Bile, Biopsy, Skin, Peritoneal fluid, Venous catheter",
+      "followUpSchedule": "follow-up is planned to last 24 months with respect to the occurrence of the first known immunization event, either natural infection or vaccination",
+      "inclusionCriteria": "Adult (>18 years) HCW with at least one immunization event (SARS-CoV-2 infection and/or vaccination) and mandatory information on their full immunization story:\na. Dates of SARS-CoV-2 infection, and/or\nb. dates of vaccination and vaccine type\n\n2. For those with a history of SARS-CoV-2 infection, diagnosis obtained by detection of SARS-CoV-2 RNA or Antigen\n3. Having a signed informed consent when required by ethical approval",
+      "typeOfData": [
+        "SARS-CoV-2 sequences",
+        "Serology",
+        "Clinical-epidemiological",
+        "Biospecimens",
+        "Phenotypic",
+        "Others -CT values"
+      ]
     },
-    "tags": ["ReCoDID"],
+    "funding": "European Union",
+    "publications": [
+      {
+        "doi": "10.1186/s12879-023-08658-2"
+      }
+    ],
+    "tags": [
+      "ReCoDID"
+    ],
     "label": "RECODID",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
   },
   {
     "accession": "BSC0000007",
-    "cohortName": "*COV-COHORT",
-    "description": "Studying mechanism of infections among a cohort of patients across a range of South American countries. ",
-    "acronym": "",
-    "website": "https://recodid.eu/xyz",
+    "cohortName": "EuCARE-POSTCOVID",
+    "description": "The EuCARE-POSTCOVID study is an observational multicentre study enrolling COVID-19 patients recovered from the acute phase of disease to investigate the prevalence and possible predictors of post COVID-19 condition. The study retrospectively analyzes data already collected at the post COVID-19 outpatients services of the participating centers; furthermore, a prospective cohort study is performed.",
+    "acronym": "EuCARE-POSTCOVID",
+    "website": "https://eucareresearch.eu/activities/clinical-cohorts/",
     "type": "Cohort",
     "provider": {
-      "name": "*South American COV-Cohort Consortium"
+      "name": "EuCARE - European cohorts of patients and schools to advance response to epidemics",
+      "description": "EuCARE answers to an emergency call from the European Union, in the frame of the Horizon Europe programme, to confront the COVID-19 epidemics and in particular the newly emerging SARS-COV-2 variants under several aspects. With the support of strong immuno-virological and artificial intelligence components, the project will take advantage of large hospital patients, vaccinated healthcare workers, and schools’ cohorts in Europe, Kenya, Mexico, Brazil and Vietnam to find an answer to urgent issues related to science and society.The EuCARE Project is funded by the European Union´s Horizon Europe Research and Innovation Programme under Grant Agreement No 101046016.",
+      "website": "https://eucareresearch.eu/"
     },
-    "startDate": "2020-01-03",
-    "endDate": "ongoing",
-    "totalEnrollment": 5234,
+    "startDate": "2022-07-01",
+    "endDate": "2025-07-01",
+    "targetEnrollment": 2300,
+    "studyDesign": "Observational retrospective-prospective multicentre cohort study",
     "territories": [
-      "Argentina", "Bolivia", "Brazil", "Chile", "Colombia", "Trondheim"
+      "Italy",
+      "Poland",
+      "Portugal",
+      "Germany",
+      "Lithuania",
+      "Brazil",
+      "Mexico"
+    ],
+    "locations": [
+      "Milan (IT)",
+      "Rome (IT)",
+      "Szczecin (PL)",
+      "Lisbon (PT)",
+      "Dusseldorf (DE)",
+      "Vilnius (LT)",
+      "Belo Horizonte (BR)",
+      "Villahermosa (MX)"
     ],
     "dataSummary": {
       "diseases": [
+        "Cancer",
+        "Cerebrovascular disease",
+        "Chronic kidney disease",
+        "Chronic lung diseases",
+        "Chronic liver diseases",
+        "Diabetes mellitus (type 1 or 2)",
+        "Heart disease",
+        "Mental health disorders",
+        "Pregnancy and recent pregnancy",
+        "Smoking",
+        "current and former Tuberculosis",
+        "HIV",
+        "Neurologic conditions",
+        "including dementia",
+        "Obesity",
+        "Overweight",
+        "Sickle cell disease or thalassemia",
+        "Solid organ or blood stem cell transplantation",
+        "Substance use disorder",
+        "Immunosuppressive conditions",
+        "Cystic fibrosis",
+        "Asthma",
         "Hypertension",
-        "Chronic pulmonary disease (not asthma)",
-        "Asthma (physician diagnosed)",
-        "Obesity (as defined by clinical staff)",
-        "Chronic neurological disorder",
-        "Diabetes Mellitus",
-        "Tuberculosis",
-        "Smoking"
+        "Immune deficiencies",
+        "Mental Health conditions"
       ],
       "medication": [
-        "Angiotensin converting enzyme inhibitors (ACE inhibitors)",
-        "Angiotensin II receptor blockers (ARBs)",
-        "Non-steroidal anti-inflammatory (NSAID)",
-        "Antibiotics",
-        "Other targeted COVID-19 Medication"
-      ],
-      "treatment": [
-        "Non-invasive ventilation",
-        "Invasive ventilation",
-        "Renal replacement therapy (RRT) or dialysis",
-        "Inotropes / vasopressors"
-      ],
-      "outcome": [
-        "Discharged alive",
-        "death"
+        "Lopinavir",
+        "Ritonavir",
+        "Molnupiravir",
+        "SARS-CoV-2 specific monoclonal Abs (Bamlanivimab, Bamlanivimab/Etesevimab, Casirivimab/Imdevimab, Sotrovimab, Evusheld)",
+        "Paxlovid (Nirmatrelvir/Ritonavir)",
+        "Remdesivir",
+        "Glucocorticoids",
+        "Monoclonal antibody against IL-6 (Tocilizumab, Olokizumab, Levilimab, Sarilumab)",
+        "Recombinant IL-1 receptor anragonist (Anakinra etc.)",
+        "Janus kinase (JAK1/JAK2 inhibitor as Ruxolitinib, Baricitinib, Tofacitinib, etc.)",
+        "Chloroquine phosphate",
+        "Anti-coagulation therapy specifically prescribed for COVID-19 (Low-molecular weight heparin, etc.)",
+        "Ribavirin",
+        "Other COVID drug",
+        "Other non-COVID drug"
       ],
       "complications": [
-        "Viral pneumonia/pneumonitis",
-        "Acute Respiratory Distress Syndrome",
-        "Pleural effusion",
-        "Cardiac arrest",
-        "Myocardial infarction",
-        "Cardiomyopathy",
-        "Congestive heart failure",
-        "Seizure",
-        "Stroke / Cerebrovascular accident"
+        "new hospital admission",
+        "new ED visit",
+        "new general practitioner visit"
       ],
-
-      "ageRange": "20 - 65",
-      "sampleSize": 5423,
-      "sampleType": "nasopharyngial (NP) swab; serum/plasma; human tissue; human DNA sample",
-      "followUpSchedule":  "daily",
-      "inclusionCriteria":  "Hospital or health care centre"
+      "outcome": [
+        "post COVID 19 condition and clusters (chronic fatigue syndrome, brain fog, respiratory sequelae, ect)"
+      ],
+      "treatment": [
+        "specialistic visit prescription and physioterapist visit prescription (se si intende terapia per post COVID",
+        "dato che non ci sono trattamenti codificati",
+        "teniamo se vengono inviati da specialisti o fisioterapia"
+      ],
+      "ageRange": "18 - 122",
+      "sampleType": "blood/serum samples",
+      "followUpSchedule": "2-3 months, 6-9 months, 12-15 months",
+      "inclusionCriteria": "Patients diagnosed with acute COVID-19 disease from 01/03/2020 to 01/02/2025 at the participating centers will be enrolled in the study; two groups of patients recovered from acute COVID-19 will be enrolled:\nGroup 1 (hospitalized patients): patients hospitalized for COVID-19 disease;\nGroup 2 (outpatients): patients diagnosed with mild COVID-19 disease and thus not hospitalized (these patients will be referred to the Clinic of Infectious Diseases by the general practitioner or have received monoclonal antibodies for COVID-19 or antiviral treatments for COVID-19 at the Clinic of Infectious Diseases or have been visited at the Emergency Department of the hospital).",
+      "typeOfData": [
+        "SARS-CoV-2 sequences",
+        "Serology",
+        "Clinical-epidemiological",
+        "Biospecimens",
+        "Phenotypic"
+      ]
     },
-    "tags": ["ReCoDID"],
+    "funding": "European Union",
+    "publications": [
+      {
+        "doi": "doi: 10.1186/s12879-023-08595-0"
+      }
+    ],
+    "tags": [
+      "ReCoDID"
+    ],
     "label": "RECODID",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
   },
   {
     "accession": "BSC0000008",
-    "cohortName": "*Lombardy Cohort - Public Health Italy",
-    "description": "Study into the transmission events of the initial spread of COVID-19 within Trento, Italy",
-    "acronym": "",
-    "website": "https://recodid.eu/xyz",
+    "cohortName": "EuCARE-SCHOOLS",
+    "description": "In the School Studies Within the EuCARE Horizon Europe Research Project (EUCARE-SCHOOLS Study) the aim is to determine if regular screening with pooled saliva tests (Lolli-Method) is useful to support school opening and to reduce clusters and attack rates in schools, compared with the standard of care (SoC) regular surveillance based on symptoms and contact tracing by public health departments.",
+    "acronym": "EuCARE-SCHOOLS",
+    "website": "https://eucareresearch.eu/activities/clinical-cohorts/",
     "type": "Cohort",
     "provider": {
-      "name": "*Italian Public Health Laboratory"
+      "name": "EuCARE - European cohorts of patients and schools to advance response to epidemics",
+      "description": "EuCARE answers to an emergency call from the European Union, in the frame of the Horizon Europe programme, to confront the COVID-19 epidemics and in particular the newly emerging SARS-COV-2 variants under several aspects. With the support of strong immuno-virological and artificial intelligence components, the project will take advantage of large hospital patients, vaccinated healthcare workers, and schools’ cohorts in Europe, Kenya, Mexico, Brazil and Vietnam to find an answer to urgent issues related to science and society.The EuCARE Project is funded by the European Union´s Horizon Europe Research and Innovation Programme under Grant Agreement No 101046016.",
+      "website": "https://eucareresearch.eu/"
     },
-    "startDate": "2020-04-01",
-    "endDate": "ongoing",
-    "totalEnrollment": 190,
+    "startDate": "2022-05-10",
+    "endDate": "2023-12-31",
+    "studyDesign": "Multicenter cluster randomised interventional study + ancillary observational study",
     "territories": [
-      "Italy", "Trento"
+      "Italy",
+      "Portugal",
+      "Mexico"
+    ],
+    "locations": [
+      "Milan (IT)",
+      "Lecce (IT)",
+      "Lisbon (PT)"
     ],
     "dataSummary": {
-      "diseases": [
-        "Chronic pulmonary disease (not asthma)",
-        "Asthma (physician diagnosed)",
-        "AIDS / HIV",
-        "Diabetes Mellitus",
-        "Rheumatologic disorder",
-        "Dementia",
-        "Malnutrition",
-        "Smoking"
-      ],
-      "medication": [
-        "Non-steroidal anti-inflammatory (NSAID)",
-        "Oral steroids",
-        "Other immunosuppressant agents (not oral steroids)",
-        "Antivirals",
-        "Antibiotics"
-      ],
-      "treatment": [
-        "Any Oxygen therapy",
-        "Non-invasive ventilation",
-        "Invasive ventilation",
-        "Prone Positioning",
-        "Inhaled Nitric Oxide"
-      ],
       "outcome": [
-        "Discharged alive",
-        "Death",
-        "Transfer to other facility",
-        "Palliative discharge"
+        "Frequencies of clusters in classrooms in which pooled saliva tests (Lolli-Method) are performed in association with standard contact-tracing protocols, compared with classrooms in which SoC protocols are applied"
       ],
-      "complications": [
-        "Viral pneumonia/pneumonitis",
-        "Bacterial pneumonia",
-        "Acute Respiratory Distress Syndrome",
-        "Pneumothorax",
-        "Pleural effusion",
-        "Cryptogenic organizing pneumonia (COP)",
-        "Bronchiolitis",
-        "Cardiac arrest",
-        "Myocardial infarction"
-      ],
-
-      "ageRange": "10 - 88",
-      "sampleSize": 200,
-      "sampleType": "nasopharyngial (NP) swab; sputum; serum/plasma",
-      "followUpSchedule":  "none",
-      "inclusionCriteria":  "Community"
+      "ageRange": "3 - 19",
+      "sampleType": "swab",
+      "inclusionCriteria": "Kindergartens and school-age children from public or private schools. Enrolled children may be students of classes that have expressed their consent to participateSchool personnel of participating schools Householders of participating children",
+      "typeOfData": [
+        "SARS-CoV-2 sequences",
+        "Serology",
+        "Clinical-epidemiological",
+        "Phenotypic"
+      ]
     },
-    "tags": ["ReCoDID"],
-    "label": "RECODID",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
-  },
-  {
-    "accession": "BSC0000009",
-    "cohortName": "*VoC-CoV",
-    "description": "VoC-CoV aims to investigate the effect of variants of concern on patients through a couple of main themes - symptoms and phenotypic effects and transmission events.",
-    "acronym": "",
-    "website": "https://recodid.eu/xyz",
-    "type": "Cohort",
-    "provider": {
-      "name": "*VoC-CoV consortium"
-    },
-    "startDate": "2020-04-01",
-    "endDate": "ongoing",
-    "totalEnrollment": 21130,
-    "territories": [
-      "Germany", "UK", "France", "Italy", "Spain", "Galway"
+    "funding": "European Union",
+    "publications": [
+      {
+        "doi": "doi: 10.1186/s12879-023-08065-7"
+      },
+      {
+        "doi": "doi: 10.1016/j.ijid.2023.11.002"
+      }
     ],
-    "dataSummary": {
-      "diseases": [
-        "Chronic cardiac disease (not hypertension)",
-        "Hypertension",
-        "Chronic kidney disease",
-        "Obesity (as defined by clinical staff)",
-        "Chronic hematologic disease",
-        "AIDS / HIV",
-        "Diabetes Mellitus",
-        "Rheumatologic disorder",
-        "Dementia",
-        "Tuberculosis",
-        "Malnutrition",
-        "Smoking"
-      ],
-      "medication": [
-        "Angiotensin converting enzyme inhibitors (ACE inhibitors)",
-        "Non-steroidal anti-inflammatory (NSAID)",
-        "Other immunosuppressant agents (not oral steroids)",
-        "Antibiotics"
-      ],
-      "treatment": [
-        "Any Oxygen therapy",
-        "Invasive ventilation",
-        "Inhaled Nitric Oxide",
-        "Tracheostomy inserted",
-        "Renal replacement therapy (RRT) or dialysis",
-        "ICU or High Dependency Unit admission"
-      ],
-      "outcome": [
-        "Discharged alive",
-        "death",
-        "Hospitalization",
-        "Unknown"
-      ],
-      "complications": [
-        "Stroke / Cerebrovascular accident",
-        "Pulmonary embolism",
-        "Anaemia",
-        "Rhabdomyolysis / Myositis",
-        "Acute renal injury / Acute renal failure",
-        "Gastrointestinal hemorrhage",
-        "Pancreatitis",
-        "Liver dysfunction"
-      ],
-
-      "ageRange": "19 - 66",
-      "sampleSize": 25124,
-      "sampleType": "sputum",
-      "followUpSchedule":  "weekly",
-      "inclusionCriteria":  "care center"
-    },
-    "tags": ["ReCoDID"],
+    "tags": [
+      "ReCoDID"
+    ],
     "label": "RECODID",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
   },
