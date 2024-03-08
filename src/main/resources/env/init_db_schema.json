@@ -978,7 +978,90 @@
       }
     ]
   },
-
+  {
+    "accession": "BSC0000011",
+    "cohortName": "Parents of NFBC1966",
+    "acronym": "NFBC1966 G0",
+    "type": "Cohort",
+    "territories": [
+      "Finland"
+    ],
+    "tags": [
+      "earlycause"
+    ],
+    "label": "EARLY_CAUSE",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+  {
+    "accession": "BSC0000012",
+    "cohortName": "Netherlands Study of Depression and Anxiety",
+    "acronym": "NESDA",
+    "website": "www.nesda.nl",
+    "type": "Cohort",
+    "studyDesign": "Observational longitudinal study of case-controls of individuals with affective disorders",
+    "provider": {
+      "name": "consortium from Amsterdam University Medical Centers (location VUmc), Leiden University Medical Center and University Medical Center Groningen"
+    },
+    "dataSharing": {
+      "label": "submit analysis plan to NESDA management team to be evaluated for data access (see website nesda.nl for more information)"
+    },
+    "startDate": "2004",
+    "totalEnrollment": 3348,
+    "publications": [
+      {
+        "url": "https://reader.elsevier.com/reader/sd/pii/S0165032721002512?token=CC79A3F2466668640C06FBB72256F9606F40927F4B84CBE68465225B307711FD7446A10C7C5AC5260676D7BE56B26463&originRegion=eu-west-1&originCreation=20230331120104"
+      }
+    ],
+    "territories": [
+      "Netherlands"
+    ],
+    "dataSummary": {
+      "ageGroups": [
+        "youngAdult",
+        "adult",
+        "lateMiddleaged",
+        "lateAdulthood"
+      ],
+      "inclusionCriteria": "Individuals with and without current/remitted depression and/or anxiety disorders were included."
+    },
+    "tags": [
+      "earlycause"
+    ],
+    "label": "EARLY_CAUSE",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+  {
+    "accession": "BSC0000013",
+    "cohortName": "Netherlands Study of Depression in Older persons",
+    "acronym": "NESDO",
+    "website": "www.nesdo.onderzoek.io",
+    "type": "Cohort",
+    "studyDesign": "Observational longitudinal study of case-controls of individuals with affective disorders",
+    "provider": {
+      "name": "consortium from Amsterdam University Medical Centers (location VUmc), Leiden University Medical Center and University Medical Center Groningen"
+    },
+    "dataSharing": {
+      "label": "submit analysis plan to NESDO management team to be evaluated for data access (see website nesdo.onderzoek.io for more information)"
+    },
+    "startDate": "2007",
+    "endDate": "20016",
+    "totalEnrollment": 510,
+    "territories": [
+      "Netherlands"
+    ],
+    "dataSummary": {
+      "ageGroups": [
+        "lateMiddleaged",
+        "lateAdulthood"
+      ],
+      "inclusionCriteria": "Individuals with and without current/remitted depression and/or anxiety disorders were included."
+    },
+    "tags": [
+      "earlycause"
+    ],
+    "label": "EARLY_CAUSE",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
   {
     "accession": "BSC0000000",
     "cohortName": "Longitudinal Study of Parents and Children (Test)",
