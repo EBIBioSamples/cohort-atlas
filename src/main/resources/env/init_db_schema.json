@@ -1095,9 +1095,9 @@
     ],
     "investigators": [
       {
-        "name": "Luis Villar",
+        "name": "Cloud Strife",
         "orcid": "",
-        "email": "epiclin@uis.edu.co"
+        "email": "biosamples@ebi.ac.uk"
       }
     ],
     "startDate": "01-01-2023",
@@ -1185,7 +1185,6 @@
       "outcome": [],
       "complications": [],
       "typeOfData": [],
-
       "ageRange": "",
       "ageGroups": [],
       "sampleSize": "",
