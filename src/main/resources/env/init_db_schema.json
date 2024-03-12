@@ -1185,23 +1185,406 @@
       "outcome": [],
       "complications": [],
       "typeOfData": [],
-
       "ageRange": "",
       "ageGroups": [],
       "sampleSize": "",
       "sampleType": "",
-      "followUpSchedule":  "",
+      "followUpSchedule": "",
       "collectionType": "",
-      "inclusionCriteria":  "",
+      "inclusionCriteria": "",
       "releaseType": "",
-      "linkageOptions":  ""
+      "linkageOptions": ""
     },
-    "tags": ["test"],
+    "tags": [
+      "test"
+    ],
     "label": "TEST",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
   },
-
-
+  {
+    "accession": "BSC0000014",
+    "cohortName": "AEDES Cohort 1",
+    "description": "",
+    "acronym": "AEDES-1",
+    "website": "https://uis.edu.co/fs-gruinv-epiclin-en/",
+    "type": "Cohort",
+    "studyDesign": "Cohort",
+    "provider": {
+      "name": "Universidad Industrial de Santander",
+      "description": "Public university",
+      "website": "https://uis.edu.co/fs-gruinv-epiclin-en/"
+    },
+    "startDate": "2003",
+    "endDate": "2005",
+    "totalEnrollment": 500,
+    "territories": [
+      "Colombia"
+    ],
+    "locations": [
+      "Bucaramanga",
+      "Santander"
+    ],
+    "publications": [
+      {
+        "title": "Evaluación de la definición clínica de dengue sugerida por la Organización Mundial de la Salud [Evaluation of the World Health Organization clinical definition of dengue]",
+        "doi": "https://doi.org/10.7705/biomedica.v25i3.1365",
+        "url": "https://revistabiomedica.org/index.php/biomedica/article/view/1365"
+      },
+      {
+        "title": "Criterios clínicos para diagnosticar el dengue en los primeros días de enfermedad [Clinical criteria to diagnose dengue in its early stages]",
+        "doi": "https://doi.org/10.7705/biomedica.v26i1.1391",
+        "url": "https://revistabiomedica.org/index.php/biomedica/article/view/1391"
+      }
+    ],
+    "investigators": [
+      {
+        "name": "Luis Villar",
+        "orcid": "",
+        "email": "epiclin@uis.edu.co",
+        "address": "Cra 32 no. 29-31, Bucaramanga, Santander"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Grupo de Epidemiología Clínica",
+        "orcid": "",
+        "email": "epiclin@uis.edu.co",
+        "address": "Cra 32 no. 29-31, Bucaramanga, Santander"
+      }
+    ],
+    "dataSummary": {
+      "inclusionCriteria": "Febrile patients with clinically suspected dengue were recruited at the point of care",
+      "followUpSchedule": "Follow-up visits one to seven days via clinical and laboratory assessments, with a convalescent blood sample taken approximately 2 weeks after disease onset.",
+      "diseases": [
+        "Arterial Hypertension",
+        "Asthma",
+        "Chronic hepatitis",
+        "Chronic Obstructive Pulmonary",
+        "Diabetes",
+        "Heart disease",
+        "Renal disease",
+        "Anemia"
+      ],
+      "medication": [
+        "Antibiotics",
+        "anticoagulant",
+        "steroids"
+      ],
+      "outcome": [
+        "Hospitalization",
+        "discharged alive",
+        "death",
+        "transfer to othe facillity"
+      ],
+      "typeOfData": [
+        "SARS-CoV-2 sequences",
+        "Clinical-epidemiological"
+      ],
+      "sampleSize": 195,
+      "provider": {
+        "name": "Universidad Industrial de Santander",
+        "description": "Public university",
+        "website": "https://uis.edu.co/fs-gruinv-epiclin-en/"
+      },
+      "ageRange": "2 - 85",
+      "sampleSize": 273,
+      "sampleType": "serum or plasma"
+    },
+    "funding": "Colombian Administrative Department of Science, Technology, and Innovation – Colciencias and the Universidad Industrial de Santander. Grant no: 1102-04-12919",
+    "tags": [
+      "ReCoDID"
+    ],
+    "label": "RECODID",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+  {
+    "accession": "BSC0000015",
+    "cohortName": "AEDES Cohort 2",
+    "description": "",
+    "acronym": "AEDES-2",
+    "website": "https://uis.edu.co/fs-gruinv-epiclin-en/",
+    "type": "Cohort",
+    "studyDesign": "Cohort",
+    "provider": {
+      "name": "Universidad Industrial de Santander",
+      "description": "Public university",
+      "website": "https://uis.edu.co/fs-gruinv-epiclin-en/"
+    },
+    "startDate": "2006",
+    "endDate": "2008",
+    "totalEnrollment": 705,
+    "territories": [
+      "Colombia"
+    ],
+    "locations": [
+      "Bucaramanga",
+      "Santander"
+    ],
+    "publications": [
+      {
+        "title": "Biomarcadores pronósticos de gravedad del dengue [Biomarkers for the prognosis of severe dengue]",
+        "doi": "https://doi.org/10.7705/biomedica.v33i0.733",
+        "url": "https://revistabiomedica.org/index.php/biomedica/article/view/733"
+      }
+    ],
+    "investigators": [
+      {
+        "name": "Luis Villar",
+        "orcid": "",
+        "email": "epiclin@uis.edu.co",
+        "address": "Cra 32 no. 29-31, Bucaramanga, Santander"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Grupo de Epidemiología Clínica",
+        "orcid": "",
+        "email": "epiclin@uis.edu.co",
+        "address": "Cra 32 no. 29-31, Bucaramanga, Santander"
+      }
+    ],
+    "dataSummary": {
+      "inclusionCriteria": "Febrile patients with clinically suspected dengue were recruited at the point of care",
+      "followUpSchedule": "Follow-up visits one to seven days via clinical and laboratory assessments, with a convalescent blood sample taken approximately 2 weeks after disease onset.",
+      "diseases": [
+        "Arterial Hypertension",
+        "Asthma",
+        "Chronic hepatitis",
+        "Chronic Obstructive Pulmonary",
+        "Diabetes",
+        "Heart disease",
+        "Renal disease, Anemia"
+      ],
+      "medication": [
+        "Antibiotics",
+        "anticoagulant",
+        "steroids"
+      ],
+      "outcome": [
+        "Hospitalization",
+        "discharged alive",
+        "death",
+        "transfer to othe facillity"
+      ],
+      "typeOfData": [
+        "SARS-CoV-2 sequences",
+        "Clinical-epidemiological"
+      ],
+      "provider": {
+        "name": "Universidad Industrial de Santander",
+        "description": "Public university",
+        "website": "https://uis.edu.co/fs-gruinv-epiclin-en/"
+      },
+      "ageRange": "5 - 74",
+      "sampleSize": 228,
+      "sampleType": "serum or plasma"
+    },
+    "funding": "Colombian Administrative Department of Science, Technology, and Innovation – Colciencias and the Universidad Industrial de Santander. Grant no: 1102-04-18205",
+    "tags": [
+      "ReCoDID"
+    ],
+    "label": "RECODID",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+  {
+    "accession": "BSC0000016",
+    "cohortName": "AEDES Cohort 3: Abordando Áreas Endémicas del Dengue para el Estudio de su Severidad (AEDES) Cohorts",
+    "description": "AEDES cohort 3 is a multicentre study aimed to evaluate the usefulness of the clinical definition of severe dengue and to examine the prognostic value of clinical variables and biomarkers. This study includes clinical-epidemiological (CE) data collected from acute febrile patients (n=2005) with clinical suspect of dengue infection during the epidemic (2009-2011).",
+    "acronym": "AEDES-3",
+    "website": "https://uis.edu.co/fs-gruinv-epiclin-en/",
+    "type": "Cohort",
+    "studyDesign": "Cohort",
+    "provider": {
+      "name": "Universidad Industrial de Santander",
+      "description": "Public university",
+      "website": "https://uis.edu.co/fs-gruinv-epiclin-en/"
+    },
+    "startDate": "2009",
+    "endDate": "2011",
+    "totalEnrollment": 705,
+    "territories": [
+      "Colombia"
+    ],
+    "locations": [
+      "Bucaramanga, COL",
+      "Barranquilla, COL",
+      "Parmila, COL",
+      "Cali, COL",
+      "Neiva, COL"
+    ],
+    "publications": [
+      {
+        "title": "Vitamin D serostatus and dengue fever progression to dengue hemorrhagic fever/dengue shock syndrome",
+        "doi": "https://doi.org/10.1017/S0950268817002059",
+        "url": "https://www.cambridge.org/core/journals/epidemiology-and-infection/article/vitamin-d-serostatus-and-dengue-fever-progression-to-dengue-hemorrhagic-feverdengue-shock-syndrome/A0A08B7C54C4B8600A2FCE208B4C2405"
+      },
+      {
+        "title": "Serum fatty acids and progression from dengue fever to dengue haemorrhagic fever/dengue shock syndrome",
+        "doi": "https://doi.org/10.1017/S0007114518002039",
+        "url": "https://www.cambridge.org/core/journals/british-journal-of-nutrition/article/serum-fatty-acids-and-progression-from-dengue-fever-to-dengue-haemorrhagic-feverdengue-shock-syndrome/AD80A6B12767B1FFF410D5E521746AF5"
+      },
+      {
+        "title": "Clinical Indicators of Fatal Dengue in Two Endemic Areas of Colombia: A Hospital-Based Case-Control Study",
+        "doi": "https://doi.org/10.4269%2Fajtmh.17-0323",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6367622/"
+      }
+    ],
+    "investigators": [
+      {
+        "name": "Luis Villar",
+        "orcid": "",
+        "email": "epiclin@uis.edu.co",
+        "address": "Cra 32 no. 29-31, Bucaramanga, Santander"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Grupo de Epidemiología Clínica",
+        "orcid": "",
+        "email": "epiclin@uis.edu.co",
+        "address": "Cra 32 no. 29-31, Bucaramanga, Santander"
+      }
+    ],
+    "dataSummary": {
+      "inclusionCriteria": "Febrile patients with clinically suspected dengue were recruited at the point of care",
+      "followUpSchedule": "Follow-up visits one to seven days via clinical and laboratory assessments, with a convalescent blood sample taken approximately 2 weeks after disease onset.",
+      "diseases": [
+        "Arterial Hypertension",
+        "Asthma",
+        "Chronic hepatitis",
+        "Chronic Obstructive Pulmonary",
+        "Diabetes",
+        "Heart disease",
+        "Renal disease, Anemia"
+      ],
+      "medication": [
+        "Antibiotics",
+        "anticoagulant",
+        "steroids"
+      ],
+      "outcome": [
+        "Hospitalization",
+        "discharged alive",
+        "death",
+        "transfer to othe facillity"
+      ],
+      "typeOfData": [
+        "SARS-CoV-2 sequences",
+        "Clinical-epidemiological"
+      ],
+      "provider": {
+        "name": "Universidad Industrial de Santander",
+        "description": "Public university",
+        "website": "https://uis.edu.co/fs-gruinv-epiclin-en/"
+      },
+      "ageRange": "1 - 86",
+      "sampleSize": 799,
+      "sampleType": "serum or plasma"
+    },
+    "funding": "Colombian Administrative Department of Science, Technology, and Innovation – Colciencias and the Universidad Industrial de Santander. Grant no: 1102-459-21561",
+    "tags": [
+      "ReCoDID"
+    ],
+    "label": "RECODID",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+  {
+    "accession": "BSC0000017",
+    "cohortName": "Piedecuesta’s household-based dynamic cohort. Identification of age groups to be prioritized for vaccination in a population of children and adolescents",
+    "description": "Piedecuesta's household-based dynamic cohort sought to estimate age-specific dengue seroprevalence and identify age groups to be prioritized for vaccination among children and adolescents. This study was funded by the Colombian Science Ministry, Minciencias. PHBDC was a population-based cross-sectional study which began in 2014 and enrolled and evaluated healthy children and adults (15%) from Piedecuesta (a mid-size city with endemic DENV).",
+    "acronym": "PHBDC",
+    "website": "http://redaedes.org/proyectos/detalle/3",
+    "type": "Cohort",
+    "studyDesign": "Cohort",
+    "provider": {
+      "name": "Universidad Industrial de Santander",
+      "description": "Public university",
+      "website": "https://uis.edu.co/fs-gruinv-epiclin-en/"
+    },
+    "startDate": "2015",
+    "endDate": "2018",
+    "totalEnrollment": 2400,
+    "territories": [
+      "Colombia"
+    ],
+    "locations": [
+      "Piedecuesta, COL"
+    ],
+    "publications": [
+      {
+        "title": "Vitamin D serostatus and dengue fever progression to dengue hemorrhagic fever/dengue shock syndrome",
+        "doi": "https://doi.org/10.1017/S0950268817002059",
+        "url": "https://www.cambridge.org/core/journals/epidemiology-and-infection/article/vitamin-d-serostatus-and-dengue-fever-progression-to-dengue-hemorrhagic-feverdengue-shock-syndrome/A0A08B7C54C4B8600A2FCE208B4C2405"
+      },
+      {
+        "title": "Serum fatty acids and progression from dengue fever to dengue haemorrhagic fever/dengue shock syndrome",
+        "doi": "https://doi.org/10.1017/S0007114518002039",
+        "url": "https://www.cambridge.org/core/journals/british-journal-of-nutrition/article/serum-fatty-acids-and-progression-from-dengue-fever-to-dengue-haemorrhagic-feverdengue-shock-syndrome/AD80A6B12767B1FFF410D5E521746AF5"
+      },
+      {
+        "title": "Clinical Indicators of Fatal Dengue in Two Endemic Areas of Colombia: A Hospital-Based Case-Control Study",
+        "doi": "https://doi.org/10.4269%2Fajtmh.17-0323",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6367622/"
+      }
+    ],
+    "investigators": [
+      {
+        "name": "Luis Villar",
+        "orcid": "",
+        "email": "epiclin@uis.edu.co",
+        "address": "Cra 32 no. 29-31, Bucaramanga, Santander"
+      }
+    ],
+    "contacts": [
+      {
+        "name": "Grupo de Epidemiología Clínica",
+        "orcid": "",
+        "email": "epiclin@uis.edu.co",
+        "address": "Cra 32 no. 29-31, Bucaramanga, Santander"
+      }
+    ],
+    "dataSummary": {
+      "followUpSchedule": "Biweekly (All, telephone)Once per day (Incident Febrile cases) Annual (All)0, 7 days (Incident Febrile cases)",
+      "diseases": [
+        "Arterial Hypertension",
+        "Asthma",
+        "Chronic hepatitis",
+        "Chronic Obstructive Pulmonary",
+        "Diabetes",
+        "Heart disease",
+        "Renal disease, Anemia"
+      ],
+      "medication": [
+        "Antibiotics",
+        "anticoagulant",
+        "steroids"
+      ],
+      "outcome": [
+        "Hospitalization",
+        "discharged alive",
+        "death",
+        "transfer to othe facillity"
+      ],
+      "typeOfData": [
+        "SARS-CoV-2 sequences",
+        "Clinical-epidemiological"
+      ],
+      "provider": {
+        "name": "Universidad Industrial de Santander",
+        "description": "Public university",
+        "website": "https://uis.edu.co/fs-gruinv-epiclin-en/"
+      },
+      "ageRange": "2 - 40",
+      "sampleSize": 145,
+      "sampleType": "serum or plasma"
+    },
+    "funding": "Colombian Science, Technology, and Innovation Funds of `Sistema General de Regalías de Santander, Casanare y Valle del Cauca.` Additional financial support was received by Sanofi Pasteur S.A and Fundación Infovida (http://www.fundacioninfovida.com.co/).Grant no: 1102-459-21561",
+    "tags": [
+      "ReCoDID"
+    ],
+    "label": "RECODID",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
   {
     "accession": "BCAP0000000",
     "name": "test_project",
