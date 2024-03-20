@@ -1204,7 +1204,7 @@
   {
     "accession": "BSC0000014",
     "cohortName": "AEDES Cohort 1",
-    "description": "",
+    "description": "Identification of prognostic markers of severity in dengue",
     "acronym": "AEDES-1",
     "website": "https://uis.edu.co/fs-gruinv-epiclin-en/",
     "type": "Cohort",
@@ -1300,7 +1300,7 @@
   {
     "accession": "BSC0000015",
     "cohortName": "AEDES Cohort 2",
-    "description": "",
+    "description": "Validation of a clinical definition for dengue and evaluation of its usefulness to identify early conditions associated with hospitalization",
     "acronym": "AEDES-2",
     "website": "https://uis.edu.co/fs-gruinv-epiclin-en/",
     "type": "Cohort",
@@ -1579,6 +1579,138 @@
       "sampleType": "serum or plasma"
     },
     "funding": "Colombian Science, Technology, and Innovation Funds of `Sistema General de Regalías de Santander, Casanare y Valle del Cauca.` Additional financial support was received by Sanofi Pasteur S.A and Fundación Infovida (http://www.fundacioninfovida.com.co/).Grant no: 1102-459-21561",
+    "tags": [
+      "ReCoDID"
+    ],
+    "label": "RECODID",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+  {
+    "accession": "BSC0000018",
+    "cohortName": "Norwegian health registries",
+    "description": "Nationwide linked health records and sociodemographics of Norway, covering the entire population residing in the country being assigned a personal ID number. The data cover individual-level information on (i) clinical diagnoses in primary care using the ICPC-2 classification system, (ii) specialist inpatient and outpatint clinical diagnoses based on ICD-10 classification, (iii) filled prescriptions at community pharmacies, irrespective of reimbursment, (iv) PCR test results for Sars-CoV-2, (v) vaccination records, (vi) sociodemographics including education, income, migration status and nationality, (vii) records of all births in the country from gestational week 12 including pregnancy details, and outcomes for child and mother, and (viii) cause of death registry with underlying cause of death.",
+    "acronym": "NHR",
+    "website": "www.helsedata.no",
+    "type": "Cohort",
+    "studyDesign": "Prospective electronic health records",
+    "provider": {
+      "name": "Helsedata platform",
+      "description": "Platform covering health data in Norway",
+      "website": "www.helsedata.no"
+    },
+    "startDate": "2015-01-01",
+    "endDate": "2022-12-31",
+    "totalEnrollment": 0,
+    "territories": [
+      "Norway"
+    ],
+    "locations": [
+      "entire country"
+    ],
+    "investigators": [
+      {
+        "name": "Angela Lupattelli",
+        "orcid": "0000-0002-8787-3183",
+        "email": "angela.lupattelli@farmasi.uio.no",
+        "address": "Postboks 1068 Blindern 0316 Oslo Norway"
+      }
+    ],
+    "dataSummary": {
+      "typeOfData": [
+        "Viral sequence",
+        "Clinical-epidemiological"
+      ],
+      "inclusionCriteria": "Residents in Norway"
+    },
+    "tags": [
+      "ReCoDID"
+    ],
+    "label": "RECODID",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+  {
+    "accession": "BSC0000019",
+    "cohortName": "Stellenbosch",
+    "description": "Cohort that includes \n- Children 0-13 years of age, HIV +/-, presenting with symptoms of respiratory illness or suspicion of COVID-19 illness (including multi-system inflammatory syndrome), in Tygerberg Hospital, Cape Town, South Africa.  \n- Household contacts 0- 99 years of age, of confirmed COVID-19 cases presenting to Tygerberg Hospital, Cape Town, South Africa. Exclusion for cohort and household contact study: Inability to come for follow up visits.  Within the Umoya platform at Desmond Tutu TB Centre (DTTC) 4 different groups of interest at Tygerberg Hospital are recruited: \n- COVID confirmed illness. Total number 60-80.\n - Other respiratory virus illness. Total number 120.\n - paediatric tuberculosis (TB) cases. Total number ±70.\n- Healthy controls. Total number 40.",
+    "acronym": "COVID kids",
+    "type": "Cohort",
+    "studyDesign": "Observational longitudinal Cohort study",
+    "provider": {
+      "name": "Marieke vd Zalm",
+      "description": "PI",
+      "website": "www.helsedata.no"
+    },
+    "startDate": "2021-11-01",
+    "endDate": "2025-10-31",
+    "totalEnrollment": 125,
+    "territories": [
+      "South Africa"
+    ],
+    "locations": [
+      "Cape Town"
+    ],
+    "investigators": [
+      {
+        "name": "Marieke vd Zalm",
+        "orcid": "0000-0002-8787-9139",
+        "email": "mariekevdzalm@sun.ac.za",
+        "address": "Stellenbosch University South Africa"
+      }
+    ],
+    "dataSummary": {
+      "typeOfData": [
+        "Viral sequence",
+        "Clinical-epidemiological",
+        "Serology"
+      ],
+      "inclusionCriteria": "Children",
+      "followUpSchedule": "Baseline (presentation), month 3, 12, 18 and 24",
+      "sampleType": "Saliva, serum and paxgene",
+      "ageRange": "0 - 13"
+    },
+    "funding": "Horizon Europe (VERDI), part NIH funding and part South African Medical Research Council",
+    "tags": [
+      "ReCoDID"
+    ],
+    "label": "RECODID",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+  {
+    "accession": "BSC0000020",
+    "cohortName": "Influenzanet",
+    "description": "Influenzanet is a network of routine surveillance systems in Europe used for monitoring influenza-like-Illness (ILI) in the general population. It is a collective system of internet-based tools through which real-time surveillance of self-reported influenza like illness (ILI) in the community is undertaken. Participation is voluntary, and any member of the public where the platform is deployed can register and are then prompted on a weekly basis to report any respiratory symptoms or lack of it that they may have experienced during the flu season.",
+    "website": "https://influenzanet.info/",
+    "type": "Cohort",
+    "provider": {
+      "name": "Influenzanet",
+      "description": "Network of web platforms in Europe for flu surveillance",
+      "website": "influenzanet.info"
+    },
+    "territories": [
+      "UK",
+      "Italy",
+      "Portugal",
+      "Spain",
+      "Ireland",
+      "Germany",
+      "Switerland",
+      "Denmark",
+      "Sweden",
+      "France",
+      "The Netherlands",
+      "Belgium"
+    ],
+    "investigators": [
+      {
+        "address": "https://influenzanet.info/project"
+      }
+    ],
+    "dataSummary": {
+      "typeOfData": [
+        "Clinical-epidemiological"
+      ]
+    },
+    "funding": " Horizon Europe",
     "tags": [
       "ReCoDID"
     ],
