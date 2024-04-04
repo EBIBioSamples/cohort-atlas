@@ -23,5 +23,7 @@ public class Summary {
   private String inclusionCriteria;
   private String releaseType;
   private String linkageOptions;
+  private double taxId;
+  private String scientificName;
 
 }
