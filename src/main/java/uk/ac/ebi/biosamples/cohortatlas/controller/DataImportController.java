@@ -1,7 +1,6 @@
 package uk.ac.ebi.biosamples.cohortatlas.controller;
 
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,7 +15,7 @@ public class DataImportController {
     this.dataImportService = dataImportService;
   }
 
-  @GetMapping(value = "/cohorts")
+  @PostMapping(value = "/cohorts")
   public ResponseEntity<Void> importCohorts() {
     dataImportService.importCohorts();
     return ResponseEntity.ok().build();
