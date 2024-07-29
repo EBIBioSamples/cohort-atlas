@@ -670,7 +670,9 @@
       "taxId": [
         2697049
       ],
-      "scientificName": "Severe acute respiratory syndrome coronavirus 2"
+      "scientificName": [
+        "Severe acute respiratory syndrome coronavirus 2"
+      ]
     },
     "tags": [
       "ReCoDID"
@@ -1193,6 +1195,9 @@
       "inclusionCriteria": "Febrile patients with clinically suspected dengue were recruited at the point of care",
       "taxId": [
         12637
+      ],
+      "scientificName": [
+        "Dengue virus"
       ]
     },
     "tags": [
@@ -1277,6 +1282,9 @@
       "inclusionCriteria": "Febrile patients with clinically suspected dengue were recruited at the point of care",
       "taxId": [
         12637
+      ],
+      "scientificName": [
+        "Dengue virus"
       ]
     },
     "tags": [
@@ -1371,6 +1379,9 @@
       "inclusionCriteria": "Febrile patients with clinically suspected dengue were recruited at the point of care",
       "taxId": [
         12637
+      ],
+      "scientificName": [
+        "Dengue virus"
       ]
     },
     "tags": [
@@ -1464,6 +1475,9 @@
       "followUpSchedule": "Biweekly (All, telephone)Once per day (Incident Febrile cases) Annual (All)0, 7 days (Incident Febrile cases)",
       "taxId": [
         12637
+      ],
+      "scientificName": [
+        "Dengue virus"
       ]
     },
     "tags": [
@@ -1509,6 +1523,9 @@
       "inclusionCriteria": "Residents in Norway",
       "taxId": [
         2697049
+      ],
+      "scientificName": [
+        "Severe acute respiratory syndrome coronavirus 2"
       ]
     },
     "tags": [
@@ -1559,6 +1576,10 @@
       "taxId": [
         2697049,
         11676
+      ],
+      "scientificName": [
+        "Severe acute respiratory syndrome coronavirus 2",
+        "Human immunodeficiency virus 1"
       ]
     },
     "tags": [
@@ -1607,6 +1628,9 @@
       "sampleSize": 0,
       "taxId": [
         11320
+      ],
+      "scientificName": [
+        "Influenza A virus"
       ]
     },
     "tags": [
@@ -1620,7 +1644,7 @@
     "cohortName": "England Mother Baby Cohort",
     "description": "The national birth cohort includes approximately 13.5 million children born between 2003 and March 2021 in England (and is updated quarterly) and will include all births from 1st January 2020 onwards (mother-infant pairs). We will derive control cohorts of women delivering in previous years as required. Children in the cohort will be followed from birth or the 1st January 2020, whichever occurs later until death, their 18th birthday or the end of the study period, whichever occurs first. The oldest children in the cohort will be 17 years old at start of follow-up. National Pupil Data linked to hospital data from  approximately 7 million children per academic year will be available for the analyses of differential school transmission by VoC.",
     "acronym": "VERDI",
-    "website": "NA",
+    "website": "https://verdiproject.org/",
     "type": "Cohort",
     "studyDesign": "Retrospective cohort study",
     "contacts": [
