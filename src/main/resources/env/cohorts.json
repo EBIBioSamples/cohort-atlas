@@ -587,6 +587,7 @@
         "values": "Argentina, Bolivia, Brazil, Chile, Colombia, France, Germany, Spain, UK, Netherlands"
       }
     ],
+    "project": "ReCoDID",
     "dataSummary": {
       "diseases": [
         "Chronic cardiac disease (not hypertension)",
@@ -712,6 +713,7 @@
       "Brazil",
       "Mexico"
     ],
+    "project": "EuCARE",
     "dataSummary": {
       "diseases": [
         "immunossupression"
@@ -773,6 +775,7 @@
       "Brazil",
       "Mexico"
     ],
+    "project": "EuCARE",
     "dataSummary": {
       "diseases": [
         "Cancer",
@@ -878,6 +881,7 @@
       "Brazil",
       "Mexico"
     ],
+    "project": "EuCARE",
     "dataSummary": {
       "diseases": [
         "Cancer",
@@ -989,6 +993,7 @@
       "Portugal",
       "Mexico"
     ],
+    "project": "EuCARE",
     "dataSummary": {
       "outcome": [
         "Frequencies of clusters in classrooms in which pooled saliva tests (Lolli-Method) are performed in association with standard contact-tracing protocols, compared with classrooms in which SoC protocols are applied"
@@ -1662,6 +1667,7 @@
     "territories": [
       "United Kingdom"
     ],
+    "project": "VERDI",
     "dataSummary": {
       "typeOfData": [
         "Clinical-epidemiological",
