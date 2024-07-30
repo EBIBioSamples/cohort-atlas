@@ -24,6 +24,6 @@ public class Summary {
   private String releaseType;
   private String linkageOptions;
   private List<Double> taxId;
-  private String scientificName;
+  private List<String> scientificName;
 
 }
