@@ -35,7 +35,7 @@
       "sampleSize": 0,
       "inclusionCriteria": "Children, Mothers, Partners",
       "taxId": [
-        0
+        "0"
       ]
     },
     "tags": [
@@ -94,7 +94,7 @@
       "sampleSize": 0,
       "inclusionCriteria": "All mothers and their children whose expected date of birth was between July 1st 1985 - June 30th 1986 in the two northernmost provinces of Finland (Oulu and Lapland)",
       "taxId": [
-        0
+        "0"
       ]
     },
     "tags": [
@@ -151,7 +151,7 @@
       "sampleSize": 0,
       "inclusionCriteria": "All pregnant women and their children living in the Oulu and Lapland provinces of Finland with expected delivery dates in 1966.",
       "taxId": [
-        0
+        "0"
       ]
     },
     "tags": [
@@ -233,7 +233,7 @@
       "sampleSize": 0,
       "inclusionCriteria": "Pregnant women with an expected delivery date between April 2002 and January 2006 living in Rotterdam were eligible for participation in the study. We aimed to enrol mothers in early pregnancy but enrolment was possible until birth of their child. Partners from mothers enrolled in pregnancy were invited to participate. Extensive assessments are performed in mothers, fathers and their children.",
       "taxId": [
-        0
+        "0"
       ]
     },
     "tags": [
@@ -669,7 +669,7 @@
       "followUpSchedule": "Until discharged from Erasmus MC; Data further consulted to check survival up to 60 days after inclusion into the study",
       "inclusionCriteria": "Adult Patients admitted to the ICU with a clinical suspicion of infection or patients admitted to the ICU with respiratory failure (either Optiflow or mechanical ventilation)",
       "taxId": [
-        2697049
+        "2697049"
       ],
       "scientificName": [
         "Severe acute respiratory syndrome coronavirus 2"
@@ -731,7 +731,7 @@
       "followUpSchedule": "follow-up is planned to last 24 months with respect to the occurrence of the first known immunization event, either natural infection or vaccination",
       "inclusionCriteria": "Adult (>18 years) HCW with at least one immunization event (SARS-CoV-2 infection and/or vaccination) and mandatory information on their full immunization story:\na. Dates of SARS-CoV-2 infection, and/or\nb. dates of vaccination and vaccine type\n\n2. For those with a history of SARS-CoV-2 infection, diagnosis obtained by detection of SARS-CoV-2 RNA or Antigen\n3. Having a signed informed consent when required by ethical approval",
       "taxId": [
-        0
+        "0"
       ]
     },
     "tags": [
@@ -840,7 +840,7 @@
       "followUpSchedule": "follow-up is planned to last 24 months with respect to the occurrence of the first known immunization event, either natural infection or vaccination",
       "inclusionCriteria": "Adult (>18 years) HCW with at least one immunization event (SARS-CoV-2 infection and/or vaccination) and mandatory information on their full immunization story:\na. Dates of SARS-CoV-2 infection, and/or\nb. dates of vaccination and vaccine type\n\n2. For those with a history of SARS-CoV-2 infection, diagnosis obtained by detection of SARS-CoV-2 RNA or Antigen\n3. Having a signed informed consent when required by ethical approval",
       "taxId": [
-        0
+        "0"
       ]
     },
     "tags": [
@@ -953,7 +953,7 @@
       "followUpSchedule": "2-3 months, 6-9 months, 12-15 months",
       "inclusionCriteria": "Patients diagnosed with acute COVID-19 disease from 01/03/2020 to 01/02/2025 at the participating centers will be enrolled in the study; two groups of patients recovered from acute COVID-19 will be enrolled:\nGroup 1 (hospitalized patients): patients hospitalized for COVID-19 disease;\nGroup 2 (outpatients): patients diagnosed with mild COVID-19 disease and thus not hospitalized (these patients will be referred to the Clinic of Infectious Diseases by the general practitioner or have received monoclonal antibodies for COVID-19 or antiviral treatments for COVID-19 at the Clinic of Infectious Diseases or have been visited at the Emergency Department of the hospital).",
       "taxId": [
-        0
+        "0"
       ]
     },
     "tags": [
@@ -1009,7 +1009,7 @@
       "sampleType": "swab",
       "inclusionCriteria": "Kindergartens and school-age children from public or private schools. Enrolled children may be students of classes that have expressed their consent to participateSchool personnel of participating schools Householders of participating children",
       "taxId": [
-        0
+        "0"
       ]
     },
     "tags": [
@@ -1072,7 +1072,7 @@
       "sampleSize": 0,
       "inclusionCriteria": "Individuals with and without current/remitted depression and/or anxiety disorders were included.",
       "taxId": [
-        0
+        "0"
       ]
     },
     "tags": [
@@ -1109,7 +1109,7 @@
       "sampleSize": 0,
       "inclusionCriteria": "Individuals with and without current/remitted depression and/or anxiety disorders were included.",
       "taxId": [
-        0
+        "0"
       ]
     },
     "tags": [
@@ -1199,7 +1199,7 @@
       "followUpSchedule": "Follow-up visits one to seven days via clinical and laboratory assessments, with a convalescent blood sample taken approximately 2 weeks after disease onset.",
       "inclusionCriteria": "Febrile patients with clinically suspected dengue were recruited at the point of care",
       "taxId": [
-        12637
+        "12637"
       ],
       "scientificName": [
         "Dengue virus"
@@ -1286,7 +1286,7 @@
       "followUpSchedule": "Follow-up visits one to seven days via clinical and laboratory assessments, with a convalescent blood sample taken approximately 2 weeks after disease onset.",
       "inclusionCriteria": "Febrile patients with clinically suspected dengue were recruited at the point of care",
       "taxId": [
-        12637
+        "12637"
       ],
       "scientificName": [
         "Dengue virus"
@@ -1383,7 +1383,7 @@
       "followUpSchedule": "Follow-up visits one to seven days via clinical and laboratory assessments, with a convalescent blood sample taken approximately 2 weeks after disease onset.",
       "inclusionCriteria": "Febrile patients with clinically suspected dengue were recruited at the point of care",
       "taxId": [
-        12637
+        "12637"
       ],
       "scientificName": [
         "Dengue virus"
@@ -1479,7 +1479,7 @@
       "sampleType": "serum or plasma",
       "followUpSchedule": "Biweekly (All, telephone)Once per day (Incident Febrile cases) Annual (All)0, 7 days (Incident Febrile cases)",
       "taxId": [
-        12637
+        "12637"
       ],
       "scientificName": [
         "Dengue virus"
@@ -1527,7 +1527,7 @@
       "sampleSize": 0,
       "inclusionCriteria": "Residents in Norway",
       "taxId": [
-        2697049
+        "2697049"
       ],
       "scientificName": [
         "Severe acute respiratory syndrome coronavirus 2"
@@ -1579,8 +1579,8 @@
       "followUpSchedule": "Baseline (presentation), month 3, 12, 18 and 24",
       "inclusionCriteria": "Children",
       "taxId": [
-        2697049,
-        11676
+        "2697049",
+        "11676"
       ],
       "scientificName": [
         "Severe acute respiratory syndrome coronavirus 2",
@@ -1632,7 +1632,7 @@
       ],
       "sampleSize": 0,
       "taxId": [
-        11320
+        "11320"
       ],
       "scientificName": [
         "Influenza A virus"
@@ -1676,7 +1676,7 @@
       "sampleSize": 0,
       "ageRange": "0 - 17",
       "taxId": [
-        9606
+        "9606"
       ]
     },
     "tags": [
