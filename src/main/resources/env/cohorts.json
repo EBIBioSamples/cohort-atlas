@@ -669,7 +669,7 @@
       "followUpSchedule": "Until discharged from Erasmus MC; Data further consulted to check survival up to 60 days after inclusion into the study",
       "inclusionCriteria": "Adult Patients admitted to the ICU with a clinical suspicion of infection or patients admitted to the ICU with respiratory failure (either Optiflow or mechanical ventilation)",
       "taxId": [
-        2697049
+        2697049.0
       ],
       "scientificName": [
         "Severe acute respiratory syndrome coronavirus 2"
@@ -1199,7 +1199,7 @@
       "followUpSchedule": "Follow-up visits one to seven days via clinical and laboratory assessments, with a convalescent blood sample taken approximately 2 weeks after disease onset.",
       "inclusionCriteria": "Febrile patients with clinically suspected dengue were recruited at the point of care",
       "taxId": [
-        12637
+        12637.0
       ],
       "scientificName": [
         "Dengue virus"
@@ -1286,7 +1286,7 @@
       "followUpSchedule": "Follow-up visits one to seven days via clinical and laboratory assessments, with a convalescent blood sample taken approximately 2 weeks after disease onset.",
       "inclusionCriteria": "Febrile patients with clinically suspected dengue were recruited at the point of care",
       "taxId": [
-        12637
+        12637.0
       ],
       "scientificName": [
         "Dengue virus"
@@ -1383,7 +1383,7 @@
       "followUpSchedule": "Follow-up visits one to seven days via clinical and laboratory assessments, with a convalescent blood sample taken approximately 2 weeks after disease onset.",
       "inclusionCriteria": "Febrile patients with clinically suspected dengue were recruited at the point of care",
       "taxId": [
-        12637
+        12637.0
       ],
       "scientificName": [
         "Dengue virus"
@@ -1479,7 +1479,7 @@
       "sampleType": "serum or plasma",
       "followUpSchedule": "Biweekly (All, telephone)Once per day (Incident Febrile cases) Annual (All)0, 7 days (Incident Febrile cases)",
       "taxId": [
-        12637
+        12637.0
       ],
       "scientificName": [
         "Dengue virus"
@@ -1527,7 +1527,7 @@
       "sampleSize": 0,
       "inclusionCriteria": "Residents in Norway",
       "taxId": [
-        2697049
+        2697049.0
       ],
       "scientificName": [
         "Severe acute respiratory syndrome coronavirus 2"
@@ -1579,8 +1579,8 @@
       "followUpSchedule": "Baseline (presentation), month 3, 12, 18 and 24",
       "inclusionCriteria": "Children",
       "taxId": [
-        2697049,
-        11676
+        2697049.0,
+        11676.0
       ],
       "scientificName": [
         "Severe acute respiratory syndrome coronavirus 2",
@@ -1632,7 +1632,7 @@
       ],
       "sampleSize": 0,
       "taxId": [
-        11320
+        11320.0
       ],
       "scientificName": [
         "Influenza A virus"
@@ -1676,7 +1676,7 @@
       "sampleSize": 0,
       "ageRange": "0 - 17",
       "taxId": [
-        9606
+        9606.0
       ]
     },
     "tags": [
