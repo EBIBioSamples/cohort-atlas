@@ -1020,7 +1020,8 @@
       "self": {
         "href": "http://wwwdev.ebi.ac.uk/biosamples/cohortatlas/cohorts/BSC0000009"
       }
-    }
+    },
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
   },
   {
     "accession": "BSC0000011",

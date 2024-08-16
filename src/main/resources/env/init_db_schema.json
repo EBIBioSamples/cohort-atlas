@@ -16,6 +16,7 @@
     },
     "startDate": "1990",
     "endDate": "1992",
+    "targetEnrollment": 0,
     "totalEnrollment": 14541,
     "publications": [
       {
@@ -31,9 +32,15 @@
       "United Kingdom of Great Britain and Northern Ireland (the)"
     ],
     "dataSummary": {
-      "inclusionCriteria":  "Children, Mothers, Partners"
+      "sampleSize": 0,
+      "inclusionCriteria": "Children, Mothers, Partners",
+      "taxId": [
+        "0"
+      ]
     },
-    "tags": ["earlycause"],
+    "tags": [
+      "earlycause"
+    ],
     "label": "EARLY_CAUSE",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
   },
@@ -53,6 +60,7 @@
       "label": "health or medical or biomedical research"
     },
     "startDate": "1985",
+    "targetEnrollment": 0,
     "totalEnrollment": 9479,
     "publications": [
       {
@@ -74,12 +82,24 @@
     ],
     "dataSummary": {
       "ageGroups": [
-        "prenatal", "newborn", "infant", "infantsAndToddlers",
-        "child", "adolescent", "youngAdult", "adult"
+        "prenatal",
+        "newborn",
+        "infant",
+        "infantsAndToddlers",
+        "child",
+        "adolescent",
+        "youngAdult",
+        "adult"
       ],
-      "inclusionCriteria":  "All mothers and their children whose expected date of birth was between July 1st 1985 - June 30th 1986 in the two northernmost provinces of Finland (Oulu and Lapland)"
+      "sampleSize": 0,
+      "inclusionCriteria": "All mothers and their children whose expected date of birth was between July 1st 1985 - June 30th 1986 in the two northernmost provinces of Finland (Oulu and Lapland)",
+      "taxId": [
+        "0"
+      ]
     },
-    "tags": ["earlycause"],
+    "tags": [
+      "earlycause"
+    ],
     "label": "EARLY_CAUSE",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
   },
@@ -99,6 +119,7 @@
       "label": "health or medical or biomedical research"
     },
     "startDate": "1965",
+    "targetEnrollment": 0,
     "totalEnrollment": 12231,
     "publications": [
       {
@@ -117,12 +138,25 @@
     ],
     "dataSummary": {
       "ageGroups": [
-        "prenatal", "newborn", "infant", "infantsAndToddlers",
-        "child", "adolescent", "youngAdult", "adult", "middleAged"
+        "prenatal",
+        "newborn",
+        "infant",
+        "infantsAndToddlers",
+        "child",
+        "adolescent",
+        "youngAdult",
+        "adult",
+        "middleAged"
       ],
-      "inclusionCriteria":  "All pregnant women and their children living in the Oulu and Lapland provinces of Finland with expected delivery dates in 1966."
+      "sampleSize": 0,
+      "inclusionCriteria": "All pregnant women and their children living in the Oulu and Lapland provinces of Finland with expected delivery dates in 1966.",
+      "taxId": [
+        "0"
+      ]
     },
-    "tags": ["earlycause"],
+    "tags": [
+      "earlycause"
+    ],
     "label": "EARLY_CAUSE",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
   },
@@ -149,6 +183,7 @@
     ],
     "startDate": "2001",
     "endDate": "2006",
+    "targetEnrollment": 0,
     "totalEnrollment": 9901,
     "publications": [
       {
@@ -195,7 +230,11 @@
         "infant",
         "infantsAndToddlers"
       ],
-      "inclusionCriteria": "Pregnant women with an expected delivery date between April 2002 and January 2006 living in Rotterdam were eligible for participation in the study. We aimed to enrol mothers in early pregnancy but enrolment was possible until birth of their child. Partners from mothers enrolled in pregnancy were invited to participate. Extensive assessments are performed in mothers, fathers and their children."
+      "sampleSize": 0,
+      "inclusionCriteria": "Pregnant women with an expected delivery date between April 2002 and January 2006 living in Rotterdam were eligible for participation in the study. We aimed to enrol mothers in early pregnancy but enrolment was possible until birth of their child. Partners from mothers enrolled in pregnancy were invited to participate. Extensive assessments are performed in mothers, fathers and their children.",
+      "taxId": [
+        "0"
+      ]
     },
     "tags": [
       "earlycause"
@@ -215,99 +254,12 @@
     },
     "startDate": "2020",
     "endDate": "2021",
+    "targetEnrollment": 0,
     "totalEnrollment": 151,
     "territories": [
       "Netherlands",
       "Rotterdam, NL"
     ],
-    "dataSummary": {
-      "diseases": [
-        "Chronic cardiac disease (not hypertension)",
-        "Hypertension",
-        "Chronic pulmonary disease (not asthma)",
-        "Asthma (physician diagnosed)",
-        "Chronic kidney disease",
-        "Obesity (as defined by clinical staff)",
-        "Moderate or severe liver disease",
-        "Mild liver disease",
-        "Chronic neurological disorder",
-        "Malignant neoplasm",
-        "Chronic hematologic disease",
-        "Rheumatologic disorder",
-        "Malnutrition",
-        "Smoking"
-      ],
-      "medication": [
-        "Antiviral or COVID-19 targeted agent (Ribavirin, Lopinavir/Ritonvir, Remdesivir (Veklury), Neuraminidase inhibitors, Interferon alpha, Interferon beta, Chloroquine/hydroxychloroquine)",
-        "Antibiotic",
-        "Heparin",
-        "Antifungal agent"
-      ],
-      "treatment": [
-        "Any Oxygen therapy",
-        "Non-invasive ventilation",
-        "Invasive ventilation",
-        "Prone positioning",
-        "Inhaled Nitric Oxide",
-        "Tracheostomy inserted",
-        "Extracorporeal support (ECMO)",
-        "Renal replacement therapy (RRT) or dialysis",
-        "Inotropes / vasopressors",
-        "ICU or High Dependency Unit admission"
-      ],
-      "outcome": [
-        "Discharged alive",
-        "Transfer to other facility",
-        "Death"
-      ],
-      "complications": [
-        "Viral pneumonia/pneumonitis",
-        "Bacterial pneumonia",
-        "Acute Respiratory Distress Syndrome",
-        "Pleural effusion",
-        "Pneumothorax",
-        "Cryptogenic organizing pneumonia (COP)",
-        "Bronchiolitis",
-        "Cardiac arrest",
-        "Myocardial infarction",
-        "Cardiac ischemia",
-        "Cardiac arrhythmia",
-        "Myocarditis/Pericarditis",
-        "Endocarditis",
-        "Cardiomyopathy",
-        "Congestive heart failure",
-        "Seizure",
-        "Stroke / Cerebrovascular accident",
-        "Meningitis / Encephalitis",
-        "Bacteremia",
-        "Pulmonary embolism",
-        "Anemia",
-        "Rhabdomyolysis / Myositis",
-        "Acute renal injury / Acute renal failure",
-        "Gastrointestinal hemorrhage",
-        "Gastrointestinal hemorrhage | Pancreatitis",
-        "Liver dysfunction",
-        "Hyperglycaemia",
-        "Hypoglycaemia"
-      ],
-      "typeOfData": [
-        "SARS-CoV-2 sequences",
-        "Serology",
-        "Clinical-epidemiological"
-      ],
-      "ageRange": "20 - 78",
-      "sampleSize": 273,
-      "taxId": 2697049,
-      "scientificName": "Severe acute respiratory syndrome coronavirus 2",
-      "sampleType": "nasopharyngeal swab",
-      "followUpSchedule": "Until discharged from Erasmus MC; Data further consulted to check survival up to 60 days after inclusion into the study",
-      "inclusionCriteria": "Adult Patients admitted to the ICU with a clinical suspicion of infection or patients admitted to the ICU with respiratory failure (either Optiflow or mechanical ventilation)"
-    },
-    "tags": [
-      "ReCoDID"
-    ],
-    "label": "RECODID",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort",
     "dictionary": [
       {
         "name": "Chronic cardiac disease (not hypertension) ",
@@ -634,7 +586,100 @@
         "label": "countries",
         "values": "Argentina, Bolivia, Brazil, Chile, Colombia, France, Germany, Spain, UK, Netherlands"
       }
-    ]
+    ],
+    "project": "ReCoDID",
+    "dataSummary": {
+      "diseases": [
+        "Chronic cardiac disease (not hypertension)",
+        "Hypertension",
+        "Chronic pulmonary disease (not asthma)",
+        "Asthma (physician diagnosed)",
+        "Chronic kidney disease",
+        "Obesity (as defined by clinical staff)",
+        "Moderate or severe liver disease",
+        "Mild liver disease",
+        "Chronic neurological disorder",
+        "Malignant neoplasm",
+        "Chronic hematologic disease",
+        "Rheumatologic disorder",
+        "Malnutrition",
+        "Smoking"
+      ],
+      "medication": [
+        "Antiviral or COVID-19 targeted agent (Ribavirin, Lopinavir/Ritonvir, Remdesivir (Veklury), Neuraminidase inhibitors, Interferon alpha, Interferon beta, Chloroquine/hydroxychloroquine)",
+        "Antibiotic",
+        "Heparin",
+        "Antifungal agent"
+      ],
+      "treatment": [
+        "Any Oxygen therapy",
+        "Non-invasive ventilation",
+        "Invasive ventilation",
+        "Prone positioning",
+        "Inhaled Nitric Oxide",
+        "Tracheostomy inserted",
+        "Extracorporeal support (ECMO)",
+        "Renal replacement therapy (RRT) or dialysis",
+        "Inotropes / vasopressors",
+        "ICU or High Dependency Unit admission"
+      ],
+      "outcome": [
+        "Discharged alive",
+        "Transfer to other facility",
+        "Death"
+      ],
+      "complications": [
+        "Viral pneumonia/pneumonitis",
+        "Bacterial pneumonia",
+        "Acute Respiratory Distress Syndrome",
+        "Pleural effusion",
+        "Pneumothorax",
+        "Cryptogenic organizing pneumonia (COP)",
+        "Bronchiolitis",
+        "Cardiac arrest",
+        "Myocardial infarction",
+        "Cardiac ischemia",
+        "Cardiac arrhythmia",
+        "Myocarditis/Pericarditis",
+        "Endocarditis",
+        "Cardiomyopathy",
+        "Congestive heart failure",
+        "Seizure",
+        "Stroke / Cerebrovascular accident",
+        "Meningitis / Encephalitis",
+        "Bacteremia",
+        "Pulmonary embolism",
+        "Anemia",
+        "Rhabdomyolysis / Myositis",
+        "Acute renal injury / Acute renal failure",
+        "Gastrointestinal hemorrhage",
+        "Gastrointestinal hemorrhage | Pancreatitis",
+        "Liver dysfunction",
+        "Hyperglycaemia",
+        "Hypoglycaemia"
+      ],
+      "typeOfData": [
+        "SARS-CoV-2 sequences",
+        "Serology",
+        "Clinical-epidemiological"
+      ],
+      "ageRange": "20 - 78",
+      "sampleSize": 273,
+      "sampleType": "nasopharyngeal swab",
+      "followUpSchedule": "Until discharged from Erasmus MC; Data further consulted to check survival up to 60 days after inclusion into the study",
+      "inclusionCriteria": "Adult Patients admitted to the ICU with a clinical suspicion of infection or patients admitted to the ICU with respiratory failure (either Optiflow or mechanical ventilation)",
+      "taxId": [
+        "2697049"
+      ],
+      "scientificName": [
+        "Severe acute respiratory syndrome coronavirus 2"
+      ]
+    },
+    "tags": [
+      "ReCoDID"
+    ],
+    "label": "RECODID",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
   },
   {
     "accession": "BSC0000006",
@@ -643,15 +688,22 @@
     "acronym": "EuCARE-HCW",
     "website": "https://eucareresearch.eu/activities/clinical-cohorts/",
     "type": "Cohort",
+    "studyDesign": "Observational retrospective-prospective multicentre cohort study",
     "provider": {
       "name": "EuCARE - European cohorts of patients and schools to advance response to epidemics",
-      "description": "EuCARE answers to an emergency call from the European Union, in the frame of the Horizon Europe programme, to confront the COVID-19 epidemics and in particular the newly emerging SARS-COV-2 variants under several aspects. With the support of strong immuno-virological and artificial intelligence components, the project will take advantage of large hospital patients, vaccinated healthcare workers, and schools’ cohorts in Europe, Kenya, Mexico, Brazil and Vietnam to find an answer to urgent issues related to science and society.The EuCARE Project is funded by the European Union´s Horizon Europe Research and Innovation Programme under Grant Agreement No 101046016.",
-      "website": "https://eucareresearch.eu/"
+      "website": "https://eucareresearch.eu/",
+      "description": "EuCARE answers to an emergency call from the European Union, in the frame of the Horizon Europe programme, to confront the COVID-19 epidemics and in particular the newly emerging SARS-COV-2 variants under several aspects. With the support of strong immuno-virological and artificial intelligence components, the project will take advantage of large hospital patients, vaccinated healthcare workers, and schools’ cohorts in Europe, Kenya, Mexico, Brazil and Vietnam to find an answer to urgent issues related to science and society.The EuCARE Project is funded by the European Union´s Horizon Europe Research and Innovation Programme under Grant Agreement No 101046016."
     },
     "startDate": "2022-04-01",
     "endDate": "2025-04-01",
     "targetEnrollment": 1800,
-    "studyDesign": "Observational retrospective-prospective multicentre cohort study",
+    "totalEnrollment": 0,
+    "publications": [
+      {
+        "doi": "10.1186/s12879-023-08658-2"
+      }
+    ],
+    "funding": "European Union",
     "territories": [
       "Italy",
       "Poland",
@@ -661,38 +713,27 @@
       "Brazil",
       "Mexico"
     ],
-    "locations": [
-      "Milan (IT)",
-      "Rome (IT)",
-      "Szczecin (PL)",
-      "Lisbon (PT)",
-      "Dusseldorf (DE)",
-      "Vilnius (LT)",
-      "Belo Horizonte (BR)",
-      "Villahermosa (MX)"
-    ],
+    "project": "EuCARE",
     "dataSummary": {
       "diseases": [
         "immunossupression"
       ],
-      "ageRange": "18 - 122",
-      "sampleType": "serum, plasma, PMBC, nasopharyngeal swabs",
-      "followUpSchedule": "follow-up is planned to last 24 months with respect to the occurrence of the first known immunization event, either natural infection or vaccination",
-      "inclusionCriteria": "Adult (>18 years) HCW with at least one immunization event (SARS-CoV-2 infection and/or vaccination) and mandatory information on their full immunization story:\na. Dates of SARS-CoV-2 infection, and/or\nb. dates of vaccination and vaccine type\n\n2. For those with a history of SARS-CoV-2 infection, diagnosis obtained by detection of SARS-CoV-2 RNA or Antigen\n3. Having a signed informed consent when required by ethical approval",
       "typeOfData": [
         "SARS-CoV-2 sequences",
         "Serology",
         "Clinical-epidemiological",
         "Biospecimens",
         "Phenotypic"
+      ],
+      "ageRange": "18 - 122",
+      "sampleSize": 0,
+      "sampleType": "serum, plasma, PMBC, nasopharyngeal swabs",
+      "followUpSchedule": "follow-up is planned to last 24 months with respect to the occurrence of the first known immunization event, either natural infection or vaccination",
+      "inclusionCriteria": "Adult (>18 years) HCW with at least one immunization event (SARS-CoV-2 infection and/or vaccination) and mandatory information on their full immunization story:\na. Dates of SARS-CoV-2 infection, and/or\nb. dates of vaccination and vaccine type\n\n2. For those with a history of SARS-CoV-2 infection, diagnosis obtained by detection of SARS-CoV-2 RNA or Antigen\n3. Having a signed informed consent when required by ethical approval",
+      "taxId": [
+        "0"
       ]
     },
-    "funding": "European Union",
-    "publications": [
-      {
-        "doi": "10.1186/s12879-023-08658-2"
-      }
-    ],
     "tags": [
       "ReCoDID"
     ],
@@ -706,15 +747,22 @@
     "acronym": "EuCARE-HOSPITALISED",
     "website": "https://eucareresearch.eu/activities/clinical-cohorts/",
     "type": "Cohort",
+    "studyDesign": "Observational retrospective-prospective multicentre cohort study",
     "provider": {
       "name": "EuCARE - European cohorts of patients and schools to advance response to epidemics",
-      "description": "EuCARE answers to an emergency call from the European Union, in the frame of the Horizon Europe programme, to confront the COVID-19 epidemics and in particular the newly emerging SARS-COV-2 variants under several aspects. With the support of strong immuno-virological and artificial intelligence components, the project will take advantage of large hospital patients, vaccinated healthcare workers, and schools’ cohorts in Europe, Kenya, Mexico, Brazil and Vietnam to find an answer to urgent issues related to science and society.The EuCARE Project is funded by the European Union´s Horizon Europe Research and Innovation Programme under Grant Agreement No 101046016.",
-      "website": "https://eucareresearch.eu/"
+      "website": "https://eucareresearch.eu/",
+      "description": "EuCARE answers to an emergency call from the European Union, in the frame of the Horizon Europe programme, to confront the COVID-19 epidemics and in particular the newly emerging SARS-COV-2 variants under several aspects. With the support of strong immuno-virological and artificial intelligence components, the project will take advantage of large hospital patients, vaccinated healthcare workers, and schools’ cohorts in Europe, Kenya, Mexico, Brazil and Vietnam to find an answer to urgent issues related to science and society.The EuCARE Project is funded by the European Union´s Horizon Europe Research and Innovation Programme under Grant Agreement No 101046016."
     },
     "startDate": "2022-02-23",
     "endDate": "2026-10-13",
     "targetEnrollment": 1800,
-    "studyDesign": "Observational retrospective-prospective multicentre cohort study",
+    "totalEnrollment": 0,
+    "publications": [
+      {
+        "doi": "10.1186/s12879-023-08658-2"
+      }
+    ],
+    "funding": "European Union",
     "territories": [
       "Sweden",
       "Italy",
@@ -727,19 +775,7 @@
       "Brazil",
       "Mexico"
     ],
-    "locations": [
-      "Stockholm (SE)",
-      "Milan (IT)",
-      "Rome (IT)",
-      "Szczecin (PL)",
-      "Lisbon (PT)",
-      "Dusseldorf (DE)",
-      "Vilnius (LT)",
-      "Poole (UK)",
-      "Nairobi (KE)",
-      "Belo Horizonte (BR)",
-      "Villahermosa (MX)"
-    ],
+    "project": "EuCARE",
     "dataSummary": {
       "diseases": [
         "Cancer",
@@ -790,10 +826,6 @@
         "ICU admission",
         "mechanical ventilation"
       ],
-      "ageRange": "18 - 122",
-      "sampleType": "Swab (nasopharyngeal), Whole blood, Bronchoalveolar lavage, Sputum, Serum, Plasma, PBMC, Urine, Feces/rectal swab, BAS (Bronchoaspirate), Swab (throat), BAL (Bronchoalveolar lavage), ETA (Endotracheal Aspirate), CSF (Cerebrospinal Fluid), Pus, Bile, Biopsy, Skin, Peritoneal fluid, Venous catheter",
-      "followUpSchedule": "follow-up is planned to last 24 months with respect to the occurrence of the first known immunization event, either natural infection or vaccination",
-      "inclusionCriteria": "Adult (>18 years) HCW with at least one immunization event (SARS-CoV-2 infection and/or vaccination) and mandatory information on their full immunization story:\na. Dates of SARS-CoV-2 infection, and/or\nb. dates of vaccination and vaccine type\n\n2. For those with a history of SARS-CoV-2 infection, diagnosis obtained by detection of SARS-CoV-2 RNA or Antigen\n3. Having a signed informed consent when required by ethical approval",
       "typeOfData": [
         "SARS-CoV-2 sequences",
         "Serology",
@@ -801,14 +833,16 @@
         "Biospecimens",
         "Phenotypic",
         "Others -CT values"
+      ],
+      "ageRange": "18 - 122",
+      "sampleSize": 0,
+      "sampleType": "Swab (nasopharyngeal), Whole blood, Bronchoalveolar lavage, Sputum, Serum, Plasma, PBMC, Urine, Feces/rectal swab, BAS (Bronchoaspirate), Swab (throat), BAL (Bronchoalveolar lavage), ETA (Endotracheal Aspirate), CSF (Cerebrospinal Fluid), Pus, Bile, Biopsy, Skin, Peritoneal fluid, Venous catheter",
+      "followUpSchedule": "follow-up is planned to last 24 months with respect to the occurrence of the first known immunization event, either natural infection or vaccination",
+      "inclusionCriteria": "Adult (>18 years) HCW with at least one immunization event (SARS-CoV-2 infection and/or vaccination) and mandatory information on their full immunization story:\na. Dates of SARS-CoV-2 infection, and/or\nb. dates of vaccination and vaccine type\n\n2. For those with a history of SARS-CoV-2 infection, diagnosis obtained by detection of SARS-CoV-2 RNA or Antigen\n3. Having a signed informed consent when required by ethical approval",
+      "taxId": [
+        "0"
       ]
     },
-    "funding": "European Union",
-    "publications": [
-      {
-        "doi": "10.1186/s12879-023-08658-2"
-      }
-    ],
     "tags": [
       "ReCoDID"
     ],
@@ -822,15 +856,22 @@
     "acronym": "EuCARE-POSTCOVID",
     "website": "https://eucareresearch.eu/activities/clinical-cohorts/",
     "type": "Cohort",
+    "studyDesign": "Observational retrospective-prospective multicentre cohort study",
     "provider": {
       "name": "EuCARE - European cohorts of patients and schools to advance response to epidemics",
-      "description": "EuCARE answers to an emergency call from the European Union, in the frame of the Horizon Europe programme, to confront the COVID-19 epidemics and in particular the newly emerging SARS-COV-2 variants under several aspects. With the support of strong immuno-virological and artificial intelligence components, the project will take advantage of large hospital patients, vaccinated healthcare workers, and schools’ cohorts in Europe, Kenya, Mexico, Brazil and Vietnam to find an answer to urgent issues related to science and society.The EuCARE Project is funded by the European Union´s Horizon Europe Research and Innovation Programme under Grant Agreement No 101046016.",
-      "website": "https://eucareresearch.eu/"
+      "website": "https://eucareresearch.eu/",
+      "description": "EuCARE answers to an emergency call from the European Union, in the frame of the Horizon Europe programme, to confront the COVID-19 epidemics and in particular the newly emerging SARS-COV-2 variants under several aspects. With the support of strong immuno-virological and artificial intelligence components, the project will take advantage of large hospital patients, vaccinated healthcare workers, and schools’ cohorts in Europe, Kenya, Mexico, Brazil and Vietnam to find an answer to urgent issues related to science and society.The EuCARE Project is funded by the European Union´s Horizon Europe Research and Innovation Programme under Grant Agreement No 101046016."
     },
     "startDate": "2022-07-01",
     "endDate": "2025-07-01",
     "targetEnrollment": 2300,
-    "studyDesign": "Observational retrospective-prospective multicentre cohort study",
+    "totalEnrollment": 0,
+    "publications": [
+      {
+        "doi": "doi: 10.1186/s12879-023-08595-0"
+      }
+    ],
+    "funding": "European Union",
     "territories": [
       "Italy",
       "Poland",
@@ -840,16 +881,7 @@
       "Brazil",
       "Mexico"
     ],
-    "locations": [
-      "Milan (IT)",
-      "Rome (IT)",
-      "Szczecin (PL)",
-      "Lisbon (PT)",
-      "Dusseldorf (DE)",
-      "Vilnius (LT)",
-      "Belo Horizonte (BR)",
-      "Villahermosa (MX)"
-    ],
+    "project": "EuCARE",
     "dataSummary": {
       "diseases": [
         "Cancer",
@@ -895,37 +927,35 @@
         "Other COVID drug",
         "Other non-COVID drug"
       ],
-      "complications": [
-        "new hospital admission",
-        "new ED visit",
-        "new general practitioner visit"
-      ],
-      "outcome": [
-        "post COVID 19 condition and clusters (chronic fatigue syndrome, brain fog, respiratory sequelae, ect)"
-      ],
       "treatment": [
         "specialistic visit prescription and physioterapist visit prescription (se si intende terapia per post COVID",
         "dato che non ci sono trattamenti codificati",
         "teniamo se vengono inviati da specialisti o fisioterapia"
       ],
-      "ageRange": "18 - 122",
-      "sampleType": "blood/serum samples",
-      "followUpSchedule": "2-3 months, 6-9 months, 12-15 months",
-      "inclusionCriteria": "Patients diagnosed with acute COVID-19 disease from 01/03/2020 to 01/02/2025 at the participating centers will be enrolled in the study; two groups of patients recovered from acute COVID-19 will be enrolled:\nGroup 1 (hospitalized patients): patients hospitalized for COVID-19 disease;\nGroup 2 (outpatients): patients diagnosed with mild COVID-19 disease and thus not hospitalized (these patients will be referred to the Clinic of Infectious Diseases by the general practitioner or have received monoclonal antibodies for COVID-19 or antiviral treatments for COVID-19 at the Clinic of Infectious Diseases or have been visited at the Emergency Department of the hospital).",
+      "outcome": [
+        "post COVID 19 condition and clusters (chronic fatigue syndrome, brain fog, respiratory sequelae, ect)"
+      ],
+      "complications": [
+        "new hospital admission",
+        "new ED visit",
+        "new general practitioner visit"
+      ],
       "typeOfData": [
         "SARS-CoV-2 sequences",
         "Serology",
         "Clinical-epidemiological",
         "Biospecimens",
         "Phenotypic"
+      ],
+      "ageRange": "18 - 122",
+      "sampleSize": 0,
+      "sampleType": "blood/serum samples",
+      "followUpSchedule": "2-3 months, 6-9 months, 12-15 months",
+      "inclusionCriteria": "Patients diagnosed with acute COVID-19 disease from 01/03/2020 to 01/02/2025 at the participating centers will be enrolled in the study; two groups of patients recovered from acute COVID-19 will be enrolled:\nGroup 1 (hospitalized patients): patients hospitalized for COVID-19 disease;\nGroup 2 (outpatients): patients diagnosed with mild COVID-19 disease and thus not hospitalized (these patients will be referred to the Clinic of Infectious Diseases by the general practitioner or have received monoclonal antibodies for COVID-19 or antiviral treatments for COVID-19 at the Clinic of Infectious Diseases or have been visited at the Emergency Department of the hospital).",
+      "taxId": [
+        "0"
       ]
     },
-    "funding": "European Union",
-    "publications": [
-      {
-        "doi": "doi: 10.1186/s12879-023-08595-0"
-      }
-    ],
     "tags": [
       "ReCoDID"
     ],
@@ -939,39 +969,16 @@
     "acronym": "EuCARE-SCHOOLS",
     "website": "https://eucareresearch.eu/activities/clinical-cohorts/",
     "type": "Cohort",
+    "studyDesign": "Multicenter cluster randomised interventional study + ancillary observational study",
     "provider": {
       "name": "EuCARE - European cohorts of patients and schools to advance response to epidemics",
-      "description": "EuCARE answers to an emergency call from the European Union, in the frame of the Horizon Europe programme, to confront the COVID-19 epidemics and in particular the newly emerging SARS-COV-2 variants under several aspects. With the support of strong immuno-virological and artificial intelligence components, the project will take advantage of large hospital patients, vaccinated healthcare workers, and schools’ cohorts in Europe, Kenya, Mexico, Brazil and Vietnam to find an answer to urgent issues related to science and society.The EuCARE Project is funded by the European Union´s Horizon Europe Research and Innovation Programme under Grant Agreement No 101046016.",
-      "website": "https://eucareresearch.eu/"
+      "website": "https://eucareresearch.eu/",
+      "description": "EuCARE answers to an emergency call from the European Union, in the frame of the Horizon Europe programme, to confront the COVID-19 epidemics and in particular the newly emerging SARS-COV-2 variants under several aspects. With the support of strong immuno-virological and artificial intelligence components, the project will take advantage of large hospital patients, vaccinated healthcare workers, and schools’ cohorts in Europe, Kenya, Mexico, Brazil and Vietnam to find an answer to urgent issues related to science and society.The EuCARE Project is funded by the European Union´s Horizon Europe Research and Innovation Programme under Grant Agreement No 101046016."
     },
     "startDate": "2022-05-10",
     "endDate": "2023-12-31",
-    "studyDesign": "Multicenter cluster randomised interventional study + ancillary observational study",
-    "territories": [
-      "Italy",
-      "Portugal",
-      "Mexico"
-    ],
-    "locations": [
-      "Milan (IT)",
-      "Lecce (IT)",
-      "Lisbon (PT)"
-    ],
-    "dataSummary": {
-      "outcome": [
-        "Frequencies of clusters in classrooms in which pooled saliva tests (Lolli-Method) are performed in association with standard contact-tracing protocols, compared with classrooms in which SoC protocols are applied"
-      ],
-      "ageRange": "3 - 19",
-      "sampleType": "swab",
-      "inclusionCriteria": "Kindergartens and school-age children from public or private schools. Enrolled children may be students of classes that have expressed their consent to participateSchool personnel of participating schools Householders of participating children",
-      "typeOfData": [
-        "SARS-CoV-2 sequences",
-        "Serology",
-        "Clinical-epidemiological",
-        "Phenotypic"
-      ]
-    },
-    "funding": "European Union",
+    "targetEnrollment": 0,
+    "totalEnrollment": 0,
     "publications": [
       {
         "doi": "doi: 10.1186/s12879-023-08065-7"
@@ -980,18 +987,49 @@
         "doi": "doi: 10.1016/j.ijid.2023.11.002"
       }
     ],
+    "funding": "European Union",
+    "territories": [
+      "Italy",
+      "Portugal",
+      "Mexico"
+    ],
+    "project": "EuCARE",
+    "dataSummary": {
+      "outcome": [
+        "Frequencies of clusters in classrooms in which pooled saliva tests (Lolli-Method) are performed in association with standard contact-tracing protocols, compared with classrooms in which SoC protocols are applied"
+      ],
+      "typeOfData": [
+        "SARS-CoV-2 sequences",
+        "Serology",
+        "Clinical-epidemiological",
+        "Phenotypic"
+      ],
+      "ageRange": "3 - 19",
+      "sampleSize": 0,
+      "sampleType": "swab",
+      "inclusionCriteria": "Kindergartens and school-age children from public or private schools. Enrolled children may be students of classes that have expressed their consent to participateSchool personnel of participating schools Householders of participating children",
+      "taxId": [
+        "0"
+      ]
+    },
     "tags": [
       "ReCoDID"
     ],
     "label": "RECODID",
+    "_links": {
+      "self": {
+        "href": "http://wwwdev.ebi.ac.uk/biosamples/cohortatlas/cohorts/BSC0000009"
+      }
+    },
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
   },
-
   {
     "accession": "BSC0000011",
     "cohortName": "Parents of NFBC1966",
     "acronym": "NFBC1966 G0",
     "type": "Cohort",
+    "targetEnrollment": 0,
+    "totalEnrollment": 0,
     "territories": [
       "Finland"
     ],
@@ -1015,6 +1053,7 @@
       "label": "submit analysis plan to NESDA management team to be evaluated for data access (see website nesda.nl for more information)"
     },
     "startDate": "2004",
+    "targetEnrollment": 0,
     "totalEnrollment": 3348,
     "publications": [
       {
@@ -1031,7 +1070,11 @@
         "lateMiddleaged",
         "lateAdulthood"
       ],
-      "inclusionCriteria": "Individuals with and without current/remitted depression and/or anxiety disorders were included."
+      "sampleSize": 0,
+      "inclusionCriteria": "Individuals with and without current/remitted depression and/or anxiety disorders were included.",
+      "taxId": [
+        "0"
+      ]
     },
     "tags": [
       "earlycause"
@@ -1054,6 +1097,7 @@
     },
     "startDate": "2007",
     "endDate": "20016",
+    "targetEnrollment": 0,
     "totalEnrollment": 510,
     "territories": [
       "Netherlands"
@@ -1063,151 +1107,16 @@
         "lateMiddleaged",
         "lateAdulthood"
       ],
-      "inclusionCriteria": "Individuals with and without current/remitted depression and/or anxiety disorders were included."
+      "sampleSize": 0,
+      "inclusionCriteria": "Individuals with and without current/remitted depression and/or anxiety disorders were included.",
+      "taxId": [
+        "0"
+      ]
     },
     "tags": [
       "earlycause"
     ],
     "label": "EARLY_CAUSE",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
-  },
-  {
-    "accession": "BSC0000000",
-    "cohortName": "Longitudinal Study of Parents and Children (Test)",
-    "description": "This is a test cohort which contains all available data fields in cohort-atlas",
-    "acronym": "LSPCT",
-    "website": "wwwdev.ebi.ac.uk/biosamples/cohortatlas/cohorts/BSC0000000",
-    "logo": "",
-    "type": "Cohort",
-    "studyDesign": "Longitudinal",
-    "provider": {
-      "name": "BioSamples Development Team",
-      "description": "BioSamples Team is a part of EBI AIT"
-    },
-    "license": "MIT",
-    "rights": "",
-    "dataSharing": {
-      "id": "DUO:0000004",
-      "label": "No restrictions"
-    },
-    "contacts": [
-      {
-        "name": "Fox Mulder",
-        "orcid": "",
-        "email": "biosamples@ebi.ac.uk"
-      },
-      {
-        "name": "Dana Scully",
-        "orcid": "",
-        "email": "biosamples@ebi.ac.uk"
-      }
-    ],
-    "investigators": [
-      {
-        "name": "Cloud Strife",
-        "orcid": "",
-        "email": "biosamples@ebi.ac.uk"
-      }
-    ],
-    "startDate": "01-01-2023",
-    "endDate": "01-01-2025",
-    "targetEnrollment": 1000,
-    "totalEnrollment": 345,
-    "publications": [
-      {
-        "url": "https://academic.oup.com/nar/article/50/D1/D1500/6423179"
-      },
-      {
-        "url": "https://academic.oup.com/nar/article/47/D1/D1172/5165182"
-      }
-    ],
-    "funding": "This cohort is not funded by anyone",
-    "acknowledgements": "We acknowledge the hard work of all EBI team",
-    "territories": [
-      "UK"
-    ],
-    "dataTypes": [
-      "biospecimens",
-      "environmentalData",
-      "genomicData",
-      "phenotypicData"
-    ],
-    "project": "BCAP0000000",
-    "attachments": [],
-    "externalLinks": [],
-    "supplementaryInformation": "",
-    "dictionary": [
-      {
-        "name": "Gender",
-        "label": "Gender",
-        "description": "Gender",
-        "type": "string",
-        "values": "MALE, FEMALE, OTHER",
-        "annotation": "gender"
-      },
-      {
-        "name": "Birthdate",
-        "label": "Birthdate",
-        "description": "Birthdate",
-        "type": "string",
-        "annotation": "age/birthdate"
-      },
-      {
-        "name": "Agreement dateAgreement date",
-        "label": "Agreement dateAgreement date",
-        "description": "Agreement dateAgreement date",
-        "type": "string",
-        "annotation": "date and time-related information"
-      },
-      {
-        "name": "Year of birth",
-        "label": "Year of birth",
-        "description": "Year of birth",
-        "type": "string"
-      },
-      {
-        "name": "Age",
-        "label": "Age at present",
-        "description": "Age at present",
-        "type": "string",
-        "annotation": "age/birthdate"
-      }
-    ],
-    "relationships": [
-      {
-        "source": "biosamples:SAMEA2241260",
-        "type": "IS_RELATED_TO"
-      },
-      {
-        "source": "biosamples:SAMEA2241357",
-        "type": "IS_RELATED_TO"
-      },
-      {
-        "source": "biosamples:SAMEA2541472",
-        "type": "IS_A_PART_OF"
-      }
-    ],
-    "dataSummary": {
-      "diseases": [],
-      "medication": [],
-      "treatment": [],
-      "outcome": [],
-      "complications": [],
-      "typeOfData": [],
-      "ageRange": "",
-      "ageGroups": [],
-      "sampleSize": "",
-      "sampleType": "",
-      "followUpSchedule": "",
-      "collectionType": "",
-      "inclusionCriteria": "",
-      "releaseType": "",
-      "linkageOptions": ""
-    },
-    "tags": [
-      "test"
-    ],
-    "label": "TEST",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
   },
   {
@@ -1220,19 +1129,29 @@
     "studyDesign": "Cohort",
     "provider": {
       "name": "Universidad Industrial de Santander",
-      "description": "Public university",
-      "website": "https://uis.edu.co/fs-gruinv-epiclin-en/"
+      "website": "https://uis.edu.co/fs-gruinv-epiclin-en/",
+      "description": "Public university"
     },
+    "contacts": [
+      {
+        "name": "Grupo de Epidemiología Clínica",
+        "email": "epiclin@uis.edu.co",
+        "orcid": "",
+        "address": "Cra 32 no. 29-31, Bucaramanga, Santander"
+      }
+    ],
+    "investigators": [
+      {
+        "name": "Luis Villar",
+        "email": "epiclin@uis.edu.co",
+        "orcid": "",
+        "address": "Cra 32 no. 29-31, Bucaramanga, Santander"
+      }
+    ],
     "startDate": "2003",
     "endDate": "2005",
+    "targetEnrollment": 0,
     "totalEnrollment": 500,
-    "territories": [
-      "Colombia"
-    ],
-    "locations": [
-      "Bucaramanga",
-      "Santander"
-    ],
     "publications": [
       {
         "title": "Evaluación de la definición clínica de dengue sugerida por la Organización Mundial de la Salud [Evaluation of the World Health Organization clinical definition of dengue]",
@@ -1245,25 +1164,11 @@
         "url": "https://revistabiomedica.org/index.php/biomedica/article/view/1391"
       }
     ],
-    "investigators": [
-      {
-        "name": "Luis Villar",
-        "orcid": "",
-        "email": "epiclin@uis.edu.co",
-        "address": "Cra 32 no. 29-31, Bucaramanga, Santander"
-      }
-    ],
-    "contacts": [
-      {
-        "name": "Grupo de Epidemiología Clínica",
-        "orcid": "",
-        "email": "epiclin@uis.edu.co",
-        "address": "Cra 32 no. 29-31, Bucaramanga, Santander"
-      }
+    "funding": "Colombian Administrative Department of Science, Technology, and Innovation – Colciencias and the Universidad Industrial de Santander. Grant no: 1102-04-12919",
+    "territories": [
+      "Colombia"
     ],
     "dataSummary": {
-      "inclusionCriteria": "Febrile patients with clinically suspected dengue were recruited at the point of care",
-      "followUpSchedule": "Follow-up visits one to seven days via clinical and laboratory assessments, with a convalescent blood sample taken approximately 2 weeks after disease onset.",
       "diseases": [
         "Arterial Hypertension",
         "Asthma",
@@ -1289,17 +1194,18 @@
         "SARS-CoV-2 sequences",
         "Clinical-epidemiological"
       ],
-      "sampleSize": 195,
-      "provider": {
-        "name": "Universidad Industrial de Santander",
-        "description": "Public university",
-        "website": "https://uis.edu.co/fs-gruinv-epiclin-en/"
-      },
       "ageRange": "2 - 85",
       "sampleSize": 273,
-      "sampleType": "serum or plasma"
+      "sampleType": "serum or plasma",
+      "followUpSchedule": "Follow-up visits one to seven days via clinical and laboratory assessments, with a convalescent blood sample taken approximately 2 weeks after disease onset.",
+      "inclusionCriteria": "Febrile patients with clinically suspected dengue were recruited at the point of care",
+      "taxId": [
+        "12637"
+      ],
+      "scientificName": [
+        "Dengue virus"
+      ]
     },
-    "funding": "Colombian Administrative Department of Science, Technology, and Innovation – Colciencias and the Universidad Industrial de Santander. Grant no: 1102-04-12919",
     "tags": [
       "ReCoDID"
     ],
@@ -1316,19 +1222,29 @@
     "studyDesign": "Cohort",
     "provider": {
       "name": "Universidad Industrial de Santander",
-      "description": "Public university",
-      "website": "https://uis.edu.co/fs-gruinv-epiclin-en/"
+      "website": "https://uis.edu.co/fs-gruinv-epiclin-en/",
+      "description": "Public university"
     },
+    "contacts": [
+      {
+        "name": "Grupo de Epidemiología Clínica",
+        "email": "epiclin@uis.edu.co",
+        "orcid": "",
+        "address": "Cra 32 no. 29-31, Bucaramanga, Santander"
+      }
+    ],
+    "investigators": [
+      {
+        "name": "Luis Villar",
+        "email": "epiclin@uis.edu.co",
+        "orcid": "",
+        "address": "Cra 32 no. 29-31, Bucaramanga, Santander"
+      }
+    ],
     "startDate": "2006",
     "endDate": "2008",
+    "targetEnrollment": 0,
     "totalEnrollment": 705,
-    "territories": [
-      "Colombia"
-    ],
-    "locations": [
-      "Bucaramanga",
-      "Santander"
-    ],
     "publications": [
       {
         "title": "Biomarcadores pronósticos de gravedad del dengue [Biomarkers for the prognosis of severe dengue]",
@@ -1336,25 +1252,11 @@
         "url": "https://revistabiomedica.org/index.php/biomedica/article/view/733"
       }
     ],
-    "investigators": [
-      {
-        "name": "Luis Villar",
-        "orcid": "",
-        "email": "epiclin@uis.edu.co",
-        "address": "Cra 32 no. 29-31, Bucaramanga, Santander"
-      }
-    ],
-    "contacts": [
-      {
-        "name": "Grupo de Epidemiología Clínica",
-        "orcid": "",
-        "email": "epiclin@uis.edu.co",
-        "address": "Cra 32 no. 29-31, Bucaramanga, Santander"
-      }
+    "funding": "Colombian Administrative Department of Science, Technology, and Innovation – Colciencias and the Universidad Industrial de Santander. Grant no: 1102-04-18205",
+    "territories": [
+      "Colombia"
     ],
     "dataSummary": {
-      "inclusionCriteria": "Febrile patients with clinically suspected dengue were recruited at the point of care",
-      "followUpSchedule": "Follow-up visits one to seven days via clinical and laboratory assessments, with a convalescent blood sample taken approximately 2 weeks after disease onset.",
       "diseases": [
         "Arterial Hypertension",
         "Asthma",
@@ -1379,16 +1281,18 @@
         "SARS-CoV-2 sequences",
         "Clinical-epidemiological"
       ],
-      "provider": {
-        "name": "Universidad Industrial de Santander",
-        "description": "Public university",
-        "website": "https://uis.edu.co/fs-gruinv-epiclin-en/"
-      },
       "ageRange": "5 - 74",
       "sampleSize": 228,
-      "sampleType": "serum or plasma"
+      "sampleType": "serum or plasma",
+      "followUpSchedule": "Follow-up visits one to seven days via clinical and laboratory assessments, with a convalescent blood sample taken approximately 2 weeks after disease onset.",
+      "inclusionCriteria": "Febrile patients with clinically suspected dengue were recruited at the point of care",
+      "taxId": [
+        "12637"
+      ],
+      "scientificName": [
+        "Dengue virus"
+      ]
     },
-    "funding": "Colombian Administrative Department of Science, Technology, and Innovation – Colciencias and the Universidad Industrial de Santander. Grant no: 1102-04-18205",
     "tags": [
       "ReCoDID"
     ],
@@ -1405,22 +1309,29 @@
     "studyDesign": "Cohort",
     "provider": {
       "name": "Universidad Industrial de Santander",
-      "description": "Public university",
-      "website": "https://uis.edu.co/fs-gruinv-epiclin-en/"
+      "website": "https://uis.edu.co/fs-gruinv-epiclin-en/",
+      "description": "Public university"
     },
+    "contacts": [
+      {
+        "name": "Grupo de Epidemiología Clínica",
+        "email": "epiclin@uis.edu.co",
+        "orcid": "",
+        "address": "Cra 32 no. 29-31, Bucaramanga, Santander"
+      }
+    ],
+    "investigators": [
+      {
+        "name": "Luis Villar",
+        "email": "epiclin@uis.edu.co",
+        "orcid": "",
+        "address": "Cra 32 no. 29-31, Bucaramanga, Santander"
+      }
+    ],
     "startDate": "2009",
     "endDate": "2011",
+    "targetEnrollment": 0,
     "totalEnrollment": 705,
-    "territories": [
-      "Colombia"
-    ],
-    "locations": [
-      "Bucaramanga, COL",
-      "Barranquilla, COL",
-      "Parmila, COL",
-      "Cali, COL",
-      "Neiva, COL"
-    ],
     "publications": [
       {
         "title": "Vitamin D serostatus and dengue fever progression to dengue hemorrhagic fever/dengue shock syndrome",
@@ -1438,25 +1349,11 @@
         "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6367622/"
       }
     ],
-    "investigators": [
-      {
-        "name": "Luis Villar",
-        "orcid": "",
-        "email": "epiclin@uis.edu.co",
-        "address": "Cra 32 no. 29-31, Bucaramanga, Santander"
-      }
-    ],
-    "contacts": [
-      {
-        "name": "Grupo de Epidemiología Clínica",
-        "orcid": "",
-        "email": "epiclin@uis.edu.co",
-        "address": "Cra 32 no. 29-31, Bucaramanga, Santander"
-      }
+    "funding": "Colombian Administrative Department of Science, Technology, and Innovation – Colciencias and the Universidad Industrial de Santander. Grant no: 1102-459-21561",
+    "territories": [
+      "Colombia"
     ],
     "dataSummary": {
-      "inclusionCriteria": "Febrile patients with clinically suspected dengue were recruited at the point of care",
-      "followUpSchedule": "Follow-up visits one to seven days via clinical and laboratory assessments, with a convalescent blood sample taken approximately 2 weeks after disease onset.",
       "diseases": [
         "Arterial Hypertension",
         "Asthma",
@@ -1481,16 +1378,18 @@
         "SARS-CoV-2 sequences",
         "Clinical-epidemiological"
       ],
-      "provider": {
-        "name": "Universidad Industrial de Santander",
-        "description": "Public university",
-        "website": "https://uis.edu.co/fs-gruinv-epiclin-en/"
-      },
       "ageRange": "1 - 86",
       "sampleSize": 799,
-      "sampleType": "serum or plasma"
+      "sampleType": "serum or plasma",
+      "followUpSchedule": "Follow-up visits one to seven days via clinical and laboratory assessments, with a convalescent blood sample taken approximately 2 weeks after disease onset.",
+      "inclusionCriteria": "Febrile patients with clinically suspected dengue were recruited at the point of care",
+      "taxId": [
+        "12637"
+      ],
+      "scientificName": [
+        "Dengue virus"
+      ]
     },
-    "funding": "Colombian Administrative Department of Science, Technology, and Innovation – Colciencias and the Universidad Industrial de Santander. Grant no: 1102-459-21561",
     "tags": [
       "ReCoDID"
     ],
@@ -1507,18 +1406,29 @@
     "studyDesign": "Cohort",
     "provider": {
       "name": "Universidad Industrial de Santander",
-      "description": "Public university",
-      "website": "https://uis.edu.co/fs-gruinv-epiclin-en/"
+      "website": "https://uis.edu.co/fs-gruinv-epiclin-en/",
+      "description": "Public university"
     },
+    "contacts": [
+      {
+        "name": "Grupo de Epidemiología Clínica",
+        "email": "epiclin@uis.edu.co",
+        "orcid": "",
+        "address": "Cra 32 no. 29-31, Bucaramanga, Santander"
+      }
+    ],
+    "investigators": [
+      {
+        "name": "Luis Villar",
+        "email": "epiclin@uis.edu.co",
+        "orcid": "",
+        "address": "Cra 32 no. 29-31, Bucaramanga, Santander"
+      }
+    ],
     "startDate": "2015",
     "endDate": "2018",
+    "targetEnrollment": 0,
     "totalEnrollment": 2400,
-    "territories": [
-      "Colombia"
-    ],
-    "locations": [
-      "Piedecuesta, COL"
-    ],
     "publications": [
       {
         "title": "Vitamin D serostatus and dengue fever progression to dengue hemorrhagic fever/dengue shock syndrome",
@@ -1536,24 +1446,11 @@
         "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6367622/"
       }
     ],
-    "investigators": [
-      {
-        "name": "Luis Villar",
-        "orcid": "",
-        "email": "epiclin@uis.edu.co",
-        "address": "Cra 32 no. 29-31, Bucaramanga, Santander"
-      }
-    ],
-    "contacts": [
-      {
-        "name": "Grupo de Epidemiología Clínica",
-        "orcid": "",
-        "email": "epiclin@uis.edu.co",
-        "address": "Cra 32 no. 29-31, Bucaramanga, Santander"
-      }
+    "funding": "Colombian Science, Technology, and Innovation Funds of `Sistema General de Regalías de Santander, Casanare y Valle del Cauca.` Additional financial support was received by Sanofi Pasteur S.A and Fundación Infovida (http://www.fundacioninfovida.com.co/).Grant no: 1102-459-21561",
+    "territories": [
+      "Colombia"
     ],
     "dataSummary": {
-      "followUpSchedule": "Biweekly (All, telephone)Once per day (Incident Febrile cases) Annual (All)0, 7 days (Incident Febrile cases)",
       "diseases": [
         "Arterial Hypertension",
         "Asthma",
@@ -1578,16 +1475,17 @@
         "SARS-CoV-2 sequences",
         "Clinical-epidemiological"
       ],
-      "provider": {
-        "name": "Universidad Industrial de Santander",
-        "description": "Public university",
-        "website": "https://uis.edu.co/fs-gruinv-epiclin-en/"
-      },
       "ageRange": "2 - 40",
       "sampleSize": 145,
-      "sampleType": "serum or plasma"
+      "sampleType": "serum or plasma",
+      "followUpSchedule": "Biweekly (All, telephone)Once per day (Incident Febrile cases) Annual (All)0, 7 days (Incident Febrile cases)",
+      "taxId": [
+        "12637"
+      ],
+      "scientificName": [
+        "Dengue virus"
+      ]
     },
-    "funding": "Colombian Science, Technology, and Innovation Funds of `Sistema General de Regalías de Santander, Casanare y Valle del Cauca.` Additional financial support was received by Sanofi Pasteur S.A and Fundación Infovida (http://www.fundacioninfovida.com.co/).Grant no: 1102-459-21561",
     "tags": [
       "ReCoDID"
     ],
@@ -1604,32 +1502,37 @@
     "studyDesign": "Prospective electronic health records",
     "provider": {
       "name": "Helsedata platform",
-      "description": "Platform covering health data in Norway",
-      "website": "www.helsedata.no"
+      "website": "www.helsedata.no",
+      "description": "Platform covering health data in Norway"
     },
-    "startDate": "2015-01-01",
-    "endDate": "2022-12-31",
-    "totalEnrollment": 0,
-    "territories": [
-      "Norway"
-    ],
-    "locations": [
-      "entire country"
-    ],
     "investigators": [
       {
         "name": "Angela Lupattelli",
-        "orcid": "0000-0002-8787-3183",
         "email": "angela.lupattelli@farmasi.uio.no",
+        "orcid": "0000-0002-8787-3183",
         "address": "Postboks 1068 Blindern 0316 Oslo Norway"
       }
+    ],
+    "startDate": "2015-01-01",
+    "endDate": "2022-12-31",
+    "targetEnrollment": 0,
+    "totalEnrollment": 0,
+    "territories": [
+      "Norway"
     ],
     "dataSummary": {
       "typeOfData": [
         "Viral sequence",
         "Clinical-epidemiological"
       ],
-      "inclusionCriteria": "Residents in Norway"
+      "sampleSize": 0,
+      "inclusionCriteria": "Residents in Norway",
+      "taxId": [
+        "2697049"
+      ],
+      "scientificName": [
+        "Severe acute respiratory syndrome coronavirus 2"
+      ]
     },
     "tags": [
       "ReCoDID"
@@ -1646,25 +1549,24 @@
     "studyDesign": "Observational longitudinal Cohort study",
     "provider": {
       "name": "Marieke vd Zalm",
-      "description": "PI",
-      "website": "www.helsedata.no"
+      "website": "www.helsedata.no",
+      "description": "PI"
     },
-    "startDate": "2021-11-01",
-    "endDate": "2025-10-31",
-    "totalEnrollment": 125,
-    "territories": [
-      "South Africa"
-    ],
-    "locations": [
-      "Cape Town"
-    ],
     "investigators": [
       {
         "name": "Marieke vd Zalm",
-        "orcid": "0000-0002-8787-9139",
         "email": "mariekevdzalm@sun.ac.za",
+        "orcid": "0000-0002-8787-9139",
         "address": "Stellenbosch University South Africa"
       }
+    ],
+    "startDate": "2021-11-01",
+    "endDate": "2025-10-31",
+    "targetEnrollment": 0,
+    "totalEnrollment": 125,
+    "funding": "Horizon Europe (VERDI), part NIH funding and part South African Medical Research Council",
+    "territories": [
+      "South Africa"
     ],
     "dataSummary": {
       "typeOfData": [
@@ -1672,12 +1574,20 @@
         "Clinical-epidemiological",
         "Serology"
       ],
-      "inclusionCriteria": "Children",
-      "followUpSchedule": "Baseline (presentation), month 3, 12, 18 and 24",
+      "ageRange": "0 - 13",
+      "sampleSize": 0,
       "sampleType": "Saliva, serum and paxgene",
-      "ageRange": "0 - 13"
+      "followUpSchedule": "Baseline (presentation), month 3, 12, 18 and 24",
+      "inclusionCriteria": "Children",
+      "taxId": [
+        "2697049",
+        "11676"
+      ],
+      "scientificName": [
+        "Severe acute respiratory syndrome coronavirus 2",
+        "Human immunodeficiency virus 1"
+      ]
     },
-    "funding": "Horizon Europe (VERDI), part NIH funding and part South African Medical Research Council",
     "tags": [
       "ReCoDID"
     ],
@@ -1692,9 +1602,17 @@
     "type": "Cohort",
     "provider": {
       "name": "Influenzanet",
-      "description": "Network of web platforms in Europe for flu surveillance",
-      "website": "influenzanet.info"
+      "website": "influenzanet.info",
+      "description": "Network of web platforms in Europe for flu surveillance"
     },
+    "investigators": [
+      {
+        "address": "https://influenzanet.info/project"
+      }
+    ],
+    "targetEnrollment": 0,
+    "totalEnrollment": 0,
+    "funding": " Horizon Europe",
     "territories": [
       "UK",
       "Italy",
@@ -1709,17 +1627,18 @@
       "The Netherlands",
       "Belgium"
     ],
-    "investigators": [
-      {
-        "address": "https://influenzanet.info/project"
-      }
-    ],
     "dataSummary": {
       "typeOfData": [
         "Clinical-epidemiological"
+      ],
+      "sampleSize": 0,
+      "taxId": [
+        "11320"
+      ],
+      "scientificName": [
+        "Influenza A virus"
       ]
     },
-    "funding": " Horizon Europe",
     "tags": [
       "ReCoDID"
     ],
@@ -1727,636 +1646,44 @@
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
   },
   {
-    "accession": "BCAP0000000",
-    "name": "test_project",
-    "description": "Test umbrella project to contain multiple cohorts",
-    "acronym": "TP2",
-    "website": "www.ebi.ac.uk/biosamples",
-    "startDate": "01-01-2020",
-    "endDate": "01-01-2030",
-    "funding": "no funding",
-    "acknowledgements": "No ack",
-    "dictionary": [
+    "accession": "BSC0000021",
+    "cohortName": "England Mother Baby Cohort",
+    "description": "The national birth cohort includes approximately 13.5 million children born between 2003 and March 2021 in England (and is updated quarterly) and will include all births from 1st January 2020 onwards (mother-infant pairs). We will derive control cohorts of women delivering in previous years as required. Children in the cohort will be followed from birth or the 1st January 2020, whichever occurs later until death, their 18th birthday or the end of the study period, whichever occurs first. The oldest children in the cohort will be 17 years old at start of follow-up. National Pupil Data linked to hospital data from  approximately 7 million children per academic year will be available for the analyses of differential school transmission by VoC.",
+    "acronym": "VERDI",
+    "website": "https://verdiproject.org/",
+    "type": "Cohort",
+    "studyDesign": "Retrospective cohort study",
+    "contacts": [
       {
-        "name": "Gender",
-        "label": "Gender",
-        "description": "Gender",
-        "type": "string",
-        "values": "MALE, FEMALE, OTHER",
-        "annotation": "gender"
-      },
-      {
-        "name": "Birthdate",
-        "label": "Birthdate",
-        "description": "Birthdate",
-        "type": "string",
-        "annotation": "age/birthdate"
-      },
-      {
-        "name": "Agreement dateAgreement date",
-        "label": "Agreement dateAgreement date",
-        "description": "Agreement dateAgreement date",
-        "type": "string",
-        "annotation": "date and time-related information"
+        "name": "Pia Hardelid",
+        "email": "p.hardelid@ucl.ac.uk",
+        "orcid": "https://orcid.org/0000-0002-0154-1306",
+        "address": "University College London, London"
       }
     ],
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Project"
-  },
-
-
-  {
-    "id": "Gender",
-    "name": "Gender",
-    "label": "Gender",
-    "description": "Gender of the patient",
-    "type": "string",
-    "values": "MALE, FEMALE, OTHER",
-    "parent": "lifestyle_and_behaviours",
-    "annotation": "gender",
-    "tags": [],
-    "fullQualifiedName": "lifestyle_and_behaviours.gender",
-    "cohort": "BSC0000000",
-    "project": "BCAP0000000",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "id": "Birthdate",
-    "name": "Birthdate",
-    "label": "Birthdate",
-    "description": "Birthdate of the patient",
-    "type": "string",
-    "annotation": "age/birthdate",
-    "cohort": "BSC0000000",
-    "project": "BCAP0000000",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "id": "Agreement date",
-    "name": "Agreement date",
-    "label": "Agreement date",
-    "description": "Agreement date for the survey",
-    "type": "string",
-    "annotation": "date and time-related information",
-    "cohort": "BSC0000000",
-    "project": "BCAP0000000",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "id": "Year of birth",
-    "name": "Year of birth",
-    "label": "Year of birth",
-    "description": "Year of birth of the patient",
-    "type": "string",
-    "cohort": "BSC0000000",
-    "project": "BCAP0000000",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "id": "Age",
-    "name": "Age",
-    "label": "Age at present",
-    "description": "Age at present",
-    "type": "string",
-    "annotation": "age/birthdate",
-    "cohort": "BSC0000000",
-    "project": "BCAP0000000",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-
-
-  {
-    "name": "Chronic cardiac disease (not hypertension) ",
-    "label": "Chronic cardiac disease (not hypertension) ",
-    "parent": "comorbidities",
-    "description": "Chronic cardiac disease (not hypertension)",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Hypertension",
-    "label": "Hypertension",
-    "parent": "comorbidities",
-    "description": "Hypertension",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Chronic pulmonary disease (not asthma)",
-    "label": "Chronic pulmonary disease (not asthma)",
-    "parent": "comorbidities",
-    "description": "Chronic pulmonary disease (not asthma)",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Asthma (physician diagnosed)",
-    "label": "Asthma (physician diagnosed)",
-    "parent": "comorbidities",
-    "description": "Asthma (physician diagnosed)",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Chronic kidney disease",
-    "label": "Chronic kidney disease",
-    "parent": "comorbidities",
-    "description": "Chronic kidney disease",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Obesity (as defined by clinical staff)",
-    "label": "Obesity (as defined by clinical staff)",
-    "parent": "comorbidities",
-    "description": "Obesity (as defined by clinical staff)",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Moderate or severe liver disease",
-    "label": "Moderate or severe liver disease",
-    "parent": "comorbidities",
-    "description": "Moderate or severe liver disease",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Mild liver disease",
-    "label": "Mild liver disease",
-    "parent": "comorbidities",
-    "description": "Mild liver disease",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Asplenia",
-    "label": "Asplenia",
-    "parent": "comorbidities",
-    "description": "Asplenia",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Chronic neurological disorder",
-    "label": "Chronic neurological disorder",
-    "parent": "comorbidities",
-    "description": "Chronic neurological disorder",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Malignant neoplasm",
-    "label": "Malignant neoplasm",
-    "parent": "comorbidities",
-    "description": "Malignant neoplasm",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Chronic hematologic disease",
-    "label": "Chronic hematologic disease",
-    "parent": "comorbidities",
-    "description": "Chronic",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "AIDS / HIV",
-    "label": "AIDS / HIV",
-    "parent": "comorbidities",
-    "description": "AIDS / HIV",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Diabetes Mellitus",
-    "label": "Diabetes Mellitus",
-    "parent": "comorbidities",
-    "description": "Diabetes Mellitus",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Diabetes with complications",
-    "label": "Diabetes with complications",
-    "parent": "comorbidities",
-    "description": "Diabetes with complications",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Diabetes without complications",
-    "label": "Diabetes without complications",
-    "parent": "comorbidities",
-    "description": "Diabetes without complications",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Rheumatologic disorder",
-    "label": "Rheumatologic disorder",
-    "parent": "comorbidities",
-    "description": "Rheumatologic disorder",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Dementia",
-    "label": "Dementia",
-    "parent": "comorbidities",
-    "description": "Dementia",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Tuberculosis",
-    "label": "Tuberculosis",
-    "parent": "comorbidities",
-    "description": "Tuberculosis",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Malnutrition",
-    "label": "Malnutrition",
-    "parent": "comorbidities",
-    "description": "Malnutrition",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Other relevant risk factor(s)",
-    "label": "Other relevant risk factor(s)",
-    "parent": "comorbidities",
-    "description": "Other relevant risk factor(s)",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Other relevant risk factor(s) - if YES, specify: ",
-    "label": "Other relevant risk factor(s) - if YES, specify: ",
-    "parent": "comorbidities",
-    "description": "Other relevant risk factor(s) - if YES, specify",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Smoking",
-    "label": "Smoking",
-    "parent": "comorbidities",
-    "description": "Smoking",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Complete",
-    "label": "Complete",
-    "parent": "comorbidities",
-    "description": "Complete",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Any Oxygen therapy",
-    "label": "Any Oxygen therapy",
-    "parent": "treatment",
-    "description": "Any Oxygen therapy",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Non-invasive ventilation",
-    "label": "Non-invasive ventilation",
-    "parent": "treatment",
-    "description": "Non-invasive ventilation",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Invasive ventilation",
-    "label": "Invasive ventilation",
-    "parent": "treatment",
-    "description": "Invasive ventilation",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Prone Positioning",
-    "label": "Prone Positioning",
-    "parent": "treatment",
-    "description": "Prone Positioning",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Inhaled Nitric Oxide",
-    "label": "Inhaled Nitric Oxide",
-    "parent": "treatment",
-    "description": "Inhaled Nitric Oxide",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Tracheostomy inserted",
-    "label": "Tracheostomy inserted",
-    "parent": "treatment",
-    "description": "Tracheostomy inserted",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Extracorporeal support (ECMO)",
-    "label": "Extracorporeal support (ECMO)",
-    "parent": "treatment",
-    "description": "Extracorporeal support (ECMO)",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Renal replacement therapy (RRT) or dialysis",
-    "label": "Renal replacement therapy (RRT) or dialysis",
-    "parent": "treatment",
-    "description": "Renal replacement therapy (RRT) or dialysis",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Inotropes / vasopressors",
-    "label": "Inotropes / vasopressors",
-    "parent": "treatment",
-    "description": "Inotropes / vasopressors",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "ICU or High Dependency Unit admission",
-    "label": "ICU or High Dependency Unit admission",
-    "parent": "treatment",
-    "description": "ICU or High Dependency Unit admission",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Optiflow or mechanical ventilation",
-    "label": "Optiflow or mechanical ventilation",
-    "parent": "treatment",
-    "description": "Optiflow or mechanical ventilation",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Lopinavir/Ritonvir",
-    "label": "Lopinavir/Ritonvir",
-    "parent": "treatment",
-    "description": "Lopinavir/Ritonvir",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Remdesivir",
-    "label": "Remdesivir",
-    "parent": "treatment",
-    "description": "Remdesivir",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Interferon alpha",
-    "label": "Interferon alpha",
-    "parent": "treatment",
-    "description": "Interferon alpha",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Chloroquine/hydroxychloroquine",
-    "label": "Chloroquine/hydroxychloroquine",
-    "parent": "treatment",
-    "description": "Chloroquine/hydroxychloroquine",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Antibiotic",
-    "label": "Antibiotic",
-    "parent": "treatment",
-    "description": "Antibiotic",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Ventilation",
-    "label": "Ventilation",
-    "parent": "treatment",
-    "description": "Ventilation",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Discharged alive",
-    "label": "Discharged alive",
-    "parent": "outcome",
-    "description": "Discharged alive",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Hospitalization",
-    "label": "Hospitalization",
-    "parent": "outcome",
-    "description": "Hospitalization",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Transfer to other facility",
-    "label": "Transfer to other facility",
-    "parent": "outcome",
-    "description": "Transfer to other facility",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Death",
-    "label": "Death",
-    "parent": "outcome",
-    "description": "Death",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Palliative discharge",
-    "label": "Palliative discharge",
-    "parent": "outcome",
-    "description": "Palliative discharge",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Unknown",
-    "label": "Unknown",
-    "parent": "outcome",
-    "description": "Unknown",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Clinical-epidemiological",
-    "label": "Clinical-epidemiological ",
-    "parent": "typeOfData",
-    "description": "Clinical-epidemiological",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "human sequence data",
-    "label": "Human sequence data",
-    "parent": "typeOfData",
-    "description": "Human sequence data",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "SARS-CoV-2 sequences",
-    "label": "SARS-CoV-2 sequences",
-    "parent": "typeOfData",
-    "description": "SARS-CoV-2 sequences",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Serology",
-    "label": "Serology",
-    "parent": "typeOfData",
-    "description": "Serology",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Angiotensin converting enzyme inhibitors (ACE inhibitors)",
-    "label": "Angiotensin converting enzyme inhibitors (ACE inhibitors)",
-    "parent": "medication",
-    "description": "Angiotensin converting enzyme inhibitors (ACE inhibitors)",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Angiotensin II receptor blockers (ARBs)",
-    "label": "Angiotensin II receptor blockers (ARBs)",
-    "parent": "medication",
-    "description": "Angiotensin II receptor blockers (ARBs)",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Non-steroidal anti-inflammatory (NSAID)",
-    "label": "Non-steroidal anti-inflammatory (NSAID)",
-    "parent": "medication",
-    "description": "Non-steroidal anti-inflammatory (NSAID)",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Oral steroids",
-    "label": "Oral steroids",
-    "parent": "medication",
-    "description": "Oral steroids",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Oral steroids - if YES, agent(s):",
-    "label": "Oral steroids - if YES, agent(s):",
-    "parent": "medication",
-    "description": "Oral steroids - if YES, agent(s)",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Other immunosuppressant agents (not oral steroids)",
-    "label": "Other immunosuppressant agents (not oral steroids)",
-    "parent": "medication",
-    "description": "Other immunosuppressant agents (not oral steroids)",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Antivirals",
-    "label": "Antivirals",
-    "parent": "medication",
-    "description": "Antivirals",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Antivirals - if YES, agent(s):",
-    "label": "Antivirals - if YES, agent(s):",
-    "parent": "medication",
-    "description": "Antivirals - if YES, agent(s)",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Antibiotics",
-    "label": "Antibiotics",
-    "parent": "medication",
-    "description": "Antibiotics",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Antibiotics - if YES, agent(s):",
-    "label": "Antibiotics - if YES, agent(s):",
-    "parent": "medication",
-    "description": "Antibiotics - if YES, agent(s)",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Other targeted COVID-19 Medications",
-    "label": "Other targeted COVID-19 Medications",
-    "parent": "medication",
-    "description": "Other targeted COVID-19 Medications",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Other targeted COVID-19 Medications - if YES, agent(s):",
-    "label": "Other targeted COVID-19 Medications - if YES, agent(s):",
-    "parent": "medication",
-    "description": "Other targeted COVID-19 Medications - if YES, agent(s):",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "Complete",
-    "label": "Complete",
-    "parent": "medication",
-    "description": "Complete",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-  {
-    "name": "countries",
-    "label": "countries",
-    "values": "Argentina, Bolivia, Brazil, Chile, Colombia, France, Germany, Spain, UK, Netherlands",
-    "description": "countries",
-    "cohort": "BSC0000010",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField"
-  },
-
-  {
-    "id": "test_relationship_1",
-    "source": "biosample:SAMEA112152897",
-    "type": "IS_A_CHILD_OF",
-    "target": "BSC0000001",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Relationship"
-  },
-  {
-    "id": "test_relationship_2",
-    "source": "biosample:SAMEA112152898",
-    "type": "IS_A_CHILD_OF",
-    "target": "BSC0000001",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Relationship"
+    "startDate": "2002-01-10",
+    "endDate": "2025-10-31",
+    "targetEnrollment": 0,
+    "totalEnrollment": 0,
+    "territories": [
+      "United Kingdom"
+    ],
+    "project": "VERDI",
+    "dataSummary": {
+      "typeOfData": [
+        "Clinical-epidemiological",
+        "Others - diagnosis"
+      ],
+      "sampleSize": 0,
+      "ageRange": "0 - 17",
+      "taxId": [
+        "9606"
+      ]
+    },
+    "tags": [
+      "ReCoDID"
+    ],
+    "label": "RECODID",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
   }
 ]

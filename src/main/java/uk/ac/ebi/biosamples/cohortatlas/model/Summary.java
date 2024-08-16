@@ -23,7 +23,7 @@ public class Summary {
   private String inclusionCriteria;
   private String releaseType;
   private String linkageOptions;
-  private List<Double> taxId;
+  private List<String> taxId;
   private List<String> scientificName;
 
 }
