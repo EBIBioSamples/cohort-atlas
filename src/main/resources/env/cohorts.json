@@ -1497,7 +1497,7 @@
     "cohortName": "Norwegian health registries",
     "description": "Nationwide linked health records and sociodemographics of Norway, covering the entire population residing in the country being assigned a personal ID number. The data cover individual-level information on (i) clinical diagnoses in primary care using the ICPC-2 classification system, (ii) specialist inpatient and outpatint clinical diagnoses based on ICD-10 classification, (iii) filled prescriptions at community pharmacies, irrespective of reimbursment, (iv) PCR test results for Sars-CoV-2, (v) vaccination records, (vi) sociodemographics including education, income, migration status and nationality, (vii) records of all births in the country from gestational week 12 including pregnancy details, and outcomes for child and mother, and (viii) cause of death registry with underlying cause of death.",
     "acronym": "NHR",
-    "website": "www.helsedata.no",
+    "website": "https://verdiproject.org/",
     "type": "Cohort",
     "studyDesign": "Prospective electronic health records",
     "provider": {
@@ -1520,6 +1520,7 @@
     "territories": [
       "Norway"
     ],
+    "project": "VERDI",
     "dataSummary": {
       "typeOfData": [
         "Viral sequence",
@@ -1545,6 +1546,7 @@
     "cohortName": "Stellenbosch",
     "description": "Cohort that includes \n- Children 0-13 years of age, HIV +/-, presenting with symptoms of respiratory illness or suspicion of COVID-19 illness (including multi-system inflammatory syndrome), in Tygerberg Hospital, Cape Town, South Africa.  \n- Household contacts 0- 99 years of age, of confirmed COVID-19 cases presenting to Tygerberg Hospital, Cape Town, South Africa. Exclusion for cohort and household contact study: Inability to come for follow up visits.  Within the Umoya platform at Desmond Tutu TB Centre (DTTC) 4 different groups of interest at Tygerberg Hospital are recruited: \n- COVID confirmed illness. Total number 60-80.\n - Other respiratory virus illness. Total number 120.\n - paediatric tuberculosis (TB) cases. Total number ±70.\n- Healthy controls. Total number 40.",
     "acronym": "COVID kids",
+    "website": "https://verdiproject.org/",
     "type": "Cohort",
     "studyDesign": "Observational longitudinal Cohort study",
     "provider": {
@@ -1568,6 +1570,7 @@
     "territories": [
       "South Africa"
     ],
+    "project": "VERDI",
     "dataSummary": {
       "typeOfData": [
         "Viral sequence",
@@ -1598,7 +1601,7 @@
     "accession": "BSC0000020",
     "cohortName": "Influenzanet",
     "description": "Influenzanet is a network of routine surveillance systems in Europe used for monitoring influenza-like-Illness (ILI) in the general population. It is a collective system of internet-based tools through which real-time surveillance of self-reported influenza like illness (ILI) in the community is undertaken. Participation is voluntary, and any member of the public where the platform is deployed can register and are then prompted on a weekly basis to report any respiratory symptoms or lack of it that they may have experienced during the flu season.",
-    "website": "https://influenzanet.info/",
+    "website": "https://verdiproject.org/",
     "type": "Cohort",
     "provider": {
       "name": "Influenzanet",
@@ -1627,6 +1630,7 @@
       "The Netherlands",
       "Belgium"
     ],
+    "project": "VERDI",
     "dataSummary": {
       "typeOfData": [
         "Clinical-epidemiological"
