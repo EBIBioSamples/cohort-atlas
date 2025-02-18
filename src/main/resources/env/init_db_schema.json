@@ -1689,5 +1689,171 @@
     ],
     "label": "RECODID",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+  {
+    "accession": "BSC0000022",
+    "cohortName": "The Thailand VERDI-RECOVER study",
+    "description": "Household transmission of SARS-CoV-2 infections in Bangkok and Chiang Mai, Thailand.",
+    "acronym": "VERDI",
+    "website": "https://lucent.ams.cmu.ac.th/verdi.php",
+    "type": "Cohort",
+    "studyDesign": "Prospective",
+    "contacts": [
+      {
+        "name": "Asst. Prof. Dr. Woottichai Khamduang",
+        "email": "woottichai.k@cmu.ac.th",
+        "orcid": "0000-0003-0196-5691",
+        "address": "Faculty of Associated Medical Sciences, Chiang Mai University: 110 Inthawarorot Rd, Suthep Subdistrict, Mueang Chiang Mai District, Chiang Mai 50200"
+      }
+    ],
+    "investigators": [
+      {
+        "name": "Asst. Prof. Dr. Woottichai Khamduang",
+        "email": "woottichai.k@cmu.ac.th",
+        "orcid": "0000-0003-0196-5691",
+        "address": "Faculty of Associated Medical Sciences, Chiang Mai University: 110 Inthawarorot Rd, Suthep Subdistrict, Mueang Chiang Mai District, Chiang Mai 50200"
+      }
+    ],
+    "provider": {
+      "name": "The Thailand VERDI-RECOVER study",
+      "description": "Household transmission of SARS-CoV-2 infections in Chiang Mai, Thailand",
+      "website": "https://lucent.ams.cmu.ac.th/verdi.php"
+    },
+    "startDate": "2022-12-07",
+    "endDate": "2024-05-23",
+    "targetEnrollment": 400,
+    "totalEnrollment": 312,
+    "territories": [
+      "Thailand"
+    ],
+    "project": "VERDI",
+    "dataSummary": {
+      "diseases": [
+        "Cardiovascular disease",
+        "Hepertension",
+        "Kidney disesae",
+        "Immunocompromised",
+        "Diabetes",
+        "Brain or nerve disorder",
+        "Intestinal disease"
+      ],
+      "medication": [
+        "Anti-inflammatory",
+        "Insulin, Antihypertensive",
+        "Antibiotics/Antimicrobial", "Cholesterol-lowering",
+        "Antipyretics",
+        "Antacids"
+      ],
+      "outcome": ["Alive"],
+      "typeOfData": [
+        "human sequences",
+        "Clinical-epidemiological",
+        "SARS-CoV-2 sequences",
+        "Serology"
+      ],
+      "sampleType": "Nasopharyngeal swab, Thraot swab, Blood",
+      "sampleSize": 312,
+      "ageRange": "1 - 82",
+      "taxId": [
+        "694009"
+      ],
+      "inclusionCriteria": "General",
+      "followUpSchedule": "At least 21 days"
+    },
+    "funding": "European Commission",
+    "acknowledgements": "Chiang Mai Provincial Public Health Office, Doi-Sa-Khet District Public Health Office, Sub-disrict Health Promotion Hospitals (Ban Chet Yot , Ban Wang Sing Kham, Khua Mung, Chompu, Tha Kwang, Tha Thin Kaow, Pa Sa)",
+    "tags": [
+      "ReCoDID"
+    ],
+    "label": "RECODID",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+  {
+    "accession": "BSC0000023",
+    "cohortName": "VERDI-Mahidol COVID-19 Household Transmission Cohort",
+    "description": "The study involves actively tracking and observing households to identify and study instances of SARS-CoV-2 infection. Our primary objective is to dissect and delineate the intricate differences between household and community transmissions of SARS-CoV-2. We aim to understand the unique transmission dynamics and unravel the patterns of micro-evolutionary diversity of the virus in each context.",
+    "acronym": "VERDI-MU-HH Cohort",
+    "website": "https://verdiproject.org/",
+    "type": "Cohort",
+    "studyDesign": "Cohort-observational",
+    "contacts": [
+      {
+        "name": "Chanya Srisaowakarn",
+        "email": "sris.chanya@gmail.com",
+        "orcid": "0000-0003-3652-4757",
+        "address": "Department of Microbiology, Faculty of Science, Mahidol University, 272 Rama VI Road, Ratchathewi, Bangkok 10400 THAILAND"
+      }
+    ],
+    "investigators": [
+      {
+        "name": "Arunee Thitithanyanont",
+        "email": "arunee.thi@mahidol.edu",
+        "orcid": "0000-0002-9756-4763",
+        "address": "Department of Microbiology, Faculty of Science, Mahidol University, 272 Rama VI Road, Ratchathewi, Bangkok 10400 THAILAND"
+      },
+      {
+        "name": "Nopporn Apiwattanakul",
+        "email": "nopporn.api@mahidol.ac.th",
+        "orcid": "0000-0003-1833-5127",
+        "address": "Faculty of Medicine Ramathibodi Hospital, Mahidol University, 270 Rama VI Road, Ratchathewi, Bangkok 10400 THAILAND"
+      },
+      {
+        "name": "Kobporn Boonnak",
+        "email": "kobporn.boo@mahidol.ac.th",
+        "orcid": "0000-0002-7536-8964",
+        "address": "Department of Immunology, Faculty of Medicine Siriraj Hospital,  Mahidol University, 11th Floor Adulyadejvikrom Building, Bangkok 10700 Thailand"
+      },
+      {
+        "name": "Pakorn Aiewsakun",
+        "email": "pakorn.aie@mahidol.ac.th",
+        "orcid": "0000-0002-5665-4041",
+        "address": "Department of Microbiology, Faculty of Science, Mahidol University, 272 Rama VI Road, Ratchathewi, Bangkok 10400 THAILAND"
+      },
+      {
+        "name": "Saranath Lawpoolsri Niyom",
+        "email": "saranath.law@mahidol.ac.th",
+        "address": "Department of Tropical Hygiene, Faculty of Tropical Medicine, Mahidol University, 420/6 Ratchawithi Road, Ratchathewi Bangkok 10400"
+      }
+    ],
+    "startDate": "2022-11-01",
+    "endDate": "2024-08-31",
+    "targetEnrollment": 400,
+    "totalEnrollment": 263,
+    "territories": [
+      "Thailand"
+    ],
+    "project": "VERDI",
+    "dataSummary": {
+      "diseases": [
+        "Heart Disease",
+        "Hypertension",
+        "Lung Disease", "Disbetes",
+        "Arthritis",
+        "Others (Allergy, Hyperlipidemia, Thyroid, PCOS, Immune thrombocytopenic purpura (ITP), Gout, Asthma, and more)"
+      ],
+      "outcome": ["Infected household member during study"],
+      "typeOfData": [
+        "human sequences",
+        "Clinical-epidemiological",
+        "Serology"
+      ],
+      "sampleType": "Nasopharyngeal swab, Thraot swab, Blood",
+      "sampleSize": 170,
+      "ageRange": "0 - 82",
+      "taxId": [
+        "2697049"
+      ],
+      "scientificName": [
+        "Severe acute respiratory syndrome coronavirus 2"
+      ],
+      "inclusionCriteria": "children, household members"
+    },
+    "funding": "European Commission",
+    "acknowledgements": "Chiang Mai Provincial Public Health Office, Doi-Sa-Khet District Public Health Office, Sub-disrict Health Promotion Hospitals (Ban Chet Yot , Ban Wang Sing Kham, Khua Mung, Chompu, Tha Kwang, Tha Thin Kaow, Pa Sa)",
+    "tags": [
+      "ReCoDID"
+    ],
+    "label": "RECODID",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
   }
 ]
