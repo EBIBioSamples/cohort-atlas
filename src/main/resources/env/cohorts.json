@@ -1497,7 +1497,7 @@
     "cohortName": "Norwegian health registries",
     "description": "Nationwide linked health records and sociodemographics of Norway, covering the entire population residing in the country being assigned a personal ID number. The data cover individual-level information on (i) clinical diagnoses in primary care using the ICPC-2 classification system, (ii) specialist inpatient and outpatint clinical diagnoses based on ICD-10 classification, (iii) filled prescriptions at community pharmacies, irrespective of reimbursment, (iv) PCR test results for Sars-CoV-2, (v) vaccination records, (vi) sociodemographics including education, income, migration status and nationality, (vii) records of all births in the country from gestational week 12 including pregnancy details, and outcomes for child and mother, and (viii) cause of death registry with underlying cause of death.",
     "acronym": "NHR",
-    "website": "www.helsedata.no",
+    "website": "https://verdiproject.org/",
     "type": "Cohort",
     "studyDesign": "Prospective electronic health records",
     "provider": {
@@ -1520,6 +1520,7 @@
     "territories": [
       "Norway"
     ],
+    "project": "VERDI",
     "dataSummary": {
       "typeOfData": [
         "Viral sequence",
@@ -1545,6 +1546,7 @@
     "cohortName": "Stellenbosch",
     "description": "Cohort that includes \n- Children 0-13 years of age, HIV +/-, presenting with symptoms of respiratory illness or suspicion of COVID-19 illness (including multi-system inflammatory syndrome), in Tygerberg Hospital, Cape Town, South Africa.  \n- Household contacts 0- 99 years of age, of confirmed COVID-19 cases presenting to Tygerberg Hospital, Cape Town, South Africa. Exclusion for cohort and household contact study: Inability to come for follow up visits.  Within the Umoya platform at Desmond Tutu TB Centre (DTTC) 4 different groups of interest at Tygerberg Hospital are recruited: \n- COVID confirmed illness. Total number 60-80.\n - Other respiratory virus illness. Total number 120.\n - paediatric tuberculosis (TB) cases. Total number ±70.\n- Healthy controls. Total number 40.",
     "acronym": "COVID kids",
+    "website": "https://verdiproject.org/",
     "type": "Cohort",
     "studyDesign": "Observational longitudinal Cohort study",
     "provider": {
@@ -1568,6 +1570,7 @@
     "territories": [
       "South Africa"
     ],
+    "project": "VERDI",
     "dataSummary": {
       "typeOfData": [
         "Viral sequence",
@@ -1598,7 +1601,7 @@
     "accession": "BSC0000020",
     "cohortName": "Influenzanet",
     "description": "Influenzanet is a network of routine surveillance systems in Europe used for monitoring influenza-like-Illness (ILI) in the general population. It is a collective system of internet-based tools through which real-time surveillance of self-reported influenza like illness (ILI) in the community is undertaken. Participation is voluntary, and any member of the public where the platform is deployed can register and are then prompted on a weekly basis to report any respiratory symptoms or lack of it that they may have experienced during the flu season.",
-    "website": "https://influenzanet.info/",
+    "website": "https://verdiproject.org/",
     "type": "Cohort",
     "provider": {
       "name": "Influenzanet",
@@ -1627,6 +1630,7 @@
       "The Netherlands",
       "Belgium"
     ],
+    "project": "VERDI",
     "dataSummary": {
       "typeOfData": [
         "Clinical-epidemiological"
@@ -1685,5 +1689,528 @@
     ],
     "label": "RECODID",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+  {
+    "accession": "BSC0000022",
+    "cohortName": "The Thailand VERDI-RECOVER study",
+    "description": "Household transmission of SARS-CoV-2 infections in Bangkok and Chiang Mai, Thailand.",
+    "acronym": "VERDI",
+    "website": "https://lucent.ams.cmu.ac.th/verdi.php",
+    "type": "Cohort",
+    "studyDesign": "Prospective",
+    "contacts": [
+      {
+        "name": "Asst. Prof. Dr. Woottichai Khamduang",
+        "email": "woottichai.k@cmu.ac.th",
+        "orcid": "0000-0003-0196-5691",
+        "address": "Faculty of Associated Medical Sciences, Chiang Mai University: 110 Inthawarorot Rd, Suthep Subdistrict, Mueang Chiang Mai District, Chiang Mai 50200"
+      }
+    ],
+    "investigators": [
+      {
+        "name": "Asst. Prof. Dr. Woottichai Khamduang",
+        "email": "woottichai.k@cmu.ac.th",
+        "orcid": "0000-0003-0196-5691",
+        "address": "Faculty of Associated Medical Sciences, Chiang Mai University: 110 Inthawarorot Rd, Suthep Subdistrict, Mueang Chiang Mai District, Chiang Mai 50200"
+      }
+    ],
+    "provider": {
+      "name": "The Thailand VERDI-RECOVER study",
+      "description": "Household transmission of SARS-CoV-2 infections in Chiang Mai, Thailand",
+      "website": "https://lucent.ams.cmu.ac.th/verdi.php"
+    },
+    "startDate": "2022-12-07",
+    "endDate": "2024-05-23",
+    "targetEnrollment": 400,
+    "totalEnrollment": 312,
+    "territories": [
+      "Thailand"
+    ],
+    "project": "VERDI",
+    "dataSummary": {
+      "diseases": [
+        "Cardiovascular disease",
+        "Hepertension",
+        "Kidney disesae",
+        "Immunocompromised",
+        "Diabetes",
+        "Brain or nerve disorder",
+        "Intestinal disease"
+      ],
+      "medication": [
+        "Anti-inflammatory",
+        "Insulin, Antihypertensive",
+        "Antibiotics/Antimicrobial", "Cholesterol-lowering",
+        "Antipyretics",
+        "Antacids"
+      ],
+      "outcome": ["Alive"],
+      "typeOfData": [
+        "human sequences",
+        "Clinical-epidemiological",
+        "Serology"
+      ],
+      "sampleType": "Nasopharyngeal swab, Thraot swab, Blood",
+      "sampleSize": 312,
+      "ageRange": "1 - 82",
+      "taxId": [
+        "694009"
+      ],
+      "scientificName": [
+        "Severe acute respiratory syndrome-related coronavirus"
+      ],
+      "inclusionCriteria": "General",
+      "followUpSchedule": "At least 21 days"
+    },
+    "funding": "European Commission",
+    "acknowledgements": "Chiang Mai Provincial Public Health Office, Doi-Sa-Khet District Public Health Office, Sub-disrict Health Promotion Hospitals (Ban Chet Yot , Ban Wang Sing Kham, Khua Mung, Chompu, Tha Kwang, Tha Thin Kaow, Pa Sa)",
+    "tags": [
+      "ReCoDID"
+    ],
+    "label": "RECODID",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+  {
+    "accession": "BSC0000023",
+    "cohortName": "VERDI-Mahidol COVID-19 Household Transmission Cohort",
+    "description": "The study involves actively tracking and observing households to identify and study instances of SARS-CoV-2 infection. Our primary objective is to dissect and delineate the intricate differences between household and community transmissions of SARS-CoV-2. We aim to understand the unique transmission dynamics and unravel the patterns of micro-evolutionary diversity of the virus in each context.",
+    "acronym": "VERDI-MU-HH Cohort",
+    "website": "https://verdiproject.org/",
+    "type": "Cohort",
+    "studyDesign": "Cohort-observational",
+    "contacts": [
+      {
+        "name": "Chanya Srisaowakarn",
+        "email": "sris.chanya@gmail.com",
+        "orcid": "0000-0003-3652-4757",
+        "address": "Department of Microbiology, Faculty of Science, Mahidol University, 272 Rama VI Road, Ratchathewi, Bangkok 10400 THAILAND"
+      }
+    ],
+    "investigators": [
+      {
+        "name": "Arunee Thitithanyanont",
+        "email": "arunee.thi@mahidol.edu",
+        "orcid": "0000-0002-9756-4763",
+        "address": "Department of Microbiology, Faculty of Science, Mahidol University, 272 Rama VI Road, Ratchathewi, Bangkok 10400 THAILAND"
+      },
+      {
+        "name": "Nopporn Apiwattanakul",
+        "email": "nopporn.api@mahidol.ac.th",
+        "orcid": "0000-0003-1833-5127",
+        "address": "Faculty of Medicine Ramathibodi Hospital, Mahidol University, 270 Rama VI Road, Ratchathewi, Bangkok 10400 THAILAND"
+      },
+      {
+        "name": "Kobporn Boonnak",
+        "email": "kobporn.boo@mahidol.ac.th",
+        "orcid": "0000-0002-7536-8964",
+        "address": "Department of Immunology, Faculty of Medicine Siriraj Hospital,  Mahidol University, 11th Floor Adulyadejvikrom Building, Bangkok 10700 Thailand"
+      },
+      {
+        "name": "Pakorn Aiewsakun",
+        "email": "pakorn.aie@mahidol.ac.th",
+        "orcid": "0000-0002-5665-4041",
+        "address": "Department of Microbiology, Faculty of Science, Mahidol University, 272 Rama VI Road, Ratchathewi, Bangkok 10400 THAILAND"
+      },
+      {
+        "name": "Saranath Lawpoolsri Niyom",
+        "email": "saranath.law@mahidol.ac.th",
+        "address": "Department of Tropical Hygiene, Faculty of Tropical Medicine, Mahidol University, 420/6 Ratchawithi Road, Ratchathewi Bangkok 10400"
+      }
+    ],
+    "startDate": "2022-11-01",
+    "endDate": "2024-08-31",
+    "targetEnrollment": 400,
+    "totalEnrollment": 263,
+    "territories": [
+      "Thailand"
+    ],
+    "project": "VERDI",
+    "dataSummary": {
+      "diseases": [
+        "Heart Disease",
+        "Hypertension",
+        "Lung Disease", "Disbetes",
+        "Arthritis",
+        "Others (Allergy, Hyperlipidemia, Thyroid, PCOS, Immune thrombocytopenic purpura (ITP), Gout, Asthma, and more)"
+      ],
+      "outcome": ["Infected household member during study"],
+      "typeOfData": [
+        "human sequences",
+        "Clinical-epidemiological",
+        "Serology"
+      ],
+      "sampleType": "Nasopharyngeal swab, Thraot swab, Blood",
+      "sampleSize": 170,
+      "ageRange": "0 - 82",
+      "taxId": [
+        "2697049"
+      ],
+      "scientificName": [
+        "Severe acute respiratory syndrome coronavirus 2"
+      ],
+      "inclusionCriteria": "children, household members"
+    },
+    "funding": "European Commission",
+    "acknowledgements": "Chiang Mai Provincial Public Health Office, Doi-Sa-Khet District Public Health Office, Sub-disrict Health Promotion Hospitals (Ban Chet Yot , Ban Wang Sing Kham, Khua Mung, Chompu, Tha Kwang, Tha Thin Kaow, Pa Sa)",
+    "tags": [
+      "ReCoDID"
+    ],
+    "label": "RECODID",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+  {
+    "accession": "BSC0000024",
+    "cohortName": "Pedianet - VERDI Cohort",
+    "description": "Pedianet is an independent Italian network of family pediatricians (FPs) founded in 1998 to gather significant data for clinical and epidemiological studies. The network connects FPs who use the same software (JuniorBit) in their practice. The resulting database provide valuable info on paediatric GP. In some regions the database contain information from hospitalizations and vaccination records.",
+    "acronym": "Pedianet",
+    "website": "https://pedianet.it/",
+    "type": "Cohort",
+    "studyDesign": "Electronic Health Records",
+    "contacts": [
+      {
+        "name": "Luigi Cantarutti",
+        "email": "l.cantarutti@sosepe.com",
+        "address": "Via G. Medici, 9 35138 Padova (PD) - Italy"
+      },
+      {
+        "name": "Anna Cantarutti",
+        "email": "anna.cantarutti@unimib.it",
+        "address": "Via G. Medici, 9 35138 Padova (PD) - Italy"
+      }
+    ],
+    "providers": [
+      {
+        "name": "Società Servizi Telematici (So.Se.Te)",
+        "website": "https://pedianet.it"
+      }
+    ],
+    "startDate": "2007",
+    "endDate": "2023",
+    "targetEnrollment": 75000,
+    "totalEnrollment": 75000,
+    "territories": [
+      "Italy"
+    ],
+    "project": "VERDI",
+    "dataSummary": {
+      "diseases": [
+        "Potentially all, because database is fed by EHR"
+      ],
+      "medication": [
+        "Potentially all, because database is fed by EHR"
+      ],
+      "treatment": [
+        "Potentially all, because database is fed by EHR"
+      ],
+      "outcome": [
+        "Hospitalisation",
+        "Discharged alive",
+        "Alive",
+        "Death"
+      ],
+      "complications": [
+        "Potentially everyone, because database is fed by EHR"
+      ],
+      "typeOfData": [
+        "Clinical-epidemiological"
+      ],
+      "sampleSize": 40000,
+      "ageRange": "0 - 14",
+      "inclusionCriteria": "Children aged 0 to 14",
+      "followUpSchedule": "Irregular, unplanned, dependent on visits to GP"
+    },
+    "tags": [
+      "ReCoDID"
+    ],
+    "label": "RECODID",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+  {
+    "accession": "BSC0000025",
+    "cohortName": "RECOVER Household 1.0 CORONAthuis",
+    "description": "A prospective study in the Netherlands, Belgium and Switzerland between April 2020 and April 2021, investigating transmission from confirmed SARS-CoV-2 index patients to household members. Aims of this study were to estimate SARs and to determine factors that impact transmission, with a specific focus on the effect of the infection control measures taken in households in the Western European setting.",
+    "acronym": "CORONAthuis 1.0",
+    "website": "https://verdiproject.org/",
+    "type": "Cohort",
+    "studyDesign": "Cohort-observational",
+    "contacts": [
+      {
+        "name": "Prof. Patricia Bruijning-Verhagen",
+        "email": "p.bruijning@umcutrecht.nl",
+        "orcid": "0000-0003-4105-9669",
+        "address": "University Medical Center Utrecht,Universiteitsweg 100, 3584 CX UTRECHT"
+      }
+    ],
+    "providers": [
+      {
+        "name": "Julius Center for Health Sciences and Primary Care, infectious disease epidemiology",
+        "description": "Within the infectious diseases epidemiology program, we are engaged in diagnostic, prognostic, etiological and interventional research of infections (respiratory, urinary and bloodstream infections) with a focus on prevention of infections and spread, on innovation in design and conduct of (inter-)national studies, and on better understanding the dynamics of infectious disease spread.",
+        "website": "https://juliuscentrum.umcutrecht.nl/en/epidemiology-of-infectious-diseases"
+      }
+    ],
+    "investigators": [
+      {
+        "name": "Prof. Patricia Bruijning-Verhagen",
+        "email": "p.bruijning@umcutrecht.nl",
+        "orcid": "0000-0003-4105-9669",
+        "address": "University Medical Center Utrecht,Universiteitsweg 100, 3584 CX Utrecht, Netherlands"
+      },
+      {
+        "name": "Dr. Marieke de Hoog",
+        "email": "m.l.a.dehoog@umcutrecht.nl",
+        "orcid": "0000-0002-7406-0909",
+        "address": "University Medical Center Utrecht,Universiteitsweg 100, 3584 CX Utrecht, Netherlands"
+      },
+      {
+        "name": "Dr. Julia Bielicki",
+        "email": "juliaanna.bielicki@ukbb.ch",
+        "orcid": "0000-0002-3902-5489",
+        "address": "University of Basel Children’s Hospital, Spitalstrasse 33, 4056 Basel, Switzerland"
+      },
+      {
+        "name": "Pakorn Aiewsakun",
+        "email": "pakorn.aie@mahidol.ac.th",
+        "orcid": "0000-0002-5665-4041",
+        "address": "Department of Microbiology, Faculty of Science, Mahidol University, 272 Rama VI Road, Ratchathewi, Bangkok 10400 THAILAND"
+      },
+      {
+        "name": "Dr. Marieke de Hoog",
+        "email": "sam.vangoethem@uza.be",
+        "orcid": "0000-0003-4784-0229",
+        "address": "University Antwerp, Universiteitsplein 1, 2610 Antwerp, Belgium"
+      }
+    ],
+    "publications": [
+      {
+        "title": "Experiences and needs of persons living with a household member infected with SARS-CoV-2: A mixed method study",
+        "doi": "doi: 10.1371/journal.pone.0249391",
+        "url": "https://link.springer.com/article/10.1007/s10654-022-00870-9"
+      },
+      {
+        "title": "Experiences and needs of persons living with a household member infected with SARS-CoV-2: A mixed method study",
+        "doi": "doi: 10.1371/journal.pone.0249391",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8011759/"
+      },
+      {
+        "title": "The impact of variant and vaccination on SARS-CoV-2 symptomatology; three prospective household cohorts",
+        "doi": "doi: 10.1016/j.ijid.2022.12.018",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9780022/"
+      },
+      {
+        "title": "Addressing current limitations of household transmission studies by collecting contact data",
+        "doi": "doi: 10.1093/aje/kwae106",
+        "url": "https://academic.oup.com/aje/article/193/12/1832/7689062?login=true"
+      }
+    ],
+    "startDate": "2020-04-22",
+    "endDate": "2021-05-10",
+    "targetEnrollment": 1000,
+    "totalEnrollment": 920,
+    "territories": [
+      "Netherlands",
+      "Belgium",
+      "Switzerland"
+    ],
+    "project": "VERDI",
+    "dataSummary": {
+      "diseases": [
+        "Diabetes",
+        "cardiovascular disease",
+        "chronic neurological or neuromuscular disease",
+        "hypertension"
+      ],
+      "outcome": [
+        "Sequelae of infection"
+      ],
+      "typeOfData": [
+        "Clinical-epidemiological",
+        "Serology"
+      ],
+      "taxId": [
+        "2697049"
+      ],
+      "scientificName": [
+        "Severe acute respiratory syndrome coronavirus 2"
+      ],
+      "sampleType": "Dried blood spot",
+      "sampleSize": 276,
+      "ageRange": "0 - 78",
+      "inclusionCriteria": "General population; households",
+      "followUpSchedule": "From inclusion of the household, daily follow-up was continued until 21 days after last symptom-onset in any household member."
+    },
+    "tags": [
+      "ReCoDID"
+    ],
+    "label": "RECODID",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+  {
+    "accession": "BSC0000026",
+    "cohortName": "RECOVER-VERDI Household 2.0 CORONAthius",
+    "description": "A prospective study in the Netherlands between January 2022 and April 2022, investigating transmission from confirmed SARS-CoV-2 index patients to household members during the Omicron wave (BA.1 and BA.2) in households with kids under 18 years of age. Aims of this study were to estimate SARs and to determine factors that impact transmission and the impact of COVID-19 vaccination on the transmission.",
+    "acronym": "CORONAthuis 2.0",
+    "website": "https://verdiproject.org/",
+    "type": "Cohort",
+    "studyDesign": "Cohort-observational",
+    "contacts": [
+      {
+        "name": "Prof. Patricia Bruijning-Verhagen",
+        "email": "p.bruijning@umcutrecht.nl",
+        "orcid": "0000-0003-4105-9669",
+        "address": "University Medical Center Utrecht,Universiteitsweg 100, 3584 CX UTRECHT"
+      }
+    ],
+    "providers": [
+      {
+        "name": "Julius Center for Health Sciences and Primary Care, infectious disease epidemiology",
+        "description": "Within the infectious diseases epidemiology program, we are engaged in diagnostic, prognostic, etiological and interventional research of infections (respiratory, urinary and bloodstream infections) with a focus on prevention of infections and spread, on innovation in design and conduct of (inter-)national studies, and on better understanding the dynamics of infectious disease spread.",
+        "website": "https://juliuscentrum.umcutrecht.nl/en/epidemiology-of-infectious-diseases"
+      }
+    ],
+    "investigators": [
+      {
+        "name": "Prof. Patricia Bruijning-Verhagen",
+        "email": "p.bruijning@umcutrecht.nl",
+        "orcid": "0000-0003-4105-9669",
+        "address": "University Medical Center Utrecht,Universiteitsweg 100, 3584 CX Utrecht, Netherlands"
+      },
+      {
+        "name": "Dr. Marieke de Hoog",
+        "email": "m.l.a.dehoog@umcutrecht.nl",
+        "orcid": "0000-0002-7406-0909",
+        "address": "University Medical Center Utrecht,Universiteitsweg 100, 3584 CX Utrecht, Netherlands"
+      },
+      {
+        "name": "Ilse Steffens - Westerhof",
+        "email": "i.westerhof-4@umcutrecht.nl",
+        "orcid": "0000-0001-7693-6137",
+        "address": "University Medical Center Utrecht,Universiteitsweg 100, 3584 CX Utrecht, Netherlands"
+      }
+    ],
+    "publications": [
+      {
+        "title": "The impact of variant and vaccination on SARS-CoV-2 symptomatology; three prospective household cohorts",
+        "doi": "doi: 10.1016/j.ijid.2022.12.018",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9780022/"
+      }
+    ],
+    "startDate": "2022-01-13",
+    "endDate": "2022-04-21",
+    "targetEnrollment": 325,
+    "totalEnrollment": 325,
+    "territories": [
+      "Netherlands"
+    ],
+    "project": "VERDI",
+    "dataSummary": {
+      "diseases": [
+        "Diabetes",
+        "cardiovascular disease",
+        "chronic neurological or neuromuscular disease",
+        "hypertension"
+      ],
+      "outcome": [
+        "Sequelae of infection"
+      ],
+      "typeOfData": [
+        "Clinical-epidemiological",
+        "Serology"
+      ],
+      "taxId": [
+        "2697049"
+      ],
+      "scientificName": [
+        "Severe acute respiratory syndrome coronavirus 2"
+      ],
+      "sampleType": "Dried blood spot",
+      "sampleSize": 214,
+      "ageRange": "0 - 61",
+      "inclusionCriteria": "Households with children under 18 years of age",
+      "followUpSchedule": "From inclusion of the household, daily follow-up was continued until 21 days after last symptom-onset in any household member."
+    },
+    "tags": [
+      "ReCoDID"
+    ],
+    "label": "RECODID",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+  },
+  {
+    "accession": "BSC0000027",
+    "cohortName": "KoroGeno-EST: Estonian SARS-CoV-2 sequencing study",
+    "description": "The aim of the KoroGeno-EST study was to sequence and analyse the complete genomes of SARS-CoV-2 in Estonia. The study carried out the determination of SARS-CoV-2 variants, described the changes in the distribution of SARS-CoV-2 Pango lineages and performed a molecular epidemiological analysis to support the Estonian Health Board in monitoring and managing the outbreaks. Data of the study have been used to conduct in depth analyses of SARS-CoV-2 epidemic in Estonia during 2020 and 2023.",
+    "acronym": "KoroGeno-EST",
+    "website": "https://kliinilinemeditsiin.ut.ee/et/sisu/eesti-sars-cov-2-taisgenoomide-jarjestamine-ja-analuus-korogeno-est-1est-2est-3",
+    "type": "Cohort",
+    "studyDesign": "Cross-sectional",
+    "contacts": [
+      {
+        "name": "Kristi Huik",
+        "email": "kristi.huik@ut.ee",
+        "orcid": "0000-0002-1569-8830",
+        "address": "Ravila 19, Tartu, Estonia"
+      }
+    ],
+    "providers": [
+      {
+        "name": "University of Tartu and Estonian Health Board",
+        "description": "KoroGeno-EST: Estonian SARS-CoV-2 sequencing study was led by University of Tartu supported by Estonian Health Board",
+        "website": "https://kliinilinemeditsiin.ut.ee/et/sisu/eesti-sars-cov-2-taisgenoomide-jarjestamine-ja-analuus-korogeno-est-1est-2est-3"
+      }
+    ],
+    "investigators": [
+      {
+        "name": "Irja Lutsar",
+        "email": "irja.lutsar@ut.ee",
+        "orcid": "0000-0002-5082-429X",
+        "address": "Ravila 19, Tartu, Estonia"
+      },
+      {
+        "name": "Kristi Huik",
+        "email": "kristi.huik@ut.ee",
+        "orcid": "0000-0002-1569-8830",
+        "address": "Ravila 19, Tartu, Estonia"
+      }
+    ],
+    "publications": [
+      {
+        "title": "SARS-CoV-2 clade dynamics and their associations with hospitalisations during the first two years of the COVID-19 pandemic",
+        "doi": "https://doi.org/10.1371/journal.pone.0303176",
+        "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0303176"
+      }
+    ],
+    "startDate": "2020-03-01",
+    "endDate": "2023-03-01",
+    "territories": [
+      "Netherlands"
+    ],
+    "project": "VERDI",
+    "dataSummary": {
+      "outcome": [
+        "Alive",
+        "Death",
+        "Discharged alive",
+        "Hospitalisation",
+        "Intensive Care Unit (ICU) admission",
+        "Transfer to other facility"
+      ],
+      "typeOfData": [
+        "Clinical-epidemiological"
+      ],
+      "taxId": [
+        "2697049"
+      ],
+      "scientificName": [
+        "Severe acute respiratory syndrome coronavirus 2"
+      ],
+      "sampleType": "Nasopharyngeal swab",
+      "sampleSize": 1,
+      "inclusionCriteria": "General population"
+    },
+    "tags": [
+      "ReCoDID"
+    ],
+    "label": "RECODID",
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
   }
+
 ]
