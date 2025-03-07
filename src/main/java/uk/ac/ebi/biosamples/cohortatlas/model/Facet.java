@@ -17,7 +17,7 @@ public class Facet {
 
    public enum FacetType {
     DATA_TYPES("dataTypes", "Data Types", "dataTypes"),
-    TREATMENTS("treatments", "Treatments", "treatments"),
+    TREATMENTS("treatments", "Treatments", "dataSummary.treatment"),
     LICENSE("license", "License", "license"),
     TERRITORIES("territories", "Territories", "territories");
     FacetType(String category, String displayName, String searchPath){

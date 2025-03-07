@@ -7,25 +7,20 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Primary;
-import org.springframework.core.annotation.Order;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.data.repository.init.Jackson2RepositoryPopulatorFactoryBean;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
-import org.springframework.http.HttpMethod;
+import org.springframework.format.FormatterRegistry;
 import org.springframework.lang.NonNull;
-import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-import org.springframework.security.config.annotation.web.configurers.oauth2.server.resource.OAuth2ResourceServerConfigurer;
-import org.springframework.security.config.http.SessionCreationPolicy;
-import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.method.HandlerTypePredicate;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.PathMatchConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import uk.ac.ebi.biosamples.cohortatlas.model.Cohort;
+import uk.ac.ebi.biosamples.cohortatlas.utils.NoSplitStringConverter;
 
 //@SpringBootApplication
 //@EnableWebSecurity
@@ -49,7 +44,7 @@ public class CohortAtlasApplication {
   }
 
   @Bean
-  public WebMvcConfigurer corsConfigurer() {
+  public WebMvcConfigurer configureWebMvC() {
     return new WebMvcConfigurer() {
       // enable cors for development
       @Override
@@ -60,6 +55,11 @@ public class CohortAtlasApplication {
       @Override
       public void configurePathMatch(@NonNull PathMatchConfigurer configurer) {
         configurer.addPathPrefix("api", HandlerTypePredicate.forAnnotation(RestController.class));
+      }
+
+      @Override
+      public void addFormatters(FormatterRegistry registry) {
+        registry.addConverter(new NoSplitStringConverter());
       }
     };
   }

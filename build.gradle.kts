@@ -37,7 +37,7 @@ dependencies {
 	implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-csv:2.14.2")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
-	annotationProcessor("org.projectlombok:lombok")
+	annotationProcessor("org.projectlombok:lombok:1.18.30")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("de.flapdoodle.embed:de.flapdoodle.embed.mongo.spring30x:4.6.1")
 	testImplementation("org.testcontainers:testcontainers:1.19.1")
