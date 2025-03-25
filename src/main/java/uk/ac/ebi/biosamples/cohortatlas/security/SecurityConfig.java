@@ -25,21 +25,11 @@ public class SecurityConfig {
 
   @Bean
   protected SecurityFilterChain configure(HttpSecurity http, AuthenticationManager authenticationManager) throws Exception {
-    String basePath = "";
     http
         .authorizeHttpRequests(authorize -> authorize
-            // checklists
-//            .requestMatchers(HttpMethod.POST, "/**").hasAuthority("editor")
-            .requestMatchers(HttpMethod.GET, basePath + "/users/search/me").authenticated()
-            .requestMatchers(HttpMethod.GET, basePath + "/users/search").authenticated()
-            .requestMatchers(HttpMethod.GET, basePath + "/users/**").hasAuthority("admin")
-            .requestMatchers(HttpMethod.POST, basePath + "/users/**").hasAuthority("admin")
-            .requestMatchers(HttpMethod.PUT, basePath + "/users/**").hasAuthority("admin")
             .requestMatchers(HttpMethod.GET, "/actuator/**").permitAll()
-
             .requestMatchers(HttpMethod.GET, "/**").permitAll()
-            .requestMatchers( "/**").permitAll()
-
+            .requestMatchers(HttpMethod.POST, "/**").hasAuthority(Roles.USER.name())
             .anyRequest().authenticated()
         )
         .addFilter(requestHeaderAuthenticationFilter(authenticationManager))
@@ -56,7 +46,7 @@ public class SecurityConfig {
     filter.setCheckForPrincipalChanges(true);
     filter.setExceptionIfHeaderMissing(false);
     filter.setAuthenticationSuccessHandler(
-        (request, response, authentication) -> userService.updateUser((UserDetails) authentication.getPrincipal()));
+        (request, response, authentication) -> userService.createUserIfNotExists((UserDetails) authentication.getPrincipal()));
     return filter;
   }
 

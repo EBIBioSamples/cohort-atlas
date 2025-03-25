@@ -8,6 +8,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class CohortAtlasProperties {
 
-    @Value("${auth.api.url:https://wwwdev.ebi.ac.uk/ena/submit/webin/auth}")
+    @Value("${auth.api.url:https://www.ebi.ac.uk/ena/submit/webin/auth}")
     private String webinUrl;
 }
