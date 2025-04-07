@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.aggregation.AggregationResults;
 import uk.ac.ebi.biosamples.cohortatlas.CohortAtlasIntegrationTest;
+import uk.ac.ebi.biosamples.cohortatlas.field.FieldRepository;
 
 import java.util.List;
 import java.util.Map;

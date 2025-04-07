@@ -3,7 +3,7 @@ package uk.ac.ebi.biosamples.cohortatlas.service;
 import org.springframework.stereotype.Service;
 import uk.ac.ebi.biosamples.cohortatlas.model.Facet;
 import uk.ac.ebi.biosamples.cohortatlas.model.FacetSummary;
-import uk.ac.ebi.biosamples.cohortatlas.repository.CohortSearchRepository;
+import uk.ac.ebi.biosamples.cohortatlas.cohort.CohortSearchRepository;
 
 import java.util.ArrayList;
 import java.util.List;

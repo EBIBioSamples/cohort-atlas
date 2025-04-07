@@ -7,8 +7,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
-import uk.ac.ebi.biosamples.cohortatlas.model.Cohort;
-import uk.ac.ebi.biosamples.cohortatlas.repository.CohortRepository;
+import uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort;
+import uk.ac.ebi.biosamples.cohortatlas.cohort.CohortRepository;
 
 import java.util.List;
 

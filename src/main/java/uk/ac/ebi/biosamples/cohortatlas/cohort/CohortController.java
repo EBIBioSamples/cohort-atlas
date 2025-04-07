@@ -1,4 +1,4 @@
-package uk.ac.ebi.biosamples.cohortatlas.controller;
+package uk.ac.ebi.biosamples.cohortatlas.cohort;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -7,20 +7,15 @@ import org.springframework.hateoas.PagedModel;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import reactor.core.publisher.Mono;
-import uk.ac.ebi.biosamples.cohortatlas.model.Cohort;
+import uk.ac.ebi.biosamples.cohortatlas.field.FieldService;
 import uk.ac.ebi.biosamples.cohortatlas.model.Field;
 import uk.ac.ebi.biosamples.cohortatlas.model.Relation;
 import uk.ac.ebi.biosamples.cohortatlas.model.Survey;
-import uk.ac.ebi.biosamples.cohortatlas.service.CohortModelAssembler;
-import uk.ac.ebi.biosamples.cohortatlas.service.CohortService;
 import uk.ac.ebi.biosamples.cohortatlas.service.HarmonisationService;
 
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.InputMismatchException;
 import java.util.List;
-import java.util.Map;
 
 @RestController
 @RequestMapping(value = "/cohorts", produces = {"application/hal+json"})
@@ -28,12 +23,14 @@ public class CohortController {
   private final CohortService cohortService;
   private final HarmonisationService harmonisationService;
   private final CohortModelAssembler cohortModelAssembler;
+  private final FieldService fieldService;
 
   public CohortController(CohortService cohortService, HarmonisationService harmonisationService,
-                          CohortModelAssembler cohortModelAssembler) {
+                          CohortModelAssembler cohortModelAssembler, FieldService fieldService) {
     this.cohortService = cohortService;
     this.harmonisationService = harmonisationService;
     this.cohortModelAssembler = cohortModelAssembler;
+    this.fieldService = fieldService;
   }
 
   @GetMapping()
@@ -118,6 +115,8 @@ public class CohortController {
                                                    @RequestParam("file") MultipartFile file) throws IOException {
     cohortService.saveDictionaryFields(accession, file);
     List<Field> dictionary = triggerHarmonisation(accession);
+    cohortService.saveDictionaryFields(accession, dictionary);
+    fieldService.saveFields(dictionary, accession);
     return ResponseEntity.ok(dictionary);
   }
 
@@ -129,7 +128,6 @@ public class CohortController {
 
   private List<Field> triggerHarmonisation(String accession) {
     Cohort cohort = cohortService.getCohortById(accession);
-
     return harmonisationService.harmoniseDictionary(accession, cohort.getDictionary());
   }
 }

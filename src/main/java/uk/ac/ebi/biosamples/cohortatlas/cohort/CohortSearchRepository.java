@@ -1,4 +1,4 @@
-package uk.ac.ebi.biosamples.cohortatlas.repository;
+package uk.ac.ebi.biosamples.cohortatlas.cohort;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.support.PageableExecutionUtils;
 import org.springframework.stereotype.Repository;
-import uk.ac.ebi.biosamples.cohortatlas.model.Cohort;
+import uk.ac.ebi.biosamples.cohortatlas.repository.SearchRepository;
 
 import java.util.List;
 

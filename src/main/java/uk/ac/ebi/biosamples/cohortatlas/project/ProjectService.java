@@ -1,11 +1,8 @@
-package uk.ac.ebi.biosamples.cohortatlas.service;
+package uk.ac.ebi.biosamples.cohortatlas.project;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-import uk.ac.ebi.biosamples.cohortatlas.model.Project;
-import uk.ac.ebi.biosamples.cohortatlas.repository.ProjectRepository;
-import uk.ac.ebi.biosamples.cohortatlas.repository.ProjectSearchRepository;
 
 import java.util.List;
 import java.util.Map;

@@ -19,7 +19,7 @@ import org.springframework.web.method.HandlerTypePredicate;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.PathMatchConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-import uk.ac.ebi.biosamples.cohortatlas.model.Cohort;
+import uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort;
 import uk.ac.ebi.biosamples.cohortatlas.utils.NoSplitStringConverter;
 
 //@SpringBootApplication

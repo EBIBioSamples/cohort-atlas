@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import uk.ac.ebi.biosamples.cohortatlas.model.Cohort;
+import uk.ac.ebi.biosamples.cohortatlas.cohort.CohortController;
+import uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort;
 
 import java.util.List;
 

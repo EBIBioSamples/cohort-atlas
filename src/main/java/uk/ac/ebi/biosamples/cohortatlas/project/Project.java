@@ -1,8 +1,10 @@
-package uk.ac.ebi.biosamples.cohortatlas.model;
+package uk.ac.ebi.biosamples.cohortatlas.project;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import uk.ac.ebi.biosamples.cohortatlas.model.Field;
+import uk.ac.ebi.biosamples.cohortatlas.model.Provider;
 
 import java.util.List;
 

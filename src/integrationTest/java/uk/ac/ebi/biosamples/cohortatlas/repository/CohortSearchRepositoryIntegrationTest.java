@@ -5,8 +5,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import uk.ac.ebi.biosamples.cohortatlas.CohortAtlasIntegrationTest;
-import uk.ac.ebi.biosamples.cohortatlas.model.Cohort;
-import uk.ac.ebi.biosamples.cohortatlas.service.CohortService;
+import uk.ac.ebi.biosamples.cohortatlas.cohort.CohortSearchRepository;
+import uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort;
+import uk.ac.ebi.biosamples.cohortatlas.cohort.CohortService;
 
 import java.util.Arrays;
 import java.util.Collections;

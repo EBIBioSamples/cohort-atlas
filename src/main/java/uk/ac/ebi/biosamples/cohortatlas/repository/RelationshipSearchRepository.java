@@ -6,6 +6,7 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.support.PageableExecutionUtils;
 import org.springframework.stereotype.Repository;
+import uk.ac.ebi.biosamples.cohortatlas.cohort.CohortSearchRepository;
 import uk.ac.ebi.biosamples.cohortatlas.model.Relationship;
 
 import java.util.List;

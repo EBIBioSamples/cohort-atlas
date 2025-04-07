@@ -11,9 +11,10 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
-import uk.ac.ebi.biosamples.cohortatlas.model.Cohort;
-import uk.ac.ebi.biosamples.cohortatlas.repository.CohortRepository;
-import uk.ac.ebi.biosamples.cohortatlas.repository.CohortSearchRepository;
+import uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort;
+import uk.ac.ebi.biosamples.cohortatlas.cohort.CohortRepository;
+import uk.ac.ebi.biosamples.cohortatlas.cohort.CohortSearchRepository;
+import uk.ac.ebi.biosamples.cohortatlas.cohort.CohortService;
 
 import java.time.Instant;
 import java.util.Collections;

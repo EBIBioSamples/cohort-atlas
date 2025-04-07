@@ -1,4 +1,4 @@
-package uk.ac.ebi.biosamples.cohortatlas.service;
+package uk.ac.ebi.biosamples.cohortatlas.project;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.web.PagedResourcesAssembler;
@@ -9,9 +9,7 @@ import org.springframework.hateoas.PagedModel;
 import org.springframework.hateoas.server.RepresentationModelAssembler;
 import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Component;
-import uk.ac.ebi.biosamples.cohortatlas.controller.FieldController;
-import uk.ac.ebi.biosamples.cohortatlas.controller.ProjectController;
-import uk.ac.ebi.biosamples.cohortatlas.model.Project;
+import uk.ac.ebi.biosamples.cohortatlas.field.FieldController;
 
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 

@@ -1,11 +1,9 @@
-package uk.ac.ebi.biosamples.cohortatlas.service;
+package uk.ac.ebi.biosamples.cohortatlas.field;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-import uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField;
-import uk.ac.ebi.biosamples.cohortatlas.repository.FieldSearchRepository;
-import uk.ac.ebi.biosamples.cohortatlas.repository.FieldRepository;
+import uk.ac.ebi.biosamples.cohortatlas.model.Field;
 
 import java.util.List;
 import java.util.Map;
@@ -30,6 +28,17 @@ public class FieldService {
 
   public List<Map<String, Integer>> fieldCountGroupByCohort() {
     return fieldRepository.getFieldCountGroupByCohort().getMappedResults();
+  }
+
+  public List<DictionaryField> saveFields(List<Field> fields, String cohort) {
+    List<DictionaryField> dictionaryFields = fields.stream().map(f -> convertFieldToDictionaryField(f, cohort)).toList();
+    return fieldRepository.saveAll(dictionaryFields);
+  }
+
+  private static DictionaryField convertFieldToDictionaryField(Field field, String cohort) {
+    DictionaryField dictionaryField = DictionaryField.from(field);
+    dictionaryField.setCohort(cohort);
+    return dictionaryField;
   }
 
 }

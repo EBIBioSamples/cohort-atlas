@@ -77,7 +77,7 @@
     },
     "tags": [],
     "label": "",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   },
   {
     "accession": "BSC0000001",
@@ -115,7 +115,7 @@
     },
     "tags": ["earlycause"],
     "label": "EARLY_CAUSE",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   },
   {
     "accession": "BSC0000002",
@@ -161,7 +161,7 @@
     },
     "tags": ["earlycause"],
     "label": "EARLY_CAUSE",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   },
   {
     "accession": "BSC0000003",
@@ -204,7 +204,7 @@
     },
     "tags": ["earlycause"],
     "label": "EARLY_CAUSE",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   },
   {
     "accession": "BSC0000004",
@@ -276,7 +276,7 @@
     },
     "tags": ["earlycause"],
     "label": "EARLY_CAUSE",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   },
 
   {
@@ -334,7 +334,7 @@
     },
     "tags": ["ReCoDID"],
     "label": "RECODID",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   },
   {
     "accession": "BSC0000006",
@@ -392,7 +392,7 @@
     },
     "tags": ["ReCoDID"],
     "label": "RECODID",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   },
   {
     "accession": "BSC0000007",
@@ -458,7 +458,7 @@
     },
     "tags": ["ReCoDID"],
     "label": "RECODID",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   },
   {
     "accession": "BSC0000008",
@@ -527,7 +527,7 @@
     },
     "tags": ["ReCoDID"],
     "label": "RECODID",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   },
   {
     "accession": "BSC0000009",
@@ -599,7 +599,7 @@
     },
     "tags": ["ReCoDID"],
     "label": "RECODID",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   },
   {
     "accession": "BSC0000010",
@@ -696,6 +696,6 @@
     },
     "tags": ["ReCoDID"],
     "label": "RECODID",
-    "_class": "uk.ac.ebi.biosamples.cohortatlas.model.Cohort"
+    "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   }
 ]

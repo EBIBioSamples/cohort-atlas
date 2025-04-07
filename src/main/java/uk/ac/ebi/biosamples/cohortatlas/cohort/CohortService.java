@@ -1,7 +1,5 @@
-package uk.ac.ebi.biosamples.cohortatlas.service;
+package uk.ac.ebi.biosamples.cohortatlas.cohort;
 
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.MappingIterator;
 import com.fasterxml.jackson.dataformat.csv.CsvMapper;
 import com.fasterxml.jackson.dataformat.csv.CsvSchema;
@@ -11,10 +9,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
-import uk.ac.ebi.biosamples.cohortatlas.model.Cohort;
 import uk.ac.ebi.biosamples.cohortatlas.model.Field;
-import uk.ac.ebi.biosamples.cohortatlas.repository.CohortRepository;
-import uk.ac.ebi.biosamples.cohortatlas.repository.CohortSearchRepository;
 
 import java.io.IOException;
 import java.util.List;

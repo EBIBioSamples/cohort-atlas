@@ -11,10 +11,10 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
-import uk.ac.ebi.biosamples.cohortatlas.model.Cohort;
-import uk.ac.ebi.biosamples.cohortatlas.model.DictionaryField;
-import uk.ac.ebi.biosamples.cohortatlas.repository.FieldRepository;
-import uk.ac.ebi.biosamples.cohortatlas.repository.FieldSearchRepository;
+import uk.ac.ebi.biosamples.cohortatlas.field.FieldService;
+import uk.ac.ebi.biosamples.cohortatlas.field.DictionaryField;
+import uk.ac.ebi.biosamples.cohortatlas.field.FieldRepository;
+import uk.ac.ebi.biosamples.cohortatlas.field.FieldSearchRepository;
 
 import java.util.Collections;
 import java.util.List;

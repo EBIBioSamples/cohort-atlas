@@ -1,9 +1,10 @@
-package uk.ac.ebi.biosamples.cohortatlas.model;
+package uk.ac.ebi.biosamples.cohortatlas.field;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.TextIndexed;
 import org.springframework.data.mongodb.core.mapping.Document;
+import uk.ac.ebi.biosamples.cohortatlas.model.Field;
 
 import java.util.List;
 
@@ -30,4 +31,16 @@ public class DictionaryField {
 
   private String cohort;
   private String project;
+
+  public static DictionaryField from(Field field) {
+    DictionaryField dictionaryField = new DictionaryField();
+    dictionaryField.setName(field.getName());
+    dictionaryField.setLabel(field.getLabel());
+    dictionaryField.setDescription(field.getDescription());
+    dictionaryField.setType(field.getType());
+    dictionaryField.setValues(field.getValues());
+    dictionaryField.setParent(field.getParent());
+    dictionaryField.setAnnotation(field.getAnnotation());
+    return dictionaryField;
+  }
 }

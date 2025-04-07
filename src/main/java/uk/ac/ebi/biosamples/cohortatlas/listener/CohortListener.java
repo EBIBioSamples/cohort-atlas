@@ -4,8 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.mapping.event.AbstractMongoEventListener;
 import org.springframework.data.mongodb.core.mapping.event.BeforeConvertEvent;
 import org.springframework.stereotype.Component;
-import uk.ac.ebi.biosamples.cohortatlas.model.AccessionSequence;
-import uk.ac.ebi.biosamples.cohortatlas.model.Cohort;
+import uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort;
 import uk.ac.ebi.biosamples.cohortatlas.service.AccessionService;
 
 @Component

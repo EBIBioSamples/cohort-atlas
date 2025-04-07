@@ -9,7 +9,7 @@ import org.springframework.hateoas.PagedModel;
 import org.springframework.hateoas.server.RepresentationModelAssembler;
 import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Component;
-import uk.ac.ebi.biosamples.cohortatlas.controller.FieldController;
+import uk.ac.ebi.biosamples.cohortatlas.field.FieldController;
 import uk.ac.ebi.biosamples.cohortatlas.model.Relationship;
 
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
