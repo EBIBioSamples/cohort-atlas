@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.MappingIterator;
 import com.fasterxml.jackson.dataformat.csv.CsvMapper;
 import com.fasterxml.jackson.dataformat.csv.CsvSchema;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.hateoas.EntityModel;
@@ -11,8 +12,8 @@ import org.springframework.hateoas.PagedModel;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import uk.ac.ebi.biosamples.cohortatlas.harmonisation.HarmonisationService;
 import uk.ac.ebi.biosamples.cohortatlas.model.Field;
-import uk.ac.ebi.biosamples.cohortatlas.service.HarmonisationService;
 import uk.ac.ebi.biosamples.cohortatlas.utils.PageUtils;
 
 import java.io.IOException;
@@ -26,7 +27,9 @@ public class FieldController {
   private final FieldModelAssembler fieldModelAssembler;
   private final HarmonisationService harmonisationService;
 
-  public FieldController(FieldService fieldService, FieldModelAssembler fieldModelAssembler, HarmonisationService harmonisationService) {
+  public FieldController(FieldService fieldService,
+                         FieldModelAssembler fieldModelAssembler,
+                         @Qualifier("geminiHarmonisationService") HarmonisationService harmonisationService) {
     this.fieldService = fieldService;
     this.fieldModelAssembler = fieldModelAssembler;
     this.harmonisationService = harmonisationService;

@@ -33,6 +33,11 @@ dependencies {
 	implementation ("org.springframework.boot:spring-boot-starter-oauth2-resource-server")
 	implementation ("org.springframework.security:spring-security-oauth2-jose:6.1.4")
 	implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.7.8")
+
+//	implementation("dev.langchain4j:langchain4j-spring-boot-starter:1.0.0-beta2")
+//	implementation("dev.langchain4j:langchain4j-google-ai-gemini-spring-boot-starter:1.0.0-beta2")
+	implementation("dev.langchain4j:langchain4j-google-ai-gemini:1.0.0-beta2")
+
 //	implementation("com.opencsv:opencsv:5.7.1")
 	implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-csv:2.14.2")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")

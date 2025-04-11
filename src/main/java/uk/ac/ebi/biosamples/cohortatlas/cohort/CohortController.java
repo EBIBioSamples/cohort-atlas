@@ -1,5 +1,6 @@
 package uk.ac.ebi.biosamples.cohortatlas.cohort;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.hateoas.EntityModel;
@@ -8,10 +9,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import uk.ac.ebi.biosamples.cohortatlas.field.FieldService;
+import uk.ac.ebi.biosamples.cohortatlas.harmonisation.HarmonisationService;
 import uk.ac.ebi.biosamples.cohortatlas.model.Field;
 import uk.ac.ebi.biosamples.cohortatlas.model.Relation;
 import uk.ac.ebi.biosamples.cohortatlas.model.Survey;
-import uk.ac.ebi.biosamples.cohortatlas.service.HarmonisationService;
 
 import java.io.IOException;
 import java.util.InputMismatchException;
@@ -25,8 +26,10 @@ public class CohortController {
   private final CohortModelAssembler cohortModelAssembler;
   private final FieldService fieldService;
 
-  public CohortController(CohortService cohortService, HarmonisationService harmonisationService,
-                          CohortModelAssembler cohortModelAssembler, FieldService fieldService) {
+  public CohortController(CohortService cohortService,
+                          @Qualifier("geminiHarmonisationService") HarmonisationService harmonisationService,
+                          CohortModelAssembler cohortModelAssembler,
+                          FieldService fieldService) {
     this.cohortService = cohortService;
     this.harmonisationService = harmonisationService;
     this.cohortModelAssembler = cohortModelAssembler;
