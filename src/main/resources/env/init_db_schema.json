@@ -34,13 +34,9 @@
     "dataSummary": {
       "sampleSize": 0,
       "inclusionCriteria": "Children, Mothers, Partners",
-      "taxId": [
-        "0"
-      ]
+      "taxId": ["0"]
     },
-    "tags": [
-      "earlycause"
-    ],
+    "tags": ["earlycause"],
     "label": "EARLY_CAUSE",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   },
@@ -75,11 +71,7 @@
     ],
     "funding": "EU QLG1-CT-2000-01643 (EUROBLCS) Grant no. E51560, NorFA Grant no. 731, 20056, 30167, USA / NIH 2000 G DF682 Grant no. 50945",
     "acknowledgements": "We thank all cohort members and researchers who have participated in the study. We also wish acknowledge the work of the NFBC project center.",
-    "territories": [
-      "Finland",
-      "Lapland",
-      "North Ostrobothnia"
-    ],
+    "territories": ["Finland", "Lapland", "North Ostrobothnia"],
     "dataSummary": {
       "ageGroups": [
         "prenatal",
@@ -93,13 +85,9 @@
       ],
       "sampleSize": 0,
       "inclusionCriteria": "All mothers and their children whose expected date of birth was between July 1st 1985 - June 30th 1986 in the two northernmost provinces of Finland (Oulu and Lapland)",
-      "taxId": [
-        "0"
-      ]
+      "taxId": ["0"]
     },
-    "tags": [
-      "earlycause"
-    ],
+    "tags": ["earlycause"],
     "label": "EARLY_CAUSE",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   },
@@ -131,11 +119,7 @@
     ],
     "funding": "For the 31yr follow-up: NFBC1966  received financial support from University of Oulu Grant no. 65354, Oulu University Hospital Grant no. 2/97, 8/97, Ministry of Health and Social Affairs Grant no. 23/251/97, 160/97, 190/97, National Institute for Health and Welfare, Helsinki Grant no. 54121, Regional Institute of Occupational Health, Oulu, Finland Grant no. 50621, 54231 \\nFor the 46yr follow-up: NFBC1966 received financial support from University of Oulu Grant no. 24000692, Oulu University Hospital Grant no. 24301140, ERDF European Regional Development Fund Grant no. 539/2010 A31592",
     "acknowledgements": "We thank all cohort members and researchers who have participated in the study. We also wish acknowledge the work of the NFBC project center.",
-    "territories": [
-      "Finland",
-      "Lapland",
-      "North Ostrobothnia"
-    ],
+    "territories": ["Finland", "Lapland", "North Ostrobothnia"],
     "dataSummary": {
       "ageGroups": [
         "prenatal",
@@ -150,13 +134,9 @@
       ],
       "sampleSize": 0,
       "inclusionCriteria": "All pregnant women and their children living in the Oulu and Lapland provinces of Finland with expected delivery dates in 1966.",
-      "taxId": [
-        "0"
-      ]
+      "taxId": ["0"]
     },
-    "tags": [
-      "earlycause"
-    ],
+    "tags": ["earlycause"],
     "label": "EARLY_CAUSE",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   },
@@ -219,26 +199,14 @@
     ],
     "funding": "The general design of the Generation R Study is made possible by financial support from the Erasmus  MC, University Medical Center, Rotterdam, Erasmus University Rotterdam, Netherlands  Organization for Health Research and Development (ZonMw), Netherlands Organisation for  Scientific Research (NWO), Ministry of Health, Welfare and Sport and Ministry of Youth and  Families. This project received funding from the European Union's Horizon 2020 research and innovation programme (LIFECYCLE, grant agreement No 733206, 2016; EUCAN-Connect grant agreement No 824989; ATHLETE, grant agreement No 874583). VJ received funding from a Consolidator Grant from the European Research Council (ERC-2014-CoG-648916).",
     "acknowledgements": "The authors gratefully acknowledge the contribution of participants, research collaborators, general practitioners, hospitals, midwives, and pharmacies in Rotterdam.",
-    "territories": [
-      "Netherlands",
-      "Rotterdam"
-    ],
+    "territories": ["Netherlands", "Rotterdam"],
     "dataSummary": {
-      "ageGroups": [
-        "prenatal",
-        "newborn",
-        "infant",
-        "infantsAndToddlers"
-      ],
+      "ageGroups": ["prenatal", "newborn", "infant", "infantsAndToddlers"],
       "sampleSize": 0,
       "inclusionCriteria": "Pregnant women with an expected delivery date between April 2002 and January 2006 living in Rotterdam were eligible for participation in the study. We aimed to enrol mothers in early pregnancy but enrolment was possible until birth of their child. Partners from mothers enrolled in pregnancy were invited to participate. Extensive assessments are performed in mothers, fathers and their children.",
-      "taxId": [
-        "0"
-      ]
+      "taxId": ["0"]
     },
-    "tags": [
-      "earlycause"
-    ],
+    "tags": ["earlycause"],
     "label": "EARLY_CAUSE",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   },
@@ -256,10 +224,7 @@
     "endDate": "2021",
     "targetEnrollment": 0,
     "totalEnrollment": 151,
-    "territories": [
-      "Netherlands",
-      "Rotterdam, NL"
-    ],
+    "territories": ["Netherlands", "Rotterdam, NL"],
     "dictionary": [
       {
         "name": "Chronic cardiac disease (not hypertension) ",
@@ -623,11 +588,7 @@
         "Inotropes / vasopressors",
         "ICU or High Dependency Unit admission"
       ],
-      "outcome": [
-        "Discharged alive",
-        "Transfer to other facility",
-        "Death"
-      ],
+      "outcome": ["Discharged alive", "Transfer to other facility", "Death"],
       "complications": [
         "Viral pneumonia/pneumonitis",
         "Bacterial pneumonia",
@@ -668,16 +629,10 @@
       "sampleType": "nasopharyngeal swab",
       "followUpSchedule": "Until discharged from Erasmus MC; Data further consulted to check survival up to 60 days after inclusion into the study",
       "inclusionCriteria": "Adult Patients admitted to the ICU with a clinical suspicion of infection or patients admitted to the ICU with respiratory failure (either Optiflow or mechanical ventilation)",
-      "taxId": [
-        "2697049"
-      ],
-      "scientificName": [
-        "Severe acute respiratory syndrome coronavirus 2"
-      ]
+      "taxId": ["2697049"],
+      "scientificName": ["Severe acute respiratory syndrome coronavirus 2"]
     },
-    "tags": [
-      "ReCoDID"
-    ],
+    "tags": ["ReCoDID"],
     "label": "RECODID",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   },
@@ -715,9 +670,7 @@
     ],
     "project": "EuCARE",
     "dataSummary": {
-      "diseases": [
-        "immunossupression"
-      ],
+      "diseases": ["immunossupression"],
       "typeOfData": [
         "SARS-CoV-2 sequences",
         "Serology",
@@ -730,13 +683,9 @@
       "sampleType": "serum, plasma, PMBC, nasopharyngeal swabs",
       "followUpSchedule": "follow-up is planned to last 24 months with respect to the occurrence of the first known immunization event, either natural infection or vaccination",
       "inclusionCriteria": "Adult (>18 years) HCW with at least one immunization event (SARS-CoV-2 infection and/or vaccination) and mandatory information on their full immunization story:\na. Dates of SARS-CoV-2 infection, and/or\nb. dates of vaccination and vaccine type\n\n2. For those with a history of SARS-CoV-2 infection, diagnosis obtained by detection of SARS-CoV-2 RNA or Antigen\n3. Having a signed informed consent when required by ethical approval",
-      "taxId": [
-        "0"
-      ]
+      "taxId": ["0"]
     },
-    "tags": [
-      "ReCoDID"
-    ],
+    "tags": ["ReCoDID"],
     "label": "RECODID",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   },
@@ -839,13 +788,9 @@
       "sampleType": "Swab (nasopharyngeal), Whole blood, Bronchoalveolar lavage, Sputum, Serum, Plasma, PBMC, Urine, Feces/rectal swab, BAS (Bronchoaspirate), Swab (throat), BAL (Bronchoalveolar lavage), ETA (Endotracheal Aspirate), CSF (Cerebrospinal Fluid), Pus, Bile, Biopsy, Skin, Peritoneal fluid, Venous catheter",
       "followUpSchedule": "follow-up is planned to last 24 months with respect to the occurrence of the first known immunization event, either natural infection or vaccination",
       "inclusionCriteria": "Adult (>18 years) HCW with at least one immunization event (SARS-CoV-2 infection and/or vaccination) and mandatory information on their full immunization story:\na. Dates of SARS-CoV-2 infection, and/or\nb. dates of vaccination and vaccine type\n\n2. For those with a history of SARS-CoV-2 infection, diagnosis obtained by detection of SARS-CoV-2 RNA or Antigen\n3. Having a signed informed consent when required by ethical approval",
-      "taxId": [
-        "0"
-      ]
+      "taxId": ["0"]
     },
-    "tags": [
-      "ReCoDID"
-    ],
+    "tags": ["ReCoDID"],
     "label": "RECODID",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   },
@@ -952,13 +897,9 @@
       "sampleType": "blood/serum samples",
       "followUpSchedule": "2-3 months, 6-9 months, 12-15 months",
       "inclusionCriteria": "Patients diagnosed with acute COVID-19 disease from 01/03/2020 to 01/02/2025 at the participating centers will be enrolled in the study; two groups of patients recovered from acute COVID-19 will be enrolled:\nGroup 1 (hospitalized patients): patients hospitalized for COVID-19 disease;\nGroup 2 (outpatients): patients diagnosed with mild COVID-19 disease and thus not hospitalized (these patients will be referred to the Clinic of Infectious Diseases by the general practitioner or have received monoclonal antibodies for COVID-19 or antiviral treatments for COVID-19 at the Clinic of Infectious Diseases or have been visited at the Emergency Department of the hospital).",
-      "taxId": [
-        "0"
-      ]
+      "taxId": ["0"]
     },
-    "tags": [
-      "ReCoDID"
-    ],
+    "tags": ["ReCoDID"],
     "label": "RECODID",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   },
@@ -988,11 +929,7 @@
       }
     ],
     "funding": "European Union",
-    "territories": [
-      "Italy",
-      "Portugal",
-      "Mexico"
-    ],
+    "territories": ["Italy", "Portugal", "Mexico"],
     "project": "EuCARE",
     "dataSummary": {
       "outcome": [
@@ -1008,13 +945,9 @@
       "sampleSize": 0,
       "sampleType": "swab",
       "inclusionCriteria": "Kindergartens and school-age children from public or private schools. Enrolled children may be students of classes that have expressed their consent to participateSchool personnel of participating schools Householders of participating children",
-      "taxId": [
-        "0"
-      ]
+      "taxId": ["0"]
     },
-    "tags": [
-      "ReCoDID"
-    ],
+    "tags": ["ReCoDID"],
     "label": "RECODID",
     "_links": {
       "self": {
@@ -1030,12 +963,8 @@
     "type": "Cohort",
     "targetEnrollment": 0,
     "totalEnrollment": 0,
-    "territories": [
-      "Finland"
-    ],
-    "tags": [
-      "earlycause"
-    ],
+    "territories": ["Finland"],
+    "tags": ["earlycause"],
     "label": "EARLY_CAUSE",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   },
@@ -1060,25 +989,14 @@
         "url": "https://reader.elsevier.com/reader/sd/pii/S0165032721002512?token=CC79A3F2466668640C06FBB72256F9606F40927F4B84CBE68465225B307711FD7446A10C7C5AC5260676D7BE56B26463&originRegion=eu-west-1&originCreation=20230331120104"
       }
     ],
-    "territories": [
-      "Netherlands"
-    ],
+    "territories": ["Netherlands"],
     "dataSummary": {
-      "ageGroups": [
-        "youngAdult",
-        "adult",
-        "lateMiddleaged",
-        "lateAdulthood"
-      ],
+      "ageGroups": ["youngAdult", "adult", "lateMiddleaged", "lateAdulthood"],
       "sampleSize": 0,
       "inclusionCriteria": "Individuals with and without current/remitted depression and/or anxiety disorders were included.",
-      "taxId": [
-        "0"
-      ]
+      "taxId": ["0"]
     },
-    "tags": [
-      "earlycause"
-    ],
+    "tags": ["earlycause"],
     "label": "EARLY_CAUSE",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   },
@@ -1099,23 +1017,14 @@
     "endDate": "20016",
     "targetEnrollment": 0,
     "totalEnrollment": 510,
-    "territories": [
-      "Netherlands"
-    ],
+    "territories": ["Netherlands"],
     "dataSummary": {
-      "ageGroups": [
-        "lateMiddleaged",
-        "lateAdulthood"
-      ],
+      "ageGroups": ["lateMiddleaged", "lateAdulthood"],
       "sampleSize": 0,
       "inclusionCriteria": "Individuals with and without current/remitted depression and/or anxiety disorders were included.",
-      "taxId": [
-        "0"
-      ]
+      "taxId": ["0"]
     },
-    "tags": [
-      "earlycause"
-    ],
+    "tags": ["earlycause"],
     "label": "EARLY_CAUSE",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   },
@@ -1165,9 +1074,7 @@
       }
     ],
     "funding": "Colombian Administrative Department of Science, Technology, and Innovation – Colciencias and the Universidad Industrial de Santander. Grant no: 1102-04-12919",
-    "territories": [
-      "Colombia"
-    ],
+    "territories": ["Colombia"],
     "dataSummary": {
       "diseases": [
         "Arterial Hypertension",
@@ -1179,36 +1086,23 @@
         "Renal disease",
         "Anemia"
       ],
-      "medication": [
-        "Antibiotics",
-        "anticoagulant",
-        "steroids"
-      ],
+      "medication": ["Antibiotics", "anticoagulant", "steroids"],
       "outcome": [
         "Hospitalization",
         "discharged alive",
         "death",
         "transfer to othe facillity"
       ],
-      "typeOfData": [
-        "SARS-CoV-2 sequences",
-        "Clinical-epidemiological"
-      ],
+      "typeOfData": ["SARS-CoV-2 sequences", "Clinical-epidemiological"],
       "ageRange": "2 - 85",
       "sampleSize": 273,
       "sampleType": "serum or plasma",
       "followUpSchedule": "Follow-up visits one to seven days via clinical and laboratory assessments, with a convalescent blood sample taken approximately 2 weeks after disease onset.",
       "inclusionCriteria": "Febrile patients with clinically suspected dengue were recruited at the point of care",
-      "taxId": [
-        "12637"
-      ],
-      "scientificName": [
-        "Dengue virus"
-      ]
+      "taxId": ["12637"],
+      "scientificName": ["Dengue virus"]
     },
-    "tags": [
-      "ReCoDID"
-    ],
+    "tags": ["ReCoDID"],
     "label": "RECODID",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   },
@@ -1253,9 +1147,7 @@
       }
     ],
     "funding": "Colombian Administrative Department of Science, Technology, and Innovation – Colciencias and the Universidad Industrial de Santander. Grant no: 1102-04-18205",
-    "territories": [
-      "Colombia"
-    ],
+    "territories": ["Colombia"],
     "dataSummary": {
       "diseases": [
         "Arterial Hypertension",
@@ -1266,36 +1158,23 @@
         "Heart disease",
         "Renal disease, Anemia"
       ],
-      "medication": [
-        "Antibiotics",
-        "anticoagulant",
-        "steroids"
-      ],
+      "medication": ["Antibiotics", "anticoagulant", "steroids"],
       "outcome": [
         "Hospitalization",
         "discharged alive",
         "death",
         "transfer to othe facillity"
       ],
-      "typeOfData": [
-        "SARS-CoV-2 sequences",
-        "Clinical-epidemiological"
-      ],
+      "typeOfData": ["SARS-CoV-2 sequences", "Clinical-epidemiological"],
       "ageRange": "5 - 74",
       "sampleSize": 228,
       "sampleType": "serum or plasma",
       "followUpSchedule": "Follow-up visits one to seven days via clinical and laboratory assessments, with a convalescent blood sample taken approximately 2 weeks after disease onset.",
       "inclusionCriteria": "Febrile patients with clinically suspected dengue were recruited at the point of care",
-      "taxId": [
-        "12637"
-      ],
-      "scientificName": [
-        "Dengue virus"
-      ]
+      "taxId": ["12637"],
+      "scientificName": ["Dengue virus"]
     },
-    "tags": [
-      "ReCoDID"
-    ],
+    "tags": ["ReCoDID"],
     "label": "RECODID",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   },
@@ -1350,9 +1229,7 @@
       }
     ],
     "funding": "Colombian Administrative Department of Science, Technology, and Innovation – Colciencias and the Universidad Industrial de Santander. Grant no: 1102-459-21561",
-    "territories": [
-      "Colombia"
-    ],
+    "territories": ["Colombia"],
     "dataSummary": {
       "diseases": [
         "Arterial Hypertension",
@@ -1363,36 +1240,23 @@
         "Heart disease",
         "Renal disease, Anemia"
       ],
-      "medication": [
-        "Antibiotics",
-        "anticoagulant",
-        "steroids"
-      ],
+      "medication": ["Antibiotics", "anticoagulant", "steroids"],
       "outcome": [
         "Hospitalization",
         "discharged alive",
         "death",
         "transfer to othe facillity"
       ],
-      "typeOfData": [
-        "SARS-CoV-2 sequences",
-        "Clinical-epidemiological"
-      ],
+      "typeOfData": ["SARS-CoV-2 sequences", "Clinical-epidemiological"],
       "ageRange": "1 - 86",
       "sampleSize": 799,
       "sampleType": "serum or plasma",
       "followUpSchedule": "Follow-up visits one to seven days via clinical and laboratory assessments, with a convalescent blood sample taken approximately 2 weeks after disease onset.",
       "inclusionCriteria": "Febrile patients with clinically suspected dengue were recruited at the point of care",
-      "taxId": [
-        "12637"
-      ],
-      "scientificName": [
-        "Dengue virus"
-      ]
+      "taxId": ["12637"],
+      "scientificName": ["Dengue virus"]
     },
-    "tags": [
-      "ReCoDID"
-    ],
+    "tags": ["ReCoDID"],
     "label": "RECODID",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   },
@@ -1447,9 +1311,7 @@
       }
     ],
     "funding": "Colombian Science, Technology, and Innovation Funds of `Sistema General de Regalías de Santander, Casanare y Valle del Cauca.` Additional financial support was received by Sanofi Pasteur S.A and Fundación Infovida (http://www.fundacioninfovida.com.co/).Grant no: 1102-459-21561",
-    "territories": [
-      "Colombia"
-    ],
+    "territories": ["Colombia"],
     "dataSummary": {
       "diseases": [
         "Arterial Hypertension",
@@ -1460,35 +1322,22 @@
         "Heart disease",
         "Renal disease, Anemia"
       ],
-      "medication": [
-        "Antibiotics",
-        "anticoagulant",
-        "steroids"
-      ],
+      "medication": ["Antibiotics", "anticoagulant", "steroids"],
       "outcome": [
         "Hospitalization",
         "discharged alive",
         "death",
         "transfer to othe facillity"
       ],
-      "typeOfData": [
-        "SARS-CoV-2 sequences",
-        "Clinical-epidemiological"
-      ],
+      "typeOfData": ["SARS-CoV-2 sequences", "Clinical-epidemiological"],
       "ageRange": "2 - 40",
       "sampleSize": 145,
       "sampleType": "serum or plasma",
       "followUpSchedule": "Biweekly (All, telephone)Once per day (Incident Febrile cases) Annual (All)0, 7 days (Incident Febrile cases)",
-      "taxId": [
-        "12637"
-      ],
-      "scientificName": [
-        "Dengue virus"
-      ]
+      "taxId": ["12637"],
+      "scientificName": ["Dengue virus"]
     },
-    "tags": [
-      "ReCoDID"
-    ],
+    "tags": ["ReCoDID"],
     "label": "RECODID",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   },
@@ -1517,26 +1366,15 @@
     "endDate": "2022-12-31",
     "targetEnrollment": 0,
     "totalEnrollment": 0,
-    "territories": [
-      "Norway"
-    ],
+    "territories": ["Norway"],
     "dataSummary": {
-      "typeOfData": [
-        "Viral sequence",
-        "Clinical-epidemiological"
-      ],
+      "typeOfData": ["Viral sequence", "Clinical-epidemiological"],
       "sampleSize": 0,
       "inclusionCriteria": "Residents in Norway",
-      "taxId": [
-        "2697049"
-      ],
-      "scientificName": [
-        "Severe acute respiratory syndrome coronavirus 2"
-      ]
+      "taxId": ["2697049"],
+      "scientificName": ["Severe acute respiratory syndrome coronavirus 2"]
     },
-    "tags": [
-      "ReCoDID"
-    ],
+    "tags": ["ReCoDID"],
     "label": "RECODID",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   },
@@ -1565,32 +1403,21 @@
     "targetEnrollment": 0,
     "totalEnrollment": 125,
     "funding": "Horizon Europe (VERDI), part NIH funding and part South African Medical Research Council",
-    "territories": [
-      "South Africa"
-    ],
+    "territories": ["South Africa"],
     "dataSummary": {
-      "typeOfData": [
-        "Viral sequence",
-        "Clinical-epidemiological",
-        "Serology"
-      ],
+      "typeOfData": ["Viral sequence", "Clinical-epidemiological", "Serology"],
       "ageRange": "0 - 13",
       "sampleSize": 0,
       "sampleType": "Saliva, serum and paxgene",
       "followUpSchedule": "Baseline (presentation), month 3, 12, 18 and 24",
       "inclusionCriteria": "Children",
-      "taxId": [
-        "2697049",
-        "11676"
-      ],
+      "taxId": ["2697049", "11676"],
       "scientificName": [
         "Severe acute respiratory syndrome coronavirus 2",
         "Human immunodeficiency virus 1"
       ]
     },
-    "tags": [
-      "ReCoDID"
-    ],
+    "tags": ["ReCoDID"],
     "label": "RECODID",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   },
@@ -1628,20 +1455,12 @@
       "Belgium"
     ],
     "dataSummary": {
-      "typeOfData": [
-        "Clinical-epidemiological"
-      ],
+      "typeOfData": ["Clinical-epidemiological"],
       "sampleSize": 0,
-      "taxId": [
-        "11320"
-      ],
-      "scientificName": [
-        "Influenza A virus"
-      ]
+      "taxId": ["11320"],
+      "scientificName": ["Influenza A virus"]
     },
-    "tags": [
-      "ReCoDID"
-    ],
+    "tags": ["ReCoDID"],
     "label": "RECODID",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   },
@@ -1665,24 +1484,15 @@
     "endDate": "2025-10-31",
     "targetEnrollment": 0,
     "totalEnrollment": 0,
-    "territories": [
-      "United Kingdom"
-    ],
+    "territories": ["United Kingdom"],
     "project": "VERDI",
     "dataSummary": {
-      "typeOfData": [
-        "Clinical-epidemiological",
-        "Others - diagnosis"
-      ],
+      "typeOfData": ["Clinical-epidemiological", "Others - diagnosis"],
       "sampleSize": 0,
       "ageRange": "0 - 17",
-      "taxId": [
-        "9606"
-      ]
+      "taxId": ["9606"]
     },
-    "tags": [
-      "ReCoDID"
-    ],
+    "tags": ["ReCoDID"],
     "label": "RECODID",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   },
@@ -1901,11 +1711,7 @@
         "Deep venous thrombosis prophylaxis",
         "Daily oral care and chlorhexidine"
       ],
-      "outcome": [
-        "Alive",
-        "Death",
-        "Discharged alive"
-      ],
+      "outcome": ["Alive", "Death", "Discharged alive"],
       "complications": [],
       "typeOfData": [
         "Clinical-Epidemiological",
@@ -1929,13 +1735,9 @@
         "40324",
         "354276"
       ],
-      "hostTaxId": [
-        "9606"
-      ]
+      "hostTaxId": ["9606"]
     },
-    "tags": [
-      "ReCoDID"
-    ],
+    "tags": ["ReCoDID"],
     "label": "RECODID",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   },
@@ -2230,13 +2032,9 @@
         "1907210",
         "1280"
       ],
-      "hostTaxId": [
-        "9606"
-      ]
+      "hostTaxId": ["9606"]
     },
-    "tags": [
-      "ReCoDID"
-    ],
+    "tags": ["ReCoDID"],
     "label": "RECODID",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   },
@@ -2276,7 +2074,7 @@
     ],
     "startDate": "2021-03-01",
     "endDate": "Ongoing",
-    "targetEnrollment": 16000,
+    "targetEnrollment": 9400,
     "totalEnrollment": 6759,
     "publications": [
       {
@@ -2512,13 +2310,9 @@
         "1578",
         "544"
       ],
-      "hostTaxId": [
-        "9606"
-      ]
+      "hostTaxId": ["9606"]
     },
-    "tags": [
-      "ReCoDID"
-    ],
+    "tags": ["ReCoDID"],
     "label": "RECODID",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   },
@@ -2581,33 +2375,21 @@
     ],
     "project": "IDAMS",
     "dataSummary": {
-      "diseases": [
-        "cardiovascular disease",
-        "DPOC",
-        "HIV"
-      ],
+      "diseases": ["cardiovascular disease", "DPOC", "HIV"],
       "medication": [],
       "treatment": [],
-      "outcome": [
-        "discharged alive"
-      ],
+      "outcome": ["discharged alive"],
       "complications": [],
-      "typeOfData": [
-        "Socio-demographic"
-      ],
+      "typeOfData": ["Socio-demographic"],
       "ageRange": "5 - 100",
       "sampleSize": 109,
       "sampleType": "blood",
       "followUpSchedule": "between day 2 and day 5 after onset of fever",
       "inclusionCriteria": "5 years and older",
       "taxId": [],
-      "hostTaxId": [
-        "9606"
-      ]
+      "hostTaxId": ["9606"]
     },
-    "tags": [
-      "ReCoDID"
-    ],
+    "tags": ["ReCoDID"],
     "label": "RECODID",
     "_class": "uk.ac.ebi.biosamples.cohortatlas.cohort.Cohort"
   }
