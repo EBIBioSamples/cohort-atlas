@@ -7,8 +7,6 @@ import com.fasterxml.jackson.dataformat.csv.CsvMapper;
 import com.fasterxml.jackson.dataformat.csv.CsvSchema;
 import dev.langchain4j.model.chat.ChatLanguageModel;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
-import org.springframework.context.annotation.Primary;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
 import uk.ac.ebi.biosamples.cohortatlas.config.CohortAtlasProperties;
@@ -24,8 +22,6 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 @Service
-@Primary
-@ConditionalOnProperty(name = "langchain4j.google-ai.api-key")
 @Slf4j
 public class GeminiHarmonisationService implements HarmonisationService {
   private final ObjectMapper objectMapper;
